@@ -67,7 +67,7 @@ Excels in Matter-compliant smart home applications.
 <strong>DUAL 32-BIT RISC-V PROCESSORS</strong>: with the high-performance processor running up to 160 MHz, and the low-power processor clocking up to 20
 
 <p align="center" width="100%">
-<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3.jpg" alt="alt text" width="350">
+<img src="/image/xiao_esp32c6.jpg" alt="alt text" width="350">
 </p>
 
 <strong>[🖱️ Buy Now ](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html)</strong>
@@ -135,12 +135,9 @@ XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable devic
 <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840.jpg" alt="alt text" width="350">
 </p>
 
-<br />
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/XIAO_BLE/)</strong>
 
 <br />
 

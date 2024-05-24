@@ -1,8 +1,9 @@
 # Seeed Studio XIAO Series
 
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/main.png" style={{width:1000, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/main.png" alt="alt text" width="600">
 </div>
+
 
 Seeed Studio XIAO Series consists of 7 versions to satisfy the diverse needs of makers, product designers, and educators. If you're a maker, you can take advantage of its rich community resources to get inspiration and knowledge for your own projects. The XIAO Series offers educators a comprehensive gettingstarted course and detailed wikis to quickly learn how to use XIAO for their projects. If you're a product designer, XIAO SoM User Manual covers everything from Module Selection to Mass Production.
 
@@ -20,9 +21,10 @@ Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the
 <strong>WIRELESS</strong>: 2.4GHz WiFi and BLE 5
 <strong>TINYML-SUPPORTED</strong>: Image Processing/Speech Recognition
 
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3sense.jpg" style={{width:600, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3sense.jpg" alt="alt text" width="300">
 </div>
+
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
@@ -41,9 +43,10 @@ Small yet extraordinary, a new Benchmark in IoT Application.
 <strong>WIRELESS</strong>: 2.4GHz WiFi and BLE 5
 <strong>IOT BREAKTHROUGHS</strong>: Smart Homes/Mobile Devices/Wireless Wearable Applications
 
-<div class="xiao_topic_page_pic">
-<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3.jpg" style={{width:800, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3.jpg" alt="alt text" width="350">
 </div>
+
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
@@ -63,8 +66,8 @@ XIAO ESP32C3 is a low-cost, high-performance RISC-V IOT development board that s
 <strong>PROLONGED USE TIME</strong>: On-board charging chip design
 <strong>HIGH COST PERFORMANCE</strong>: WIFI/BLE dual mode development board for only $4.99
 
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32c3.jpg" style={{width:800, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32c3.jpg" alt="alt text" width="350">
 </div>
 
 <br />
@@ -84,9 +87,8 @@ XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for 
 
 <strong>SAME FEATURES AS XIAO NRF52840</strong>
 
-
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" style={{width:800, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" alt="alt text" width="350">
 </div>
 
 <br />
@@ -108,8 +110,8 @@ XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable devic
 <strong>PROLONGED USE TIME</strong>: Support lithium battery charge management
 <strong>INTERFACE RICH</strong>: 1x Reset button, Ix UART, 1x I2C, 1x SPI, 1x NFC, 1x SWD, 11x GPIO, 6x ADC, 1x Three-in-one LED, 1x User LED
 
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840.jpg" style={{width:800, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840.jpg" alt="alt text" width="350">
 </div>
 
 <br />
@@ -131,10 +133,8 @@ XIAO RP2040 is an ultra small, high performance universal development board. Fea
 <strong>RICH ON-CHIP MEMORY</strong>: 264KB of SRAM, 2MB of onboard Flash
 <strong>INTERFACE RICH</strong>: 11 digital pins, 4 analog pins, 11 PWM Pins, 1 I2C interface, 1 UART interface, 1 SPI interface, 1 SWD Bonding pad interface
 
-
-<div class="xiao_topic_page_pic">
-    <br />
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/rp2040.jpg" style={{width:800, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/rp2040.jpg" alt="alt text" width="350">
 </div>
 
 <br />
@@ -156,8 +156,8 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 <strong>FLEXIBLE COMPATIBILITY</strong>: Compatible with Arduino IDE, Breadboard-friendly
 <strong>INTERFACE RICH</strong>: 11 digital/analog pins, 10 PWM Pins, 1 DAC output, 1 SWD Bonding pad interface, 1 I2C interface, 1 UART interface, 1 SPI interface
 
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/samd21.jpg" style={{width:800, height:'auto'}}/>
+<div style="text-align:center;">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/samd21.jpg" alt="alt text" width="350">
 </div>
 
 
@@ -171,7 +171,6 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 <br />
 
 ## Seeed Studio XIAO Series Comparison Table
-
 
 <table align="center">
 <font size={"2"}>

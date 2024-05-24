@@ -22,16 +22,16 @@ easily integrate XIAO into their own boards for rapid mass production.
         <th>Seeed Studio XIAO nRF52840 Sense</th>
 	</tr>
 	<tr>
-	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/samd21.jpg" alt="alt text" width="350"></td>
+	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/samd21.jpg" alt="alt text" width="300"></td>
 	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/rp2040.jpg" alt="alt text" width="350"></td>
 	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840.jpg" alt="alt text" width="350"></td>
 	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" alt="alt text" width="350"></td>
 	</tr>
 	<tr>
-	    <td align="center">XIAO SAMD21 is an ultra small, high performance universal development board.</td>
-	    <td align="center">XIAO RP2040 is an ultra small, high performance universal development board. Features onboard 2MB flash, micropython support.</td>
-	    <td align="center">XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable device.</td>
-	    <td align="center">XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for the TinyML AI+IOT project.</td>
+	    <td>XIAO SAMD21 is an ultra small, high performance universal development board.</td>
+	    <td>XIAO RP2040 is an ultra small, high performance universal development board. Features onboard 2MB flash, micropython support.</td>
+	    <td>XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable device.</td>
+	    <td>XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for the TinyML AI+IOT project.</td>
 	</tr>
 	<tr>
 	    <td align="center"><a href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html" target="_blank"><b><strong>🖱️ Buy Now</strong></b></a><br /><br /><a href="https://wiki.seeedstudio.com/Seeeduino-XIAO/" target="_blank"><b><strong>📚 Getting Started</strong></b></a></td>
@@ -46,16 +46,16 @@ easily integrate XIAO into their own boards for rapid mass production.
         <th>Seeed Studio XIAO ESP32S3 Sense</th>
 	</tr>
 	<tr>
-	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32c3.jpg" alt="alt text" width="350"></td>
+	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32c3.jpg" alt="alt text" width="300"></td>
 	    <td align="center"><img src="/image/xiao_esp32c6.jpg" alt="alt text" width="350"></td>
 	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3.jpg" alt="alt text" width="350"></td>
 	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3sense.jpg" alt="alt text" width="200"></td>
 	</tr>
     <tr>
-	    <td align="center">XIAO ESP32C3 is a low-cost, high-performance RISC-V IOT development board that supports Bluetooth&WIFI and low-power mode.</td>
-	    <td align="center">Excels in Matter-compliant smart home applications</td>
-	    <td align="center">Small yet extraordinary, a new Benchmark in IoT Application </td>
-	    <td align="center">Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the fields of TinyML and Smart Home</td>
+	    <td>XIAO ESP32C3 is a low-cost, high-performance RISC-V IOT development board that supports Bluetooth&WIFI and low-power mode.</td>
+	    <td>Excels in Matter-compliant smart home applications</td>
+	    <td>Small yet extraordinary, a new Benchmark in IoT Application </td>
+	    <td>Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the fields of TinyML and Smart Home</td>
 	</tr>
 	<tr>
 	    <td align="center"><a href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" target="_blank"><b><strong>🖱️ Buy Now</strong></b></a><br /><br /><a href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/" target="_blank"><b><strong>📚 Getting Started</strong></b></a></td>

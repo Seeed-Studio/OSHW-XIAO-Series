@@ -18,9 +18,13 @@ easily integrate XIAO into their own boards for rapid mass production.
 Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the fields of TinyML and Smart Home.
         
 <strong>HIGH-PERFORMANCE</strong>: 240MHz Xtensa 32-bit LX7 dual-core processor
+
 <strong>MEMORY</strong>: 8MB PSRAM + 8MB FLASH
+
 <strong>MULTI-FUNCTIONAL</strong>: Microphone/SD card slot/Detachable OV2640
+
 <strong>WIRELESS</strong>: 2.4GHz WiFi and BLE 5
+
 <strong>TINYML-SUPPORTED</strong>: Image Processing/Speech Recognition
 
 <p align="center" width="100%">
@@ -40,9 +44,13 @@ Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the
 Small yet extraordinary, a new Benchmark in IoT Application.
 
 <strong>HIGH-PERFORMANCE</strong>: 240MHz Xtensa 32-bit LX7 dual-core processor
+
 <strong>ULTRA LOW-POWER</strong>: 14μA
+
 <strong>MULTI-FUNCTIONAL</strong>: Microphone/SD card slot/Detachable OV2640
+
 <strong>WIRELESS</strong>: 2.4GHz WiFi and BLE 5
+
 <strong>IOT BREAKTHROUGHS</strong>: Smart Homes/Mobile Devices/Wireless Wearable Applications
 
 <p align="center" width="100%">
@@ -62,8 +70,11 @@ Small yet extraordinary, a new Benchmark in IoT Application.
 Excels in Matter-compliant smart home applications.
 
 <strong>ENHANCED CONNECTIVITY</strong>: 2.4GHz Wi-Fi 6, BLE 5.0, Zigbee, and Thread
+
 <strong>GREAT RF PERFORMANCE</strong>: 2.4GHz Wi-Fi 6, BLE 5.0, Zigbee, and Thread
+
 <strong>SECURITY ENCRYPTED ON CHIP</strong>: Secure boot, flash encryption, trusted Execution Environment, and more
+
 <strong>DUAL 32-BIT RISC-V PROCESSORS</strong>: with the high-performance processor running up to 160 MHz, and the low-power processor clocking up to 20
 
 <p align="center" width="100%">
@@ -83,10 +94,15 @@ Excels in Matter-compliant smart home applications.
 XIAO ESP32C3 is a low-cost, high-performance RISC-V IOT development board that supports Bluetooth&WIFI and low-power mode.
 
 <strong>POWERFUL MCU (ESP32C3)</strong>: RISC-V 32bit, up to 160MHz ESP32-C3 4MB Flash
+
 <strong>DUAL-MODE WIRELESS CONNECTIVITY</strong>: WIFI and BLE
+
 <strong>LOW POWER CONSUMPTION</strong>: WIFI (3.6mA), BLE (9.7mA), Deep Sleep Mode (44uA)
+
 <strong>EXCELLENT RF</strong>: With free U.FL antenna Bluetooth/WIFI stable connection distance over 100 meters
+
 <strong>PROLONGED USE TIME</strong>: On-board charging chip design
+
 <strong>HIGH COST PERFORMANCE</strong>: WIFI/BLE dual mode development board for only $4.99
 
 <p align="center" width="100%">
@@ -126,9 +142,13 @@ XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for 
 XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable device.
 
 <strong>VARIOUS WIRELESS CONNECTIVITY OPTIONS</strong>: Bluetooth 5.0, NFC with onboard antenna
+
 <strong>POWERFUL MCU (NORDIC NRF52840)</strong>: ARM® Cortex™-M4 32-bit processor with FPU operating at 64 MHz
+
 <strong>ULTRA-LOW POWER CONSUMPTION</strong>: As low as 5 μA in deep sleep model
+
 <strong>PROLONGED USE TIME</strong>: Support lithium battery charge management
+
 <strong>INTERFACE RICH</strong>: 1x Reset button, Ix UART, 1x I2C, 1x SPI, 1x NFC, 1x SWD, 11x GPIO, 6x ADC, 1x Three-in-one LED, 1x User LED
 
 <p align="center" width="100%">
@@ -148,9 +168,13 @@ XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable devic
 XIAO RP2040 is an ultra small, high performance universal development board. Features onboard 2MB flash, micropython support.
 
 <strong>GETTING STARTED FAST</strong>: Support Arduino/Micropython/CircuitPython
+
 <strong>COST-EFFECTIVE</strong>: Lower the barrier to entry
+
 <strong>MORE POWERFUL MCU (RP2040)</strong>: Dual-core ARM Cortex M0+ Raspberry PI RP2040 chip, running up to 133 MHz
+
 <strong>RICH ON-CHIP MEMORY</strong>: 264KB of SRAM, 2MB of onboard Flash
+
 <strong>INTERFACE RICH</strong>: 11 digital pins, 4 analog pins, 11 PWM Pins, 1 I2C interface, 1 UART interface, 1 SPI interface, 1 SWD Bonding pad interface
 
 <p align="center" width="100%">
@@ -170,9 +194,13 @@ XIAO RP2040 is an ultra small, high performance universal development board. Fea
 XIAO SAMD21 is an ultra small, high performance universal development board.
 
 <strong>USERS’ FAVOURITE</strong>: First pioneering product of XIAO series!
+
 <strong>THUMB-SIZED</strong>: The smallest Arduino-compatible board in Seeed Studio board Family
+
 <strong>POWERFUL MCU (SAMD21)</strong>: ARM® Cortex®-M0+ 32bit 48MHz microcontroller(SAMD21G18) with 256KB Flash,32KB SRAM
+
 <strong>FLEXIBLE COMPATIBILITY</strong>: Compatible with Arduino IDE, Breadboard-friendly
+
 <strong>INTERFACE RICH</strong>: 11 digital/analog pins, 10 PWM Pins, 1 DAC output, 1 SWD Bonding pad interface, 1 I2C interface, 1 UART interface, 1 SPI interface
 
 <p align="center" width="100%">

@@ -1,7 +1,7 @@
 # Seeed Studio XIAO Series
 
 <p align="center" width="100%">
-<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/main.png" alt="alt text" width="600">
+<img src="/image/xiao_family.jpg" alt="alt text" width="700">
 </p>
 
 
@@ -10,6 +10,8 @@ Seeed Studio XIAO Series consists of 7 versions to satisfy the diverse needs of 
 XIAO is a combination of compactness, capability, and user-friendly design. The whole XIAO Series features
 compact design withall SMD components are placed on the same side of the board, so designers can
 easily integrate XIAO into their own boards for rapid mass production.
+
+---
 
 ## Seeed Studio XIAO ESP32S3 Sense
 
@@ -25,13 +27,13 @@ Ultra-small ESP32-S3 development board with OV2640 camera, a risging star in the
 <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3sense.jpg" alt="alt text" width="300">
 </p>
 
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)</strong>
 
 <br />
+
+---
 
 ## Seeed Studio XIAO ESP32S3
 
@@ -47,13 +49,13 @@ Small yet extraordinary, a new Benchmark in IoT Application.
 <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3.jpg" alt="alt text" width="350">
 </p>
 
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)</strong>
 
 <br />
+
+---
 
 ## Seeed Studio XIAO ESP32C3
 
@@ -70,14 +72,13 @@ XIAO ESP32C3 is a low-cost, high-performance RISC-V IOT development board that s
 <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32c3.jpg" alt="alt text" width="350">
 </p>
 
-<br />
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)</strong>
 
 <br />
+
+---
 
 ## Seeed Studio XIAO nRF52840 Sense
 
@@ -91,14 +92,13 @@ XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for 
 <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" alt="alt text" width="350">
 </p>
 
-<br />
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/XIAO_BLE/)</strong>
 
 <br />
+
+---
 
 ### Seeed Studio XIAO nRF52840
 
@@ -137,14 +137,13 @@ XIAO RP2040 is an ultra small, high performance universal development board. Fea
 <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/rp2040.jpg" alt="alt text" width="350">
 </p>
 
-<br />
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-RP2040/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/XIAO-RP2040/)</strong>
 
 <br />
+
+---
 
 ### Seeed Studio XIAO SAMD21
 
@@ -161,14 +160,13 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 </p>
 
 
-<br />
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html)</strong>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Seeeduino-XIAO/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Getting Started</font></span></strong></a>
-</div>
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/Seeeduino-XIAO/)</strong>
 
 <br />
+
+---
 
 ## Seeed Studio XIAO Series Comparison Table
 

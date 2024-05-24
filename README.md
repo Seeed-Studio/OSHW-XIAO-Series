@@ -39,13 +39,6 @@ easily integrate XIAO into their own boards for rapid mass production.
 	    <td align="center"><a href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html" target="_blank"><b><strong>🖱️ Buy Now</strong></b></a><br /><br /><a href="https://wiki.seeedstudio.com/XIAO_BLE/" target="_blank"><b><strong>📚 Getting Started</strong></b></a></td>
 	    <td align="center"><a href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html" target="_blank"><b><strong>🖱️ Buy Now</strong></b></a><br /><br /><a href="https://wiki.seeedstudio.com/XIAO_BLE/" target="_blank"><b><strong>📚 Getting Started</strong></b></a></td>
 	</tr>
-	</font>
-</table>
-
-
-
-<table align="center">
-<font size={"2"}>
 	<tr>
 	    <th>Seeed Studio XIAO ESP32C3</th>
 		<th>Seeed Studio XIAO ESP32C6</th>

@@ -57,6 +57,27 @@ Small yet extraordinary, a new Benchmark in IoT Application.
 
 ---
 
+## Seeed Studio XIAO ESP32C6
+
+Excels in Matter-compliant smart home applications.
+
+<strong>ENHANCED CONNECTIVITY</strong>: 2.4GHz Wi-Fi 6, BLE 5.0, Zigbee, and Thread
+<strong>GREAT RF PERFORMANCE</strong>: 2.4GHz Wi-Fi 6, BLE 5.0, Zigbee, and Thread
+<strong>SECURITY ENCRYPTED ON CHIP</strong>: Secure boot, flash encryption, trusted Execution Environment, and more
+<strong>DUAL 32-BIT RISC-V PROCESSORS</strong>: with the high-performance processor running up to 160 MHz, and the low-power processor clocking up to 20
+
+<p align="center" width="100%">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/esp32s3.jpg" alt="alt text" width="350">
+</p>
+
+<strong>[🖱️ Buy Now ](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html)</strong>
+
+<strong>[📚 Getting Started ](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)</strong>
+
+<br />
+
+---
+
 ## Seeed Studio XIAO ESP32C3
 
 XIAO ESP32C3 is a low-cost, high-performance RISC-V IOT development board that supports Bluetooth&WIFI and low-power mode.
@@ -123,6 +144,8 @@ XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable devic
 
 <br />
 
+---
+
 ### Seeed Studio XIAO RP2040
 
 XIAO RP2040 is an ultra small, high performance universal development board. Features onboard 2MB flash, micropython support.
@@ -179,6 +202,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
         <th>Seeed Studio XIAO nRF52840</th>
         <th>Seeed Studio XIAO nRF52840 Sense</th>
         <th>Seeed Studio XIAO ESP32C3</th>
+		<th>Seeed Studio XIAO ESP32C6</th>
         <th>Seeed Studio XIAO ESP32S3</th>
         <th>Seeed Studio XIAO ESP32S3 Sense</th>
 	</tr>
@@ -189,18 +213,9 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center">102010448</td>
 	    <td align="center">102010469</td>
         <td align="center">113991054</td>
+		<td align="center">113991254</td>
         <td align="center">113991114</td>
         <td align="center">113991115</td>
-	</tr>
-	<tr>
-        <th>Short Description</th>
-	    <td>Universal With Strong Stability and Compatibility</td>
-	    <td>Compatible with the Raspberry Pi RP2040 ecosystem</td>
-	    <td>Ultra-low power consumption Bluetooth 5.0 Suitable for consumergrade product applications</td>
-	    <td>Advanced Version of XIAO nRF52840 With Onboard Microphone And 3-Axis IMU</td>
-        <td>With WiFi and BLE, BudgetFriendly Risc-V</td>
-        <td>With WiFi and BLE, High Performance</td>
-        <td>Advanced Version of XIAO ESP32S3 with OV2640 Camera and Microphone</td>
 	</tr>
 	<tr>
 	    <th>Chip</th>
@@ -209,6 +224,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center">Nordic nRF52840</td>
 	    <td align="center">Nordic nRF52840</td>
         <td align="center">Expressif ESP32C3</td>
+		<td align="center">Expressif ESP32C6</td>
         <td align="center">Expressif ESP32S3</td>
         <td align="center">Expressif ESP32S3</td>
 	</tr>
@@ -219,6 +235,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center">Cortex-M4<br />running up to 64 MHz</td>
 	    <td align="center">Cortex-M4<br />running up to 64 MHz</td>
         <td align="center">RISC-V<br />running up to 160 MHz</td>
+		<td align="center">Dual RISC-V<br />with the HP one running up to 160MHz</td>
         <td align="center">Dual-core Xtensa LX7<br />running up to 240 MHz</td>
         <td align="center">Dual-core Xtensa LX7<br />running up to 240 MHz</td>
 	</tr>
@@ -229,16 +246,18 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center">256 KB RAM</td>
 	    <td align="center">256 KB RAM</td>
         <td align="center">400 KB SRAM</td>
+		<td align="center">512 KB SRAM</td>
         <td align="center">512 KB SRAM<br />8MB PSRAM</td>
         <td align="center">512 KB SRAM<br />8MB PSRAM</td>
 	</tr>
     <tr>
-	    <th>Flash&ROM (chip)</th>
+	    <th>Flash & ROM (chip)</th>
 	    <td align="center">256KB</td>
 	    <td align="center"><font size={"3"}>❌</font></td>
 	    <td align="center">1MB</td>
 	    <td align="center">1MB</td>
         <td align="center">4MB</td>
+		<td align="center">4MB</td>
         <td align="center">384KB</td>
         <td align="center">384KB</td>
 	</tr>
@@ -249,6 +268,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center">2MB</td>
 	    <td align="center">2MB</td>
         <td align="center"><font size={"3"}>❌</font></td>
+		<td align="center"><font size={"3"}>❌</font></td>
         <td align="center">8MB</td>
         <td align="center">8MB</td>
 	</tr>
@@ -259,16 +279,18 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>❌</font></td>
 	    <td align="center">IMU, Microphone</td>
         <td align="center"><font size={"3"}>❌</font></td>
+		<td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center">OV2640 camera, Microphone</td>
 	</tr>
     <tr>
-	    <th>PWM/Analog Pins</th>
+	    <th>Digital / Analog Pins</th>
 	    <td align="center">11/11</td>
 	    <td align="center">11/4</td>
 	    <td align="center">11/6</td>
 	    <td align="center">11/6</td>
         <td align="center">11/4</td>
+		<td align="center">11/6</td>
         <td align="center">11/9</td>
         <td align="center">13/11</td>
 	</tr>
@@ -279,6 +301,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -289,6 +312,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -299,6 +323,40 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>❌</font></td>
 	    <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
+	</tr>
+	<tr>
+	    <th>Zigbee</th>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+	</tr>
+	<tr>
+	    <th>Thread</th>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+	</tr>
+	<tr>
+	    <th>Matter</th>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+	    <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -309,6 +367,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -319,6 +378,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>❌</font></td>
 	    <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -329,6 +389,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -339,6 +400,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -349,11 +411,12 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center">5μA</td>
 	    <td align="center">5μA</td>
         <td align="center">44μA</td>
+		<td align="center">15μA</td>
         <td align="center">14μA</td>
         <td align="center">26.5mA</td>
 	</tr>
     <tr>
-	    <th colspan="8">Programming Langusges</th>
+	    <th colspan="9">Programming Langusges</th>
 	</tr>
     <tr>
 	    <th>Arduino</th>
@@ -362,6 +425,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
@@ -372,6 +436,7 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
 	</tr>
@@ -382,50 +447,48 @@ XIAO SAMD21 is an ultra small, high performance universal development board.
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
+		<td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
 	</tr>
 </font>
 </table>
 
+---
+
 ## XIAO Resources
 
 ### System-on-Modules(SoM) User Manual
 
-
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/xiaosom.png" style={{width:2000, height:'auto'}}/>
-</div>
+<p align="center" width="100%">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/xiaosom.png" alt="alt text" width="600">
+</p>
 
 XIAO SoM User Manual opensource hardware & software resources of XIAO, providing professional product design guidelines to help you accelerate your ideas off the ground. This User Manual can provide everything needed from module selection to the final manufacturing.
 
+<strong>[ ⬇️ Download ](https://files.seeedstudio.com/wiki/XIAO/Seeed-Studio-XIAO-Series-SOM-Datasheet.pdf)</strong>
+
+<strong>[ 📚 Learn More ](https://www.seeedstudio.com/blog/2023/02/23/xiao-som-user-manual-the-ultimate-guide-to-streamline-product-design-providing-seamless-experience-from-module-selection-to-mass-production/)</strong>
+
 <br />
 
-<div class="all_container">
-    <div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO/Seeed-Studio-XIAO-Series-SOM-Datasheet.pdf"><strong><span><font color={'FFFFFF'} size={"4"}>Download ⬇️</font></span></strong></a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-    <div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/blog/2023/02/23/xiao-som-user-manual-the-ultimate-guide-to-streamline-product-design-providing-seamless-experience-from-module-selection-to-mass-production/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div>
-</div>
+---
 
 ### Seeed Studio XIAO Starter Kit Courses
 
-
 This course guides you through a series of practical exercises and project-based activities. By using Seeed Studio XIAO series products, you will embark on a step-by-step journey to master Arduino, starting from the basics of LED lighting and progressing towards more advanced projects such as Arduino wearables and miniaturized device. In addition, you will learn how to quickly create a usable electronic product prototype from the course.
 
-<div class="xiao_topic_page_pic">
-    <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/xiaokit.png" style={{width:3000, height:'auto'}}/>
-</div>
+<p align="center" width="100%">
+<img src="https://files.seeedstudio.com/wiki/xiao_topicpage/xiaokit.png" alt="alt text" width="600">
+</p>
 
+<strong>[ ⬇️ Download ](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/Seeeduino-XIAO-in-Action-Minitype&Wearable-Projects-Step-by-Step.pdf)</strong>
 
-<br />
-
-<div class="all_container">
-    <div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/Seeeduino-XIAO-in-Action-Minitype&Wearable-Projects-Step-by-Step.pdf"><strong><span><font color={'FFFFFF'} size={"4"}>Download ⬇️</font></span></strong></a></div>
-    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-    <div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-Kit-Courses/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div>
-</div>
+<strong>[ 📚 Learn More ](https://wiki.seeedstudio.com/XIAO-Kit-Courses/)</strong>
 
 <br />
+
+---
 
 ### Seeed Studio XIAO SMAD21 Open-Source Materials
 
@@ -449,6 +512,8 @@ This course guides you through a series of practical exercises and project-based
 
 - **[ZIP]** [Seeed Studio XIAO SAMD21 Certification files](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/XIAO-SAMD21-Certification.zip)
 
+---
+
 ### Seeed Studio XIAO RP2040 Open-Source Materials
 
 - **[PDF]** [RP2040 datasheet](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/rp2040_datasheet.pdf)
@@ -469,6 +534,8 @@ This course guides you through a series of practical exercises and project-based
 
 - **[ZIP]** [Seeed Studio XIAO RP2040 Certification files](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO-RP2040-Certification.zip)
 
+---
+
 ### Seeed Studio XIAO nRF52840 Open-Source Materials
 
 - **[PDF]** [nRF52840 datasheet](https://files.seeedstudio.com/wiki/XIAO-BLE/nRF52840_PS_v1.5.pdf)
@@ -483,6 +550,8 @@ This course guides you through a series of practical exercises and project-based
 
 - **[ZIP]** [Seeed Studio XIAO nRF52840 Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Certification.zip)
 
+---
+
 ### Seeed Studio XIAO nRF52840 Sense Open-Source Materials
 
 - **[PDF]** [nRF52840 datasheet](https://files.seeedstudio.com/wiki/XIAO-BLE/nRF52840_PS_v1.5.pdf)
@@ -496,6 +565,8 @@ This course guides you through a series of practical exercises and project-based
 - **[XLSX]** [Seeed Studio XIAO nRF52840 Sense pinout sheet](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Senese-pinout_sheet.xlsx)
 
 - **[ZIP]** [Seeed Studio XIAO nRF52840 Sense Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-Certification.zip)
+
+---
 
 ### Seeed Studio XIAO ESP32C3 Open-Source Materials
 
@@ -521,11 +592,15 @@ This course guides you through a series of practical exercises and project-based
 
 - **[ZIP]** [Seeed Studio XIAO ESP32C3 Certification files](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-Certification.zip)
 
+---
+
 ### Seeed Studio XIAO ESP32C6 Open-Source Materials
 
 - **[ZIP]** [Seeed Studio XIAO ESP32C6 KiCAD Libraries](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO-ESP32-C6_v1.0_SCH&PCB_24028.zip)
 
 - **[PDF]** [Seeed Studio XIAO ESP32C6 Schematic](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO-ESP32-C6_v1.0_SCH_PDF_24028.pdf)
+
+---
 
 ### Seeed Studio XIAO ESP32S3 Open-Source Materials
 
@@ -540,6 +615,8 @@ This course guides you through a series of practical exercises and project-based
 - **[ZIP]** [Seeed Studio XIAO ESP32S3 Factory firmware](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-firmware.zip)
 
 - **[XLSX]** [Seeed Studio XIAO ESP32S3 pinout sheet](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Sense_Pinout.xlsx)
+
+---
 
 ### Seeed Studio XIAO ESP32S3 Sense Open-Source Materials
 

@@ -1,15 +1,15 @@
-# Seeed Studio XIAO Series
+# [Seeed Studio XIAO Series](https://www.seeedstudio.com/xiao-series-page?utm_source=github&utm_medium=seeed&utm_campaign=xiaoseries)
 
 <p align="center" width="100%">
 <img src="/image/xiao_family.jpg" alt="alt text" width="700">
 </p>
 
 
-Seeed Studio XIAO Series consists of 7 versions to satisfy the diverse needs of makers, product designers, and educators. If you're a maker, you can take advantage of its rich community resources to get inspiration and knowledge for your own projects. The XIAO Series offers educators a comprehensive gettingstarted course and detailed wikis to quickly learn how to use XIAO for their projects. If you're a product designer, XIAO SoM User Manual covers everything from Module Selection to Mass Production.
+The Seeed Studio XIAO Series is a collection of thumb-sized, powerful microcontroller units (MCUs) tailor-made for space-conscious projects requiring high performance and wireless connectivity. Embodying the essence of popular hardware platforms such as ESP32, RP2040, nRF52840, and SAMD21, the Arduino-compatible XIAO series is the perfect toolset for you to embrace tiny machine learning (TinyML) on the Edge.
 
 XIAO is a combination of compactness, capability, and user-friendly design. The whole XIAO Series features
-compact design withall SMD components are placed on the same side of the board, so designers can
-easily integrate XIAO into their own boards for rapid mass production.
+compact design with all SMD components placed on the same side of the board, so designers can
+easily integrate XIAO into their boards for rapid mass production.
 
 ---
 
@@ -28,8 +28,8 @@ easily integrate XIAO into their own boards for rapid mass production.
 	    <td align="center"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" alt="alt text" width="350"></td>
 	</tr>
 	<tr>
-	    <td>XIAO SAMD21 is an ultra small, high performance universal development board.</td>
-	    <td>XIAO RP2040 is an ultra small, high performance universal development board. Features onboard 2MB flash, micropython support.</td>
+	    <td>XIAO SAMD21 is an ultra-small, high-performance universal development board.</td>
+	    <td>XIAO RP2040 is an ultra-small, high-performance universal development board. Features onboard 2MB flash, MicroPython support.</td>
 	    <td>XIAO nRF52840 features ultra-low power BLE, suitable for wireless wearable device.</td>
 	    <td>XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for the TinyML AI+IOT project.</td>
 	</tr>

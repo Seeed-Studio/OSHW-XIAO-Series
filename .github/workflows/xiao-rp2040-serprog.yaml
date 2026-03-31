@@ -3,11 +3,7 @@ name: Build XIAO RP2040 Serprog
 on:
   push:
     branches: [main]
-    paths:
-      - 'projects/reference-projects/XIAO_RP2040_Serprog/**'
   pull_request:
-    paths:
-      - 'projects/reference-projects/XIAO_RP2040_Serprog/**'
 
 jobs:
   build:

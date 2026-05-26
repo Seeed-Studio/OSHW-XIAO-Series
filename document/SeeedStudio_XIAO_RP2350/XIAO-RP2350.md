@@ -452,7 +452,7 @@ def main():
     init_gpio()  # Initialize the enable pin
     adc = ADC(Pin(29))  # Initialize the ADC on GPIO29
 
-    conversion_factor = 3.3 / (1 << 12)  # Conversion factor for 12-bit ADC and 3.3V reference
+    conversion_factor = 3.3 / (1 << 16)  # read_u16() returns 16-bit value
     
     while True:
         result = adc.read_u16()  # Read the ADC value
@@ -496,7 +496,7 @@ int main() {
 
     while (1) {
         // 12-bit conversion, assume max value == ADC_VREF == 3.3 V
-        const float conversion_factor = 3.3f / (1 << 12); // Conversion factor for 12-bit ADC and 3.3V reference
+        const float conversion_factor = 3.3f / (1 << 12); // 12-bit ADC, max value 4095
         uint16_t result = adc_read(); // Read the ADC value
         // Calculate the voltage, considering the voltage divider (factor of 2)
         printf("Raw value: 0x%03x, voltage: %f V\n", result, result * conversion_factor * 2); 

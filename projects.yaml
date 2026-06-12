@@ -1,5 +1,198 @@
 projects:
 
+  # ========== 2026-06-12 Community Projects ==========
+  # Source: xiao-weekly-search(2026-06-12)
+
+- name:
+    en: "Little Ledger - Real-Time Blockchain Monitoring"
+    zh: "小账本 — 实时区块链监控器"
+  description:
+    en: "An open-source IoT blockchain monitoring device built around the XIAO ESP32-S3. Connects via WiFi and WebSocket to the XRP Ledger and Xahau networks, displaying real-time transactions, price changes, and network status on a 0.96\" OLED with haptic, audio, and visual alerts. Designed as an educational project to teach C++ through hands-on blockchain data interaction."
+    zh: "基于 XIAO ESP32-S3 的开源 IoT 区块链监控装置。通过 WiFi 和 WebSocket 连接 XRP Ledger 及 Xahau 网络，在 0.96\" OLED 上实时显示交易、价格变化和网络状态，并提供震动、声音和视觉警报。以教育为目的，通过实际区块链数据互动来学习 C++ 编程。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 3
+  author:
+    en: "Handy4ndy (Xspence)"
+    zh: "Handy4ndy (Xspence)"
+  author_type: "GitHub"
+  link: "https://github.com/Handy4ndy/ESP32-XRPL"
+  image: ""
+
+- name:
+    en: "Build an Air Quality Panel with Home Assistant and ePaper"
+    zh: "用 Home Assistant 和 ePaper 打造空气质量面板"
+  description:
+    en: "An ePaper air quality dashboard that connects to Home Assistant for real-time indoor air quality monitoring. Built with the Seeed Studio EE05 e-paper board integrating a XIAO ESP32-S3 Plus for Wi-Fi connectivity. Displays sensor data on a low-power e-paper screen, making it ideal for always-on home monitoring."
+    zh: "一款连接 Home Assistant 的 ePaper 空气质量仪表盘，用于实时室内空气质量监测。采用 Seeed Studio EE05 e-paper 板（集成 XIAO ESP32-S3 Plus）通过 Wi-Fi 连接 Home Assistant，在低功耗 ePaper 屏幕上显示传感器数据，适合全天候家庭监测。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 6
+  author:
+    en: "Profe Tolocka (etolocka)"
+    zh: "Profe Tolocka (etolocka)"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/etolocka/build-an-air-quality-panel-with-home-assistant-and-epaper-89c823"
+  image: ""
+
+- name:
+    en: "Veltoc Model 01 — Retro E-Ink Environmental Monitor"
+    zh: "Veltoc Model 01 — 复古 E-Ink 环境监测器"
+  description:
+    en: "A retro-inspired environmental monitor with a 2.9\" E-Ink display, built around the XIAO ESP32-C6. Monitors temperature, humidity, and air pressure via a BME280 sensor with WiFi time sync. Features a rotary encoder for navigating views, deep sleep wake-on-press, and a 1400mAh LiPo battery for extended use. The ePaper Driver Board for XIAO handles display control."
+    zh: "一款复古风格的环境监测器，配备 2.9\" E-Ink 显示屏，基于 XIAO ESP32-C6 构建。通过 BME280 传感器监测温度、湿度和气压，支持 WiFi 时间同步。具有旋转编码器导航、按压唤醒深度睡眠、1400mAh 锂电池等特性。使用 ePaper Driver Board for XIAO 驱动屏幕。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "danking6"
+    zh: "danking6"
+  author_type: "GitHub"
+  link: "https://github.com/danking6/veltoc"
+  image: "https://private-user-images.githubusercontent.com/35265770/605069097-abb05084-31d4-4e59-87b8-da9ddf925d28.jpg"
+
+- name:
+    en: "DIY JOY AI Desktop Companion Robot"
+    zh: "DIY JOY AI 桌面陪伴机器人"
+  description:
+    en: "An AI desktop companion robot built with the Seeed Studio ReSpeaker XVF3800 4-Mic Array with XIAO ESP32S3 for voice detection and AI processing. Features an OLED display for facial expressions, speaker with amplifier for voice responses, and a custom 3D-printed body. Uses Xiaozhi open-source voice AI firmware for wake word detection and natural conversation."
+    zh: "基于 Seeed Studio ReSpeaker XVF3800 4-Mic Array（带 XIAO ESP32S3）的 AI 桌面陪伴机器人。配有 OLED 表情显示屏、语音功放扬声器，以及定制 3D 打印外壳。采用 Xiaozhi 开源语音 AI 固件实现唤醒词检测和自然对话交互。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 5
+  author:
+    en: "Maker Science"
+    zh: "Maker Science"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=0RDqchg34wQ"
+  image: "https://i.ytimg.com/vi/0RDqchg34wQ/sddefault.jpg"
+
+- name:
+    en: "ESP Dash — Local ESP32 Sensor Data Visualization"
+    zh: "ESP Dash — 本地 ESP32 传感器数据可视化"
+  description:
+    en: "A tutorial demonstrating ESP Dash for locally visualizing ESP32 sensor data via web dashboard. Built with the Seeed Studio XIAO ESP32-C5 and XIAO Logger HAT featuring temperature, humidity, light sensor, RTC, and battery voltage monitoring. Uses PlatformIO and ESPAsyncWebServer to create a real-time dashboard running entirely on the local network without cloud dependency."
+    zh: "一个演示 ESP Dash 的教程，通过网页仪表盘在本地可视化 ESP32 传感器数据。使用 Seeed Studio XIAO ESP32-C5 和 XIAO Logger HAT（温度、湿度、光线传感器，带 RTC 和电池电压监测）。基于 PlatformIO 和 ESPAsyncWebServer 构建实时仪表盘，完全在本地网络运行，无需云端依赖。"
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "pixeledi Tech Hub"
+    zh: "pixeledi Tech Hub"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=s4nqLmd9FdY"
+  image: "https://i.ytimg.com/vi/s4nqLmd9FdY/maxresdefault.jpg"
+
+- name:
+    en: "ANYDECK Macropad"
+    zh: "ANYDECK 宏键盘"
+  description:
+    en: "A compact 6-key mechanical macropad built around the Seeed Studio XIAO RP2040, featuring two EC11 rotary encoders, an SSD1306 OLED display, and SK6812 RGB lighting. Uses CircuitPython/KMK firmware for easy keybinding on a USB drive. Custom double-layer PCB with 1N4148 diode matrix, housed in a 3D-printed case."
+    zh: "一款紧凑型 6 键机械宏键盘，基于 Seeed Studio XIAO RP2040 构建，配备两个 EC11 旋转编码器、SSD1306 OLED 显示屏和 SK6812 RGB 灯效。使用 CircuitPython/KMK 固件，通过 USB 驱动即可轻松修改按键绑定。定制双层 PCB，1N4148 二极管矩阵，3D 打印外壳。"
+  board: "XIAO RP2040"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2026
+  month: 2
+  author:
+    en: "ANYplays77"
+    zh: "ANYplays77"
+  author_type: "GitHub"
+  link: "https://github.com/ANYplays77/ANYDECK-Macropad"
+  image: ""
+
+- name:
+    en: "Tripwire — Cyberpunk ESP32 BLE & WiFi Radar Scanner"
+    zh: "Tripwire — 赛博朋克 ESP32 BLE 与 WiFi 雷达扫描器"
+  description:
+    en: "A wireless reconnaissance platform built around the XIAO ESP32-C5 that detects, visualizes, and logs Bluetooth and WiFi activity in real time. Features a round TFT radar display, SD card logging, geiger-style proximity audio, and rechargeable battery. Tracks devices via RSSI with a cyberpunk-inspired radar UI for portable situational awareness."
+    zh: "基于 XIAO ESP32-C5 的无线侦察平台，可实时检测、可视化和记录附近的蓝牙与 WiFi 活动。配备圆形 TFT 雷达显示屏、SD 卡日志记录、盖革计数器式距离音频提示和可充电电池。通过 RSSI 追踪设备，赛博朋克风格雷达 UI，便携式态势感知工具。"
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "Notorious Squirrel"
+    zh: "Notorious Squirrel"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=omlpN5Fmq7g"
+  image: "https://i.ytimg.com/vi/omlpN5Fmq7g/maxresdefault.jpg"
+
+- name:
+    en: "Sneaky Gestures V2 — Bluetooth Gestural MIDI Glove"
+    zh: "Sneaky Gestures V2 — 蓝牙手势 MIDI 手套"
+  description:
+    en: "A wearable BLE-MIDI gestural instrument glove built on the Seeed XIAO nRF52840 Sense. Features 12 conductive finger pads for scale-quantized note playing, flex sensor for glissando pitch bend, thumb FSR for aftertouch, and dual-axis accelerometer for continuous MIDI CC control. Includes 20 selectable scales, tap tempo, 63 presets, RGBW LED display, and serial patch backup. Transmits as standard BLE-MIDI to any DAW or hardware synth."
+    zh: "一款基于 Seeed XIAO nRF52840 Sense 的可穿戴 BLE-MIDI 手势乐器手套。配备了 12 个导电手指触垫用于音阶量化演奏、弯音柔性传感器、拇指 FSR 触后感应、双轴加速度计 MIDI CC 控制。支持 20 种音阶、打拍定速、63 个预置位、RGBW LED 显示和串口备份恢复。作为标准 BLE-MIDI 设备连接任何 DAW 或硬件合成器。"
+  board: "XIAO nRF52840 Sense"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 6
+  author:
+    en: "INVOLUCIJA (sneak-thief)"
+    zh: "INVOLUCIJA (sneak-thief)"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=-hAtGIP00vk"
+  image: "https://i.ytimg.com/vi/-hAtGIP00vk/maxresdefault.jpg"
+
+- name:
+    en: "Hivora Sense Locktopf — Hornet Trap Camera"
+    zh: "Hivora Sense Locktopf — 胡蜂诱捕器相机"
+  description:
+    en: "A wildlife monitoring camera system built around the Seeed Studio XIAO ESP32-S3 Sense for remote observation of Asian hornet (Vespa Velutina) traps. Features an integrated camera module with SD card storage, custom 3D-printed weatherproof housing, USB-C connectivity, and WiFi antenna for IoT-enabled remote monitoring. Assembly guide covers trap preparation, camera housing assembly, and mounting."
+    zh: "基于 Seeed Studio XIAO ESP32-S3 Sense 的野生动物监测相机系统，用于远程观察亚洲胡蜂（Vespa Velutina）诱捕器。集成了摄像头模块和 SD 卡存储、定制 3D 打印防水外壳、USB-C 连接和 WiFi 天线，支持 IoT 远程监测。组装指南涵盖诱捕器准备、相机外壳组装和安装。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  author:
+    en: "Hivora (Community)"
+    zh: "Hivora (社区)"
+  author_type: "Web"
+  link: "https://hivora.discourse.group/t/aufbauanleitung-hivora-sense-locktopf/12"
+  image: ""
+
+- name:
+    en: "DIY AI Pin — Wearable Vision/Voice Assistant"
+    zh: "DIY AI Pin — 可穿戴视觉/语音助手"
+  description:
+    en: "A compact wearable AI device built with the XIAO ESP32-S3 Sense that clips onto your chest and can see, hear, and respond to voice commands. Features camera-based vision for object recognition, voice AI for natural conversation, and IoT device control. Open source project with downloadable firmware and schematic on GitHub."
+    zh: "一款基于 XIAO ESP32-S3 Sense 的紧凑型可穿戴 AI 设备，可夹在胸前，实现视觉识别、语音交互和 IoT 设备控制。支持摄像头物体识别、AI 语音对话和智能家居控制。开源项目，提供固件和原理图下载。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 4
+  author:
+    en: "techiesms"
+    zh: "techiesms"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=4tEngx4ffeQ"
+  image: "https://i.ytimg.com/vi/4tEngx4ffeQ/maxresdefault.jpg"
+
   # ========== 2026-06-01 Community Projects ==========
   # Source: xiao-weekly-search(2026-06-01)
 

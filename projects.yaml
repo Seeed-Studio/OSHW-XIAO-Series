@@ -49,8 +49,8 @@ projects:
     zh: "用 Seeed Studio XIAO ESP32-C3 复活 1996 年 Good Design Award 获奖数字手机 DP192。每 5 分钟检查指定邮箱，收到含关键字的邮件时通过 OLED 显示屏和蜂鸣器发出警报。属于\"社畜警示灯\"系列——用于系统故障监控的开源 Arduino 项目。"
   board: "XIAO ESP32-C3"
   category:
-    en: "AI Gadget"
-    zh: "AI Gadget"
+    en: "IoT"
+    zh: "IoT"
   year: 2026
   month: 4
   author:

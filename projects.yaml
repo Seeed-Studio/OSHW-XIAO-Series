@@ -1,5 +1,217 @@
 projects:
 
+  # ========== 2026-06-17 Community Projects ==========
+  # Source: xiao-weekly-search(2026-06-17)
+
+- name:
+    en: "LUN-E Explorer"
+    zh: "LUN-E 月球桌面探测车"
+  description:
+    en: "A desk companion rover built on the XIAO ESP32-S3 Sense that uses browser-based computer vision for autonomous navigation. The ESP32 streams MJPEG frames from its OV2640 camera to a browser where JavaScript processes pixel data to classify floor, detect cliffs, and control two continuous-rotation servos via WebSocket at 40 Hz. Features include floor learning on boot, a multi-state FSM (LEARN → SCAN → FWD → AVOID → REV → CLIFF), live parameter tuning, and occupancy grid mapping."
+    zh: "基于 XIAO ESP32-S3 Sense 的桌面探测车，利用浏览器端计算机视觉实现自主导航。ESP32 将 OV2640 摄像头的 MJPEG 画面推流到浏览器，通过 JavaScript 分析像素来判断地面/悬崖，并通过 WebSocket 以 40Hz 控制两个连续旋转舵机。支持开机地面学习、多状态 FSM（学习→扫描→前进→规避→后退→悬崖）、实时参数调节滑块和占据栅格地图。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 5
+  author:
+    en: "Absurd Industries"
+    zh: "Absurd Industries"
+  author_type: "GitHub"
+  link: "https://github.com/Absurd-Industries/lune-rover"
+  image: ""
+
+- name:
+    en: "ESP32-C5 Piglet Build — From PCB to Working Wardriver"
+    zh: "ESP32-C5 Piglet 组装教程 — 从 PCB 到可运行的 Wardriver"
+  description:
+    en: "A step-by-step build tutorial for the open-source Piglet Wi-Fi wardriver based on the XIAO ESP32-C5. Walks through PCB assembly from Seeed Studio custom boards, SD card module wiring with correct pinouts, and firmware flashing using Espressif Flash Tool. Covers common soldering pitfalls and awareness to ensure a successful first boot."
+    zh: "开源 Piglet Wi-Fi wardriver 的逐步组装教程，基于 XIAO ESP32-C5。涵盖 Seeed Studio 定制 PCB 组装、SD 卡模块接线、使用 Espressif Flash Tool 刷写固件，以及常见焊接陷阱和引脚注意事项。"
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 3
+  author:
+    en: "Valleytech Custom Solutions"
+    zh: "Valleytech Custom Solutions"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=4pC2dYrGgrQ"
+  image: "https://i.ytimg.com/vi/4pC2dYrGgrQ/maxresdefault.jpg"
+
+- name:
+    en: "Corporate Slave Digital Phone DP192 — Reviving a 1996 Phone with ESP32"
+    zh: "社畜数字电话 DP192 — 用 ESP32 复活 1996 年手机"
+  description:
+    en: "A creative revival of a 1996 Good Design Award-winning digital mobile phone (Nippondenso DP192) using Seeed Studio XIAO ESP32-C3. The phone checks a designated email inbox every 5 minutes and alerts via OLED display and buzzer when matching keywords are found. Part of the 'Corporate Slave Warning Light' series for system fault monitoring, with open source Arduino code available on GitHub."
+    zh: "用 Seeed Studio XIAO ESP32-C3 复活 1996 年 Good Design Award 获奖数字手机 DP192。每 5 分钟检查指定邮箱，收到含关键字的邮件时通过 OLED 显示屏和蜂鸣器发出警报。属于\"社畜警示灯\"系列——用于系统故障监控的开源 Arduino 项目。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 4
+  author:
+    en: "punitaka"
+    zh: "punitaka"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=STJVEMpMfwk"
+  image: "https://i.ytimg.com/vi/STJVEMpMfwk/maxresdefault.jpg"
+
+- name:
+    en: "Modular Wearable Platform — Stackable Electronics with XIAO nRF52840"
+    zh: "模块化可穿戴平台 — 基于 XIAO nRF52840 的堆叠式电子系统"
+  description:
+    en: "A modular wearable development platform built around the Seeed Studio XIAO nRF52840, where each function lives on its own stackable module. Features heart rate monitoring via MAX30101, step counting via MPU6050 IMU, OLED display output, and Bluetooth BLE data transmission. An early prototype demonstrating a flexible approach to wearable system design."
+    zh: "基于 Seeed Studio XIAO nRF52840 的模块化可穿戴开发平台，每个功能独立为可堆叠模块。集成 MAX30101 心率监测、MPU6050 计步、OLED 显示和 BLE 数据传输。早期原型，展示灵活的可穿戴系统设计方法。"
+  board: "XIAO nRF52840 Sense"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 4
+  author:
+    en: "Leonardo Marquez"
+    zh: "Leonardo Marquez"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=u9U9Lx5eMgA"
+  image: "https://i.ytimg.com/vi/u9U9Lx5eMgA/maxresdefault.jpg"
+
+- name:
+    en: "$40 Wireless Vibe Coding Voice Keyboard"
+    zh: "40美元无线语音编程键盘"
+  description:
+    en: "A step-by-step guide to building a wireless vibe coding voice keyboard for under $40 using Seeed Studio XIAO nRF52840 Sense. Features Bluetooth voice-to-text input for hands-free coding, with a Grove OLED display for feedback and Grove Mech Keycap. Designed for accessibility and creative coding workflows."
+    zh: "不到 40 美元的无线语音编程键盘制作教程，基于 Seeed Studio XIAO nRF52840 Sense。支持蓝牙语音转文字输入，配合 Grove OLED 显示和机械键帽，适合无障碍编程和创意工作流。"
+  board: "XIAO nRF52840 Sense"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  author:
+    en: "Brandy"
+    zh: "Brandy"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/lsw031105guge-bit/40-wireless-vibcoding-voice-keyboard-cbade2"
+  image: "https://hackster.imgix.net/uploads/attachments/1955994/20260511-152224_6FHULGtZiF.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
+
+- name:
+    en: "XIAO ESP32-S3 Sense Retro Camera"
+    zh: "XIAO ESP32-S3 Sense 复古相机"
+  description:
+    en: "A compact retro-styled digital camera built on the Seeed Studio XIAO ESP32-S3 Sense. Captures 1280×720 photos and MJPEG/PCM audio video with a 2.0\" TFT live viewfinder. Features encoder-driven menu, on-device gallery with thumbnail previews, self-timer, timelapse, slideshow, and a tabbed WiFi file server with QR code pairing. Built on FreeRTOS multi-core architecture."
+    zh: "基于 Seeed Studio XIAO ESP32-S3 Sense 的紧凑型复古风格数码相机。可拍摄 1280×720 照片和 MJPEG/PCM 音视频，配备 2.0\" TFT 实时取景器。支持编码器菜单系统、设备内图库缩略图预览、自拍定时、延时摄影、幻灯片播放，以及带二维码配对的 WiFi 文件管理。采用 FreeRTOS 多核架构。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "Barkın Sarıkartal"
+    zh: "Barkın Sarıkartal"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=0UTXGptOVkc"
+  image: "https://i.ytimg.com/vi/0UTXGptOVkc/maxresdefault.jpg"
+
+- name:
+    en: "Giant XIAO — 15x Scale Fully Functional XIAO ESP32-C3 Replica"
+    zh: "巨型 XIAO — 15 倍大全功能 XIAO ESP32-C3 复制品"
+  description:
+    en: "A fully functional 15× scale replica of the Seeed Studio XIAO ESP32-C3, built with 3D-printed PLA and copper tape wiring. Every pin is wired through to a real XIAO hidden inside the giant USB-C port, making the giant board electrically functional. Features swappable chip housing and magnetic interior tray. Created by the TinyGo team and presented at GopherCon EU 2026."
+    zh: "3D 打印的全功能 15 倍大 XIAO ESP32-C3 复制品。每个引脚通过铜箔胶带连接到藏在巨型 USB-C 接口内的真实 XIAO，使巨型开发板具备完整电气功能。配备可更换芯片外壳和磁吸内部收纳托盘。由 TinyGo 团队制作，在 GopherCon EU 2026 展示。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "Daniel Esteban (TinyGo Team)"
+    zh: "Daniel Esteban (TinyGo 团队)"
+  author_type: "Web"
+  link: "https://madriguera.me/building-a-giant-xiao-a-fully-functional-15x-scale-seeed-studio-xiao-esp32-c3/"
+  image: "https://madriguera.me/content/images/2026/06/02-size-comparison-real-vs-giant.jpg"
+
+- name:
+    en: "WeatherPaper V2 — 500-Day Battery E-Paper Weather Display"
+    zh: "WeatherPaper V2 — 500 天续航电子墨水屏天气显示"
+  description:
+    en: "An ultra-low-power e-paper weather display engineered for up to 500 days of battery life on a single charge. Built around the XIAO ESP32-C3 with custom PCB (EasyEDA) and 3D-printed resin enclosure. Features deep sleep optimization (44µA), downclocking to 80MHz, WiFiManager captive portal with QR pairing, and OpenWeatherMap integration."
+    zh: "一款超低功耗电子墨水屏天气显示器，单次充电续航长达 500 天。基于 XIAO ESP32-C3 构建，配以 EasyEDA 定制 PCB 和 3D 打印树脂外壳。采用深度睡眠优化（44µA）、CPU 降频至 80MHz、WiFiManager 二维码配对和 OpenWeatherMap 数据集成。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 6
+  author:
+    en: "Jeremy Ngai (ngai-jeremy)"
+    zh: "Jeremy Ngai (ngai-jeremy)"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/WeatherPaper-Squeezing-500-Days-of-Battery-Life-Ou/"
+  image: "https://content.instructables.com/F5R/SM2S/MPX8P861/F5RSM2SMPX8P861.jpg?auto=webp&frame=1&width=2100"
+
+- name:
+    en: "Sleeper Matter Sensor — Ultra-Low-Power XIAO nRF52840 Smart Home Sensor"
+    zh: "超低功耗 Matter 智能家居传感器 — 基于 XIAO nRF52840"
+  description:
+    en: "An ultra-low-power Matter smart home sensor built around the Seeed Studio XIAO nRF52840, engineered for years of battery life. Features Matter protocol integration for local-only Home Assistant control, SHT41 temperature and humidity sensing, and LiPo fuel gauge. Demonstrates intermittent connectivity strategies for Matter devices with cross-platform power analysis."
+    zh: "基于 Seeed Studio XIAO nRF52840 的超低功耗 Matter 智能家居传感器，续航长达数年。支持 Matter 协议本地 Home Assistant 控制，集成 SHT41 温湿度传感器和 LiPo 电量计。展示了 Matter 设备的间歇连接策略和跨平台功耗分析。"
+  board: "XIAO nRF52840"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 4
+  author:
+    en: "Microamp Home"
+    zh: "Microamp Home"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=KE7bOYCYETM"
+  image: "https://i.ytimg.com/vi/KE7bOYCYETM/maxresdefault.jpg"
+
+- name:
+    en: "ET MeetingRoom ePaper Sign — SharePoint Room Reservation Display"
+    zh: "ET 会议室电子墨水屏标识牌 — SharePoint 会议室预订显示"
+  description:
+    en: "An integrated ePaper meeting room sign built around the Seeed Studio XIAO ESP32-S3 that bridges a reTerminal E1002 full-color ePaper display with a SharePoint Server 2019 room-booking calendar. The XIAO acts as a lightweight REST API wrapper, caching SharePoint OData results and serving clean JSON to a SenseCraft HMI-powered display. Designed for on-premises deployment with no cloud dependency and military-grade security."
+    zh: "基于 Seeed Studio XIAO ESP32-S3 的集成式会议室电子墨水屏标识牌，连接 reTerminal E1002 彩色电子纸显示屏与 SharePoint Server 2019 会议室预订日历。XIAO 作为轻量 REST API 包装器，缓存 SharePoint OData 结果并输出干净 JSON 给 SenseCraft HMI 界面。纯本地部署，无云端依赖，达到军事级安全标准。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 5
+  author:
+    en: "McOrts"
+    zh: "McOrts"
+  author_type: "GitHub"
+  link: "https://github.com/McOrts/ET_MeetingRoom_ePaperSign/tree/main"
+  image: "https://raw.githubusercontent.com/McOrts/ET_MeetingRoom_ePaperSign/main/img/ET_MeetingRoom_ePaperSign.jpg"
+
+- name:
+    en: "NIMO — ESP32 Desk Buddy Robot with Motion Sensing & Emotions"
+    zh: "NIMO — ESP32 桌面伙伴机器人（运动感应 & 表情交互）"
+  description:
+    en: "A DIY ESP32 desk buddy robot with animated OLED eyes and MPU6050 motion sensing. Built around the XIAO ESP32-C3, features shake-to-emotion reactions (Dizzy → Angry), live weather mood with 3-day forecast, RTC, world clock, and touch navigation. Fully 3D-printed enclosure with open-source code and STL files."
+    zh: "DIY ESP32 桌面伙伴机器人，配备动画 OLED 眼睛和 MPU6050 运动感应。基于 XIAO ESP32-C3，支持摇晃触发表情反应（晕眩→生气）、实时天气情绪（含 3 天预报）、RTC、世界时钟和触摸导航。全 3D 打印外壳，开源代码和 STL 文件。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 4
+  author:
+    en: "Simple Circuits"
+    zh: "Simple Circuits"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=4Z8oJTYTInc"
+  image: "https://i.ytimg.com/vi/4Z8oJTYTInc/maxresdefault.jpg"
+
   # ========== 2026-06-12 Community Projects ==========
   # Source: xiao-weekly-search(2026-06-12)
 

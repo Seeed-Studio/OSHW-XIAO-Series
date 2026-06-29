@@ -1,5 +1,198 @@
 projects:
 
+  # ========== 2026-06-28 Community Projects ==========
+  # Source: Instructables (manual submission)
+
+- name:
+    en: "AirBird (Indoor Air Quality Monitor): the Bird That Could Save Your Life"
+    zh: "AirBird 室内空气质量监测器：能救你命的鸟"
+  description:
+    en: "An IoT indoor air quality monitor housed inside a 3D-printed bird. When CO₂ levels spike or TVOC climbs into dangerous territory, a stepper motor silently rotates the bird upside down — turning invisible air chemistry into a visceral visual warning. Built with the Seeed Studio XIAO ESP32-C6 and SparkFun CCS811/BME280 combo sensor (eCO₂, TVOC, temp, humidity, pressure over I²C). Powered by Li-Ion battery with onboard charging. Open-source Arduino sketch with 3D-printable STL files, no cloud dependency."
+    zh: "一款 IoT 室内空气质量监测器，外壳为 3D 打印小鸟。当 CO₂ 或 TVOC 超标时，步进电机静音旋转将鸟倒挂——把看不见的空气化学变化转化为直观的视觉警示。基于 Seeed Studio XIAO ESP32-C6 和 SparkFun CCS811/BME280 组合传感器，通过 I²C 测量 eCO₂、TVOC、温湿度和气压。锂电池供电（XIAO 内置充电电路），开源的 Arduino 代码和 3D 打印文件，无需云端依赖。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 6
+  author:
+    en: "taifur"
+    zh: "taifur"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/AirBird-IoT-Air-Quality-Monitor-the-Bird-That-Coul/"
+  image: "https://content.instructables.com/FL1/EQVZ/MPX8KHVF/FL1EQVZMPX8KHVF.jpg"
+
+- name:
+    en: "The RoadBook — Rally-Inspired GPS Device for Riders & Adventurers"
+    zh: "eRoadBook 拉力赛风格 GPS 导航器"
+  description:
+    en: "A rally-inspired digital road book GPS device built with the Seeed Studio XIAO ESP32-S3 (via EE05 ePaper Display Board) and a 4.26\" monochrome ePaper display. Instead of turn-by-turn navigation, it works like rally co-drivers think — pre-planned waypoints count down distance as you ride, auto-advancing at 50m. Features real-time GPS tracking via L76K GNSS (GPS/BeiDou/GLONASS/QZSS), an emergency info button (displays blood type & contacts), and a Wi-Fi configuration page for trip management. 3D-printed enclosure, battery-powered."
+    zh: "一款拉力赛风格的数字路书 GPS 导航设备，基于 Seeed Studio XIAO ESP32-S3（EE05 电子纸显示板）和 4.26 寸黑白电子纸屏幕。不同于逐向导航，它模拟拉力赛领航员的思路——预先规划航点，骑行时倒计时显示距离，50 米自动切换到下一航点。集成 L76K GNSS（GPS/北斗/GLONASS/QZSS）实时定位，紧急按钮可显示血型和联系人，Wi-Fi 配置页面管理行程。3D 打印外壳，电池供电。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "gokux"
+    zh: "gokux"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/The-ERoadBook-Rally-Inspired-GPS-Device-for-Riders"
+  image: "https://content.instructables.com/FJQ/4G21/MQK201P6/FJQ4G21MQK201P6.jpg"
+
+- name:
+    en: "The Best Air Sensor is One You Can Make Yourself"
+    zh: "最好的空气传感器，自己动手做"
+  description:
+    en: "A comprehensive tutorial on building the ultimate smart home air quality sensor using the Seeed Studio XIAO ESP32-C6 and Sensirion SEN66 sensor. Covers the full build from basic sensor readings to advanced features — ePaper/eInk display integration, ESPHome configuration (no programming required), Home Assistant dashboard with beautiful UI, and custom 3D-printed enclosure. Open-source design files on GitHub and 3D models on Printables/Makerworld."
+    zh: "一份详细的智能家居空气质量传感器制作教程，使用 Seeed Studio XIAO ESP32-C6 和 Sensirion SEN66 传感器。从基础传感器读数到高级功能全覆盖——电子纸墨水屏集成、ESPHome 配置（无需编程）、Home Assistant 精美仪表盘界面、以及定制 3D 打印外壳。设计文件和 3D 模型全部开源。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 6
+  author:
+    en: "FEATURE."
+    zh: "FEATURE."
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=DqiMmY5ppnE"
+  image: "https://i.ytimg.com/vi/u1eQ4RQV828/maxresdefault.jpg"
+
+- name:
+    en: "How I Built a Wireless Walkie Talkie with Two ESP32 | Arduino Project with code"
+    zh: "用两个 ESP32 制作无线对讲机 | Arduino 项目含代码"
+  description:
+    en: "A wireless walkie talkie built with two XIAO ESP32-S3 Sense boards using ESP-NOW wireless communication. Audio captured from the onboard microphone on one XIAO is transmitted wirelessly via ESP-NOW and played back through a speaker connected to another XIAO. Features real-time audio transmission, I2S audio output, and no Wi-Fi router required. Full Arduino code, schematic, and project details on GitHub."
+    zh: "一款基于两个 XIAO ESP32-S3 Sense 的无线对讲机，利用 ESP-NOW 无线协议通信。一个 XIAO 的内置麦克风采集音频，通过 ESP-NOW 无线传输到另一个 XIAO 驱动扬声器播放。支持实时音频传输、I2S 音频输出，无需 Wi-Fi 路由器。提供完整的 Arduino 代码、原理图和项目详情。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 6
+  author:
+    en: "Tech Talkies"
+    zh: "Tech Talkies"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=u1eQ4RQV828"
+  image: "https://i.ytimg.com/vi/u1eQ4RQV828/maxresdefault.jpg"
+
+- name:
+    en: "A Ball Robot based on Esp32"
+    zh: "ESP32 足球机器人 All-in-One 控制台"
+  description:
+    en: "A complete small football robot project using multiple Seeed Studio XIAO ESP32-S3 Sense boards. A Python WebUI manages robot motors, IMU pose (BNO080/BNO085), two camera streams, YOLO/YOLOE object detection (football + football gate), physical joystick remote, voice control via onboard microphone, and drone overhead autonomous football-to-gate path planning. Uses up to 3 XIAO units: robot main controller, joystick remote, and overhead vision camera. Features differential drive, encoder feedback, 3D IMU visualization, and optional Android controller."
+    zh: "一个完整的小型足球机器人实验项目，使用多个 Seeed Studio XIAO ESP32-S3 Sense 开发板。电脑端 Python WebUI 同时管理小车电机、IMU 姿态、两路摄像头、YOLO/YOLOE 目标识别（足球+球门）、实体摇杆遥控、语音方向控制，以及无人机俯拍下的足球到球门自动路径规划。最多使用 3 个 XIAO：小车主控、遥控器、俯拍摄像头。支持差速驱动、编码器反馈、3D 姿态可视化、Android 控制器。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 6
+  author:
+    en: "AI-FanGe"
+    zh: "AI-FanGe"
+  author_type: "GitHub"
+  link: "https://github.com/AI-FanGe/A-Ball-Robot-based-on-Esp32"
+  image: ""
+
+- name:
+    en: "Build A Stealth MeshCore Repeater: Harbor Freight Hack!"
+    zh: "隐身 MeshCore 中继器：利用 Harbor Freight 太阳能灯改造"
+  description:
+    en: "A portable stealth MeshCore mesh network repeater built using the Seeed Studio XIAO nRF52840 with Wio SX1262 LoRa kit, hidden inside a Harbor Freight solar motion sensor light. Runs MeshCore firmware for off-grid mesh communication. A creative ham radio / IoT project combining off-the-shelf hardware with open-source mesh networking firmware for portable field deployment."
+    zh: "一款便携隐身 MeshCore 网状网络中继器，使用 Seeed Studio XIAO nRF52840 加 Wio SX1262 LoRa 套件，藏在 Harbor Freight 太阳能运动感应灯内。运行 MeshCore 固件实现离网网状网络通信。一个将现成产品与开源 Mesh 组网固件结合的创意业余无线电/IoT 项目，适合野外部署。"
+  board: "XIAO nRF52840"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 6
+  author:
+    en: "Ham Radio Crash Course"
+    zh: "Ham Radio Crash Course"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=9S_ipDDkSGk"
+  image: "https://i.ytimg.com/vi/9S_ipDDkSGk/maxresdefault.jpg"
+
+- name:
+    en: "MINTIA Micropython Console"
+    zh: "MINTIA 薄荷糖盒 MicroPython 游戏机"
+  description:
+    en: "A DIY handheld game console built into a MINTIA breath mint candy box using the Seeed Studio XIAO RP2350 and a 1.54\" 240×240 ST7789 IPS display. Runs MicroPython with AI-generated code for Tetris and other games. Features 8 tactile buttons (D-pad + A/B + Start/Select), LiPo battery power with onboard charging, and a 3D-printed back panel. Open-source sample code on GitHub."
+    zh: "一款 DIY 手持游戏机，利用 MINTIA 薄荷糖盒和 Seeed Studio XIAO RP2350 及 1.54 寸 240×240 ST7789 IPS 显示屏打造。运行 MicroPython，代码由 AI 辅助生成（如俄罗斯方块游戏）。配备 8 个按键（方向键 + A/B + Start/Select）、锂电池供电（内置充电电路）和 3D 打印后盖。开源示例代码托管在 GitHub。"
+  board: "XIAO RP2350"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 6
+  author:
+    en: "陳亮 (moononournation)"
+    zh: "陳亮 (moononournation)"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/MINTIA-Micropython-Console/"
+  image: "https://content.instructables.com/FK2/62HE/MQK2168B/FK262HEMQK2168B.jpg"
+
+- name:
+    en: "Make your own satellite"
+    zh: "自制 CanSat 微型卫星"
+  description:
+    en: "A fully functional CanSat (miniature satellite designed to fit inside a soft drink can) built with the XIAO ESP32-C6. Measures real-time atmospheric data (temperature, pressure, humidity, orientation) and transmits telemetry via LoRa (RYLR998) to a ground station. Features a parachute deployment system for controlled landing. Perfect for students in robotics, electronics, and aerospace engineering."
+    zh: "一款全功能 CanSat（装在易拉罐里的微型卫星），基于 XIAO ESP32-C6 构建。实时测量大气数据（温度、气压、湿度、姿态），通过 LoRa (RYLR998) 遥测传输到地面站。配备降落伞部署系统实现可控着陆。适合机器人、电子和航空航天工程学生。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 5
+  author:
+    en: "Maker Science"
+    zh: "Maker Science"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=4gUEfZsayrM"
+  image: "https://i.ytimg.com/vi/4gUEfZsayrM/maxresdefault.jpg"
+
+- name:
+    en: "Build Battery Powered Smart Home Devices (Xiao nRF52840 + Matter)"
+    zh: "打造电池供电智能家居设备（XIAO nRF52840 + Matter 协议）"
+  description:
+    en: "A comprehensive tutorial on building ultra-low-power Matter smart home devices using the Seeed Studio XIAO nRF52840 and nRF Connect SDK. Covers SDK setup, power optimization, bootloader (MCUBoot), OTA updates, CHIP factory data, Device Tree, ZAP + Matter Data Model, and full code walkthrough with an SHT41 sensor. Open-source code on GitHub."
+    zh: "一份全面的教程，使用 Seeed Studio XIAO nRF52840 和 nRF Connect SDK 构建超低功耗 Matter 智能家居设备。涵盖 SDK 环境搭建、功耗优化、引导加载程序 (MCUBoot)、OTA 更新、CHIP 工厂数据、设备树、ZAP + Matter 数据模型配置，以及 SHT41 传感器的完整代码讲解。开源代码托管在 GitHub。"
+  board: "XIAO nRF52840"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 5
+  author:
+    en: "Microamp Home"
+    zh: "Microamp Home"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=6gioxm1IDwU"
+  image: "https://i.ytimg.com/vi/6gioxm1IDwU/maxresdefault.jpg"
+
+- name:
+    en: "This Tiny Device Detects WiFi & Bluetooth Attacks in Real Time"
+    zh: "微型 WiFi 与蓝牙攻击实时检测器"
+  description:
+    en: "A compact XIAO-based Bluetooth & WiFi attack detector for ethical hacking enthusiasts. Built around the XIAO ESP32-C5, this device detects and displays network information using radio frequency detection. Features a custom software interface, mobile app integration, 6×10 RGB Matrix display, and open-source GitHub code with 3D-printable case."
+    zh: "一款基于 XIAO 的紧凑型蓝牙与 WiFi 攻击检测器，适合道德黑客爱好者。采用 XIAO ESP32-C5 为核心，通过射频检测发现并显示网络信息。配备自定义软件界面、手机应用、6×10 RGB Matrix 显示屏，开源 GitHub 代码和 3D 打印外壳。"
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  author:
+    en: "Valleytech Custom Solutions"
+    zh: "Valleytech Custom Solutions"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=fpar8qeg0_U"
+  image: "https://i.ytimg.com/vi/fpar8qeg0_U/maxresdefault.jpg"
+
   # ========== 2026-06-17 Community Projects ==========
   # Source: xiao-weekly-search(2026-06-17)
 

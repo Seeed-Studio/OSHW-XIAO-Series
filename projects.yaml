@@ -1,4 +1,198 @@
 projects:
+  # ========== 2026-07-05 Community Projects ==========
+  # Source: xiao-weekly-search(2026-07-05)
+
+- name:
+    en: "Watchman Dongle for SteamVR Tracking using Seeed XIAO nRF52840"
+    zh: "XIAO nRF52840 Watchman Dongle 制作"
+  description:
+    en: "A tutorial on building a Watchman Dongle (wireless dongle for SteamVR Tracking devices) by flashing Watchman Dongle firmware onto the Seeed Studio XIAO nRF52840. Covers firmware generation using batch scripts, UF2 bootloader flashing via double-click reset, and assembly of a complete SteamVR wireless receiver for under 2000 yen."
+    zh: "一篇教程，介绍如何在 Seeed Studio XIAO nRF52840 上刷入 Watchman Dongle 固件，制作 SteamVR 追踪设备的无线接收器。涵盖使用批处理脚本生成固件、双击复位键进入 UF2 引导模式刷写，以及组装完整的 SteamVR 无线接收器，成本不到 2000 日元。"
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2023
+  month: 12
+  author:
+    en: "Feather"
+    zh: "Feather"
+  author_type: "Web"
+  link: "https://note.com/ugokutennp/n/n2f21dcff7f36"
+  image: "https://assets.st-note.com/production/uploads/images/125672499/rectangle_large_type_2_e1c639c12b161a9a45d21024f60cca68.jpeg"
+
+- name:
+    en: "E61 Gauge — Analog Temperature Gauge for E61 Espresso Machines"
+    zh: "E61 模拟温度表 — 适用于 E61 咖啡机"
+  description:
+    en: "An analog temperature gauge for E61 espresso machines. Custom PCB drives a VID6606 stepper motor gauge needle, reading temperature from an NTC thermistor. Connects via BLE to a web app for calibration and real-time monitoring. Features a non-linear dial scale (0–150°C) with expanded green zone at 92–97°C, SLM 3D-printed metal enclosure, and open-source KiCad/Arduino design."
+    zh: "一款 E61 咖啡机模拟温度表。定制 PCB 驱动 VID6606 步进电机表针，NTC 热敏电阻测温。通过 BLE 蓝牙连接网页应用进行校准和实时监测。非线性表盘刻度（0–150°C），92–97°C 绿色区间放大便于精确观察。SLM 3D 打印金属外壳，KiCad 源文件和 Arduino 固件全部开源。"
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  author:
+    en: "gidim"
+    zh: "gidim"
+  author_type: "GitHub"
+  link: "https://github.com/gidim/e61-gauge"
+  image: "https://raw.githubusercontent.com/gidim/e61-gauge/main/media/hero.jpg"
+
+- name:
+    en: "Pico2UltraHiResUSBDDC — USB Digital Audio Converter"
+    zh: "Pico2UltraHiResUSBDDC USB 数字音频转换器"
+  description:
+    en: "A USB Audio Class 1.0 compliant digital audio converter (USB-DDC) running on RP2350. Processes 2ch PCM audio with real-time upsampling (up to 32x via FIR/IIR hybrid filters) and outputs 32bit I²S to DAC chips. Leverages RP2350 multi-core, DMA, and PIO for low-latency audio. Official support and recommended board: Seeed XIAO RP2350."
+    zh: "一款基于 RP2350 的 USB Audio Class 1.0 数字音频转换器（USB-DDC）。接收 2ch PCM 音频信号，通过 FIR/IIR 混合滤波器进行实时高达 32 倍上采样，以 32bit I²S 格式输出到 DAC 芯片。充分利用 RP2350 的多核、DMA 和 PIO 实现低延迟音频处理。官方推荐使用 Seeed XIAO RP2350。"
+  board: "XIAO RP2350"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2025
+  month: 4
+  author:
+    en: "ArqAlice"
+    zh: "ArqAlice"
+  author_type: "GitHub"
+  link: "https://github.com/ArqAlice/Pico2UltraHiResUSBDDC"
+  image: ""
+
+- name:
+    en: "eFortune Cookie — a Tiny ESP32 Fortune Teller"
+    zh: "eFortune Cookie ESP32 幸运饼干签语器"
+  description:
+    en: "A tiny interactive fortune cookie gadget housed in a 3D-printed cookie enclosure. Built with the XIAO EPaper Display Board EE05 (powered by XIAO ESP32-S3 Plus), a 1.54\" monochrome ePaper display, and MPU-6050 accelerometer for shake detection. Shake to receive random fortunes, roll dice, or flip a coin. Programmed via Arduino IDE with no-code Sensecraft HMI support for the ePaper interface. Powered by a 150mAh LiPo battery with built-in charging."
+    zh: "一个装在 3D 打印幸运饼干外壳里的 ESP32 互动小工具。基于 XIAO EPaper Display Board EE05（XIAO ESP32-S3 Plus），配 1.54\" 电子墨水屏和 MPU-6050 加速度传感器。摇晃即可获取随机签语、掷骰子或抛硬币。支持 Arduino IDE 编程和 Sensecraft HMI 无代码界面配置。150mAh 锂电池供电，内置充电电路。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 5
+  author:
+    en: "gokux"
+    zh: "gokux"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/EFortune-Cookie-a-Tiny-ESP32-Fortune-Teller/"
+  image: "https://content.instructables.com/F6G/WPQT/MOKK3HWT/F6GWPQTMOKK3HWT.jpg"
+
+- name:
+    en: "Creating 4 Zigbee Devices on ESP32 in Home Assistant (Without Code)"
+    zh: "在 Home Assistant 中创建 4 个 ESP32 Zigbee 设备（无需编程）"
+  description:
+    en: "A comprehensive tutorial (Russian) on building 4 Zigbee smart home devices using ESP32 boards featuring Seeed Studio XIAO. Covers Zigbee device creation, Home Assistant integration, and ESP32 Zigbee firmware flashing — all without writing code. Includes affiliate links for XIAO ESP32 boards and related smart home hardware."
+    zh: "俄语综合教程，使用 ESP32 开发板（含 Seeed Studio XIAO）制作 4 个 Zigbee 智能家居设备。涵盖 Zigbee 设备创建、Home Assistant 集成和 ESP32 Zigbee 固件刷写，全部无需编写代码。包含 XIAO ESP32 开发板及相关智能家居硬件的购买链接。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 5
+  author:
+    en: "Китай Г. (Kitay G.)"
+    zh: "Китай Г."
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=OfGnYurjj8Y"
+  image: "https://i.ytimg.com/vi/OfGnYurjj8Y/maxresdefault.jpg"
+
+- name:
+    en: "Bit:busy — LED Bar That Indicates Your Work Status"
+    zh: "Bit:busy LED 工作状态指示条"
+  description:
+    en: "An LED status bar that indicates whether you are busy or free, so colleagues won't distract you. Built with the Seeed Studio XIAO ESP32-C3 and WS2812B 8x32 LED Matrix. Features a local web server at bitbusy.local with three modes: Manual (BUSY/FREE toggle), Pomodoro Timer (25-min focus, 5-min break), and Custom message. Runs entirely on local Wi-Fi with no cloud dependency. Open-source firmware on GitHub."
+    zh: "一款 LED 工作状态指示条，让同事知道你是否忙碌。基于 Seeed Studio XIAO ESP32-C3 和 WS2812B 8x32 LED Matrix。本地 Web 服务器 (bitbusy.local) 提供三种模式：手动开关（BUSY/FREE）、番茄钟（25分钟专注/5分钟休息）和自定义消息。完全在本地 Wi-Fi 运行，无需云端依赖。开源固件。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  author:
+    en: "glutesha"
+    zh: "glutesha"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/glutesha/bit-busy-led-bar-that-indicates-your-work-status-0fd501"
+  image: "https://hackster.imgix.net/uploads/attachments/1895412/_WzzfZpP47a.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+
+- name:
+    en: "TrailNAV: Solar-Powered Off-Grid Exploration Device"
+    zh: "TrailNAV 太阳能离线探险导航设备"
+  description:
+    en: "A solar-powered offline navigation device built for outdoor exploration, waypoint tracking, and off-grid adventures. Built with the Seeed Studio XIAO ESP32-C6, a 2.7\" Waveshare ePaper display, NEO-M8N GPS module, QMC5883L digital compass, and CN3791 MPPT solar charging module. Features sunlight-readable display, physical button interface, ultra-low-power operation, and a DIY PVC sunboard enclosure."
+    zh: "一款太阳能供电的离线导航设备，专为户外探索、航点追踪和离网冒险设计。基于 Seeed Studio XIAO ESP32-C6、Waveshare 2.7\" 电子墨水屏、NEO-M8N GPS 模块、QMC5883L 数字罗盘和 CN3791 MPPT 太阳能充电模块。阳光直射可读的电子墨水屏、物理按键界面、超低功耗运行，PVC 阳光板 DIY 外壳。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "Rishabh Jain"
+    zh: "Rishabh Jain"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/rishabh-jain5/trailnav-solar-powered-off-grid-exploration-device-bb35b2"
+  image: "https://hackster.imgix.net/uploads/attachments/1958177/_TKgDFJ5Vnp.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+
+- name:
+    en: "AI Meeting Recorder using XIAO ESP32 S3 Sense"
+    zh: "AI 会议记录器 — 基于 XIAO ESP32-S3 Sense"
+  description:
+    en: "A pocket-sized AI meeting recorder built with the Seeed Studio XIAO ESP32-S3 Sense. Records conversations and automatically generates detailed summaries using Elevenlabs and OpenAI APIs. Leverages the dual-core processor to chunk audio into 15-second segments for seamless real-time transcription without hitting memory limits. Inspired by the Neo Sapiens pitch on Shark Tank India."
+    zh: "一款口袋大小的 AI 会议记录器，基于 Seeed Studio XIAO ESP32-S3 Sense。录制对话内容，通过 Elevenlabs 和 OpenAI API 自动生成详细摘要。利用双核处理器将音频分块为 15 秒片段，实现无缝实时转录。灵感来自 Shark Tank India 的 Neo Sapiens 演示。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 5
+  author:
+    en: "techiesms"
+    zh: "techiesms"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=FhV9c0Vv3Ng"
+  image: "https://i.ytimg.com/vi/FhV9c0Vv3Ng/maxresdefault.jpg"
+
+- name:
+    en: "Getting Started with XIAO MG24 / XIAO MG24 Sense (Arduino)"
+    zh: "XIAO MG24 / XIAO MG24 Sense Arduino 入门指南"
+  description:
+    en: "A comprehensive Japanese tutorial blog post on using the Seeed Studio XIAO MG24 and XIAO MG24 Sense in the Arduino environment. Covers basic GPIO, I2C (Wire/Wire1 troubleshooting), WS2812 LED control, DAC output, 6-axis IMU, PDM microphone, and BLE UART communication with practical troubleshooting advice."
+    zh: "一篇详细的日文博客教程，介绍如何在 Arduino 环境中使用 Seeed Studio XIAO MG24 和 XIAO MG24 Sense。涵盖 GPIO 基础、I2C（Wire/Wire1 问题排查）、WS2812 LED 控制、DAC 输出、6 轴 IMU、PDM 麦克风和 BLE UART 通信，附有实用的故障排除建议。"
+  board: "XIAO MG24, XIAO MG24 Sense"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  author:
+    en: "tamanegi"
+    zh: "tamanegi"
+  author_type: "Web"
+  link: "https://tamanegi-digick.com/it/xiaomg24/"
+  image: "https://tamanegi-digick.com/wp-content/uploads/2026/04/ec-xiaomg24.jpg"
+
+- name:
+    en: "Final Countdown — RP2350 Event Timer"
+    zh: "Final Countdown RP2350 事件倒计时器"
+  description:
+    en: "An event countdown timer built with the Seeed Studio XIAO RP2350. Uses an e-Paper display to show days remaining until a target date, a DS1307 RTC module for timekeeping, and a button for configuration mode. Features ultra-low-power deep sleep (P1_7 state), waking every 15 minutes to update the display. Powered by a Li-Ion battery for long-term deployment."
+    zh: "一款基于 Seeed Studio XIAO RP2350 的事件倒计时器。使用电子墨水屏显示目标日期剩余天数、DS1307 RTC 模块计时、按钮进入配置模式。超低功耗深度睡眠（P1_7 状态），每 15 分钟唤醒更新显示。锂电池供电，可长期部署。"
+  board: "XIAO RP2350"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 6
+  author:
+    en: "dquadros2"
+    zh: "dquadros2"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/dquadros2/final-countdown-3fe49b"
+  image: "https://hackster.imgix.net/uploads/attachments/1890871/_Q2paFnTZcW.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+
+
 
   # ========== 2026-06-28 Community Projects ==========
   # Source: Instructables (manual submission)
@@ -104,7 +298,7 @@ projects:
   description:
     en: "A portable stealth MeshCore mesh network repeater built using the Seeed Studio XIAO nRF52840 with Wio SX1262 LoRa kit, hidden inside a Harbor Freight solar motion sensor light. Runs MeshCore firmware for off-grid mesh communication. A creative ham radio / IoT project combining off-the-shelf hardware with open-source mesh networking firmware for portable field deployment."
     zh: "一款便携隐身 MeshCore 网状网络中继器，使用 Seeed Studio XIAO nRF52840 加 Wio SX1262 LoRa 套件，藏在 Harbor Freight 太阳能运动感应灯内。运行 MeshCore 固件实现离网网状网络通信。一个将现成产品与开源 Mesh 组网固件结合的创意业余无线电/IoT 项目，适合野外部署。"
-  board: "XIAO nRF52840"
+  board: "XIAO nRF52840 (XIAO BLE)"
   category:
     en: "Telecommunication"
     zh: "通信"
@@ -161,7 +355,7 @@ projects:
   description:
     en: "A comprehensive tutorial on building ultra-low-power Matter smart home devices using the Seeed Studio XIAO nRF52840 and nRF Connect SDK. Covers SDK setup, power optimization, bootloader (MCUBoot), OTA updates, CHIP factory data, Device Tree, ZAP + Matter Data Model, and full code walkthrough with an SHT41 sensor. Open-source code on GitHub."
     zh: "一份全面的教程，使用 Seeed Studio XIAO nRF52840 和 nRF Connect SDK 构建超低功耗 Matter 智能家居设备。涵盖 SDK 环境搭建、功耗优化、引导加载程序 (MCUBoot)、OTA 更新、CHIP 工厂数据、设备树、ZAP + Matter 数据模型配置，以及 SHT41 传感器的完整代码讲解。开源代码托管在 GitHub。"
-  board: "XIAO nRF52840"
+  board: "XIAO nRF52840 (XIAO BLE)"
   category:
     en: "Smart Home"
     zh: "智能家居"
@@ -259,7 +453,7 @@ projects:
   description:
     en: "A modular wearable development platform built around the Seeed Studio XIAO nRF52840, where each function lives on its own stackable module. Features heart rate monitoring via MAX30101, step counting via MPU6050 IMU, OLED display output, and Bluetooth BLE data transmission. An early prototype demonstrating a flexible approach to wearable system design."
     zh: "基于 Seeed Studio XIAO nRF52840 的模块化可穿戴开发平台，每个功能独立为可堆叠模块。集成 MAX30101 心率监测、MPU6050 计步、OLED 显示和 BLE 数据传输。早期原型，展示灵活的可穿戴系统设计方法。"
-  board: "XIAO nRF52840 Sense"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
   category:
     en: "Wearables"
     zh: "可穿戴"
@@ -278,7 +472,7 @@ projects:
   description:
     en: "A step-by-step guide to building a wireless vibe coding voice keyboard for under $40 using Seeed Studio XIAO nRF52840 Sense. Features Bluetooth voice-to-text input for hands-free coding, with a Grove OLED display for feedback and Grove Mech Keycap. Designed for accessibility and creative coding workflows."
     zh: "不到 40 美元的无线语音编程键盘制作教程，基于 Seeed Studio XIAO nRF52840 Sense。支持蓝牙语音转文字输入，配合 Grove OLED 显示和机械键帽，适合无障碍编程和创意工作流。"
-  board: "XIAO nRF52840 Sense"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
   category:
     en: "Tools & Accessories"
     zh: "工具配件"
@@ -354,7 +548,7 @@ projects:
   description:
     en: "An ultra-low-power Matter smart home sensor built around the Seeed Studio XIAO nRF52840, engineered for years of battery life. Features Matter protocol integration for local-only Home Assistant control, SHT41 temperature and humidity sensing, and LiPo fuel gauge. Demonstrates intermittent connectivity strategies for Matter devices with cross-platform power analysis."
     zh: "基于 Seeed Studio XIAO nRF52840 的超低功耗 Matter 智能家居传感器，续航长达数年。支持 Matter 协议本地 Home Assistant 控制，集成 SHT41 温湿度传感器和 LiPo 电量计。展示了 Matter 设备的间歇连接策略和跨平台功耗分析。"
-  board: "XIAO nRF52840"
+  board: "XIAO nRF52840 (XIAO BLE)"
   category:
     en: "Smart Home"
     zh: "智能家居"
@@ -547,7 +741,7 @@ projects:
   description:
     en: "A wearable BLE-MIDI gestural instrument glove built on the Seeed XIAO nRF52840 Sense. Features 12 conductive finger pads for scale-quantized note playing, flex sensor for glissando pitch bend, thumb FSR for aftertouch, and dual-axis accelerometer for continuous MIDI CC control. Includes 20 selectable scales, tap tempo, 63 presets, RGBW LED display, and serial patch backup. Transmits as standard BLE-MIDI to any DAW or hardware synth."
     zh: "一款基于 Seeed XIAO nRF52840 Sense 的可穿戴 BLE-MIDI 手势乐器手套。配备了 12 个导电手指触垫用于音阶量化演奏、弯音柔性传感器、拇指 FSR 触后感应、双轴加速度计 MIDI CC 控制。支持 20 种音阶、打拍定速、63 个预置位、RGBW LED 显示和串口备份恢复。作为标准 BLE-MIDI 设备连接任何 DAW 或硬件合成器。"
-  board: "XIAO nRF52840 Sense"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
   category:
     en: "Wearables"
     zh: "可穿戴"
@@ -683,7 +877,7 @@ projects:
   description:
     en: "A simple, no-PCB DIY ePaper watch built with XIAO nRF52840. Features 54 rotating watchfaces, partial refresh every minute and full refresh every 10 minutes, with three levels of power optimization."
     zh: "一款无需 PCB 的简易 DIY 电子墨水屏手表，基于 XIAO nRF52840。拥有 54 款轮换表盘，每分钟局部刷新、每 10 分钟全刷，三级功耗优化。"
-  board: XIAO nRF52840
+  board: XIAO nRF52840 (XIAO BLE)
   category:
     en: Wearables
     zh: 可穿戴
@@ -721,7 +915,7 @@ projects:
   description:
     en: "An interactive spinning top game with companion iOS app. Built with XIAO nRF52840 Sense, it uses precision IMU sensors to track spin time and shares results via Bluetooth BLE. Includes custom 3D-printed spinner enclosure and pre-compiled UF2 firmware."
     zh: "一款带 iOS 配套 App 的互动陀螺对战游戏。基于 XIAO nRF52840 Sense，利用 IMU 传感器精确追踪旋转时间并通过蓝牙 BLE 实时分享成绩。含 3D 打印陀螺外壳和预编译 UF2 固件。"
-  board: XIAO nRF52840 Sense
+  board: XIAO nRF52840 Sense (XIAO BLE Sense)
   category:
     en: AI Gadget
     zh: AI Gadget
@@ -2591,7 +2785,6 @@ projects:
     zh: 官方
   author_type: GitHub
   link: https://github.com/Seeed-Studio/OSHW-XIAO-Series/tree/main/projects/reference-projects/XIAO_ESP32_CSI_Espectre
-
 
 # ========== 添加新项目模板 / Template for New Projects ==========
 #

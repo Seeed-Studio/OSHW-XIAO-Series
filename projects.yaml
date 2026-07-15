@@ -1,4 +1,257 @@
 projects:
+  # ========== 2026-07-15 Community Projects ==========
+  # Source: xiao-weekly-search(2026-07-15)
+
+- name:
+    en: "Forager"
+    zh: "Forager"
+  description:
+    en: "A Voyager-inspired 34-key low-profile wireless split keyboard powered by ZMK. Features hot-swap Kailh Choc V1 switches in Choc spacing, wireless-only design with Seeed XIAO nRF52840 running ZMK firmware, and magnetic tenting legs. Compact silhouette with fully enclosed 3D-printed two-piece case."
+    zh: "一款受 ZSA Voyager 启发的 34 键低 profile 无线分体键盘，基于 ZMK 固件。采用热插拔 Kailh Choc V1 轴体、Choc 间距、纯无线设计（Seeed XIAO nRF52840 运行 ZMK 固件），以及磁吸倾斜支脚。紧凑外形，全封闭式 3D 打印双片外壳。"
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2024
+  month: 7
+  author:
+    en: "carrefinho"
+    zh: "carrefinho"
+  author_type: "GitHub"
+  link: "https://github.com/carrefinho/forager"
+  image: "https://raw.githubusercontent.com/carrefinho/forager/main/docs/images/forager_hero.jpg"
+
+- name:
+    en: "Visorbearer"
+    zh: "Visorbearer"
+  description:
+    en: "A 32-key unibody split wireless keyboard featuring 8 RGB LED indicators with discreet dead-front design. Powered by Seeed Studio XIAO nRF52840 Plus running ZMK firmware. Features hot-swap Kailh Choc v1 switches in Choc spacing, Hummingbird-ish layout with splay and inverted thumb cluster, and 3D-printed case with accessible reset button."
+    zh: "一款 32 键一体式分体无线键盘，配备 8 个 RGB LED 指示灯，采用隐形死区设计。基于 Seeed Studio XIAO nRF52840 Plus 运行 ZMK 固件。采用热插拔 Kailh Choc v1 轴体、Choc 间距、类 Hummingbird 布局（带倾斜和反向拇指簇），以及 3D 打印外壳和易触及的复位按钮。"
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2025
+  month: 3
+  author:
+    en: "carrefinho"
+    zh: "carrefinho"
+  author_type: "GitHub"
+  link: "https://github.com/carrefinho/visorbearer"
+  image: "https://raw.githubusercontent.com/carrefinho/visorbearer/main/docs/images/visorbearer-hero.png"
+
+- name:
+    en: "AtmosGuard C5: Dual-Band IAQ & Cloud Logger"
+    zh: "AtmosGuard C5: 双频 IAQ 与云端记录仪"
+  description:
+    en: "A XIAO ESP32C5 based air quality monitor with the capability to connect 5GHz Wi-Fi band. Features indoor air quality (IAQ) monitoring and cloud logging capabilities."
+    zh: "一款基于 XIAO ESP32C5 的空气质量监测器，支持连接 5GHz Wi-Fi 频段。具备室内空气质量（IAQ）监测和云端记录功能。"
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2025
+  month: 7
+  author:
+    en: "Hendra Kusumah"
+    zh: "Hendra Kusumah"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/hendra/atmosguard-c5-dual-band-iaq-cloud-logger-72ff46"
+  image: "https://hackster.imgix.net/uploads/attachments/1917042/_ifdIbpHsnP.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+
+- name:
+    en: "AirSniffer"
+    zh: "AirSniffer"
+  description:
+    en: "An indoor climate monitoring device that reads and displays data from BME280 (temperature, humidity, pressure) and ENS160 (AQI and TVOC) sensors. Built with Rust using Ratatui/Mousefood for the UI and Embassy for async runtime. Supports multiple XIAO boards: RP2040, ESP32-C6, and ESP32-S3. Features automatic ENS160 calibration using BME280 data and power-efficient sensor cycling."
+    zh: "一款室内气候监测设备，读取并显示 BME280（温度、湿度、气压）和 ENS160（AQI、TVOC）传感器数据。使用 Rust 构建，Ratatui/Mousefood 做 UI，Embassy 做异步运行时。支持多种 XIAO 开发板：RP2040、ESP32-C6 和 ESP32-S3。支持 BME280 自动校准 ENS160，以及省电的传感器循环模式。"
+  board: "XIAO RP2040, XIAO ESP32-C6, XIAO ESP32-S3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 5
+  author:
+    en: "nebelgrau77"
+    zh: "nebelgrau77"
+  author_type: "GitHub"
+  link: "https://github.com/nebelgrau77/airsniffer-rp2040"
+  image: "https://raw.githubusercontent.com/nebelgrau77/airsniffer-rp2040/main/airsniffer.gif"
+
+- name:
+    en: "Io田んぼ (IoT Rice Field)"
+    zh: "Io田んぼ (IoT 稻田)"
+  description:
+    en: "An agricultural IoT system for remote water level monitoring in rice fields using LoRa (LPWA) communication. Deployed in over 50 locations with low-cost hardware under 4000 yen per unit. Features include water level sensors, LoRa transmission, and cloud-based monitoring."
+    zh: "一款农业物联网系统，使用 LoRa（LPWA）通信远程监测稻田水位。已在 50 多个地点部署，每套硬件成本低于 4000 日元。功能包括水位传感器、LoRa 传输和云端监控。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2023
+  month: 6
+  author:
+    en: "minolu Takeuchi"
+    zh: "minolu Takeuchi"
+  author_type: "Web"
+  link: "https://protopedia.net/prototype/3932"
+  image: "https://protopedia.net/pic/67d0db87-9dcf-4ccc-ba44-8f855d041462.jpg"
+
+- name:
+    en: "ESP-32 C3 SEN MQTT"
+    zh: "ESP-32 C3 SEN MQTT"
+  description:
+    en: "A XIAO ESP32-C3 based sensor hub that measures temperature, humidity, and a growing number of other sensors via I2C and SPI. Results are transferred via MQTT. Configurable through credentials.h to define sensor types, addresses, and network/MQTT parameters. Can read all sensors simultaneously."
+    zh: "一款基于 XIAO ESP32-C3 的传感器中枢，测量温度、湿度以及通过 I2C 和 SPI 连接的多种其他传感器。数据通过 MQTT 传输。通过 credentials.h 配置传感器类型、地址和网络/MQTT 参数。可同时读取所有传感器。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2024
+  month: 7
+  author:
+    en: "MikeEitel"
+    zh: "MikeEitel"
+  author_type: "GitHub"
+  link: "https://github.com/MikeEitel/ESP-32_C3_SEN_MQTT"
+  image: "https://opengraph.githubassets.com/bce293bdec75fd4cbbf5fdf336272dae1c5370b0a6e28f39eb36162ab70806d0/MikeEitel/ESP-32_C3_SEN_MQTT"
+
+- name:
+    en: "MacroBoard"
+    zh: "MacroBoard"
+  description:
+    en: "A 9-key hot-swappable mechanical macropad powered by Seeed XIAO RP2040."
+    zh: "一款基于 Seeed XIAO RP2040 的 9 键热插拔机械宏键盘。"
+  board: "XIAO RP2040"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2024
+  month: 7
+  author:
+    en: "palmacas"
+    zh: "palmacas"
+  author_type: "GitHub"
+  link: "https://github.com/palmacas/MacroBoard"
+  image: "https://opengraph.githubassets.com/67f64ba2c3af6c9aec5a65778ee1b32eda70c7ac98870b7e2521a84bb237c951/palmacas/MacroBoard"
+
+- name:
+    en: "Final Countdown"
+    zh: "Final Countdown"
+  description:
+    en: "An RP2350-based Event Timer using an e-Paper display and an RTC module, showcasing the RP2350's sleep mode."
+    zh: "一款基于 RP2350 的事件计时器，使用电子墨水屏和 RTC 模块，展示 RP2350 的睡眠模式。"
+  board: "XIAO RP2350"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2025
+  month: 7
+  author:
+    en: "dquadros2"
+    zh: "dquadros2"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/dquadros2/final-countdown-3fe49b"
+  image: "https://hackster.imgix.net/uploads/attachments/1890871/_Q2paFnTZcW.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+
+- name:
+    en: "Cobalt Voice Band - AI Assistant Wearable DevKit"
+    zh: "Cobalt Voice Band - AI 助手可穿戴开发套件"
+  description:
+    en: "A push-to-talk voice wearable built on the Seeed XIAO nRF52840 Sense with open-source firmware."
+    zh: "一款基于 Seeed XIAO nRF52840 Sense 的按键通话语音可穿戴设备，采用开源固件。"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2025
+  month: 7
+  author:
+    en: "Jean de Bailliencourt"
+    zh: "Jean de Bailliencourt"
+  author_type: "GitHub"
+  link: "https://github.com/Cobalt-Watch/Voice-Band"
+  image: "https://opengraph.githubassets.com/662d37d4e75e8bd7cdcecd538659ea178fc5b31ab72e70922b5ff01e8ef80a94/Cobalt-Watch/Voice-Band"
+
+- name:
+    en: "Gesture Detection Wearable Jewelry Bracelet Xerces Aurora"
+    zh: "Gesture Detection Wearable Jewelry Bracelet Xerces Aurora"
+  description:
+    en: "PlatformIO firmware for Seeed Studio XIAO nRF52840 Sense. Implements gesture recognition via LSM6DS3TR-C IMU double-tap detection, pose gating, and BLE data transfer to a companion React Native app for gesture-password training and detection."
+    zh: "Seeed Studio XIAO nRF52840 Sense 的 PlatformIO 固件。通过 LSM6DS3TR-C IMU 双击检测、姿态门控和 BLE 数据传输实现手势识别，配合 React Native 应用进行手势密码训练和检测。"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2025
+  month: 7
+  author:
+    en: "Xerces Aurora"
+    zh: "Xerces Aurora"
+  author_type: "GitHub"
+  link: "https://github.com/hybrisCole/abracadabra-platformio"
+  image: "https://opengraph.githubassets.com/38442e6cfccd98d0829b14e3db1f6ce937cf51955b1f0f0ff0555b9d150cb62c/hybrisCole/abracadabra-platformio"
+
+- name:
+    en: "Neon Beat Buzzer"
+    zh: "Neon Beat Buzzer"
+  description:
+    en: "Firmware for Neon Beat Buzzers written in no_std Rust for ESP32-C3. Connects to the Neon Beat Controller over Wi-Fi and WebSocket, listens for button pushes, and controls WS2812 LEDs. Built around the Seeed Studio XIAO ESP32-C3 with integrated antenna and battery charger."
+    zh: "Neon Beat 蜂鸣器固件，使用 no_std Rust 为 ESP32-C3 编写。通过 Wi-Fi 和 WebSocket 连接到 Neon Beat 控制器，监听按钮按下并控制 WS2812 LED。基于 Seeed Studio XIAO ESP32-C3 构建，集成天线和电池充电功能。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2025
+  month: 7
+  author:
+    en: "Tropicao"
+    zh: "Tropicao"
+  author_type: "GitHub"
+  link: "https://github.com/neon-beat/neon-beat-buzzer-fw"
+  image: "https://opengraph.githubassets.com/2f6f5499b5458e44a1b7a2688323e70bc745ad515721756bd37c8adfb6182bd1/neon-beat/neon-beat-buzzer-fw"
+
+  # ========== 2026-07-13 Community Projects ==========
+  # Source: xiao-weekly-search(2026-07-13)
+
+- name:
+    en: "Prospector"
+    zh: "Prospector"
+  description:
+    en: "A desktop ZMK dongle with a full-color 1.69-inch IPS LCD screen and curved cover glass. Built around the Seeed Studio XIAO nRF52840, it features auto brightness with an ambient light sensor, a 3D-printed case with externally accessible reset button, and open-source ZMK firmware. Designed for use with split mechanical keyboards as a wireless receiver/dongle. Assembly guide and ZMK module available on GitHub."
+    zh: "一款桌面 ZMK 加密狗，配备 1.69 英寸全彩 IPS LCD 曲面玻璃屏幕。基于 Seeed Studio XIAO nRF52840 构建，支持环境光传感器自动亮度调节、3D 打印外壳带外部复位按钮，以及开源 ZMK 固件。专为分体式机械键盘设计，作为无线接收器/加密狗使用。GitHub 提供组装指南和 ZMK 模块。"
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2024
+  month: 11
+  author:
+    en: "carrefinho"
+    zh: "carrefinho"
+  author_type: "GitHub"
+  link: "https://github.com/carrefinho/prospector"
+  image: "https://raw.githubusercontent.com/carrefinho/prospector/main/docs/images/prospector_hero2.jpg"
+
+- name:
+    en: "PMSG Smart Glasses"
+    zh: "PMSG 智能眼镜"
+  description:
+    en: "Open-source modular smart glasses supporting XIAO RP2040, XIAO ESP32-S3, and XIAO nRF52840 as interchangeable compute modules. Features Grove ports, Xiao headers, LoRa connectivity via SMA connector, IR LED, UV/lux sensor, vibration motor, a 4-pixel LED display, and environmental sensors. Lightweight design using Without.live frame technology, with discreet LED flash or vibration alerts for notifications."
+    zh: "一款开源模块化智能眼镜，支持 XIAO RP2040、XIAO ESP32-S3 和 XIAO nRF52840 作为可互换计算模块。配备 Grove 端口、Xiao 接口、LoRa 连接（SMA 接口）、红外 LED、UV/光照传感器、振动马达、4 像素 LED 显示和环境传感器。采用 Without.live 镜框技术，轻量化设计，通过 LED 闪烁或振动提醒来通知用户。"
+  board: XIAO ESP32-C3, XIAO ESP32-C5, XIAO ESP32-C6, XIAO ESP32-S3, XIAO ESP32-S3 Sense, XIAO RP2040, XIAO RP2350, XIAO SAMD21 (Seeeduino XIAO), XIAO nRF52840 (XIAO BLE), XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF54L15, XIAO RA4M1, XIAO MG24
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2023
+  month: 10
+  author:
+    en: "TeQmeQ"
+    zh: "TeQmeQ"
+  author_type: "Web"
+  link: "https://pmsg.online/"
+  image: ""
+
   # ========== 2026-07-05 Community Projects ==========
   # Source: xiao-weekly-search(2026-07-05)
 
@@ -2810,8 +3063,8 @@ projects:
 
 # ========== Board Options / 型号选项 ==========
 # XIAO ESP32-S3, XIAO ESP32-S3 Sense, XIAO ESP32-C3, XIAO ESP32-C6, XIAO ESP32-C5
-# XIAO nRF52840, XIAO nRF52840 Sense, XIAO nRF52840 Micro
-# XIAO RP2040, XIAO RP2350, XIAO SAMD21, XIAO RA4M1
+# XIAO nRF52840 (XIAO BLE), XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 Micro
+# XIAO RP2040, XIAO RP2350, XIAO SAMD21 (Seeeduino), XIAO RA4M1
 # XIAO MG24, XIAO MG24 Sense
 
 

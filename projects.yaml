@@ -76,7 +76,7 @@ projects:
     zh: "nebelgrau77"
   author_type: "GitHub"
   link: "https://github.com/nebelgrau77/airsniffer-rp2040"
-  image: "https://raw.githubusercontent.com/nebelgrau77/airsniffer-rp2040/main/airsniffer.gif"
+  image: "https://github.com/nebelgrau77/airsniffer-rp2040/raw/dev/airsniffer.gif"
 
 - name:
     en: "Io田んぼ (IoT Rice Field)"

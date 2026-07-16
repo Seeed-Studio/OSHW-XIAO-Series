@@ -239,7 +239,7 @@ projects:
   description:
     en: "Open-source modular smart glasses supporting XIAO RP2040, XIAO ESP32-S3, and XIAO nRF52840 as interchangeable compute modules. Features Grove ports, Xiao headers, LoRa connectivity via SMA connector, IR LED, UV/lux sensor, vibration motor, a 4-pixel LED display, and environmental sensors. Lightweight design using Without.live frame technology, with discreet LED flash or vibration alerts for notifications."
     zh: "一款开源模块化智能眼镜，支持 XIAO RP2040、XIAO ESP32-S3 和 XIAO nRF52840 作为可互换计算模块。配备 Grove 端口、Xiao 接口、LoRa 连接（SMA 接口）、红外 LED、UV/光照传感器、振动马达、4 像素 LED 显示和环境传感器。采用 Without.live 镜框技术，轻量化设计，通过 LED 闪烁或振动提醒来通知用户。"
-  board: XIAO ESP32-C3, XIAO ESP32-C5, XIAO ESP32-C6, XIAO ESP32-S3, XIAO ESP32-S3 Sense, XIAO RP2040, XIAO RP2350, XIAO SAMD21 (Seeeduino XIAO), XIAO nRF52840 (XIAO BLE), XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF54L15, XIAO RA4M1, XIAO MG24
+  board: XIAO ESP32-C6, XIAO ESP32-S3, XIAO RP2040, XIAO nRF52840 (XIAO BLE), XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF54L15
   category:
     en: "Wearables"
     zh: "可穿戴"

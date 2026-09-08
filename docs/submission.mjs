@@ -1,5 +1,5 @@
 import { BOARD_GROUPS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs?v=3';
-import { FORM_LANG } from './submission-locales.mjs?v=5';
+import { FORM_LANG } from './submission-locales.mjs?v=6';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 let challengeScript;
@@ -68,8 +68,8 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
         const options = (name, values) => `<div class="submission-field"><label for="submission-${name}">${language[name]}<span class="submission-required">*</span></label><select id="submission-${name}" name="${name}" required aria-describedby="${name}-error"><option value="">${language.choose}</option>${values.map(value => `<option value="${escapeHtml(value)}">${escapeHtml(name === 'category' ? getCategoryLabel(value) : value)}</option>`).join('')}</select><p class="submission-error" id="${name}-error"></p></div>`;
         const translatedField = (key, locale) => {
             const name = `${key}${locale === 'en' ? 'En' : 'Zh'}`;
-            const attributes = `id="submission-${name}" name="${name}" lang="${locale}" maxlength="${key === 'description' ? 3000 : key === 'name' ? 160 : 120}" aria-describedby="${name}-error"`;
-            return `<div class="submission-field"><label for="submission-${name}">${language[key]}</label>${key === 'description' ? `<textarea ${attributes}></textarea>` : `<input type="text" ${attributes}>`}<p class="submission-error" id="${name}-error"></p></div>`;
+            const attributes = `id="submission-${name}" name="${name}" lang="${locale}" maxlength="${key === 'description' ? 3000 : key === 'name' ? 160 : 120}" aria-describedby="submission-content-hint ${name}-error"`;
+            return `<div class="submission-field"><label for="submission-${name}">${language[key]}<span class="submission-required" aria-hidden="true">*</span></label>${key === 'description' ? `<textarea ${attributes}></textarea>` : `<input type="text" ${attributes}>`}<p class="submission-error" id="${name}-error"></p></div>`;
         };
         dialog.innerHTML = `<div class="submission-heading"><h2 id="submission-title">${language.title}</h2><p>${language.intro}</p><button class="submission-close" data-action="close" aria-label="${language.close}">×</button></div>
             <form class="submission-content" novalidate>

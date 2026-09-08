@@ -100,6 +100,7 @@ export function appendProject(text, entry) {
 
 // Repeated or concurrent submissions for a project reuse its deterministic branch and PR.
 export async function createSubmission(data, env, api) {
+    const title = (data.name.en || data.name.zh).replace(/[\r\n]/g, ' ');
     const identity = projectIdentity(data.link);
     const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(identity));
     const id = Buffer.from(digest).toString('hex').slice(0, 24);
@@ -126,7 +127,7 @@ export async function createSubmission(data, env, api) {
     if (!containsProject(branchText, identity)) {
         try {
             await api(filePath, { method: 'PUT', body: {
-                message: `feat: add ${data.name.replace(/[\r\n]/g, ' ')}`,
+                message: `feat: add ${title}`,
                 branch, sha: branchFile.sha,
                 content: Buffer.from(appendProject(branchText, toProjectEntry(data))).toString('base64')
             } });
@@ -139,7 +140,7 @@ export async function createSubmission(data, env, api) {
     const entry = toProjectEntry(data);
     const body = `A community project submission for review.\n\nProject details are included below and appended to projects.yaml.\n\n\`\`\`json\n${JSON.stringify(entry, null, 2).replace(/`/g, '\\u0060')}\n\`\`\`\n`;
     try {
-        const pull = await api(`${root}/pulls`, { method: 'POST', body: { title: `feat: add ${data.name.replace(/[\r\n]/g, ' ')}`, head: branch, base, body, maintainer_can_modify: true } });
+        const pull = await api(`${root}/pulls`, { method: 'POST', body: { title: `feat: add ${title}`, head: branch, base, body, maintainer_can_modify: true } });
         return { status: 'created', number: pull.number, url: pull.html_url };
     } catch (error) {
         if (error.githubStatus !== 422) throw error;

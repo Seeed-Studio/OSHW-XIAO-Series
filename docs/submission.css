@@ -7,6 +7,10 @@
 .submission-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; border: 0; min-width: 0; }
 .submission-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
 .submission-wide { grid-column: 1 / -1; }
+.submission-translations { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.submission-translation { min-width: 0; border: 1px solid #ffffff24; border-radius: 8px; padding: 12px; display: grid; gap: 14px; align-content: start; }
+.submission-translation legend { color: #c4e980; font-size: .85rem; font-weight: 600; padding: 0 6px; }
+.submission-translation textarea { min-height: 150px; }
 .submission-field label, .submission-board-label { font-size: .85rem; font-weight: 600; color: #e4eef3; }
 .submission-optional { font-weight: 400; color: #a6c4d1; margin-left: 6px; font-size: .75rem; }
 .submission-field input, .submission-field select, .submission-field textarea { width: 100%; box-sizing: border-box; border: 1px solid #4f7b8e; border-radius: 7px; padding: 10px 12px; background: #073b50; color: #f4f8fa; font: inherit; font-size: .9rem; color-scheme: dark; }
@@ -44,6 +48,6 @@
     .submission-heading h2 { font-size: 1.2rem; }
     .submission-close { right: 16px; top: 20px; }
     .submission-content { padding: 20px 18px; }
-    .submission-fields { grid-template-columns: 1fr; }
+    .submission-fields, .submission-translations { grid-template-columns: 1fr; }
     .submission-board-options { grid-template-columns: 1fr; }
 }

@@ -5,7 +5,7 @@ import { handleRequest, verifyChallenge } from '../worker/index.mjs';
 import { installationToken } from '../worker/github.mjs';
 
 const origin = 'https://hub.example.com';
-const input = { name: 'Test project', author: 'Test maker', description: 'A working XIAO temperature display for a desk.', link: 'https://example.com/project', boards: ['XIAO ESP32-C6'], category: 'Smart Home', source: 'Web', releaseDate: '2026-01-01', turnstileToken: 'test-challenge' };
+const input = { name: { en: 'Test project' }, author: { en: 'Test maker' }, description: { en: 'A working XIAO temperature display for a desk.' }, link: 'https://example.com/project', boards: ['XIAO ESP32-C6'], category: 'Smart Home', source: 'Web', releaseDate: '2026-01-01', turnstileToken: 'test-challenge' };
 const configured = () => ({ GITHUB_OWNER: 'example', GITHUB_REPO: 'catalog', GITHUB_BASE_BRANCH: 'main', GITHUB_APP_CLIENT_ID: 'test-client', GITHUB_APP_INSTALLATION_ID: '123', GITHUB_APP_PRIVATE_KEY: 'test-only-key', TURNSTILE_SECRET: 'test-only-secret', TURNSTILE_SITE_KEY: 'public-key', TURNSTILE_HOSTNAMES: 'hub.example.com', ALLOWED_ORIGINS: origin, SUBMISSION_LIMITER: { limit: async () => ({ success: true }) } });
 const request = (body = input, options = {}) => new Request(`https://api.example.com${options.path || '/api/submissions'}`, { method: options.method || 'POST', headers: { Origin: origin, 'Content-Type': 'application/json', 'CF-Connecting-IP': '203.0.113.1', ...options.headers }, ...((options.method || 'POST') === 'POST' ? { body: typeof body === 'string' ? body : JSON.stringify(body) } : {}) });
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status });
@@ -36,7 +36,7 @@ test('rate, content type, malformed JSON, invalid fields and oversized bodies fa
     assert.equal((await handleRequest(request(input, { headers: { 'Content-Type': 'text/plain' } }), env, services)).status, 415);
     assert.equal((await handleRequest(request('{'), env, services)).status, 400);
     assert.equal((await handleRequest(request({ ...input, boards: [] }), env, services)).status, 400);
-    assert.equal((await handleRequest(request('x'.repeat(17000)), env, services)).status, 413);
+    assert.equal((await handleRequest(request('x'.repeat(33000)), env, services)).status, 413);
     assert.equal(externalCalls, 0);
 });
 
@@ -98,4 +98,13 @@ test('installation JWT signature, lifetime and permission scope match the GitHub
         return json({ token: 'test-installation-token' });
     });
     assert.equal(result, 'test-installation-token');
+});
+
+
+test('full-length UTF-8 translations fit the request limit and reach challenge validation', async () => {
+    let verified = false;
+    const full = { ...input, name: { en: 'Weather station', zh: '\u5929\u6c14\u7ad9' }, description: { en: '\u754c'.repeat(3000), zh: '\u6e29'.repeat(3000) } };
+    const response = await handleRequest(request(full), configured(), { fetcher: async () => { verified = true; return json({ success: false }); } });
+    assert.equal(response.status, 403);
+    assert.equal(verified, true);
 });

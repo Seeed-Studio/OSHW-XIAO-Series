@@ -41,7 +41,7 @@ export async function handleRequest(request, env, services = {}) {
         const limiter = await env.SUBMISSION_LIMITER.limit({ key: `${env.GITHUB_REPO}:${request.headers.get('CF-Connecting-IP') || 'unknown'}` });
         if (!limiter.success) return reply({ error: 'rate_limited' }, 429);
         let input;
-        try { input = JSON.parse(await readLimitedText(request, 16384)); }
+        try { input = JSON.parse(await readLimitedText(request, 32768)); }
         catch (error) { if (error instanceof SubmissionError) throw error; return reply({ error: 'invalid_json' }, 400); }
         const validation = validateSubmission(input);
         if (!validation.valid) return reply({ error: 'invalid_submission', fields: validation.errors }, 400);

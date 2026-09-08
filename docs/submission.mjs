@@ -1,5 +1,5 @@
-import { BOARD_GROUPS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs';
-import { FORM_LANG } from './submission-locales.mjs';
+import { BOARD_GROUPS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs?v=3';
+import { FORM_LANG } from './submission-locales.mjs?v=3';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 let challengeScript;
@@ -37,7 +37,13 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
         const form = dialog.querySelector('form');
         if (!form) return {};
         const fields = new FormData(form);
-        return { ...Object.fromEntries(fields), boards: fields.getAll('boards') };
+        const data = { ...Object.fromEntries(fields), boards: fields.getAll('boards') };
+        for (const key of ['name', 'author', 'description']) {
+            data[key] = { en: fields.get(`${key}En`) || '', zh: fields.get(`${key}Zh`) || '' };
+            delete data[`${key}En`];
+            delete data[`${key}Zh`];
+        }
+        return data;
     };
     const status = (message, retry = false) => {
         dialog.querySelector('#submission-message').textContent = message;
@@ -60,11 +66,16 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
         const language = L();
         const field = (name, type = 'text', wide = false, optional = false, hint = '') => `<div class="submission-field${wide ? ' submission-wide' : ''}"><label for="submission-${name}">${language[name]}${optional ? `<span class="submission-optional">${language.optional}</span>` : '<span class="submission-required">*</span>'}</label><input id="submission-${name}" name="${name}" type="${type}" ${optional ? '' : 'required'} maxlength="${['link', 'image'].includes(name) ? 2048 : name === 'name' ? 160 : name === 'author' ? 120 : 40}" aria-describedby="${name}-error${hint ? ` ${name}-hint` : ''}" ${type === 'url' ? 'placeholder="https://…"' : ''}>${hint ? `<p class="submission-hint" id="${name}-hint">${hint}</p>` : ''}<p class="submission-error" id="${name}-error"></p></div>`;
         const options = (name, values) => `<div class="submission-field"><label for="submission-${name}">${language[name]}<span class="submission-required">*</span></label><select id="submission-${name}" name="${name}" required aria-describedby="${name}-error"><option value="">${language.choose}</option>${values.map(value => `<option value="${escapeHtml(value)}">${escapeHtml(name === 'category' ? getCategoryLabel(value) : value)}</option>`).join('')}</select><p class="submission-error" id="${name}-error"></p></div>`;
+        const translatedField = (key, locale) => {
+            const name = `${key}${locale === 'en' ? 'En' : 'Zh'}`;
+            const attributes = `id="submission-${name}" name="${name}" lang="${locale}" maxlength="${key === 'description' ? 3000 : key === 'name' ? 160 : 120}" aria-describedby="${name}-error"`;
+            return `<div class="submission-field"><label for="submission-${name}">${language[key]}</label>${key === 'description' ? `<textarea ${attributes}></textarea>` : `<input type="text" ${attributes}>`}<p class="submission-error" id="${name}-error"></p></div>`;
+        };
         dialog.innerHTML = `<div class="submission-heading"><h2 id="submission-title">${language.title}</h2><p>${language.intro}</p><button class="submission-close" data-action="close" aria-label="${language.close}">×</button></div>
             <form class="submission-content" novalidate>
                 <fieldset class="submission-fields">
-                    ${field('name')}${field('author')}
-                    <div class="submission-field submission-wide"><label for="submission-description">${language.description}<span class="submission-required">*</span></label><textarea id="submission-description" name="description" required minlength="20" maxlength="3000" aria-describedby="description-hint description-error"></textarea><p class="submission-hint" id="description-hint">${language.descriptionHint}</p><p class="submission-error" id="description-error"></p></div>
+                    <p class="submission-hint submission-wide" id="submission-content-hint">${language.contentHint}</p>
+                    <div class="submission-translations submission-wide">${['en', 'zh'].map(locale => `<fieldset class="submission-translation" aria-describedby="submission-content-hint"><legend>${locale === 'en' ? language.english : language.chinese}</legend>${translatedField('name', locale)}${translatedField('author', locale)}${translatedField('description', locale)}<p class="submission-hint">${language.descriptionHint}</p></fieldset>`).join('')}</div>
                     ${field('link', 'url', true)}
                     ${options('category', CATEGORIES)}${options('source', SOURCES)}
                     <div id="submission-source-other" class="submission-wide" hidden>${field('sourceOther')}</div>
@@ -80,7 +91,11 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
         dialog.querySelector('[name="releaseDate"]').max = new Date().toISOString().slice(0, 10);
         for (const input of dialog.querySelectorAll('input, textarea, select')) {
             if (input.name === 'boards') input.checked = draft.boards?.includes(input.value) || false;
-            else if (draft[input.name]) input.value = draft[input.name];
+            else {
+                const translated = input.name.match(/^(name|author|description)(En|Zh)$/);
+                const value = translated ? draft[translated[1]]?.[translated[2].toLowerCase()] : draft[input.name];
+                if (value) input.value = value;
+            }
         }
         dialog.querySelector('#submission-source-other').hidden = draft.source !== 'Other';
     }
@@ -119,15 +134,15 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
 
     function showErrors(errors) {
         const language = L();
-        const messages = { name: language.validName, author: language.validAuthor, description: language.validDescription, link: language.validUrl, image: language.validUrl, boards: language.selectBoards, releaseDate: language.validDate, category: language.required, source: language.required, sourceOther: language.validSource };
+        const messages = { nameEn: language.validName, nameZh: language.validName, authorEn: language.validAuthor, authorZh: language.validAuthor, descriptionEn: language.validDescription, descriptionZh: language.validDescription, link: language.validUrl, image: language.validUrl, boards: language.selectBoards, releaseDate: language.validDate, category: language.required, source: language.required, sourceOther: language.validSource };
         dialog.querySelectorAll('.submission-error').forEach(element => element.textContent = '');
         dialog.querySelectorAll('[aria-invalid]').forEach(element => element.removeAttribute('aria-invalid'));
-        for (const name of Object.keys(errors)) {
-            if (!Object.hasOwn(messages, name)) continue;
-            dialog.querySelector(`#${name}-error`).textContent = messages[name];
+        const names = Object.keys(errors).filter(name => Object.hasOwn(messages, name));
+        for (const name of names) {
+            dialog.querySelector(`#${name}-error`).textContent = errors[name] === 'language_required' ? language.languageRequired : errors[name] === 'incomplete_translation' ? language.incompleteTranslation : messages[name];
             dialog.querySelector(`[name="${name}"]`)?.setAttribute('aria-invalid', 'true');
         }
-        dialog.querySelector(`[name="${Object.keys(errors)[0]}"]`)?.focus();
+        dialog.querySelector(`[name="${names[0]}"]`)?.focus();
     }
 
     async function submit(event) {

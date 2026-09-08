@@ -5,7 +5,7 @@ import { parse } from 'yaml';
 import { validateSubmission, projectIdentity, toProjectEntry } from '../docs/submission-schema.mjs';
 import { appendProject, createSubmission, SubmissionError } from '../worker/github.mjs';
 
-export const valid = { name: 'Desk weather station', author: 'Community Maker', description: 'A small weather station that displays room temperature and humidity.', link: 'https://github.com/example/weather', category: 'Smart Home', source: 'GitHub', boards: ['XIAO ESP32-C6'], image: '', releaseDate: '2026-01-02' };
+export const valid = { name: { en: 'Desk weather station' }, author: { en: 'Community Maker' }, description: { en: 'A small weather station that displays room temperature and humidity.' }, link: 'https://github.com/example/weather', category: 'Smart Home', source: 'GitHub', boards: ['XIAO ESP32-C6'], image: '', releaseDate: '2026-01-02' };
 const env = { GITHUB_OWNER: 'example', GITHUB_REPO: 'catalog', GITHUB_BASE_BRANCH: 'main' };
 const pull = { number: 12, html_url: 'https://github.com/example/catalog/pull/12' };
 const existingCatalog = 'projects:\n- name: Original\n  link: https://example.com/original\n';
@@ -49,9 +49,9 @@ function repository({ existingPull, catalog = existingCatalog, failPullOnce = fa
 }
 
 test('valid submission normalizes fields, multiple boards and optional images', () => {
-    const result = validateSubmission({ ...valid, name: `  ${valid.name}  `, boards: [...valid.boards, ...valid.boards, 'XIAO RP2350'] });
+    const result = validateSubmission({ ...valid, name: { en: `  ${valid.name.en}  ` }, boards: [...valid.boards, ...valid.boards, 'XIAO RP2350'] });
     assert.equal(result.valid, true);
-    assert.equal(result.data.name, valid.name);
+    assert.deepEqual(result.data.name, valid.name);
     assert.equal(result.data.boards.length, 2);
     const entry = toProjectEntry(result.data);
     assert.equal(entry.year, 2026);
@@ -63,7 +63,10 @@ test('valid submission normalizes fields, multiple boards and optional images', 
 test('empty, malformed, oversized fields, invalid URLs, unknown boards and dates fail', () => {
     for (const input of [null, {}, [], 'bad']) assert.equal(validateSubmission(input).valid, false);
     for (const [field, values] of Object.entries({ name: ['', 'x'.repeat(161)], author: [''], description: ['short', 'x'.repeat(3001)], link: ['javascript:alert(1)', 'https://user:pass@example.com', 'http://example.com', 'https://127.0.0.1'], image: ['not-a-url'], boards: [[], ['XIAO unknown']], category: ['unknown'], source: ['unknown'], releaseDate: ['2026-02-30', '2099-01-01', 'bad', '1969-01-01'] })) {
-        for (const value of values) assert.ok(validateSubmission({ ...valid, [field]: value }).errors[field], `${field}: ${value}`);
+        for (const value of values) {
+            const translated = ['name', 'author', 'description'].includes(field);
+            assert.ok(validateSubmission({ ...valid, [field]: translated ? { en: value } : value }).errors[translated ? `${field}En` : field], `${field}: ${value}`);
+        }
     }
 });
 
@@ -155,4 +158,32 @@ test('board choices group each chip family and place variants after the standard
             assert.ok(index >= 0 && index < family.boards.indexOf(board), board);
         }
     }
+});
+
+test('English-only, Chinese-only and bilingual content preserve separate translations', async () => {
+    const english = { name: { en: 'Weather station' }, description: { en: 'A XIAO weather station with a compact indoor temperature display.' }, author: { en: 'Maker' } };
+    const chinese = { name: { zh: '\u5929\u6c14\u7ad9' }, description: { zh: '\u8fd9\u662f\u4e00\u4e2a\u4f7f\u7528 XIAO \u5f00\u53d1\u677f\u663e\u793a\u5ba4\u5185\u6e29\u5ea6\u548c\u6e7f\u5ea6\u7684\u684c\u9762\u5929\u6c14\u7ad9\u3002' }, author: { zh: '\u5c0f\u660e' } };
+    const bilingual = Object.fromEntries(Object.keys(english).map(key => [key, { ...english[key], ...chinese[key] }]));
+    for (const content of [english, chinese, bilingual]) {
+        const result = validateSubmission({ ...valid, ...content });
+        assert.equal(result.valid, true, JSON.stringify(result.errors));
+        const entry = toProjectEntry(result.data);
+        for (const key of Object.keys(content)) assert.deepEqual(entry[key], content[key]);
+        const repo = repository();
+        await createSubmission(result.data, env, repo.api);
+        assert.deepEqual(parse(repo.content).projects.at(-1), entry);
+        const pr = repo.calls.find(call => call.method === 'POST' && call.path.endsWith('/pulls'));
+        assert.equal(pr.body.title, `feat: add ${content.name.en || content.name.zh}`);
+    }
+});
+
+test('incomplete, blank and invalid translations return language-specific errors', () => {
+    const complete = { ...valid, name: { en: 'Weather station' }, description: { en: 'A weather station using XIAO for temperature readings.' }, author: { en: 'Maker' } };
+    assert.equal(validateSubmission(complete).valid, true);
+    assert.ok(validateSubmission({ ...complete, name: {} }).errors.nameEn);
+    assert.ok(validateSubmission({ ...complete, name: { ...complete.name, zh: '\u5929\u6c14\u7ad9' } }).errors.descriptionZh);
+    assert.ok(validateSubmission({ ...complete, description: { ...complete.description, zh: ' ' } }).valid);
+    assert.ok(validateSubmission({ ...complete, description: { ...complete.description, zh: 'short' } }).errors.descriptionZh);
+    assert.ok(validateSubmission({ ...complete, author: { zh: 'x'.repeat(121) } }).errors.authorZh);
+    assert.ok(validateSubmission({ ...complete, name: { en: 123 } }).errors.nameEn);
 });

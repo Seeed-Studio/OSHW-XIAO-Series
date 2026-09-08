@@ -46,7 +46,12 @@ export const FORM_LANG = {
         "validAuthor": "Use 2\u2013120 characters.",
         "validDescription": "Use 20\u20133,000 characters.",
         "validSource": "Use 2\u201340 letters, numbers, spaces, or basic punctuation.",
-        "verificationFailed": "Verification expired or failed. Please complete it again."
+        "verificationFailed": "Verification expired or failed. Please complete it again.",
+        "contentHint": "Add a complete project name and description in English, Chinese, or both. Provide the author name in at least one language.",
+        "english": "English",
+        "chinese": "\u4e2d\u6587",
+        "languageRequired": "Fill this field in at least one language.",
+        "incompleteTranslation": "Complete the project name and description in this language."
     },
     "zh": {
         "title": "\u5206\u4eab\u4f60\u7684 XIAO \u9879\u76ee",
@@ -95,6 +100,11 @@ export const FORM_LANG = {
         "validAuthor": "\u8bf7\u586b\u5199 2\u2013120 \u4e2a\u5b57\u7b26\u3002",
         "validDescription": "\u8bf7\u586b\u5199 20\u20133,000 \u4e2a\u5b57\u7b26\u3002",
         "validSource": "\u8bf7\u586b\u5199 2\u201340 \u4e2a\u5b57\u7b26\uff0c\u53ef\u4f7f\u7528\u6587\u5b57\u3001\u6570\u5b57\u3001\u7a7a\u683c\u53ca\u5e38\u7528\u6807\u70b9\u3002",
-        "verificationFailed": "\u9a8c\u8bc1\u5df2\u8fc7\u671f\u6216\u672a\u901a\u8fc7\uff0c\u8bf7\u91cd\u65b0\u5b8c\u6210\u9a8c\u8bc1\u3002"
+        "verificationFailed": "\u9a8c\u8bc1\u5df2\u8fc7\u671f\u6216\u672a\u901a\u8fc7\uff0c\u8bf7\u91cd\u65b0\u5b8c\u6210\u9a8c\u8bc1\u3002",
+        "contentHint": "\u53ef\u586b\u5199\u4e2d\u6587\u3001\u82f1\u6587\u6216\u4e24\u79cd\u8bed\u8a00\u3002\u6bcf\u79cd\u5df2\u586b\u5199\u7684\u8bed\u8a00\u90fd\u9700\u63d0\u4f9b\u9879\u76ee\u540d\u79f0\u548c\u7b80\u4ecb\uff1b\u4f5c\u8005\u540d\u79f0\u81f3\u5c11\u586b\u5199\u4e00\u79cd\u8bed\u8a00\u3002",
+        "english": "English",
+        "chinese": "\u4e2d\u6587",
+        "languageRequired": "\u8bf7\u81f3\u5c11\u7528\u4e00\u79cd\u8bed\u8a00\u586b\u5199\u6b64\u9879\u3002",
+        "incompleteTranslation": "\u8bf7\u8865\u5168\u8be5\u8bed\u8a00\u7684\u9879\u76ee\u540d\u79f0\u548c\u7b80\u4ecb\u3002"
     }
 };

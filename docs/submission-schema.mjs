@@ -36,8 +36,25 @@ export function validateSubmission(input, today = new Date().toISOString().slice
     const errors = {};
     const data = {};
     for (const [key, minimum, maximum] of [['name', 2, 160], ['author', 2, 120], ['description', 20, 3000]]) {
-        data[key] = typeof input?.[key] === 'string' ? input[key].trim() : '';
-        if (data[key].length < minimum || data[key].length > maximum || /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(data[key])) errors[key] = 'invalid_length';
+        data[key] = {};
+        for (const locale of ['en', 'zh']) {
+            const field = `${key}${locale === 'en' ? 'En' : 'Zh'}`;
+            const raw = input?.[key]?.[locale];
+            const value = typeof raw === 'string' ? raw.trim() : '';
+            if (raw != null && typeof raw !== 'string') errors[field] = 'invalid_length';
+            if (!value) continue;
+            data[key][locale] = value;
+            if (value.length < minimum || value.length > maximum || /[\u0000-\u0008\u000b\u000c\u000e-\u001f]/.test(value)) errors[field] = 'invalid_length';
+        }
+        if (!Object.keys(data[key]).length) {
+            errors[`${key}En`] = 'language_required';
+            errors[`${key}Zh`] = 'language_required';
+        }
+    }
+    for (const locale of ['en', 'zh']) {
+        const suffix = locale === 'en' ? 'En' : 'Zh';
+        if (data.name[locale] && !data.description[locale]) errors[`description${suffix}`] = 'incomplete_translation';
+        if (data.description[locale] && !data.name[locale]) errors[`name${suffix}`] = 'incomplete_translation';
     }
     data.link = publicUrl(input?.link);
     if (!data.link) errors.link = 'invalid_url';

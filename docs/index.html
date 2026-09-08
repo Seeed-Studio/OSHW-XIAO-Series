@@ -12,7 +12,7 @@
             min-height: 100vh;
             padding: 24px 20px;
         }
-        .container { max-width: 1280px; margin: 0 auto; }
+        .container { max-width: 1600px; margin: 0 auto; }
 
         /* Header */
         header {
@@ -142,70 +142,6 @@
             padding-left: 2px;
         }
 
-        /* Table wrapper for horizontal scroll on mobile */
-        .table-wrapper {
-            overflow-x: auto;
-            border-radius: 10px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        /* Projects table */
-        .projects-table {
-            width: 100%;
-            border-collapse: collapse;
-            background: rgba(255,255,255,0.04);
-        }
-        .projects-table thead tr {
-            background: rgba(0,0,0,0.25);
-        }
-        .projects-table thead th {
-            padding: 12px 16px;
-            text-align: left;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: rgba(255,255,255,0.5);
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            white-space: nowrap;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .projects-table thead th:first-child { width: 44px; text-align: center; }
-
-        /* Data rows */
-        .project-row {
-            cursor: pointer;
-            border-bottom: 1px solid rgba(255,255,255,0.06);
-            transition: background 0.15s;
-        }
-        .project-row:hover { background: rgba(143,195,31,0.07); }
-        .project-row.expanded { background: rgba(143,195,31,0.1); }
-        .project-row td {
-            padding: 13px 16px;
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.88);
-            vertical-align: middle;
-        }
-        .project-row td:first-child {
-            text-align: center;
-            color: rgba(255,255,255,0.3);
-            font-size: 0.8rem;
-            font-variant-numeric: tabular-nums;
-        }
-        .project-name {
-            font-weight: 600;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .expand-icon {
-            font-size: 0.7rem;
-            color: rgba(255,255,255,0.3);
-            transition: transform 0.2s;
-            flex-shrink: 0;
-        }
-        .project-row.expanded .expand-icon { transform: rotate(90deg); color: #8FC31F; }
-
         /* Tags */
         .tag {
             display: inline-block;
@@ -225,73 +161,79 @@
         .tag-hackaday    { background: rgba(30,30,30,0.5);  color: #aaaaaa; border: 1px solid rgba(255,255,255,0.15); }
         .tag-web         { background: rgba(100,100,100,0.2); color: #cccccc; border: 1px solid rgba(255,255,255,0.1); }
 
-        /* Detail rows */
-        .detail-row { display: none; }
-        .detail-row.open { display: table-row; }
-        .detail-cell {
-            padding: 0;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
-        }
-        .detail-inner {
-            padding: 18px 56px 20px 56px;
-            background: rgba(0,0,0,0.2);
-            border-top: 1px solid rgba(143,195,31,0.2);
-            display: flex;
-            gap: 24px;
-            align-items: flex-start;
-        }
-        .detail-preview {
-            flex-shrink: 0;
-            width: 260px;
-            max-width: 260px;
-        }
-        .detail-preview img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 6px;
-            border: 1px solid rgba(255,255,255,0.1);
-            display: block;
-        }
-        .detail-body { flex: 1; min-width: 0; }
-        .detail-description {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.9rem;
-            line-height: 1.65;
-            margin-bottom: 16px;
-        }
-        .project-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 20px;
-            background: #8FC31F;
-            color: #004966;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 0.875rem;
-            transition: background 0.15s, transform 0.1s;
-        }
-        .project-link:hover { background: #a0d422; transform: translateY(-1px); }
-
-        @media (max-width: 720px) {
-            .detail-inner { flex-direction: column; }
-            .detail-preview { width: 100%; max-width: 100%; }
-            .detail-preview img { height: 180px; }
-        }
-
-        /* No results */
-        .no-results {
-            text-align: center;
-            color: rgba(255,255,255,0.45);
-            padding: 60px 20px;
-            font-size: 1rem;
-        }
-
+        .search-box { display: flex; align-items: center; gap: 12px; padding: 4px 8px 4px 16px; background: #063d54; border: 1px solid #47788c; border-radius: 10px; margin-bottom: 16px; box-shadow: inset 0 1px 3px #001f2d30; transition: border-color .15s, background .15s, box-shadow .15s; }
+        .search-box:hover { border-color: #6895a6; }
+        .search-icon { width: 20px; height: 20px; flex-shrink: 0; color: #b8d1dc; pointer-events: none; }
+        .search-box:focus-within .search-icon { color: #b8e05a; }
+        .search-box:focus-within { background: #08445b; border-color: #8FC31F; box-shadow: 0 0 0 2px #8fc31f20; }
+        .search-box input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; padding: 8px 0; color: #f0f7fa; caret-color: #b8e05a; color-scheme: dark; font: inherit; font-size: .95rem; line-height: 1.5; }
+        .search-box input::placeholder { color: #adc7d3; opacity: 1; }
+        .search-box input::-webkit-search-cancel-button { -webkit-appearance: none; }
+        .clear-search { flex-shrink: 0; white-space: nowrap; border: 1px solid #ffffff20; background: #ffffff09; color: #d0e1e8; border-radius: 6px; padding: 6px 10px; cursor: pointer; transition: color .15s, background .15s; }
+        .clear-search:hover { color: #c4e980; background: #8fc31f12; }
+        .filters { padding: 14px 18px; }
+        .filter-group { gap: 6px; }
+        .filter-btn { padding: 5px 11px; }
+        .advanced-filters { border-top: 1px solid #ffffff20; margin-top: 12px; padding-top: 12px; }
+        summary { cursor: pointer; color: #d4e4eb; font-size: .85rem; }
+        .advanced-filters[open] summary { margin-bottom: 16px; }
+        .results-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin: 25px 0 16px; }
+        .stats { color: #d0e1e8; margin: 0; }
+        .reset-filters, .detail-button { border: 0; padding: 0; background: transparent; color: #c4e980; cursor: pointer; font: inherit; font-size: .85rem; }
+        .active-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+        .active-filters:empty { display: none; }
+        .active-filter { border: 1px solid #ffffff40; border-radius: 20px; padding: 5px 12px; color: #fff; background: #ffffff0d; cursor: pointer; }
+        .projects-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; padding-bottom: 32px; }
+        .project-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid #ffffff29; border-radius: 12px; overflow: hidden; background: #12566f; transition: border-color .15s; }
+        .project-card:hover { border-color: #8fc31f99; }
+        .card-preview { display: block; width: 100%; position: relative; aspect-ratio: 16 / 9; border-bottom: 1px solid #ffffff18; background: #e8eef0; overflow: hidden; }
+        .image-button { display: block; width: 100%; height: 100%; padding: 0; border: 0; cursor: pointer; }
+        .card-preview img { display: block; width: 100%; height: 100%; object-fit: contain; position: relative; background: #e8eef0; }
+        .text-cover { display: none; position: absolute; inset: 0; flex-direction: column; justify-content: center; align-items: flex-start; gap: 12px; padding: 20px; background: linear-gradient(135deg, #073e56, #1e6575); }
+        .text-cover-category { color: #c4e980; font-size: .7rem; letter-spacing: .06em; }
+        .text-cover h2 { color: #fff; font-size: 1.2rem; line-height: 1.4; overflow-wrap: anywhere; }
+        .text-cover button { border: 0; padding: 0; color: inherit; font: inherit; font-weight: 650; text-align: left; background: transparent; cursor: pointer; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+        .without-image .text-cover { display: flex; }
+        .without-image .image-button, .without-image .card-title, .without-image .card-kicker .tag { display: none; }
+        .without-image .card-kicker { justify-content: flex-end; }
+        .card-body { padding: 14px; display: flex; flex-direction: column; flex: 1; gap: 9px; }
+        .card-kicker { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: #c0d6df; font-size: .75rem; }
+        .card-kicker .tag { overflow: hidden; text-overflow: ellipsis; }
+        .card-title { color: white; font-size: .95rem; line-height: 1.45; overflow-wrap: anywhere; }
+        .card-title button { color: inherit; font: inherit; font-weight: 650; text-align: left; border: 0; background: none; cursor: pointer; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-description { color: #d0e1e8; font-size: .8125rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-boards { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 3px; }
+        .card-boards .tag { white-space: normal; }
+        .card-meta { color: #b7d0db; font-size: .75rem; overflow-wrap: anywhere; }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ffffff20; padding-top: 10px; gap: 8px; }
+        .project-link { display: inline-flex; padding: 8px 12px; border-radius: 6px; background: #8FC31F; color: #123d4e; font-size: .8rem; font-weight: 650; text-decoration: none; }
+        .no-results { text-align: center; color: #d0e1e8; padding: 60px 20px; border: 1px dashed #ffffff40; border-radius: 12px; }
+        .no-results p { margin-bottom: 20px; }
+        dialog { margin: auto; width: min(860px, calc(100% - 32px)); max-height: 90vh; border: 1px solid #ffffff40; border-radius: 16px; background: #104c63; color: white; padding: 0; }
+        dialog::backdrop { background: #001e2bdd; }
+        .dialog-toolbar { display: flex; justify-content: flex-end; padding: 12px 16px; position: sticky; top: 0; background: #104c63; z-index: 1; }
+        .dialog-close { border: 1px solid #ffffff50; border-radius: 6px; background: transparent; color: #fff; padding: 7px 14px; cursor: pointer; }
+        .dialog-image { width: 100%; max-height: 52vh; object-fit: contain; background: #e8eef0; display: block; }
+        .dialog-body { padding: 24px; display: grid; gap: 16px; }
+        .dialog-body h2 { font-size: 1.4rem; }
+        .dialog-description { line-height: 1.8; color: #d5e5ec; white-space: pre-line; }
+        .dialog-body .project-link { justify-self: start; }
+        button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid #c4e980; outline-offset: 4px; }
+        [hidden] { display: none !important; }
+        @media (max-width: 1499px) { .projects-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+        @media (max-width: 1199px) { .projects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+        @media (max-width: 899px) { .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
         @media (max-width: 640px) {
-            .header-text h1 { font-size: 1.5rem; }
-            .detail-inner { padding: 14px 16px; gap: 16px; }
+            body { padding: 20px 14px; }
+            .projects-grid { grid-template-columns: 1fr; gap: 14px; }
+            .header-text h1 { font-size: 1.3rem; flex-wrap: wrap; gap: 6px; }
+            .header-logo { height: 28px; }
+            .header-text p { font-size: .85rem; margin-top: 10px; }
+            header { margin-bottom: 22px; }
+            .filters { padding: 12px; }
+            .filter-group label { width: 100%; margin-bottom: 4px; }
+            .search-box { padding-left: 12px; }
+            .search-box input { font-size: .9rem; }
         }
     </style>
 </head>
@@ -304,15 +246,26 @@
             </div>
             <div class="header-actions">
                 <a class="contribute-btn" id="contributeBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSdiju4D3-h0fZavfZeRrXcOtAh-Lb7Ll8zbrkziB94RCvbZrQ/viewform?usp=publish-editor" target="_blank" rel="noopener">Contribute Project</a>
-                <button class="lang-btn small" id="langBtn" onclick="toggleLang()">中文</button>
+                <button class="lang-btn small" id="langBtn">中文</button>
             </div>
         </header>
 
+        <div class="search-box" role="search">
+            <!-- Lucide search icon; license: LUCIDE-LICENSE. -->
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="m21 21-4.34-4.34" />
+                <circle cx="11" cy="11" r="8" />
+            </svg>
+            <input id="search" type="search" maxlength="200" placeholder="Search projects, ideas, or boards..." aria-label="Search projects" autocomplete="off">
+            <button class="clear-search" id="clear-search" hidden>Clear</button>
+        </div>
         <div class="filters">
             <div class="filter-group" id="category-filters">
                 <label id="label-category">Category</label>
                 <button class="filter-btn active" data-filter="category" data-value="" id="btn-all-cat">All</button>
             </div>
+            <details class="advanced-filters" id="advanced-filters">
+                <summary id="filter-summary">More filters: board, date &amp; source</summary>
             <div class="filter-group" id="month-filters">
                 <label id="label-month">Month</label>
                 <button class="filter-btn active" data-filter="month" data-value="" id="btn-all-month">All</button>
@@ -329,32 +282,28 @@
                 <label id="label-type">Source</label>
                 <button class="filter-btn active" data-filter="author_type" data-value="" id="btn-all-type">All</button>
             </div>
+            </details>
         </div>
 
-        <div class="stats" id="stats"></div>
-
-        <div class="table-wrapper" id="table-wrapper">
-            <table class="projects-table" id="projects-table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th id="th-name">Project</th>
-                        <th id="th-board">Board</th>
-                        <th id="th-category">Category</th>
-                        <th id="th-source">Source</th>
-                        <th id="th-year">Year</th>
-                        <th id="th-month">Month</th>
-                        <th id="th-author">Author</th>
-                    </tr>
-                </thead>
-                <tbody id="projects"></tbody>
-            </table>
-            <div class="no-results" id="no-results" style="display:none;"></div>
+        <div class="results-toolbar">
+            <div class="stats" id="stats" role="status" aria-live="polite"></div>
+            <button class="reset-filters" id="reset-filters" hidden>Clear filters</button>
+        </div>
+        <div class="active-filters" id="active-filters"></div>
+        <main class="projects-grid" id="projects" aria-label="Projects"></main>
+        <div class="no-results" id="no-results" hidden>
+            <p id="no-results-text"></p>
+            <button class="project-link" id="search-all">Search all projects</button>
         </div>
     </div>
+    <dialog id="project-dialog" aria-labelledby="dialog-title">
+        <div class="dialog-toolbar"><button class="dialog-close" id="dialog-close">Close</button></div>
+        <div id="dialog-content"></div>
+    </dialog>
 
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
-    <script>
+    <script type="module">
+        import { buildSearchIndex, scoreProject, compareProjectResults } from './search.mjs?v=2';
         const YAML_URLS = [
             '../projects.yaml',
             'https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/projects.yaml'
@@ -362,6 +311,17 @@
 
         const LANG = {
             en: {
+                search: "Search projects, ideas, or boards...",
+                clear: "Clear",
+                moreFilters: "More filters: board, date & source",
+                clearFilters: "Clear filters",
+                searchAll: "Search all projects",
+                details: "Details",
+                close: "Close",
+                newest: "Images first · Newest first",
+                relevance: "Most relevant first",
+                approximate: "Approximate match",
+
                 title: ['<img src="https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/image/White_Logo.png" class="header-logo">XIAO ', 'Project Hub'],
                 subtitle: 'Discover what you can build with XIAO',
                 labelYear: 'Year', labelMonth: 'Month', labelType: 'Source', labelBoard: 'Board', labelCategory: 'Category',
@@ -377,6 +337,17 @@
                 contributeBtn: 'Contribute Project'
             },
             zh: {
+                search: "\u641c\u7d22\u9879\u76ee\u3001\u7528\u9014\u3001\u5f00\u53d1\u677f\u2026",
+                clear: "\u6e05\u7a7a",
+                moreFilters: "\u66f4\u591a\u7b5b\u9009\uff1a\u5f00\u53d1\u677f\u3001\u65f6\u95f4\u4e0e\u6765\u6e90",
+                clearFilters: "\u6e05\u9664\u7b5b\u9009",
+                searchAll: "\u5728\u5168\u90e8\u9879\u76ee\u4e2d\u641c\u7d22",
+                details: "\u67e5\u770b\u8be6\u60c5",
+                close: "\u5173\u95ed",
+                newest: "\u6709\u56fe\u4f18\u5148 \u00b7 \u6700\u65b0\u4f18\u5148",
+                relevance: "\u76f8\u5173\u5ea6\u4f18\u5148",
+                approximate: "\u8fd1\u4f3c\u5339\u914d",
+
                  title: ['<img src="https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/image/White_Logo.png" class="header-logo">XIAO ', '项目中心'],
                 subtitle: '探索用 XIAO 能做的精彩项目',
                 labelYear: '年份', labelMonth: '月份', labelType: '来源', labelBoard: '型号', labelCategory: '场景',
@@ -409,16 +380,10 @@
         let PROJECTS_DATA = [];
         let currentLang = 'en';
         let activeFilters = { year: '', month: '', author_type: '', board: '', category: '' };
-        let openRowIndex = -1;
+        let searchQuery = '';
+        let searchIndexes = [];
 
-        function t(obj) { return typeof obj === 'string' ? obj : (obj[currentLang] || obj.en); }
-
-        // Returns true if the project has content in the given language.
-        // A plain string value (not {en/zh}) is treated as language-agnostic.
-        function hasLang(p, lang) {
-            if (typeof p.name === 'string') return true;
-            return !!(p.name && p.name[lang]);
-        }
+        function t(obj) { return typeof obj === 'string' ? obj : (obj?.[currentLang] || obj?.en || obj?.zh || ''); }
 
         function formatMonth(month) {
             return MONTH_NAMES[currentLang][month - 1] || month;
@@ -458,7 +423,6 @@
 
         function toggleLang() {
             currentLang = currentLang === 'en' ? 'zh' : 'en';
-            openRowIndex = -1;
             updateLang();
             initFilters();
             renderProjects();
@@ -479,31 +443,25 @@
             document.getElementById('btn-all-type').textContent = L.btnAll;
             document.getElementById('btn-all-board').textContent = L.btnAll;
             document.getElementById('btn-all-cat').textContent = L.btnAll;
-            document.getElementById('no-results').textContent = L.noResults;
+            document.getElementById('no-results-text').textContent = L.noResults;
             document.getElementById('langBtn').textContent = L.langBtn;
             document.getElementById('contributeBtn').textContent = L.contributeBtn;
-            document.getElementById('th-name').textContent = L.thName;
-            document.getElementById('th-board').textContent = L.thBoard;
-            document.getElementById('th-category').textContent = L.thCategory;
-            document.getElementById('th-source').textContent = L.thSource;
-            document.getElementById('th-year').textContent = L.thYear;
-            document.getElementById('th-month').textContent = L.thMonth;
-            document.getElementById('th-author').textContent = L.thAuthor;
+            const search = document.getElementById('search');
+            search.placeholder = L.search;
+            search.setAttribute('aria-label', L.search);
+            document.documentElement.lang = currentLang;
+            for (const [id, key] of Object.entries({ 'clear-search': 'clear', 'filter-summary': 'moreFilters', 'reset-filters': 'clearFilters', 'search-all': 'searchAll', 'dialog-close': 'close' })) {
+                document.getElementById(id).textContent = L[key];
+            }
         }
 
         function initFilters() {
-            const langProjects = PROJECTS_DATA.filter(p => hasLang(p, currentLang));
+            const langProjects = PROJECTS_DATA;
             const years = [...new Set(langProjects.map(p => p.year))].sort((a, b) => b - a);
-
-            // Set default to latest year and latest month
-            const latestYear = years[0];
-            const latestMonth = [...new Set(langProjects.filter(p => p.year === latestYear).map(p => p.month))].sort((a, b) => b - a)[0];
-            activeFilters.year = String(latestYear);
-            activeFilters.month = String(latestMonth);
 
             const months = [...new Set(langProjects.map(p => p.month))].sort((a, b) => b - a);
             const boards = [...new Set(langProjects.flatMap(p => p.board.split(',').map(b => b.trim())))].sort();
-            const categories = [...new Set(langProjects.map(p => t(p.category)))].sort();
+            const categories = [...new Set(langProjects.map(p => typeof p.category === 'string' ? p.category : p.category.en))].sort();
             const L = LANG[currentLang];
 
             document.querySelectorAll('.filter-btn:not([id])').forEach(btn => btn.remove());
@@ -551,7 +509,7 @@
                 btn.className = 'filter-btn';
                 btn.dataset.filter = 'category';
                 btn.dataset.value = category;
-                btn.textContent = category;
+                btn.textContent = t(langProjects.find(p => (typeof p.category === 'string' ? p.category : p.category.en) === category).category);
                 document.getElementById('category-filters').appendChild(btn);
             });
 
@@ -559,92 +517,125 @@
                 btn.classList.remove('active');
                 const active = activeFilters[btn.dataset.filter];
                 if (btn.dataset.value === String(active)) btn.classList.add('active');
-                btn.addEventListener('click', () => {
+                btn.onclick = () => {
                     const filterType = btn.dataset.filter;
                     document.querySelectorAll(`.filter-btn[data-filter="${filterType}"]`).forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                     activeFilters[filterType] = btn.dataset.value;
-                    openRowIndex = -1;
                     renderProjects();
-                });
+                };
             });
         }
 
+        function escapeHtml(value) {
+            return String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
+        }
+
+        function safeUrl(value) {
+            if (!value) return '';
+            try {
+                const url = new URL(value, location.href);
+                return ['https:', 'http:'].includes(url.protocol) ? url.href : '';
+            } catch { return ''; }
+        }
+
+        // Combine active filters and bilingual search, then rank the visible projects.
         function renderProjects() {
-            const tbody = document.getElementById('projects');
-            const noResults = document.getElementById('no-results');
-            const stats = document.getElementById('stats');
-            const tableWrapper = document.getElementById('table-wrapper');
             const L = LANG[currentLang];
-
-            const filtered = PROJECTS_DATA.filter(p => {
-                if (!hasLang(p, currentLang)) return false;
-                if (activeFilters.year && p.year != activeFilters.year) return false;
-                if (activeFilters.month && p.month != activeFilters.month) return false;
+            const filtered = PROJECTS_DATA.map((project, index) => ({ project, index, hasImage: Boolean(safeUrl(getPreviewImage(project))), match: scoreProject(searchIndexes[index], searchQuery) })).filter(({ project: p, match }) => {
+                if (!match) return false;
+                if (activeFilters.year && String(p.year) !== activeFilters.year) return false;
+                if (activeFilters.month && String(p.month) !== activeFilters.month) return false;
                 if (activeFilters.author_type && p.author_type !== activeFilters.author_type) return false;
-                if (activeFilters.board && !p.board.split(',').map(b => b.trim()).includes(activeFilters.board)) {return false;}
-                if (activeFilters.category && t(p.category) !== activeFilters.category) return false;
+                if (activeFilters.board && !p.board.split(',').map(b => b.trim()).includes(activeFilters.board)) return false;
+                if (activeFilters.category && (typeof p.category === 'string' ? p.category : p.category.en) !== activeFilters.category) return false;
                 return true;
-            });
-
-            stats.textContent = L.stats(filtered.length);
-
-            if (filtered.length === 0) {
-                tbody.innerHTML = '';
-                noResults.style.display = 'block';
-                tableWrapper.querySelector('table').style.display = 'none';
-                return;
-            }
-
-            noResults.style.display = 'none';
-            tableWrapper.querySelector('table').style.display = '';
-
-            tbody.innerHTML = filtered.map((p, i) => {
-                const at = p.author_type || 'Unknown';
-                const tagClass = `tag-${at.toLowerCase()}`;
-                const sourceTag = `<span class="tag ${tagClass}">${at}</span>`;
-                const img = getPreviewImage(p);
-                const imgHtml = img ? `<div class="detail-preview"><img src="${img}" alt="${t(p.name)}" loading="lazy" onerror="this.parentElement.style.display='none'"></div>` : '';
-                return `
-                <tr class="project-row" data-idx="${i}" onclick="toggleDetail(${i}, this)">
-                    <td>${i + 1}</td>
-                    <td><span class="project-name"><span class="expand-icon">&#9658;</span>${t(p.name)}</span></td>
-                    <td><div class="tag-board-cell">${p.board.split(',').map(b => `<span class="tag tag-board">${b.trim()}</span>`).join('')}</div></td>
-                    <td><span class="tag tag-category">${t(p.category)}</span></td>
-                    <td>${sourceTag}</td>
-                    <td>${p.year}</td>
-                    <td>${formatMonth(p.month) || '-'}</td>
-                    <td>${t(p.author)}</td>
-                </tr>
-                <tr class="detail-row" id="detail-${i}">
-                    <td class="detail-cell" colspan="8">
-                        <div class="detail-inner">
-                            ${imgHtml}
-                            <div class="detail-body">
-                                <p class="detail-description">${t(p.description)}</p>
-                                <a href="${p.link}" target="_blank" class="project-link" onclick="event.stopPropagation()">${L.viewProject}</a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>`;
+            }).sort(compareProjectResults);
+            const selected = Object.entries(activeFilters).filter(([, value]) => value);
+            document.getElementById('stats').textContent = `${L.stats(filtered.length)} / ${PROJECTS_DATA.length} · ${searchQuery.trim() ? L.relevance : L.newest}`;
+            document.getElementById('reset-filters').hidden = !selected.length;
+            document.getElementById('clear-search').hidden = !searchQuery;
+            document.getElementById('no-results').hidden = filtered.length > 0;
+            document.getElementById('search-all').hidden = !selected.length;
+            document.getElementById('active-filters').innerHTML = selected.map(([key, value]) => {
+                const button = [...document.querySelectorAll('.filter-btn')].find(btn => btn.dataset.filter === key && btn.dataset.value === value);
+                return `<button class="active-filter" data-remove-filter="${key}" aria-label="${escapeHtml(L.clear + ': ' + button?.textContent)}">${escapeHtml(button?.textContent || value)} ×</button>`;
+            }).join('');
+            document.getElementById('projects').innerHTML = filtered.map(({ project: p, index, match }) => {
+                const name = escapeHtml(t(p.name));
+                const img = safeUrl(getPreviewImage(p));
+                return `<article class="project-card${img ? '' : ' without-image'}">
+                    <div class="card-preview">
+                        <div class="text-cover"><span class="text-cover-category">${escapeHtml(t(p.category))}</span><h2><button data-project="${index}">${name}</button></h2></div>
+                        ${img ? `<button class="image-button" data-project="${index}" aria-label="${name}"><img src="${escapeHtml(img)}" alt="${name}" loading="lazy" decoding="async"></button>` : ''}
+                    </div>
+                    <div class="card-body">
+                        <div class="card-kicker"><span class="tag tag-category">${escapeHtml(t(p.category))}</span><span>${p.year} · ${formatMonth(p.month)}</span></div>
+                        <h2 class="card-title"><button data-project="${index}">${name}</button></h2>
+                        <p class="card-description">${escapeHtml(t(p.summary || p.description))}</p>
+                        ${match.approximate ? `<span class="card-meta">${L.approximate}</span>` : ''}
+                        <div class="card-boards">${p.board.split(',').map(board => `<span class="tag tag-board">${escapeHtml(board.trim())}</span>`).join('')}</div>
+                        <div class="card-meta">${escapeHtml(p.author_type)} · ${escapeHtml(t(p.author))}</div>
+                        <div class="card-footer"><button class="detail-button" data-project="${index}">${L.details}</button><a class="project-link" href="${escapeHtml(safeUrl(p.link))}" target="_blank" rel="noopener noreferrer">${L.viewProject}</a></div>
+                    </div>
+                </article>`;
             }).join('');
         }
 
-        function toggleDetail(idx, row) {
-            const detailRow = document.getElementById('detail-' + idx);
-            const isOpen = detailRow.classList.contains('open');
-
-            document.querySelectorAll('.detail-row.open').forEach(r => r.classList.remove('open'));
-            document.querySelectorAll('.project-row.expanded').forEach(r => r.classList.remove('expanded'));
-
-            if (!isOpen) {
-                detailRow.classList.add('open');
-                row.classList.add('expanded');
-                openRowIndex = idx;
-            } else {
-                openRowIndex = -1;
-            }
+        // Show the full description and uncropped project image in a keyboard-accessible dialog.
+        function showProject(index) {
+            const p = PROJECTS_DATA[index];
+            if (!p) return;
+            const img = getPreviewImage(p);
+            document.getElementById('dialog-content').innerHTML = `${img ? `<img class="dialog-image" src="${escapeHtml(safeUrl(img))}" alt="${escapeHtml(t(p.name))}">` : ''}
+                <div class="dialog-body"><h2 id="dialog-title">${escapeHtml(t(p.name))}</h2><div class="card-boards">${escapeHtml(p.board)}</div><p class="dialog-description">${escapeHtml(t(p.description))}</p><p class="card-meta">${escapeHtml(t(p.author))} · ${escapeHtml(p.author_type)} · ${p.year} / ${p.month}</p><a class="project-link" href="${escapeHtml(safeUrl(p.link))}" target="_blank" rel="noopener noreferrer">${LANG[currentLang].viewProject}</a></div>`;
+            document.getElementById('project-dialog').showModal();
         }
+
+        function clearFilters() {
+            Object.keys(activeFilters).forEach(key => activeFilters[key] = '');
+            initFilters();
+            renderProjects();
+        }
+
+        document.getElementById('langBtn').addEventListener('click', toggleLang);
+        document.getElementById('search').addEventListener('input', event => {
+            if (event.isComposing) return;
+            searchQuery = event.target.value;
+            renderProjects();
+        });
+        document.getElementById('search').addEventListener('compositionend', event => {
+            searchQuery = event.target.value;
+            renderProjects();
+        });
+        document.getElementById('clear-search').addEventListener('click', () => {
+            searchQuery = '';
+            document.getElementById('search').value = '';
+            renderProjects();
+            document.getElementById('search').focus();
+        });
+        document.getElementById('reset-filters').addEventListener('click', clearFilters);
+        document.getElementById('search-all').addEventListener('click', clearFilters);
+        document.getElementById('active-filters').addEventListener('click', event => {
+            const button = event.target.closest('[data-remove-filter]');
+            if (!button) return;
+            activeFilters[button.dataset.removeFilter] = '';
+            initFilters();
+            renderProjects();
+        });
+        document.getElementById('projects').addEventListener('click', event => {
+            const button = event.target.closest('[data-project]');
+            if (button) showProject(Number(button.dataset.project));
+        });
+        document.getElementById('dialog-close').addEventListener('click', () => document.getElementById('project-dialog').close());
+        document.getElementById('project-dialog').addEventListener('click', event => {
+            if (event.target === event.currentTarget) event.currentTarget.close();
+        });
+        document.addEventListener('error', event => {
+            // Switch failed cover images to the project's category and title.
+            if (event.target.matches?.('.card-preview img')) event.target.closest('.project-card').classList.add('without-image');
+            if (event.target.matches?.('.card-preview img, .dialog-image')) event.target.hidden = true;
+        }, true);
 
         (async () => {
             updateLang();
@@ -656,6 +647,7 @@
                 return;
             }
             PROJECTS_DATA = projects;
+            searchIndexes = projects.map(buildSearchIndex);
             initFilters();
             renderProjects();
         })();

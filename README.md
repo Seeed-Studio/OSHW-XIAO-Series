@@ -11,6 +11,28 @@ The Seeed Studio XIAO Series is a collection of thumb-sized, powerful microcontr
 
 This repository is the official GitHub Project Hub for the XIAO Series, serving as an aggregated entry point for selection guidance, technical documentation, internal reference projects, and community-driven DIY works.
 
+### Browse the Project Hub
+
+The [Project Hub](docs/index.html) displays projects as compact image cards with two-line description previews, board tags, and links to their original sources. The layout shows five columns on wide screens, four on standard desktop widths, and progressively fewer columns on smaller screens. Select an image or **Details** to open the full description and image; press **Escape** to close it.
+
+Search Chinese or English names, descriptions, boards, categories, authors, and sources. Space-separated terms match together, board punctuation and capitalization are normalized (`esp32c6` matches `ESP32-C6`), and English words of at least five letters support one-letter spelling tolerance. Exact results appear before approximate matches. Category and additional board, date, and source filters apply together with the search. The initial view includes all dates, placing projects with a configured image or an automatically derived YouTube thumbnail first, then sorting each group by year and month from newest to oldest. Search results prioritize relevance, followed by the same image and date ordering. Equal dates retain source order. Image priority uses the preview URL available when rendering.
+
+The search field includes an inline [Lucide search icon](https://github.com/lucide-icons/lucide/blob/main/icons/search.svg), with attribution in [LUCIDE-LICENSE](docs/LUCIDE-LICENSE).
+
+Project content comes from [projects.yaml](projects.yaml). Cards use the existing description, or an optional `summary` string or `{en, zh}` object for a shorter introduction. Images load as they approach the viewport. Projects with missing or failed images use a blue text cover showing their category and title. The text cover opens the same project details and preserves the grid's image proportions.
+
+For local preview, run this command from the repository root with Python 3 installed:
+
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Open <http://127.0.0.1:8000/docs/>. Internet access loads the existing YAML parser and remote project images. Stop the server with **Ctrl+C** in its terminal. To check search behavior with Node.js installed, run:
+
+```sh
+node --test tests/search.test.mjs
+```
+
 **Contents**
 
 [Product Lineup and Selection Guide](#product-lineup-and-selection-guide)
@@ -303,5 +325,3 @@ We’re using this Discussion as a platform to connect with and get valuable fee
 - [Seeed Studio Facebook](https://www.facebook.com/seeedstudiosz/)
 - [Seeed Studio Youtube](https://www.youtube.com/c/SeeedStudioSZ-)
 - [Seeed Studio Instagram](https://www.instagram.com/seeedstudio/)
-
-

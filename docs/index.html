@@ -180,6 +180,11 @@
         .advanced-filters[open] summary { margin-bottom: 16px; }
         .results-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin: 25px 0 16px; }
         .stats { color: #d0e1e8; margin: 0; }
+        .results-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+        .sort-control { display: inline-flex; padding: 3px; border: 1px solid #ffffff29; border-radius: 9px; background: #063d54; }
+        .sort-button { border: 0; border-radius: 6px; padding: 6px 11px; background: transparent; color: #c7dae2; cursor: pointer; font: inherit; font-size: .8rem; transition: color .15s, background .15s; }
+        .sort-button:hover { color: #c4e980; }
+        .sort-button.active { background: #8FC31F; color: #073e56; font-weight: 700; }
         .reset-filters, .detail-button { border: 0; padding: 0; background: transparent; color: #c4e980; cursor: pointer; font: inherit; font-size: .85rem; }
         .active-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
         .active-filters:empty { display: none; }
@@ -211,6 +216,12 @@
         .card-boards .tag { white-space: normal; }
         .card-meta { color: #b7d0db; font-size: .75rem; overflow-wrap: anywhere; }
         .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ffffff20; padding-top: 10px; gap: 8px; }
+        .card-footer-actions { display: flex; align-items: center; gap: 10px; }
+        .like-button { display: inline-flex; align-items: center; justify-content: center; gap: 5px; min-width: 46px; border: 1px solid #ffffff35; border-radius: 7px; padding: 6px 9px; background: #ffffff0a; color: #d6e5eb; cursor: pointer; font: inherit; font-size: .8rem; line-height: 1; transition: border-color .15s, background .15s, color .15s; }
+        .like-button:hover:not(:disabled) { border-color: #8FC31F; color: #c4e980; background: #8fc31f12; }
+        .like-button[aria-pressed="true"] { border-color: #8FC31F; background: #8fc31f20; color: #c4e980; }
+        .like-button:disabled { cursor: default; opacity: .55; }
+        .like-icon { font-size: 1rem; line-height: 1; }
         .project-link { display: inline-flex; padding: 8px 12px; border-radius: 6px; background: #8FC31F; color: #123d4e; font-size: .8rem; font-weight: 650; text-decoration: none; }
         .no-results { text-align: center; color: #d0e1e8; padding: 60px 20px; border: 1px dashed #ffffff40; border-radius: 12px; }
         .no-results p { margin-bottom: 20px; }
@@ -222,7 +233,9 @@
         .dialog-body { padding: 24px; display: grid; gap: 16px; }
         .dialog-body h2 { font-size: 1.4rem; }
         .dialog-description { line-height: 1.8; color: #d5e5ec; white-space: pre-line; }
+        .dialog-actions { display: flex; align-items: center; gap: 12px; }
         .dialog-body .project-link { justify-self: start; }
+        .status-note { color: #f4cf72; font-size: .8rem; }
         button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid #c4e980; outline-offset: 4px; }
         [hidden] { display: none !important; }
         @media (max-width: 1499px) { .projects-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
@@ -239,6 +252,8 @@
             .filter-group label { width: 100%; margin-bottom: 4px; }
             .search-box { padding-left: 12px; }
             .search-box input { font-size: .9rem; }
+            .results-toolbar, .results-actions { align-items: flex-start; }
+            .results-actions { width: 100%; justify-content: space-between; }
         }
     </style>
 </head>
@@ -292,8 +307,15 @@
 
         <div class="results-toolbar">
             <div class="stats" id="stats" role="status" aria-live="polite"></div>
-            <button class="reset-filters" id="reset-filters" hidden>Clear filters</button>
+            <div class="results-actions">
+                <div class="sort-control" role="group" aria-label="Sort projects" id="sort-control">
+                    <button class="sort-button active" type="button" data-sort="newest" aria-pressed="true">Newest</button>
+                    <button class="sort-button" type="button" data-sort="popular" aria-pressed="false">Most liked</button>
+                </div>
+                <button class="reset-filters" id="reset-filters" hidden>Clear filters</button>
+            </div>
         </div>
+        <div class="status-note" id="like-status" role="status" aria-live="polite"></div>
         <div class="active-filters" id="active-filters"></div>
         <main class="projects-grid" id="projects" aria-label="Projects"></main>
         <div class="no-results" id="no-results" hidden>
@@ -311,6 +333,7 @@
         import { buildSearchIndex, scoreProject, compareProjectResults } from './search.mjs?v=2';
         import { initSubmissionForm } from './submission.mjs?v=7';
         import { initDescriptionPreview } from './description-preview.mjs?v=2';
+        import { comparePopularResults, initLikes } from './likes.mjs?v=1';
         const dismissDescriptionPreview = initDescriptionPreview(document.getElementById('projects'));
         const YAML_URLS = [
             '../projects.yaml',
@@ -326,9 +349,17 @@
                 searchAll: "Search all projects",
                 details: "Details",
                 close: "Close",
+                sortLabel: "Sort projects",
+                sortNewest: "Newest",
+                sortPopular: "Most liked",
                 newest: "Images first · Newest first",
+                popular: "Most liked first",
                 relevance: "Most relevant first",
+                relevancePopular: "Most relevant · Most liked ties",
                 approximate: "Approximate match",
+                like: "Like project",
+                unlike: "Remove like",
+                likesUnavailable: "Likes are temporarily unavailable. Project browsing still works.",
 
                 title: ['<img src="https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/image/White_Logo.png" class="header-logo">XIAO ', 'Project Hub'],
                 subtitle: 'Discover what you can build with XIAO',
@@ -352,9 +383,17 @@
                 searchAll: "\u5728\u5168\u90e8\u9879\u76ee\u4e2d\u641c\u7d22",
                 details: "\u67e5\u770b\u8be6\u60c5",
                 close: "\u5173\u95ed",
+                sortLabel: "\u9879\u76ee\u6392\u5e8f",
+                sortNewest: "\u6700\u65b0",
+                sortPopular: "\u6700\u70ed\u95e8",
                 newest: "\u6709\u56fe\u4f18\u5148 \u00b7 \u6700\u65b0\u4f18\u5148",
+                popular: "\u70ed\u5ea6\u4f18\u5148",
                 relevance: "\u76f8\u5173\u5ea6\u4f18\u5148",
+                relevancePopular: "\u76f8\u5173\u5ea6\u4f18\u5148 \u00b7 \u70ed\u5ea6\u8f85\u52a9\u6392\u5e8f",
                 approximate: "\u8fd1\u4f3c\u5339\u914d",
+                like: "\u559c\u6b22\u8be5\u9879\u76ee",
+                unlike: "\u53d6\u6d88\u559c\u6b22",
+                likesUnavailable: "\u70ed\u5ea6\u7edf\u8ba1\u6682\u65f6\u4e0d\u53ef\u7528\uff0c\u9879\u76ee\u6d4f\u89c8\u4ecd\u53ef\u6b63\u5e38\u4f7f\u7528\u3002",
 
                  title: ['<img src="https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/image/White_Logo.png" class="header-logo">XIAO ', '项目中心'],
                 subtitle: '探索用 XIAO 能做的精彩项目',
@@ -390,7 +429,19 @@
         let activeFilters = { year: '', month: '', author_type: '', board: '', category: '' };
         let searchQuery = '';
         let searchIndexes = [];
+        let sortMode = 'newest';
         const submissionForm = initSubmissionForm({ getLanguage: () => currentLang, getCategoryLabel: value => t(PROJECTS_DATA.find(project => (typeof project.category === 'string' ? project.category : project.category.en) === value)?.category) || value });
+        const likes = initLikes({
+            configUrl: new URL('./submission-config.json', location.href),
+            onChange: () => {
+                if (!PROJECTS_DATA.length) return;
+                if (sortMode === 'popular') renderProjects();
+                else {
+                    syncLikeButtons();
+                    updateLikeStatus();
+                }
+            }
+        });
 
         function t(obj) { return typeof obj === 'string' ? obj : (obj?.[currentLang] || obj?.en || obj?.zh || ''); }
 
@@ -458,11 +509,16 @@
             const search = document.getElementById('search');
             search.placeholder = L.search;
             search.setAttribute('aria-label', L.search);
+            document.getElementById('sort-control').setAttribute('aria-label', L.sortLabel);
+            document.querySelector('[data-sort="newest"]').textContent = L.sortNewest;
+            document.querySelector('[data-sort="popular"]').textContent = L.sortPopular;
             document.documentElement.lang = currentLang;
             submissionForm.updateLanguage();
             for (const [id, key] of Object.entries({ 'clear-search': 'clear', 'filter-summary': 'moreFilters', 'reset-filters': 'clearFilters', 'search-all': 'searchAll', 'dialog-close': 'close' })) {
                 document.getElementById(id).textContent = L[key];
             }
+            updateSortControls();
+            updateLikeStatus();
         }
 
         function initFilters() {
@@ -549,11 +605,43 @@
             } catch { return ''; }
         }
 
+        function updateSortControls() {
+            document.querySelectorAll('[data-sort]').forEach(button => {
+                const active = button.dataset.sort === sortMode;
+                button.classList.toggle('active', active);
+                button.setAttribute('aria-pressed', String(active));
+            });
+        }
+
+        function updateLikeButton(button) {
+            const project = PROJECTS_DATA[Number(button.dataset.likeProject)];
+            if (!project) return;
+            const state = likes.state(project);
+            const label = state.liked ? LANG[currentLang].unlike : LANG[currentLang].like;
+            button.disabled = !state.available || state.pending;
+            button.setAttribute('aria-label', label);
+            button.setAttribute('title', state.available ? label : LANG[currentLang].likesUnavailable);
+            button.setAttribute('aria-pressed', String(state.liked));
+            button.innerHTML = `<span class="like-icon" aria-hidden="true">${state.liked ? '&#9829;' : '&#9825;'}</span><span>${state.count}</span>`;
+        }
+
+        function syncLikeButtons() {
+            document.querySelectorAll('[data-like-project]').forEach(updateLikeButton);
+        }
+
+        function updateLikeStatus() {
+            document.getElementById('like-status').textContent = likes.serviceState().error ? LANG[currentLang].likesUnavailable : '';
+        }
+
+        function likeButton(index) {
+            return `<button class="like-button" type="button" data-like-project="${index}" aria-pressed="false" disabled></button>`;
+        }
+
         // Combine active filters and bilingual search, then rank the visible projects.
         function renderProjects() {
             dismissDescriptionPreview();
             const L = LANG[currentLang];
-            const filtered = PROJECTS_DATA.map((project, index) => ({ project, index, hasImage: Boolean(safeUrl(getPreviewImage(project))), match: scoreProject(searchIndexes[index], searchQuery) })).filter(({ project: p, match }) => {
+            const filtered = PROJECTS_DATA.map((project, index) => ({ project, index, hasImage: Boolean(safeUrl(getPreviewImage(project))), likes: likes.state(project).count, match: scoreProject(searchIndexes[index], searchQuery) })).filter(({ project: p, match }) => {
                 if (!match) return false;
                 if (activeFilters.year && String(p.year) !== activeFilters.year) return false;
                 if (activeFilters.month && String(p.month) !== activeFilters.month) return false;
@@ -561,9 +649,17 @@
                 if (activeFilters.board && !p.board.split(',').map(b => b.trim()).includes(activeFilters.board)) return false;
                 if (activeFilters.category && (typeof p.category === 'string' ? p.category : p.category.en) !== activeFilters.category) return false;
                 return true;
-            }).sort(compareProjectResults);
+            }).sort((left, right) => {
+                if (sortMode !== 'popular') return compareProjectResults(left, right);
+                if (searchQuery.trim()) {
+                    const searchOrder = Number(left.match.approximate) - Number(right.match.approximate) || right.match.score - left.match.score;
+                    if (searchOrder) return searchOrder;
+                }
+                return comparePopularResults(left, right);
+            });
             const selected = Object.entries(activeFilters).filter(([, value]) => value);
-            document.getElementById('stats').textContent = `${L.stats(filtered.length)} / ${PROJECTS_DATA.length} · ${searchQuery.trim() ? L.relevance : L.newest}`;
+            const orderLabel = searchQuery.trim() ? (sortMode === 'popular' ? L.relevancePopular : L.relevance) : (sortMode === 'popular' ? L.popular : L.newest);
+            document.getElementById('stats').textContent = `${L.stats(filtered.length)} / ${PROJECTS_DATA.length} · ${orderLabel}`;
             document.getElementById('reset-filters').hidden = !selected.length;
             document.getElementById('clear-search').hidden = !searchQuery;
             document.getElementById('no-results').hidden = filtered.length > 0;
@@ -587,10 +683,12 @@
                         ${match.approximate ? `<span class="card-meta">${L.approximate}</span>` : ''}
                         <div class="card-boards">${p.board.split(',').map(board => `<span class="tag tag-board">${escapeHtml(board.trim())}</span>`).join('')}</div>
                         <div class="card-meta">${escapeHtml(p.author_type)} · ${escapeHtml(t(p.author))}</div>
-                        <div class="card-footer"><button class="detail-button" data-project="${index}">${L.details}</button><a class="project-link" href="${escapeHtml(safeUrl(p.link))}" target="_blank" rel="noopener noreferrer">${L.viewProject}</a></div>
+                        <div class="card-footer"><div class="card-footer-actions"><button class="detail-button" data-project="${index}">${L.details}</button>${likeButton(index)}</div><a class="project-link" href="${escapeHtml(safeUrl(p.link))}" target="_blank" rel="noopener noreferrer">${L.viewProject}</a></div>
                     </div>
                 </article>`;
             }).join('');
+            syncLikeButtons();
+            updateLikeStatus();
         }
 
         // Show the full description and uncropped project image in a keyboard-accessible dialog.
@@ -599,8 +697,10 @@
             if (!p) return;
             const img = getPreviewImage(p);
             document.getElementById('dialog-content').innerHTML = `${img ? `<img class="dialog-image" src="${escapeHtml(safeUrl(img))}" alt="${escapeHtml(t(p.name))}">` : ''}
-                <div class="dialog-body"><h2 id="dialog-title">${escapeHtml(t(p.name))}</h2><div class="card-boards">${escapeHtml(p.board)}</div><p class="dialog-description">${escapeHtml(t(p.description))}</p><p class="card-meta">${escapeHtml(t(p.author))} · ${escapeHtml(p.author_type)} · ${p.year} / ${p.month}</p><a class="project-link" href="${escapeHtml(safeUrl(p.link))}" target="_blank" rel="noopener noreferrer">${LANG[currentLang].viewProject}</a></div>`;
-            document.getElementById('project-dialog').showModal();
+                <div class="dialog-body"><h2 id="dialog-title">${escapeHtml(t(p.name))}</h2><div class="card-boards">${escapeHtml(p.board)}</div><p class="dialog-description">${escapeHtml(t(p.description))}</p><p class="card-meta">${escapeHtml(t(p.author))} · ${escapeHtml(p.author_type)} · ${p.year} / ${p.month}</p><div class="dialog-actions">${likeButton(index)}<a class="project-link" href="${escapeHtml(safeUrl(p.link))}" target="_blank" rel="noopener noreferrer">${LANG[currentLang].viewProject}</a></div></div>`;
+            syncLikeButtons();
+            const dialog = document.getElementById('project-dialog');
+            if (!dialog.open) dialog.showModal();
         }
 
         function clearFilters() {
@@ -627,6 +727,13 @@
         });
         document.getElementById('reset-filters').addEventListener('click', clearFilters);
         document.getElementById('search-all').addEventListener('click', clearFilters);
+        document.querySelectorAll('[data-sort]').forEach(button => {
+            button.addEventListener('click', () => {
+                sortMode = button.dataset.sort;
+                updateSortControls();
+                renderProjects();
+            });
+        });
         document.getElementById('active-filters').addEventListener('click', event => {
             const button = event.target.closest('[data-remove-filter]');
             if (!button) return;
@@ -637,6 +744,12 @@
         document.getElementById('projects').addEventListener('click', event => {
             const button = event.target.closest('[data-project]');
             if (button) showProject(Number(button.dataset.project));
+        });
+        document.addEventListener('click', event => {
+            const button = event.target.closest?.('[data-like-project]');
+            if (!button) return;
+            const project = PROJECTS_DATA[Number(button.dataset.likeProject)];
+            if (project) void likes.toggle(project);
         });
         document.getElementById('dialog-close').addEventListener('click', () => document.getElementById('project-dialog').close());
         document.getElementById('project-dialog').addEventListener('click', event => {
@@ -661,6 +774,7 @@
             searchIndexes = projects.map(buildSearchIndex);
             initFilters();
             renderProjects();
+            await likes.load();
         })();
     </script>
 </body>

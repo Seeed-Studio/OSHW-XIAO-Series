@@ -6,8 +6,8 @@ import { installationToken } from '../worker/github.mjs';
 
 const origin = 'https://hub.example.com';
 const input = { name: { en: 'Test project' }, author: { en: 'Test maker' }, description: { en: 'A working XIAO temperature display for a desk.' }, link: 'https://example.com/project', boards: ['XIAO ESP32-C6'], category: 'Smart Home', source: 'Web', releaseDate: '2026-01-01', turnstileToken: 'test-challenge' };
-const configured = () => ({ GITHUB_OWNER: 'example', GITHUB_REPO: 'catalog', GITHUB_BASE_BRANCH: 'main', GITHUB_APP_CLIENT_ID: 'test-client', GITHUB_APP_INSTALLATION_ID: '123', GITHUB_APP_PRIVATE_KEY: 'test-only-key', TURNSTILE_SECRET: 'test-only-secret', TURNSTILE_SITE_KEY: 'public-key', TURNSTILE_HOSTNAMES: 'hub.example.com', ALLOWED_ORIGINS: origin, SUBMISSION_LIMITER: { limit: async () => ({ success: true }) } });
-const request = (body = input, options = {}) => new Request(`https://api.example.com${options.path || '/api/submissions'}`, { method: options.method || 'POST', headers: { Origin: origin, 'Content-Type': 'application/json', 'CF-Connecting-IP': '203.0.113.1', ...options.headers }, ...((options.method || 'POST') === 'POST' ? { body: typeof body === 'string' ? body : JSON.stringify(body) } : {}) });
+const configured = () => ({ GITHUB_OWNER: 'example', GITHUB_REPO: 'catalog', GITHUB_BASE_BRANCH: 'main', GITHUB_APP_CLIENT_ID: 'test-client', GITHUB_APP_INSTALLATION_ID: '123', GITHUB_APP_PRIVATE_KEY: 'test-only-key', TURNSTILE_SECRET: 'test-only-secret', TURNSTILE_SITE_KEY: 'public-key', TURNSTILE_HOSTNAMES: 'hub.example.com', ALLOWED_ORIGINS: origin, LIKE_HASH_SECRET: 'test-only-like-secret-with-32-characters', LIKES_DB: {}, SUBMISSION_LIMITER: { limit: async () => ({ success: true }) }, LIKE_LIMITER: { limit: async () => ({ success: true }) } });
+const request = (body = input, options = {}) => new Request(`https://api.example.com${options.path || '/api/submissions'}`, { method: options.method || 'POST', headers: { Origin: origin, 'Content-Type': 'application/json', 'CF-Connecting-IP': '203.0.113.1', ...options.headers }, ...(['POST', 'PUT'].includes(options.method || 'POST') ? { body: typeof body === 'string' ? body : JSON.stringify(body) } : {}) });
 const json = (body, status = 200) => new Response(JSON.stringify(body), { status });
 
 test('public config reveals only readiness, site key and repository', async () => {
@@ -25,6 +25,37 @@ test('CORS rejects other origins and permits expected preflight', async () => {
     assert.equal(blocked.status, 403);
     assert.equal(blocked.headers.has('Access-Control-Allow-Origin'), false);
     assert.equal((await handleRequest(request(null, { method: 'OPTIONS' }), configured())).status, 204);
+});
+
+test('like snapshot and toggle routes return sanitized public data', async () => {
+    const env = configured();
+    const visitorId = '550e8400-e29b-41d4-a716-446655440000';
+    const snapshot = await handleRequest(request({ visitorId }, { path: '/api/likes' }), env, {
+        getLikeSnapshot: async (db, visitor, secret) => {
+            assert.equal(db, env.LIKES_DB);
+            assert.equal(visitor, visitorId);
+            assert.equal(secret, env.LIKE_HASH_SECRET);
+            return { likes: [{ project: 'https://example.com/project', count: 2 }], liked: [] };
+        }
+    });
+    assert.equal(snapshot.status, 200);
+    assert.deepEqual(await snapshot.json(), { likes: [{ project: 'https://example.com/project', count: 2 }], liked: [] });
+
+    const toggle = await handleRequest(request({ project: 'https://example.com/project', visitorId, liked: true }, { path: '/api/likes', method: 'PUT' }), env, {
+        setLike: async (db, body) => ({ project: body.project, count: 3, liked: body.liked })
+    });
+    assert.equal(toggle.status, 200);
+    assert.deepEqual(await toggle.json(), { project: 'https://example.com/project', count: 3, liked: true });
+});
+
+test('like writes enforce availability, content type, JSON size and rate limits', async () => {
+    const env = configured();
+    const body = { project: 'https://example.com/project', visitorId: '550e8400-e29b-41d4-a716-446655440000', liked: true };
+    assert.equal((await handleRequest(request(body, { path: '/api/likes', method: 'PUT', headers: { 'Content-Type': 'text/plain' } }), env)).status, 415);
+    assert.equal((await handleRequest(request('{', { path: '/api/likes', method: 'PUT' }), env)).status, 400);
+    assert.equal((await handleRequest(request('x'.repeat(5000), { path: '/api/likes', method: 'PUT' }), env)).status, 413);
+    assert.equal((await handleRequest(request(body, { path: '/api/likes', method: 'PUT' }), { ...env, LIKE_LIMITER: { limit: async () => ({ success: false }) } })).status, 429);
+    assert.equal((await handleRequest(request(body, { path: '/api/likes', method: 'PUT' }), { ...env, LIKE_HASH_SECRET: '' })).status, 503);
 });
 
 test('rate, content type, malformed JSON, invalid fields and oversized bodies fail before GitHub', async () => {

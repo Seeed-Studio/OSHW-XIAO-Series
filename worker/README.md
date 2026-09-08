@@ -1,6 +1,6 @@
 # Project submission service
 
-The Project Hub opens a bilingual contribution dialog and sends validated project details to this Cloudflare Worker. The Worker verifies a Turnstile challenge, signs in as a GitHub App, appends one entry to `projects.yaml` on a submission branch, and opens a pull request for maintainer review. Visitors can submit without a GitHub account. The author field is contributor-provided attribution.
+The Project Hub opens a bilingual contribution dialog and sends validated project details to this Cloudflare Worker. The Worker verifies a Turnstile challenge, signs in as a GitHub App, appends one entry to `projects.yaml` on a submission branch, and opens a pull request for maintainer review. It also stores anonymous project likes in Cloudflare D1 so the hub can offer a **Most liked** order. Visitors can submit and like projects without a GitHub account. The author field is contributor-provided attribution.
 
 ## Local preview
 
@@ -8,6 +8,7 @@ Prerequisites: Node.js 22 or newer, npm, Python 3, and internet access for the s
 
 ```sh
 npm ci
+npx wrangler d1 migrations apply xiao-project-likes --local --config worker/wrangler.jsonc --env local
 npm test
 npm run check:worker
 ```
@@ -37,7 +38,7 @@ An unconfigured service returns `ready: false`. The dialog remains available for
 cp worker/.env.example worker/.env.local
 ```
 
-Local configuration needs `GITHUB_APP_CLIENT_ID`, `GITHUB_APP_INSTALLATION_ID`, `GITHUB_APP_PRIVATE_KEY`, and `TURNSTILE_SECRET`. Use a dedicated test repository for live integration tests, with a valid `projects.yaml` file and the GitHub App installed. Each accepted submission creates a real branch and PR in the configured repository.
+Local configuration needs `GITHUB_APP_CLIENT_ID`, `GITHUB_APP_INSTALLATION_ID`, `GITHUB_APP_PRIVATE_KEY`, `TURNSTILE_SECRET`, and a random `LIKE_HASH_SECRET` containing at least 32 characters. Generate the like secret with `openssl rand -hex 32` and store the result in `worker/.env.local`. Use a dedicated test repository for live submission tests, with a valid `projects.yaml` file and the GitHub App installed. Each accepted submission creates a real branch and PR in the configured repository.
 
 ## Production deployment
 
@@ -66,6 +67,13 @@ npx wrangler secret put GITHUB_APP_CLIENT_ID --config worker/wrangler.jsonc --en
 npx wrangler secret put GITHUB_APP_INSTALLATION_ID --config worker/wrangler.jsonc --env=""
 npx wrangler secret put GITHUB_APP_PRIVATE_KEY --config worker/wrangler.jsonc --env=""
 npx wrangler secret put TURNSTILE_SECRET --config worker/wrangler.jsonc --env=""
+npx wrangler secret put LIKE_HASH_SECRET --config worker/wrangler.jsonc --env=""
+```
+
+The `LIKES_DB` binding uses the `xiao-project-likes` D1 database. Apply its migrations before deploying a Worker version that serves `/api/likes`:
+
+```sh
+npx wrangler d1 migrations apply xiao-project-likes --remote --config worker/wrangler.jsonc --env=""
 ```
 
 Set `apiBaseUrl` in `docs/submission-config.json` to the HTTPS Worker URL printed by deployment, then publish the static `docs/` site through the repository's Pages workflow. Readiness requires all configured values; an actual submission verifies that the credentials and installation permissions work.
@@ -96,22 +104,26 @@ The form displays separate English and Chinese sections. Project name, author, a
 
 1. `initSubmissionForm({ getLanguage, getCategoryLabel })` in `docs/submission.mjs` creates the dialog and returns a language-update handler. It retains the current draft and displays field errors, connection status, and the returned PR link.
 2. `validateSubmission(input)` in `docs/submission-schema.mjs` receives form values and returns normalized `data`, field `errors`, and a `valid` flag. The browser and Worker share it. Text fields arrive as language-keyed objects, and error keys such as `nameEn` and `descriptionZh` identify the exact input. `toProjectEntry(data)` maps validated fields to a catalog object while retaining each translation.
-3. `handleRequest(request, env)` in `index.mjs` receives HTTP requests and returns JSON responses. It checks the origin, the 32 KiB request limit, the rate limit, and fields before processing a submission. `GET /api/config` returns public readiness information; `POST /api/submissions` accepts form fields plus `turnstileToken`.
-4. `verifyChallenge(token, request, env)` checks the Turnstile token, action, and hostname. `installationToken(env)` exchanges a signed GitHub App JWT for a repository-scoped installation token.
-5. `createSubmission(data, env, api)` returns `{ status, number, url }`. It checks existing projects and PRs, creates a branch, appends the catalog entry, and creates a PR. `appendProject(text, entry)` returns validated YAML while preserving existing catalog text.
+3. `initLikes({ configUrl, onChange })` in `docs/likes.mjs` creates or restores the browser identifier, loads public totals, sends final like or unlike states, and exposes each project's current count and button state. `comparePopularResults(left, right)` orders projects by likes, image availability, date, and source position.
+4. `handleRequest(request, env)` in `index.mjs` receives HTTP requests and returns JSON responses. It checks the origin, request size, content type, configuration, and rate limits. `GET /api/config` returns public submission readiness; `POST /api/submissions` accepts form fields plus `turnstileToken`; `POST /api/likes` returns totals and the current browser's selections; `PUT /api/likes` stores a requested final state.
+5. `getLikeSnapshot(db, visitorId, secret)` in `likes.mjs` returns all public totals and the current browser's liked project links. `setLike(db, input, secret)` inserts or removes one D1 row and returns the authoritative total. `hashVisitor(visitorId, secret)` converts the browser UUID into an HMAC-SHA-256 value before database storage.
+6. `verifyChallenge(token, request, env)` checks the Turnstile token, action, and hostname. `installationToken(env)` exchanges a signed GitHub App JWT for a repository-scoped installation token.
+7. `createSubmission(data, env, api)` returns `{ status, number, url }`. It checks existing projects and PRs, creates a branch, appends the catalog entry, and creates a PR. `appendProject(text, entry)` returns validated YAML while preserving existing catalog text.
 
 Successful new submissions return HTTP 201 with `status: "created"`; repeated submissions with an existing PR return HTTP 200 with `status: "existing"`. The dialog reports success only after receiving a valid GitHub PR URL for the configured repository.
 
 ## Verification
 
-`npm test` runs isolated tests using simulated GitHub and Turnstile responses, including valid submissions, malformed fields and dates, YAML escaping, empty catalogs, retries, concurrent writes, duplicate PRs, origin restrictions, request limits, JWT signatures, and sanitized upstream failures. `npm run check:worker` bundles the real Worker without deploying it.
+`npm test` runs isolated tests using simulated GitHub, Turnstile, and D1 responses. Coverage includes valid submissions, malformed fields and dates, YAML escaping, empty catalogs, retries, concurrent writes, duplicate PRs, origin restrictions, request limits, JWT signatures, sanitized upstream failures, idempotent likes, anonymous visitor hashing, and popular ordering. `npm run check:worker` bundles the real Worker without deploying it.
 
 Browser checks:
 
-1. Open the dialog and fill different names, descriptions, and author names in the English and Chinese sections. Close it, change the page language, and reopen it. Both sets of values remain and labels change language.
-2. Choose **Other** for source. The custom platform field appears. Open the board dropdown, select multiple boards across groups, and confirm all selections remain after reopening. Remove an individual chip and verify its checkbox clears. Remove the final chip and confirm the empty selection prompt returns.
-3. At a 390 px viewport width, confirm the two language sections stack vertically, fields fit without horizontal scrolling, and all actions are reachable by scrolling.
-4. With an unconfigured service, confirm the connection message and disabled submit button. Retrying the connection preserves entered fields.
+1. Confirm the page initially selects **Newest**. Select **Most liked** and confirm projects with larger counts move first. Reload and confirm the page returns to **Newest**.
+2. Like a project from its card. Expect the outlined heart to become filled and the count to increase by one. Select it again in the detail dialog; expect both controls to return to the same lower count. Repeated `PUT` requests with the same final state keep the count unchanged.
+3. Open the submission dialog and fill different names, descriptions, and author names in the English and Chinese sections. Close it, change the page language, and reopen it. Both sets of values remain and labels change language.
+4. Choose **Other** for source. The custom platform field appears. Open the board dropdown, select multiple boards across groups, and confirm all selections remain after reopening. Remove an individual chip and verify its checkbox clears. Remove the final chip and confirm the empty selection prompt returns.
+5. At a 390 px viewport width, confirm the language sections stack vertically, fields fit without horizontal scrolling, sort buttons stay visible, and all actions are reachable by scrolling.
+6. With an unconfigured like service, confirm the yellow availability message appears while searching, filtering, details, and project links continue to work. Retrying the submission connection preserves entered fields.
 
 After connecting a test repository and a real Turnstile widget:
 
@@ -120,5 +132,7 @@ After connecting a test repository and a real Turnstile widget:
 3. Leave both translations blank, supply a translated name without its description, exceed a text limit, select a future date, or use an invalid image URL. Expect inline errors for the affected language or field and no PR. Leave the optional image blank; a valid submission should succeed.
 4. Submit a link already present in the base catalog. Expect an already-published message. Disconnect the network during submission, reconnect, and retry; fields remain and the request recovers an existing PR or finishes creating it.
 5. Make more than five submissions per minute from one IP. Expect HTTP 429 and a retry-later message. The per-location Cloudflare rate limit reduces bursts; it is not a global submission quota.
+
+Like data uses one D1 row per browser and project. The database stores the canonical project URL, an HMAC hash of the browser UUID, and the creation time. It does not store the original browser UUID, GitHub identity, project author, or contributor form data. Like writes are limited to 30 requests per minute per IP.
 
 Live PR creation requires deployment credentials and a completed challenge. Unit tests and bundle checks verify the implementation independently of those credentials.

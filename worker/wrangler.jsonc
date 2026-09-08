@@ -14,7 +14,11 @@
     "TURNSTILE_HOSTNAMES": "seeed-studio.github.io",
     "TURNSTILE_SITE_KEY": "0x4AAAAAAEsg0wvbOeg8UF50"
   },
-  "ratelimits": [{ "name": "SUBMISSION_LIMITER", "namespace_id": "829104", "simple": { "limit": 5, "period": 60 } }],
+  "d1_databases": [{ "binding": "LIKES_DB", "database_name": "xiao-project-likes", "database_id": "3fcd85f6-7388-429c-8bc4-81444a7fa269", "migrations_dir": "migrations" }],
+  "ratelimits": [
+    { "name": "SUBMISSION_LIMITER", "namespace_id": "829104", "simple": { "limit": 5, "period": 60 } },
+    { "name": "LIKE_LIMITER", "namespace_id": "829105", "simple": { "limit": 30, "period": 60 } }
+  ],
   "env": {
     "local": {
       "vars": {
@@ -25,7 +29,11 @@
         "TURNSTILE_HOSTNAMES": "127.0.0.1,localhost",
         "TURNSTILE_SITE_KEY": "0x4AAAAAAEsg0wvbOeg8UF50"
       },
-      "ratelimits": [{ "name": "SUBMISSION_LIMITER", "namespace_id": "829104", "simple": { "limit": 5, "period": 60 } }]
+      "d1_databases": [{ "binding": "LIKES_DB", "database_name": "xiao-project-likes", "database_id": "3fcd85f6-7388-429c-8bc4-81444a7fa269", "migrations_dir": "migrations" }],
+      "ratelimits": [
+        { "name": "SUBMISSION_LIMITER", "namespace_id": "829104", "simple": { "limit": 5, "period": 60 } },
+        { "name": "LIKE_LIMITER", "namespace_id": "829105", "simple": { "limit": 30, "period": 60 } }
+      ]
     }
   }
 }

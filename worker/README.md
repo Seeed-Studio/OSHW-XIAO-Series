@@ -75,6 +75,8 @@ The GitHub App creates `project-submissions/<link-hash>` branches in the selecte
 | Image link | `image` | Optional public HTTPS URL |
 | Release date | `release_date`, `year`, `month` | Valid date from 1970 through today in UTC |
 
+The shared `BOARDS` list in `docs/submission-schema.mjs` supplies the form choices and server validation. As of September 8, 2026, it contains 22 models, including the five [XIAO Plus variants](https://www.seeedstudio.com/blog/2025/01/02/seeed-studio-xiao-plus-more-castellation-ios-for-smd-soldering/) and the nRF54L15 / nRF54LM20A standard and Sense versions in the [official XIAO overview](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/).
+
 Submitted text is preserved in its original language. The catalog and frontend support both plain strings and existing bilingual objects. Images remain externally hosted; the form collects a direct image URL. Image priority and date sorting apply when the merged project appears in the hub.
 
 ## Request flow and functions

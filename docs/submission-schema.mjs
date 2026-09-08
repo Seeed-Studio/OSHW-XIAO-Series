@@ -1,5 +1,5 @@
 export const CATEGORIES = ['AI Gadget', 'Gaming', 'Hardware Design', 'Healthcare', 'IoT', 'LED Lighting', 'Mechanical Keyboard', 'Robotics', 'Scientific Tools', 'Smart Home', 'Telecommunication', 'Tools & Accessories', 'Wearables', 'Others'];
-export const BOARDS = ['XIAO ESP32-C3', 'XIAO ESP32-C5', 'XIAO ESP32-C6', 'XIAO ESP32-S3', 'XIAO ESP32-S3 Sense', 'XIAO RP2040', 'XIAO RP2350', 'XIAO SAMD21 (Seeeduino XIAO)', 'XIAO nRF52840 (XIAO BLE)', 'XIAO nRF52840 Sense (XIAO BLE Sense)', 'XIAO nRF54L15', 'XIAO RA4M1', 'XIAO MG24', 'XIAO MG24 Sense'];
+export const BOARDS = ['XIAO ESP32-C3', 'XIAO ESP32-C5', 'XIAO ESP32-C6', 'XIAO ESP32-S3', 'XIAO ESP32-S3 Sense', 'XIAO ESP32-S3 Plus', 'XIAO RP2040', 'XIAO RP2040 Plus', 'XIAO RP2350', 'XIAO SAMD21 (Seeeduino XIAO)', 'XIAO SAMD21 Plus', 'XIAO nRF52840 (XIAO BLE)', 'XIAO nRF52840 Sense (XIAO BLE Sense)', 'XIAO nRF52840 Plus', 'XIAO nRF52840 Sense Plus', 'XIAO nRF54L15', 'XIAO nRF54L15 Sense', 'XIAO nRF54LM20A', 'XIAO nRF54LM20A Sense', 'XIAO RA4M1', 'XIAO MG24', 'XIAO MG24 Sense'];
 export const SOURCES = ['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Web', 'Other'];
 
 // Return a public HTTPS URL, or an empty string for invalid input.

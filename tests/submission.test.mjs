@@ -126,3 +126,15 @@ test('concurrent file and PR creation recover the already-created result', async
     assert.equal((await createSubmission(valid, env, repo.api)).status, 'existing');
     assert.equal(parse(repo.content).projects.length, 2);
 });
+
+test('all published Plus and Nordic board variants can be submitted together', () => {
+    const boards = ['XIAO ESP32-S3 Plus', 'XIAO RP2040 Plus', 'XIAO SAMD21 Plus', 'XIAO nRF52840 Plus', 'XIAO nRF52840 Sense Plus', 'XIAO nRF54L15 Sense', 'XIAO nRF54LM20A', 'XIAO nRF54LM20A Sense'];
+    for (const board of boards) {
+        const result = validateSubmission({ ...valid, boards: [board] });
+        assert.equal(result.valid, true, board);
+        assert.equal(toProjectEntry(result.data).board, board);
+    }
+    const combined = validateSubmission({ ...valid, boards });
+    assert.equal(combined.valid, true);
+    assert.equal(toProjectEntry(combined.data).board, boards.join(', '));
+});

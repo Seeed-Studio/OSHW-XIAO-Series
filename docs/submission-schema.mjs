@@ -8,7 +8,7 @@ export const BOARD_GROUPS = [
     { label: 'Silicon Labs', boards: ['XIAO MG24', 'XIAO MG24 Sense'] }
 ];
 export const BOARDS = BOARD_GROUPS.flatMap(group => group.boards);
-export const SOURCES = ['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Web', 'Other'];
+export const SOURCES = ['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Fab Academy', 'Web', 'Other'];
 
 // Return a public HTTPS URL, or an empty string for invalid input.
 export function publicUrl(value) {

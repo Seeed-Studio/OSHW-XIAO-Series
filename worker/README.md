@@ -22,14 +22,14 @@ python3 -m http.server 8000 --bind 127.0.0.1
 npm run dev:api
 ```
 
-Open <http://127.0.0.1:8000/docs/> and select **Contribute Project**. The local page automatically connects to port 8787 when `docs/submission-config.json` has an empty `apiBaseUrl`. Both servers stay running until **Ctrl+C** is pressed in their terminals.
+Open <http://127.0.0.1:8000/docs/> and select **Contribute Project**. Pages opened on `localhost` or `127.0.0.1` connect to the local API on port 8787. The published site uses `apiBaseUrl` from `docs/submission-config.json`. Both servers stay running until **Ctrl+C** is pressed in their terminals.
 
 An unconfigured service returns `ready: false`. The dialog remains available for entering a draft and displays its connection status. Closing and reopening the dialog, or changing the page language, preserves fields during the current page session. Reloading the page clears the draft.
 
 ## Service configuration
 
 1. Register a GitHub App with repository **Contents: Read and write** and **Pull requests: Read and write** permissions. Install it for the target repository. This service uses installation authentication; webhook delivery and visitor OAuth are unnecessary. Record its Client ID and installation ID, and generate a private key. See [GitHub App registration](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app).
-2. Create a managed Turnstile widget for the frontend hostname. For production this is `seeed-studio.github.io`; use a separate widget allowing `localhost` and `127.0.0.1` for local integration testing. Copy its public site key into the corresponding `TURNSTILE_SITE_KEY` setting in `wrangler.jsonc`.
+2. Create a managed Turnstile widget for `seeed-studio.github.io`, `localhost`, and `127.0.0.1`. Copy its public site key into the corresponding `TURNSTILE_SITE_KEY` settings in `wrangler.jsonc`. Each deployment validates its own exact frontend hostname: production accepts `seeed-studio.github.io`, and local development accepts `localhost` and `127.0.0.1`.
 3. Set `GITHUB_OWNER`, `GITHUB_REPO`, and `GITHUB_BASE_BRANCH` to the installation's repository. `ALLOWED_ORIGINS` lists exact frontend origins including scheme and port, separated by commas. `TURNSTILE_HOSTNAMES` lists matching hostnames. The top-level settings are production; `env.local.vars` configures local development.
 4. Create `worker/.env.local` from [.env.example](.env.example), then fill the four values using a local editor. Store the full PEM private key as a quoted multiline value. These files and private-key files are ignored by Git. Wrangler loads environment-specific `.env` files alongside its configuration; see [local environment variables](https://developers.cloudflare.com/workers/local-development/environment-variables/).
 
@@ -40,6 +40,17 @@ cp worker/.env.example worker/.env.local
 Local configuration needs `GITHUB_APP_CLIENT_ID`, `GITHUB_APP_INSTALLATION_ID`, `GITHUB_APP_PRIVATE_KEY`, and `TURNSTILE_SECRET`. Use a dedicated test repository for live integration tests, with a valid `projects.yaml` file and the GitHub App installed. Each accepted submission creates a real branch and PR in the configured repository.
 
 ## Production deployment
+
+The production API is hosted at <https://xiao-project-submissions.limengdu0117.workers.dev>. Its configuration endpoint is `/api/config` and requires the frontend origin `https://seeed-studio.github.io`.
+
+The [XIAO Project Hub Submissions GitHub App](https://github.com/apps/xiao-project-hub-submissions) is installed for `Seeed-Studio/OSHW-XIAO-Series` with Contents and Pull requests write permissions. Credentials are stored as encrypted Worker secrets. Check public readiness with:
+
+```sh
+curl -sS -H 'Origin: https://seeed-studio.github.io' \
+  https://xiao-project-submissions.limengdu0117.workers.dev/api/config
+```
+
+A configured service returns `"ready": true`, its public Turnstile site key, and the target repository. A complete browser submission verifies Turnstile and GitHub access together.
 
 Use the intended Cloudflare account, set its `account_id` in `wrangler.jsonc`, and deploy the Worker:
 

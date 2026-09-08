@@ -141,7 +141,7 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
             const configResponse = await fetch(new URL('./submission-config.json', import.meta.url), { cache: 'no-store', signal: AbortSignal.timeout(10000) });
             if (!configResponse.ok) throw new Error('configuration_unavailable');
             const config = await configResponse.json();
-            apiBase = config.apiBaseUrl?.replace(/\/$/, '') || (['localhost', '127.0.0.1'].includes(location.hostname) ? 'http://127.0.0.1:8787' : '');
+            apiBase = ['localhost', '127.0.0.1'].includes(location.hostname) ? 'http://127.0.0.1:8787' : config.apiBaseUrl?.replace(/\/$/, '');
             if (!apiBase) throw new Error('configuration_unavailable');
             const response = await fetch(`${apiBase}/api/config`, { signal: AbortSignal.timeout(10000), cache: 'no-store' });
             if (!response.ok) throw new Error('configuration_unavailable');

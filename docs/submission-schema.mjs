@@ -1,5 +1,13 @@
 export const CATEGORIES = ['AI Gadget', 'Gaming', 'Hardware Design', 'Healthcare', 'IoT', 'LED Lighting', 'Mechanical Keyboard', 'Robotics', 'Scientific Tools', 'Smart Home', 'Telecommunication', 'Tools & Accessories', 'Wearables', 'Others'];
-export const BOARDS = ['XIAO ESP32-C3', 'XIAO ESP32-C5', 'XIAO ESP32-C6', 'XIAO ESP32-S3', 'XIAO ESP32-S3 Sense', 'XIAO ESP32-S3 Plus', 'XIAO RP2040', 'XIAO RP2040 Plus', 'XIAO RP2350', 'XIAO SAMD21 (Seeeduino XIAO)', 'XIAO SAMD21 Plus', 'XIAO nRF52840 (XIAO BLE)', 'XIAO nRF52840 Sense (XIAO BLE Sense)', 'XIAO nRF52840 Plus', 'XIAO nRF52840 Sense Plus', 'XIAO nRF54L15', 'XIAO nRF54L15 Sense', 'XIAO nRF54LM20A', 'XIAO nRF54LM20A Sense', 'XIAO RA4M1', 'XIAO MG24', 'XIAO MG24 Sense'];
+export const BOARD_GROUPS = [
+    { label: 'ESP32', boards: ['XIAO ESP32-C3', 'XIAO ESP32-C5', 'XIAO ESP32-C6', 'XIAO ESP32-S3', 'XIAO ESP32-S3 Sense', 'XIAO ESP32-S3 Plus'] },
+    { label: 'Nordic', boards: ['XIAO nRF52840 (XIAO BLE)', 'XIAO nRF52840 Sense (XIAO BLE Sense)', 'XIAO nRF52840 Plus', 'XIAO nRF52840 Sense Plus', 'XIAO nRF54L15', 'XIAO nRF54L15 Sense', 'XIAO nRF54LM20A', 'XIAO nRF54LM20A Sense'] },
+    { label: 'Raspberry Pi', boards: ['XIAO RP2040', 'XIAO RP2040 Plus', 'XIAO RP2350'] },
+    { label: 'Microchip', boards: ['XIAO SAMD21 (Seeeduino XIAO)', 'XIAO SAMD21 Plus'] },
+    { label: 'Renesas', boards: ['XIAO RA4M1'] },
+    { label: 'Silicon Labs', boards: ['XIAO MG24', 'XIAO MG24 Sense'] }
+];
+export const BOARDS = BOARD_GROUPS.flatMap(group => group.boards);
 export const SOURCES = ['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Web', 'Other'];
 
 // Return a public HTTPS URL, or an empty string for invalid input.

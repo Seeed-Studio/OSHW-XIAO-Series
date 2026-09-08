@@ -1,4 +1,4 @@
-import { BOARDS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs';
+import { BOARD_GROUPS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs';
 import { FORM_LANG } from './submission-locales.mjs';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -68,7 +68,7 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
                     ${field('link', 'url', true)}
                     ${options('category', CATEGORIES)}${options('source', SOURCES)}
                     <div id="submission-source-other" class="submission-wide" hidden>${field('sourceOther')}</div>
-                    <div class="submission-field submission-wide"><span id="boards-label" class="submission-board-label">${language.boards}<span class="submission-required">*</span></span><p class="submission-hint" id="boards-hint">${language.boardsHint}</p><div class="submission-boards" role="group" aria-labelledby="boards-label" aria-describedby="boards-hint boards-error">${BOARDS.map(board => `<label><input type="checkbox" name="boards" value="${escapeHtml(board)}">${escapeHtml(board)}</label>`).join('')}</div><p class="submission-error" id="boards-error"></p></div>
+                    <div class="submission-field submission-wide"><span id="boards-label" class="submission-board-label">${language.boards}<span class="submission-required">*</span></span><p class="submission-hint" id="boards-hint">${language.boardsHint}</p><div class="submission-boards" role="group" aria-labelledby="boards-label" aria-describedby="boards-hint boards-error">${BOARD_GROUPS.map(group => `<fieldset class="submission-board-group"><legend>${escapeHtml(group.label)}</legend><div class="submission-board-options">${group.boards.map(board => `<label><input type="checkbox" name="boards" value="${escapeHtml(board)}">${escapeHtml(board)}</label>`).join('')}</div></fieldset>`).join('')}</div><p class="submission-error" id="boards-error"></p></div>
                     ${field('image', 'url', true, true, language.imageHint)}
                     ${field('releaseDate', 'date')}
                 </fieldset>

@@ -138,3 +138,21 @@ test('all published Plus and Nordic board variants can be submitted together', (
     assert.equal(combined.valid, true);
     assert.equal(toProjectEntry(combined.data).board, boards.join(', '));
 });
+
+test('board choices group each chip family and place variants after the standard model', async () => {
+    const { BOARD_GROUPS, BOARDS } = await import('../docs/submission-schema.mjs');
+    assert.ok(Array.isArray(BOARD_GROUPS));
+    const displayed = BOARD_GROUPS.flatMap(group => group.boards);
+    assert.deepEqual(displayed, BOARDS);
+    assert.equal(new Set(displayed).size, 22);
+    for (const [prefix, standard] of [['XIAO ESP32-', 'XIAO ESP32-S3'], ['XIAO nRF', 'XIAO nRF52840 (XIAO BLE)'], ['XIAO RP', 'XIAO RP2040'], ['XIAO SAMD21', 'XIAO SAMD21 (Seeeduino XIAO)'], ['XIAO RA', 'XIAO RA4M1'], ['XIAO MG', 'XIAO MG24']]) {
+        const family = BOARD_GROUPS.find(group => group.boards.includes(standard));
+        assert.ok(family);
+        assert.deepEqual(family.boards, BOARDS.filter(board => board.startsWith(prefix)));
+        for (const board of family.boards.filter(board => board.includes('Plus') || board.includes('Sense'))) {
+            const base = board.replace(/ (Sense Plus|Sense|Plus).*$/, '');
+            const index = family.boards.findIndex(item => item === base || item.startsWith(`${base} (`));
+            assert.ok(index >= 0 && index < family.boards.indexOf(board), board);
+        }
+    }
+});

@@ -240,6 +240,8 @@ We want to thank the community for inspiring these projects—your ideas, experi
 
 ### Share Your Projects
 
+On the Project Hub, hover over a card's description or focus it with the keyboard to read the full text in a floating preview. Long descriptions scroll within the preview. Press Escape or move the pointer away to dismiss it. On touch devices, select **Details** to read the complete description and view the project image.
+
 Thank you for your interest in sharing your projects! Community projects help others learn faster, explore new use cases, and push the ecosystem forward. If you’ve built something interesting, useful, or fun — we’d love to feature it here 🚀
 
 Your project can be submitted if it meets one or more of the following:

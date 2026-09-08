@@ -203,6 +203,10 @@
         .card-title { color: white; font-size: .95rem; line-height: 1.45; overflow-wrap: anywhere; }
         .card-title button { color: inherit; font: inherit; font-weight: 650; text-align: left; border: 0; background: none; cursor: pointer; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .card-description { color: #d0e1e8; font-size: .8125rem; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-description[data-full-description] { cursor: help; }
+        .card-description:hover { color: #f0f7fa; }
+        .card-description:focus-visible { outline: 2px solid #b8e05a; outline-offset: 4px; border-radius: 2px; }
+        .description-preview { position: fixed; inset: auto; margin: 0; width: min(440px, calc(100vw - 24px)); max-height: min(420px, calc(100dvh - 24px)); overflow: auto; overscroll-behavior: contain; padding: 16px 18px; border: 1px solid #8fc31f80; border-radius: 10px; background: #073e56; color: #edf5f8; box-shadow: 0 12px 36px #00182170; font-size: .875rem; line-height: 1.7; white-space: pre-line; overflow-wrap: anywhere; }
         .card-boards { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 3px; }
         .card-boards .tag { white-space: normal; }
         .card-meta { color: #b7d0db; font-size: .75rem; overflow-wrap: anywhere; }
@@ -306,6 +310,8 @@
     <script type="module">
         import { buildSearchIndex, scoreProject, compareProjectResults } from './search.mjs?v=2';
         import { initSubmissionForm } from './submission.mjs?v=7';
+        import { initDescriptionPreview } from './description-preview.mjs?v=2';
+        const dismissDescriptionPreview = initDescriptionPreview(document.getElementById('projects'));
         const YAML_URLS = [
             '../projects.yaml',
             'https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/projects.yaml'
@@ -545,6 +551,7 @@
 
         // Combine active filters and bilingual search, then rank the visible projects.
         function renderProjects() {
+            dismissDescriptionPreview();
             const L = LANG[currentLang];
             const filtered = PROJECTS_DATA.map((project, index) => ({ project, index, hasImage: Boolean(safeUrl(getPreviewImage(project))), match: scoreProject(searchIndexes[index], searchQuery) })).filter(({ project: p, match }) => {
                 if (!match) return false;
@@ -576,7 +583,7 @@
                     <div class="card-body">
                         <div class="card-kicker"><span class="tag tag-category">${escapeHtml(t(p.category))}</span><span>${p.year} · ${formatMonth(p.month)}</span></div>
                         <h2 class="card-title"><button data-project="${index}">${name}</button></h2>
-                        <p class="card-description">${escapeHtml(t(p.summary || p.description))}</p>
+                        <p class="card-description" tabindex="0" data-full-description="${escapeHtml(t(p.description || p.summary))}">${escapeHtml(t(p.summary || p.description))}</p>
                         ${match.approximate ? `<span class="card-meta">${L.approximate}</span>` : ''}
                         <div class="card-boards">${p.board.split(',').map(board => `<span class="tag tag-board">${escapeHtml(board.trim())}</span>`).join('')}</div>
                         <div class="card-meta">${escapeHtml(p.author_type)} · ${escapeHtml(t(p.author))}</div>

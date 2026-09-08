@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XIAO Project Hub</title>
+    <link rel="stylesheet" href="./submission.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -245,7 +246,7 @@
                 <p id="subtitle">Discover what you can build with XIAO</p>
             </div>
             <div class="header-actions">
-                <a class="contribute-btn" id="contributeBtn" href="https://docs.google.com/forms/d/e/1FAIpQLSdiju4D3-h0fZavfZeRrXcOtAh-Lb7Ll8zbrkziB94RCvbZrQ/viewform?usp=publish-editor" target="_blank" rel="noopener">Contribute Project</a>
+                <button class="contribute-btn" id="contributeBtn" type="button">Contribute Project</button>
                 <button class="lang-btn small" id="langBtn">中文</button>
             </div>
         </header>
@@ -304,6 +305,7 @@
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
     <script type="module">
         import { buildSearchIndex, scoreProject, compareProjectResults } from './search.mjs?v=2';
+        import { initSubmissionForm } from './submission.mjs';
         const YAML_URLS = [
             '../projects.yaml',
             'https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/projects.yaml'
@@ -382,6 +384,7 @@
         let activeFilters = { year: '', month: '', author_type: '', board: '', category: '' };
         let searchQuery = '';
         let searchIndexes = [];
+        const submissionForm = initSubmissionForm({ getLanguage: () => currentLang, getCategoryLabel: value => t(PROJECTS_DATA.find(project => (typeof project.category === 'string' ? project.category : project.category.en) === value)?.category) || value });
 
         function t(obj) { return typeof obj === 'string' ? obj : (obj?.[currentLang] || obj?.en || obj?.zh || ''); }
 
@@ -450,6 +453,7 @@
             search.placeholder = L.search;
             search.setAttribute('aria-label', L.search);
             document.documentElement.lang = currentLang;
+            submissionForm.updateLanguage();
             for (const [id, key] of Object.entries({ 'clear-search': 'clear', 'filter-summary': 'moreFilters', 'reset-filters': 'clearFilters', 'search-all': 'searchAll', 'dialog-close': 'close' })) {
                 document.getElementById(id).textContent = L[key];
             }
@@ -485,7 +489,7 @@
             });
 
             const typeContainer = document.getElementById('type-filters');
-            const platforms = ['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Web'];
+            const platforms = [...new Set(['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Web', ...langProjects.map(project => project.author_type)])];
             platforms.forEach(platform => {
                 const btn = document.createElement('button');
                 btn.className = 'filter-btn';

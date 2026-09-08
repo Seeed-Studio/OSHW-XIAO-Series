@@ -17,6 +17,8 @@ The [Project Hub](docs/index.html) displays projects as compact image cards with
 
 Search Chinese or English names, descriptions, boards, categories, authors, and sources. Space-separated terms match together, board punctuation and capitalization are normalized (`esp32c6` matches `ESP32-C6`), and English words of at least five letters support one-letter spelling tolerance. Exact results appear before approximate matches. Category and additional board, date, and source filters apply together with the search. The initial view includes all dates, placing projects with a configured image or an automatically derived YouTube thumbnail first, then sorting each group by year and month from newest to oldest. Search results prioritize relevance, followed by the same image and date ordering. Equal dates retain source order. Image priority uses the preview URL available when rendering.
 
+Select **Contribute Project** to submit a project through an in-page form. It collects project details, board selections, an optional cover image URL, and the release date. A configured submission service creates a GitHub pull request for maintainer review and returns its link. See [submission service setup and verification](worker/README.md) for local preview, GitHub App permissions, and deployment.
+
 The search field includes an inline [Lucide search icon](https://github.com/lucide-icons/lucide/blob/main/icons/search.svg), with attribution in [LUCIDE-LICENSE](docs/LUCIDE-LICENSE).
 
 Project content comes from [projects.yaml](projects.yaml). Cards use the existing description, or an optional `summary` string or `{en, zh}` object for a shorter introduction. Images load as they approach the viewport. Projects with missing or failed images use a blue text cover showing their category and title. The text cover opens the same project details and preserves the grid's image proportions.
@@ -246,7 +248,7 @@ Your project can be submitted if it meets one or more of the following:
 - An application demo, experiment, or creative build
 - A project originally published on GitHub, Hackster, Instructables, or a personal blog
 
-Both `hardware-focused` and `software-focused` projects are welcome, and you can submit your project by:
+Both `hardware-focused` and `software-focused` projects are welcome. For a Project Hub listing, use **Contribute Project** on the hub; the configured service opens a PR with your catalog entry. To contribute full project files, follow these steps:
 
 1. Fork this repository
 

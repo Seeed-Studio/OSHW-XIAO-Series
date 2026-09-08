@@ -1,0 +1,46 @@
+.submission-dialog { width: min(740px, calc(100% - 28px)); max-height: 92vh; background: #104c63; }
+.submission-heading { padding: 24px 28px 20px; border-bottom: 1px solid #ffffff20; }
+.submission-heading h2 { font-size: 1.45rem; letter-spacing: -.02em; padding-right: 48px; }
+.submission-heading p { margin-top: 8px; color: #bad2de; line-height: 1.6; font-size: .9rem; }
+.submission-close { position: absolute; top: 22px; right: 24px; border: 1px solid #ffffff35; border-radius: 6px; background: #ffffff08; color: #dcebf0; padding: 6px 10px; cursor: pointer; }
+.submission-content { padding: 22px 28px 26px; }
+.submission-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; border: 0; min-width: 0; }
+.submission-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.submission-wide { grid-column: 1 / -1; }
+.submission-field label, .submission-board-label { font-size: .85rem; font-weight: 600; color: #e4eef3; }
+.submission-optional { font-weight: 400; color: #a6c4d1; margin-left: 6px; font-size: .75rem; }
+.submission-field input, .submission-field select, .submission-field textarea { width: 100%; box-sizing: border-box; border: 1px solid #4f7b8e; border-radius: 7px; padding: 10px 12px; background: #073b50; color: #f4f8fa; font: inherit; font-size: .9rem; color-scheme: dark; }
+.submission-field textarea { resize: vertical; min-height: 98px; line-height: 1.6; }
+.submission-field input:focus, .submission-field select:focus, .submission-field textarea:focus { outline: 2px solid #8fc31f; outline-offset: 1px; }
+.submission-field input::placeholder { color: #94b4c3; }
+.submission-hint { font-size: .75rem; line-height: 1.55; color: #afc9d5; }
+.submission-required { color: #c4e980; margin-left: 3px; }
+.submission-boards { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; border: 1px solid #ffffff24; border-radius: 8px; padding: 10px; }
+.submission-boards label { display: flex; align-items: flex-start; gap: 8px; font-size: .76rem; font-weight: 400; padding: 5px; line-height: 1.4; cursor: pointer; }
+.submission-boards input { width: 15px; height: 15px; margin: 1px 0 0; flex-shrink: 0; accent-color: #8fc31f; }
+.submission-error { color: #ffb5ac; font-size: .78rem; line-height: 1.4; }
+.submission-error:empty { display: none; }
+.submission-field [aria-invalid="true"] { border-color: #ffb5ac; }
+.submission-status { margin-top: 18px; padding: 12px 14px; border: 1px solid #ffffff25; background: #083f54; border-radius: 8px; font-size: .82rem; line-height: 1.6; color: #d7e6ee; }
+.submission-retry { border: 0; border-bottom: 1px solid currentColor; padding: 0; margin: 8px 0 0; background: none; color: #c4e980; cursor: pointer; font: inherit; }
+.submission-challenge { margin-top: 16px; }
+.submission-notice { margin-top: 18px; color: #b6cfd9; font-size: .78rem; line-height: 1.6; }
+.submission-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 20px; }
+.submission-actions button { font: inherit; font-size: .85rem; padding: 10px 18px; border-radius: 7px; cursor: pointer; }
+.submission-secondary { border: 1px solid #ffffff35; color: #dcebf0; background: transparent; }
+.submission-submit { background: #8fc31f; color: #123d4e; border: 1px solid #8fc31f; font-weight: 650 !important; }
+.submission-dialog button:disabled { opacity: .55; cursor: default; }
+.submission-success { padding: 40px 28px; text-align: center; }
+.submission-success .success-mark { display: inline-grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #8fc31f20; color: #c4e980; font-size: 1.6rem; margin-bottom: 18px; }
+.submission-success h3 { font-size: 1.25rem; margin-bottom: 12px; }
+.submission-success p { color: #bad2de; line-height: 1.7; font-size: .9rem; }
+.submission-success .project-link { margin-top: 24px; padding: 12px 22px; }
+.submission-success button { display: block; margin: 22px auto 0; border: 0; background: none; color: #c4e980; cursor: pointer; }
+@media (max-width: 640px) {
+    .submission-heading { padding: 22px 18px 16px; }
+    .submission-heading h2 { font-size: 1.2rem; }
+    .submission-close { right: 16px; top: 20px; }
+    .submission-content { padding: 20px 18px; }
+    .submission-fields { grid-template-columns: 1fr; }
+    .submission-boards { grid-template-columns: 1fr; }
+}

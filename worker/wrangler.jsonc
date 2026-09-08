@@ -1,0 +1,30 @@
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "xiao-project-submissions",
+  "main": "index.mjs",
+  "compatibility_date": "2026-09-08",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+  "vars": {
+    "GITHUB_OWNER": "Seeed-Studio",
+    "GITHUB_REPO": "OSHW-XIAO-Series",
+    "GITHUB_BASE_BRANCH": "main",
+    "ALLOWED_ORIGINS": "https://seeed-studio.github.io",
+    "TURNSTILE_HOSTNAMES": "seeed-studio.github.io",
+    "TURNSTILE_SITE_KEY": ""
+  },
+  "ratelimits": [{ "name": "SUBMISSION_LIMITER", "namespace_id": "829104", "simple": { "limit": 5, "period": 60 } }],
+  "env": {
+    "local": {
+      "vars": {
+        "GITHUB_OWNER": "Seeed-Studio",
+        "GITHUB_REPO": "OSHW-XIAO-Series",
+        "GITHUB_BASE_BRANCH": "main",
+        "ALLOWED_ORIGINS": "http://127.0.0.1:8000,http://localhost:8000",
+        "TURNSTILE_HOSTNAMES": "127.0.0.1,localhost",
+        "TURNSTILE_SITE_KEY": ""
+      },
+      "ratelimits": [{ "name": "SUBMISSION_LIMITER", "namespace_id": "829104", "simple": { "limit": 5, "period": 60 } }]
+    }
+  }
+}

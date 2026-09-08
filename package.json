@@ -1,0 +1,17 @@
+{
+  "name": "xiao-project-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "dev:api": "wrangler dev --config worker/wrangler.jsonc --port 8787 --env local",
+    "check:worker": "wrangler deploy --config worker/wrangler.jsonc --dry-run --env=\"\"",
+    "deploy:api": "wrangler deploy --config worker/wrangler.jsonc --env=\"\""
+  },
+  "dependencies": {
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.129.1"
+  }
+}

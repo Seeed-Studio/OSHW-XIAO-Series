@@ -3076,3 +3076,17 @@ projects:
 
 # ========== Author Type / 来源平台 ==========
 # GitHub, YouTube, Hackster, Instructables, Hackaday, Web
+
+- name:
+    en: Submission service integration test
+  description:
+    en: Integration test of the XIAO project submission form, multiple board selection, and automatic GitHub pull request creation.
+  board: XIAO ESP32-C6, XIAO RP2350
+  category: Tools & Accessories
+  year: 2026
+  month: 9
+  release_date: 2026-09-08
+  author:
+    en: XIAO Project Hub
+  author_type: GitHub
+  link: https://github.com/Seeed-Studio/OSHW-XIAO-Series?submission-test=20260908

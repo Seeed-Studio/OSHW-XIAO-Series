@@ -75,6 +75,8 @@ The GitHub App creates `project-submissions/<link-hash>` branches in the selecte
 | Image link | `image` | Optional public HTTPS URL |
 | Release date | `release_date`, `year`, `month` | Valid date from 1970 through today in UTC |
 
+Boards are selected in a grouped multi-select dropdown. Checked models appear as removable chips beneath the collapsed field. Selecting a checkbox keeps the list open; clicking outside or pressing Escape closes it. Press Arrow Down on the trigger to open the list and focus a checkbox, then use Tab and Space to navigate and select.
+
 The `BOARD_GROUPS` list in `docs/submission-schema.mjs` organizes form choices into ESP32, Nordic, Raspberry Pi, Microchip, Renesas, and Silicon Labs sections. Each section keeps chip families together and places standard models before their Sense and Plus variants. The shared `BOARDS` validation list is derived from these groups. As of September 8, 2026, it contains 22 models, including the five [XIAO Plus variants](https://www.seeedstudio.com/blog/2025/01/02/seeed-studio-xiao-plus-more-castellation-ios-for-smd-soldering/) and the nRF54L15 / nRF54LM20A standard and Sense versions in the [official XIAO overview](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/).
 
 The form displays separate English and Chinese sections. Contributors may provide either language or both; each supplied language includes a complete project name and description. Author attribution requires at least one language. Submitted text is stored as `{ en, zh }` objects containing only the supplied translations. The hub displays the selected language when available and uses the supplied language when a translation is absent. Interface language changes preserve both sections. PR titles use the English project name when supplied, otherwise the Chinese name. Images remain externally hosted; the form collects a direct image URL. Image priority and date sorting apply when the merged project appears in the hub.
@@ -96,7 +98,7 @@ Successful new submissions return HTTP 201 with `status: "created"`; repeated su
 Browser checks:
 
 1. Open the dialog and fill different names, descriptions, and author names in the English and Chinese sections. Close it, change the page language, and reopen it. Both sets of values remain and labels change language.
-2. Choose **Other** for source. The custom platform field appears. Select multiple boards and confirm all selections remain after reopening.
+2. Choose **Other** for source. The custom platform field appears. Open the board dropdown, select multiple boards across groups, and confirm all selections remain after reopening. Remove an individual chip and verify its checkbox clears. Remove the final chip and confirm the empty selection prompt returns.
 3. At a 390 px viewport width, confirm the two language sections stack vertically, fields fit without horizontal scrolling, and all actions are reachable by scrolling.
 4. With an unconfigured service, confirm the connection message and disabled submit button. Retrying the connection preserves entered fields.
 

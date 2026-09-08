@@ -9,7 +9,7 @@ export const FORM_LANG = {
         "link": "Project link",
         "category": "Category",
         "boards": "XIAO boards",
-        "boardsHint": "Select every board used in this project.",
+        "boardsHint": "Open the list to select one or more boards.",
         "source": "Published on",
         "sourceOther": "Platform name",
         "image": "Cover image link",
@@ -51,7 +51,10 @@ export const FORM_LANG = {
         "english": "English",
         "chinese": "\u4e2d\u6587",
         "languageRequired": "Fill this field in at least one language.",
-        "incompleteTranslation": "Complete the project name and description in this language."
+        "incompleteTranslation": "Complete the project name and description in this language.",
+        "chooseBoards": "Choose XIAO boards",
+        "selectedBoards": "Selected: {count}",
+        "removeBoard": "Remove"
     },
     "zh": {
         "title": "\u5206\u4eab\u4f60\u7684 XIAO \u9879\u76ee",
@@ -63,7 +66,7 @@ export const FORM_LANG = {
         "link": "\u9879\u76ee\u94fe\u63a5",
         "category": "\u9879\u76ee\u5206\u7c7b",
         "boards": "\u4f7f\u7528\u7684 XIAO \u5f00\u53d1\u677f",
-        "boardsHint": "\u53ef\u4ee5\u9009\u62e9\u591a\u6b3e\u5f00\u53d1\u677f\u3002",
+        "boardsHint": "\u5c55\u5f00\u4e0b\u62c9\u5217\u8868\uff0c\u53ef\u52fe\u9009\u591a\u6b3e\u5f00\u53d1\u677f\u3002",
         "source": "\u53d1\u5e03\u5e73\u53f0",
         "sourceOther": "\u5e73\u53f0\u540d\u79f0",
         "image": "\u9879\u76ee\u5c01\u9762\u94fe\u63a5",
@@ -105,6 +108,9 @@ export const FORM_LANG = {
         "english": "English",
         "chinese": "\u4e2d\u6587",
         "languageRequired": "\u8bf7\u81f3\u5c11\u7528\u4e00\u79cd\u8bed\u8a00\u586b\u5199\u6b64\u9879\u3002",
-        "incompleteTranslation": "\u8bf7\u8865\u5168\u8be5\u8bed\u8a00\u7684\u9879\u76ee\u540d\u79f0\u548c\u7b80\u4ecb\u3002"
+        "incompleteTranslation": "\u8bf7\u8865\u5168\u8be5\u8bed\u8a00\u7684\u9879\u76ee\u540d\u79f0\u548c\u7b80\u4ecb\u3002",
+        "chooseBoards": "\u8bf7\u9009\u62e9 XIAO \u5f00\u53d1\u677f",
+        "selectedBoards": "\u5df2\u9009\u62e9 {count} \u6b3e\u5f00\u53d1\u677f",
+        "removeBoard": "\u79fb\u9664"
     }
 };

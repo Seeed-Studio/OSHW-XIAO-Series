@@ -1,5 +1,5 @@
 import { BOARD_GROUPS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs?v=3';
-import { FORM_LANG } from './submission-locales.mjs?v=3';
+import { FORM_LANG } from './submission-locales.mjs?v=5';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 let challengeScript;
@@ -79,7 +79,13 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
                     ${field('link', 'url', true)}
                     ${options('category', CATEGORIES)}${options('source', SOURCES)}
                     <div id="submission-source-other" class="submission-wide" hidden>${field('sourceOther')}</div>
-                    <div class="submission-field submission-wide"><span id="boards-label" class="submission-board-label">${language.boards}<span class="submission-required">*</span></span><p class="submission-hint" id="boards-hint">${language.boardsHint}</p><div class="submission-boards" role="group" aria-labelledby="boards-label" aria-describedby="boards-hint boards-error">${BOARD_GROUPS.map(group => `<fieldset class="submission-board-group"><legend>${escapeHtml(group.label)}</legend><div class="submission-board-options">${group.boards.map(board => `<label><input type="checkbox" name="boards" value="${escapeHtml(board)}">${escapeHtml(board)}</label>`).join('')}</div></fieldset>`).join('')}</div><p class="submission-error" id="boards-error"></p></div>
+                    <div class="submission-field submission-wide"><span id="boards-label" class="submission-board-label">${language.boards}<span class="submission-required">*</span></span><p class="submission-hint" id="boards-hint">${language.boardsHint}</p>
+                        <div class="submission-board-picker" id="submission-board-picker">
+                            <button type="button" class="submission-board-trigger" id="submission-board-trigger" data-action="toggle-boards" aria-expanded="false" aria-controls="submission-board-options" aria-labelledby="boards-label submission-board-summary" aria-describedby="boards-hint boards-error"><span id="submission-board-summary" aria-live="polite">${language.chooseBoards}</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+                            <div class="submission-boards" id="submission-board-options" role="group" aria-labelledby="boards-label" hidden>${BOARD_GROUPS.map(group => `<fieldset class="submission-board-group"><legend>${escapeHtml(group.label)}</legend><div class="submission-board-options">${group.boards.map(board => `<label><input type="checkbox" name="boards" value="${escapeHtml(board)}">${escapeHtml(board)}</label>`).join('')}</div></fieldset>`).join('')}</div>
+                            <div class="submission-board-selected" id="submission-board-selected" hidden></div>
+                        </div><p class="submission-error" id="boards-error"></p>
+                    </div>
                     ${field('image', 'url', true, true, language.imageHint)}
                     ${field('releaseDate', 'date')}
                 </fieldset>
@@ -98,6 +104,31 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
             }
         }
         dialog.querySelector('#submission-source-other').hidden = draft.source !== 'Other';
+        syncBoardSelection();
+    }
+
+    function setBoardPicker(open, focusOption = false) {
+        const trigger = dialog.querySelector('#submission-board-trigger');
+        trigger.setAttribute('aria-expanded', String(open));
+        dialog.querySelector('#submission-board-options').hidden = !open;
+        if (open && focusOption) {
+            const selected = dialog.querySelector('[name="boards"]:checked');
+            (selected || dialog.querySelector('[name="boards"]'))?.focus();
+        }
+    }
+
+    // Reflect checked boards in the collapsed summary and removable selection chips.
+    function syncBoardSelection() {
+        const boards = [...dialog.querySelectorAll('[name="boards"]:checked')].map(input => input.value);
+        dialog.querySelector('#submission-board-summary').textContent = boards.length ? L().selectedBoards.replace('{count}', boards.length) : L().chooseBoards;
+        const selected = dialog.querySelector('#submission-board-selected');
+        selected.hidden = !boards.length;
+        selected.innerHTML = boards.map(board => `<button type="button" class="submission-board-chip" data-action="remove-board" data-board="${escapeHtml(board)}" aria-label="${escapeHtml(`${L().removeBoard} ${board}`)}"><span>${escapeHtml(board)}</span><span aria-hidden="true">×</span></button>`).join('');
+        if (boards.length) {
+            dialog.querySelector('#boards-error').textContent = '';
+            dialog.querySelector('#submission-board-trigger').removeAttribute('aria-invalid');
+            dialog.querySelectorAll('[name="boards"][aria-invalid]').forEach(input => input.removeAttribute('aria-invalid'));
+        }
     }
 
     async function connect() {
@@ -142,6 +173,8 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
             dialog.querySelector(`#${name}-error`).textContent = errors[name] === 'language_required' ? language.languageRequired : errors[name] === 'incomplete_translation' ? language.incompleteTranslation : messages[name];
             dialog.querySelector(`[name="${name}"]`)?.setAttribute('aria-invalid', 'true');
         }
+        if (errors.boards) dialog.querySelector('#submission-board-trigger').setAttribute('aria-invalid', 'true');
+        if (names[0] === 'boards') setBoardPicker(true);
         dialog.querySelector(`[name="${names[0]}"]`)?.focus();
     }
 
@@ -153,6 +186,7 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
         if (!validation.valid) { status(L().invalid); return; }
         if (!configuration?.ready || !token) { status(configuration?.ready ? L().verification : L().unavailable, !configuration?.ready); return; }
         pending = true;
+        setBoardPicker(false);
         updateSubmit();
         dialog.querySelector('fieldset').disabled = true;
         dialog.querySelectorAll('[data-action="close"]').forEach(button => button.disabled = true);
@@ -191,14 +225,42 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
 
     dialog.addEventListener('submit', submit);
     dialog.addEventListener('change', event => {
+        if (event.target.name === 'boards') syncBoardSelection();
         if (event.target.name === 'source') dialog.querySelector('#submission-source-other').hidden = event.target.value !== 'Other';
     });
     dialog.addEventListener('click', event => {
-        const action = event.target.closest('[data-action]')?.dataset.action;
+        const control = event.target.closest('[data-action]');
+        const action = control?.dataset.action;
+        if (action === 'toggle-boards' && !pending) setBoardPicker(control.getAttribute('aria-expanded') !== 'true');
+        if (action === 'remove-board' && !pending) {
+            const checkbox = [...dialog.querySelectorAll('[name="boards"]')].find(input => input.value === control.dataset.board);
+            if (checkbox) checkbox.checked = false;
+            syncBoardSelection();
+            dialog.querySelector('#submission-board-trigger').focus();
+        }
         if (action === 'close' && !pending) dialog.close();
         if (action === 'retry') void connect();
         if (action === 'another') { render(); void connect(); }
     });
+    dialog.addEventListener('keydown', event => {
+        const trigger = dialog.querySelector('#submission-board-trigger');
+        if (event.key === 'ArrowDown' && event.target === trigger && !pending) {
+            event.preventDefault();
+            setBoardPicker(true, true);
+        }
+        if (event.key === 'Escape' && trigger.getAttribute('aria-expanded') === 'true') {
+            event.preventDefault();
+            event.stopPropagation();
+            setBoardPicker(false);
+            trigger.focus();
+        }
+    });
+    for (const eventName of ['pointerdown', 'focusin']) {
+        document.addEventListener(eventName, event => {
+            const picker = dialog.querySelector('#submission-board-picker');
+            if (dialog.open && !picker.contains(event.target)) setBoardPicker(false);
+        });
+    }
     dialog.addEventListener('cancel', event => { if (pending) event.preventDefault(); });
     dialog.addEventListener('close', () => { generation++; removeWidget(); openedFrom?.focus(); });
     document.getElementById('contributeBtn').addEventListener('click', event => {

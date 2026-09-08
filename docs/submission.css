@@ -19,7 +19,17 @@
 .submission-field input::placeholder { color: #94b4c3; }
 .submission-hint { font-size: .75rem; line-height: 1.55; color: #afc9d5; }
 .submission-required { color: #c4e980; margin-left: 3px; }
-.submission-boards { display: grid; gap: 14px; }
+.submission-board-picker { min-width: 0; }
+.submission-board-trigger { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; border: 1px solid #4f7b8e; border-radius: 7px; padding: 11px 12px; background: #073b50; color: #e4eef3; font: inherit; font-size: .9rem; text-align: left; cursor: pointer; }
+.submission-board-trigger svg { flex-shrink: 0; transition: transform .15s; }
+.submission-board-trigger[aria-expanded="true"] { border-color: #8fc31f; }
+.submission-board-trigger[aria-expanded="true"] svg { transform: rotate(180deg); }
+.submission-board-trigger:focus-visible, .submission-board-chip:focus-visible { outline: 2px solid #8fc31f; outline-offset: 2px; }
+.submission-boards { display: grid; gap: 14px; max-height: 290px; overflow-y: auto; overscroll-behavior: contain; margin-top: 7px; padding: 14px 10px 10px; border: 1px solid #4f7b8e; border-radius: 8px; background: #073b50; color-scheme: dark; }
+.submission-board-selected { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
+.submission-board-chip { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; padding: 5px 8px; border: 1px solid #8fc31f50; border-radius: 5px; background: #8fc31f12; color: #dfedcd; font: inherit; font-size: .73rem; text-align: left; cursor: pointer; }
+.submission-board-chip span:first-child { overflow-wrap: anywhere; }
+.submission-boards[hidden], .submission-board-selected[hidden] { display: none; }
 .submission-board-group { min-width: 0; border: 1px solid #ffffff24; border-radius: 8px; padding: 8px 10px 10px; }
 .submission-board-group legend { padding: 0 6px; color: #c4e980; font-size: .75rem; font-weight: 600; letter-spacing: .02em; }
 .submission-board-options { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }

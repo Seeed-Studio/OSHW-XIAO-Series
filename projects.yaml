@@ -1,4 +1,197 @@
 projects:
+  # ========== 2026-09-09 Community Projects ==========
+  # Source: XIAO Project Hub collaborator submissions
+
+- name:
+    en: "Genius GM6000 BLE Mouse Revival"
+    zh: "Genius GM6000 蓝牙鼠标复活改造"
+  description:
+    en: "An open-source restoration of the classic Genius GM-6000 mechanical ball mouse. A custom PCB built around the Seeed Studio XIAO nRF52840 Sense preserves the original ball and encoder mechanics while adding Bluetooth LE and wired USB HID, automatic air-mouse mode, a rechargeable battery, and multi-stage power management."
+    zh: "一项经典 Genius GM-6000 机械滚球鼠标的开源修复改造。项目使用基于 Seeed Studio XIAO nRF52840 Sense 的定制 PCB，保留原有滚球与编码器结构，并加入蓝牙 LE、有线 USB HID、自动空中鼠标模式、可充电电池和多级电源管理。"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
+  category:
+    en: "Hardware Design"
+    zh: "硬件设计"
+  year: 2026
+  month: 7
+  author:
+    en: "eSPee77"
+    zh: "eSPee77"
+  author_type: "GitHub"
+  link: "https://github.com/espee77/Genius-GM6000-BLE-Mouse-Revival"
+  image: "https://raw.githubusercontent.com/espee77/Genius-GM6000-BLE-Mouse-Revival/main/V1.0/Pictures%20with%20assembly%20notes/IMG_8706.JPG"
+
+- name:
+    en: "Gratitude Loom"
+    zh: "Gratitude Loom 感恩织机"
+  description:
+    en: "A ritual weaving instrument that combines hand weaving, sensing, and cloud intelligence. Hall effect sensors read the rhythm and consistency of each weaving action, then the system selects or generates the next pattern while the weaver remains free to change, pause, or end the process."
+    zh: "一台融合手工编织、传感检测与云端智能的仪式化织机。霍尔传感器读取每次编织动作的节奏与一致性，系统据此选择或生成下一种纹样，同时织作者可以随时更改纹样、暂停或结束过程。"
+  board: "XIAO RP2040"
+  category:
+    en: "Others"
+    zh: "其他"
+  year: 2026
+  month: 4
+  author:
+    en: "Porpla Kittisapkajon"
+    zh: "Porpla Kittisapkajon"
+  author_type: "Web"
+  link: "https://class.textile-academy.org/2026/pattaraporn-kittisapkajon/Gratitude%20Loom/"
+  image: "https://class.textile-academy.org/2026/pattaraporn-kittisapkajon/images/Development/A-Ritual-Instrument-for-Weaving-Presence.jpg"
+
+- name:
+    en: "Experimenting with Wearables"
+    zh: "可穿戴电子实验"
+  description:
+    en: "A collection of interactive textile experiments built with a FabriXIAO breakout board and XIAO ESP32-C3. The documented prototypes explore a coil-and-magnet actuator, an embroidered speaker, and a soft touch sensor that controls sound through conductive textile circuits."
+    zh: "一组使用 FabriXIAO 扩展板和 XIAO ESP32-C3 制作的互动纺织实验。项目记录了线圈与磁铁执行器、刺绣扬声器，以及通过导电纺织电路控制声音的柔性触摸传感器。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2025
+  month: 11
+  author:
+    en: "Maddie Olsen"
+    zh: "Maddie Olsen"
+  author_type: "Web"
+  link: "https://class.textile-academy.org/2026/madeleine-olsen/assignments/week09/"
+  image: "https://class.textile-academy.org/2026/madeleine-olsen/images/week09/week9-speaker-setup.png"
+
+- name:
+    en: "Tonalli"
+    zh: "Tonalli"
+  description:
+    en: "A collaborative fashion capsule inspired by Quetzalcoatl that connects Mexican heritage, handcraft, and digital fabrication. The garments combine embroidery, recycled textiles, biomaterial scales, 3D-made feathers, and responsive LED or NeoPixel circuits powered by XIAO ESP32-C3 and XIAO RP2040 boards."
+    zh: "一个以羽蛇神为灵感、连接墨西哥文化传统、手工艺与数字制造的合作式时装系列。服装融合刺绣、再生纺织品、生物材料鳞片、3D 制作羽毛，以及由 XIAO ESP32-C3 和 XIAO RP2040 驱动的响应式 LED 或 NeoPixel 电路。"
+  board: "XIAO ESP32-C3, XIAO RP2040"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 5
+  author:
+    en: "Patricia Pérez Vizcaya"
+    zh: "Patricia Pérez Vizcaya"
+  author_type: "Web"
+  link: "https://class.textile-academy.org/2026/patricia-vizcaya/project/"
+  image: "https://class.textile-academy.org/2026/patricia-vizcaya/images/Pictures/Together_1.jpg"
+
+- name:
+    en: "Biofeedback Device for Nerve Injury Exercises"
+    zh: "神经损伤训练生物反馈设备"
+  description:
+    en: "A thin silicone facial wearable that uses embedded LEDs to provide visual cues for therapeutic muscle exercises after a facial nerve injury. The prototype uses a FabriXIAO breakout board with XIAO ESP32-C3 and supports button-controlled alternating light sequences."
+    zh: "一款薄型硅胶面部可穿戴设备，通过嵌入式 LED 为面部神经损伤后的肌肉训练提供视觉提示。原型使用搭载 XIAO ESP32-C3 的 FabriXIAO 扩展板，并支持按钮控制的交替灯光序列。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 4
+  author:
+    en: "Maddie Olsen"
+    zh: "Maddie Olsen"
+  author_type: "Web"
+  link: "https://class.textile-academy.org/2026/madeleine-olsen/assignments/week12/"
+  image: "https://class.textile-academy.org/2026/madeleine-olsen/images/week12/week12-schematic.png"
+
+- name:
+    en: "Mood Paint"
+    zh: "Mood Paint 情绪绘画"
+  description:
+    en: "A bio-responsive painting system that turns physiological signals into real-time generative visuals. A wearable glove or bracelet uses XIAO ESP32-C3 with heart-rate and galvanic-skin-response sensors, translating the captured data into changing colors, movement, density, and rhythm."
+    zh: "一套把生理信号转化为实时生成式视觉画面的生物响应绘画系统。可穿戴手套或手环使用 XIAO ESP32-C3、心率传感器和皮肤电反应传感器采集数据，再将其转化为不断变化的颜色、运动、密度与节奏。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 5
+  author:
+    en: "Emma Yanez"
+    zh: "Emma Yanez"
+  author_type: "Web"
+  link: "https://class.textile-academy.org/2026/emma-yanez/project/"
+  image: "https://class.textile-academy.org/2026/emma-yanez/images/development/MoodPaintPoster.png"
+
+- name:
+    en: "TRMNL 7.5-inch DIY Weather Dashboard"
+    zh: "TRMNL 7.5 英寸 DIY 天气仪表盘"
+  description:
+    en: "An ESPHome and Home Assistant weather dashboard for the Seeed Studio TRMNL 7.5-inch DIY Kit. It presents current conditions, daily forecasts, precipitation timing, air quality, allergen levels, and local sensor data, with 15-minute or button-triggered updates optimized for battery operation."
+    zh: "一套面向 Seeed Studio TRMNL 7.5 英寸 DIY 套件的 ESPHome 与 Home Assistant 天气仪表盘。它显示当前天气、每日预报、降水时间、空气质量、过敏原水平和本地传感器数据，并支持每 15 分钟或按键触发更新，以适配电池供电。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 8
+  author:
+    en: "Kelly Garrett"
+    zh: "Kelly Garrett"
+  author_type: "GitHub"
+  link: "https://github.com/rkellygarrett/trmnl-esphome-weather-station"
+  image: "https://raw.githubusercontent.com/rkellygarrett/trmnl-esphome-weather-station/main/screenshots/TRMNLweather.jpg"
+
+- name:
+    en: "FabriXiao"
+    zh: "FabriXiao"
+  description:
+    en: "A compact development and breakout board for Fabricademy that accepts either XIAO RP2040 or XIAO ESP32-C3. It exposes analog and digital connections, battery power, ground and supply points, and an optional test LED, with open design files and examples for textile buttons, pressure sensors, flex sensors, and other inputs and outputs."
+    zh: "一款面向 Fabricademy 的紧凑型开发与扩展板，可安装 XIAO RP2040 或 XIAO ESP32-C3。它引出模拟与数字接口、电池供电、接地和电源连接，并可选装测试 LED，同时提供开放设计文件以及纺织按钮、压力传感器、弯曲传感器等输入输出示例。"
+  board: "XIAO ESP32-C3, XIAO RP2040"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2025
+  month: 9
+  author:
+    en: "Adrian Torres"
+    zh: "Adrian Torres"
+  author_type: "Web"
+  link: "https://fabacademy.org/2020/labs/leon/students/adrian-torres/fabrixiao.html"
+  image: "https://fabacademy.org/2020/labs/leon/students/adrian-torres/images/fabrixiao/fabrixiao_board.jpg"
+
+- name:
+    en: "FabXIAO"
+    zh: "FabXIAO"
+  description:
+    en: "An open breakout and learning board for XIAO RP2040 and XIAO ESP32-C3. It organizes power, ground, digital, analog, I2C, SPI, and UART connections for quickly wiring sensors and actuators, with downloadable board files and programming examples for a wide range of inputs and outputs."
+    zh: "一款适用于 XIAO RP2040 和 XIAO ESP32-C3 的开放式扩展与学习板。它集中整理电源、接地、数字、模拟、I2C、SPI 和 UART 接口，方便快速连接传感器和执行器，并提供可下载的电路板文件与多种输入输出编程示例。"
+  board: "XIAO ESP32-C3, XIAO RP2040"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2024
+  month: 1
+  author:
+    en: "Adrian Torres"
+    zh: "Adrian Torres"
+  author_type: "Web"
+  link: "https://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html"
+  image: "https://fabacademy.org/2020/labs/leon/students/adrian-torres/images/fabxiao/fabxiao_board.jpg"
+
+- name:
+    en: "ble-leveler"
+    zh: "ble-leveler 蓝牙水平仪"
+  description:
+    en: "A wireless dual-axis leveling tool built with XIAO nRF52840 Sense, its LSM6DS3 IMU, Rust, and Bluetooth Low Energy. It sends a self-contained interactive crosshair interface to the Phyphox mobile app, supports 24 mounting orientations, and stores calibration references and tolerance limits in non-volatile memory."
+    zh: "一款使用 XIAO nRF52840 Sense、板载 LSM6DS3 IMU、Rust 和蓝牙低功耗技术构建的无线双轴水平仪。设备会向 Phyphox 手机应用发送自包含的交互式十字准星界面，支持 24 种安装方向，并在非易失存储器中保存校准基准和容差范围。"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 9
+  author:
+    en: "Jan Češpivo"
+    zh: "Jan Češpivo"
+  author_type: "GitHub"
+  link: "https://github.com/jancespivo/ble-leveler"
+  image: "https://raw.githubusercontent.com/jancespivo/ble-leveler/main/screenshot.png"
+
   # ========== 2026-07-15 Community Projects ==========
   # Source: xiao-weekly-search(2026-07-15)
 

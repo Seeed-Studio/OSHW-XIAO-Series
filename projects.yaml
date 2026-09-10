@@ -3269,3 +3269,18 @@ projects:
 
 # ========== Author Type / 来源平台 ==========
 # GitHub, YouTube, Hackster, Instructables, Hackaday, Web
+
+- name:
+    en: XIAO Formula 1 Key Holder
+  description:
+    en: Battery-powered F1-garage key holder — XIAO ESP32-S3 firmware that plays a driver's theme when you hang up your keys.
+  board: XIAO ESP32-S3
+  category: Smart Home
+  year: 2026
+  month: 9
+  release_date: 2026-09-09
+  author:
+    en: nullsych
+  author_type: GitHub
+  link: https://github.com/nullsych/f1-key-holder
+  image: https://github.com/nullsych/f1-key-holder/blob/main/img/demo-img.jpg

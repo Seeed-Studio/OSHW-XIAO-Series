@@ -77,6 +77,7 @@ projects:
   author_type: "Web"
   link: "https://class.textile-academy.org/2026/patricia-vizcaya/project/"
   image: "https://class.textile-academy.org/2026/patricia-vizcaya/images/Pictures/Together_1.jpg"
+  homepage: catalog
 
 - name:
     en: "Biofeedback Device for Nerve Injury Exercises"
@@ -528,6 +529,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/EFortune-Cookie-a-Tiny-ESP32-Fortune-Teller/"
   image: "https://content.instructables.com/F6G/WPQT/MOKK3HWT/F6GWPQTMOKK3HWT.jpg"
+  homepage: catalog
 
 - name:
     en: "Creating 4 Zigbee Devices on ESP32 in Home Assistant (Without Code)"
@@ -547,6 +549,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=OfGnYurjj8Y"
   image: "https://i.ytimg.com/vi/OfGnYurjj8Y/maxresdefault.jpg"
+  homepage: catalog
 
 - name:
     en: "Bit:busy — LED Bar That Indicates Your Work Status"
@@ -1935,6 +1938,7 @@ projects:
   author_type: YouTube
   link: https://www.youtube.com/shorts/BvSES4DGh6c
   image: https://i.ytimg.com/vi/BvSES4DGh6c/maxresdefault.jpg
+  homepage: catalog
 - name:
     en: ESP32-Bus-Pirate
     zh: ESP32-Bus-Pirate
@@ -2074,6 +2078,7 @@ projects:
   author_type: GitHub
   link: https://github.com/Vail-CW/vail-adapter
   image: https://avatars.githubusercontent.com/u/207725212?v=4
+  homepage: catalog
 - name:
     en: xiamocon
     zh: xiamocon 游戏机形态主板
@@ -2093,6 +2098,7 @@ projects:
   author_type: GitHub
   link: https://github.com/shapoco/xiamocon
   image: https://avatars.githubusercontent.com/u/40152459?v=4
+  homepage: catalog
 - name:
     en: opticka
     zh: opticka 心理物理学实验管理器
@@ -2112,6 +2118,7 @@ projects:
   author_type: GitHub
   link: https://github.com/iandol/opticka
   image: https://avatars.githubusercontent.com/u/153905?v=4
+  homepage: catalog
 - name:
     en: Open source ESP32 AI Chatbot - DIY
     zh: 开源 ESP32 AI 聊天机器人 DIY

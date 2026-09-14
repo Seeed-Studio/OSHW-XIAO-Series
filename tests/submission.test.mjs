@@ -61,6 +61,16 @@ test('valid submission normalizes fields, multiple boards and optional images', 
     assert.equal('image' in entry, false);
 });
 
+test('GitHub image page URLs become direct raw image URLs', () => {
+    const result = validateSubmission({
+        ...valid,
+        image: 'https://github.com/nullsych/f1-key-holder/blob/main/img/demo-img.jpg'
+    });
+    assert.equal(result.valid, true);
+    assert.equal(result.data.image, 'https://raw.githubusercontent.com/nullsych/f1-key-holder/main/img/demo-img.jpg');
+    assert.equal(toProjectEntry(result.data).image, result.data.image);
+});
+
 test('empty, malformed, oversized fields, invalid URLs, unknown boards and dates fail', () => {
     for (const input of [null, {}, [], 'bad']) assert.equal(validateSubmission(input).valid, false);
     for (const [field, values] of Object.entries({ name: ['', 'x'.repeat(161)], author: [''], description: ['short', 'x'.repeat(3001)], link: ['javascript:alert(1)', 'https://user:pass@example.com', 'http://example.com', 'https://127.0.0.1'], image: ['not-a-url'], boards: [[], ['XIAO unknown']], category: ['unknown'], source: ['unknown'], releaseDate: ['2026-02-30', '2099-01-01', 'bad', '1969-01-01'] })) {

@@ -20,6 +20,21 @@ export function publicUrl(value) {
     } catch { return ''; }
 }
 
+/**
+ * Return a browser-loadable image URL and convert GitHub file pages to raw files.
+ * 返回浏览器可直接加载的图片地址，并将 GitHub 文件页面转换为原始文件地址。
+ */
+export function directImageUrl(value) {
+    const href = publicUrl(value);
+    if (!href) return '';
+    const url = new URL(href);
+    if (url.hostname !== 'github.com') return href;
+    const parts = url.pathname.split('/').filter(Boolean);
+    if (parts.length < 6 || !['blob', 'raw'].includes(parts[2])) return href;
+    const [owner, repository, , revision, ...path] = parts;
+    return new URL(`/${owner}/${repository}/${revision}/${path.join('/')}`, 'https://raw.githubusercontent.com').href;
+}
+
 // Canonicalize project links for duplicate detection and stable submission branches.
 export function projectIdentity(value) {
     const url = new URL(value);
@@ -58,7 +73,7 @@ export function validateSubmission(input, today = new Date().toISOString().slice
     }
     data.link = publicUrl(input?.link);
     if (!data.link) errors.link = 'invalid_url';
-    data.image = input?.image ? publicUrl(input.image) : '';
+    data.image = input?.image ? directImageUrl(input.image) : '';
     if (input?.image && !data.image) errors.image = 'invalid_url';
     data.category = input?.category;
     if (!CATEGORIES.includes(data.category)) errors.category = 'required';

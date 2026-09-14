@@ -138,7 +138,7 @@ export async function createSubmission(data, env, api) {
         }
     }
     const entry = toProjectEntry(data);
-    const body = `A community project submission for review.\n\nProject details are included below and appended to projects.yaml. Before merging, set \`homepage\` to \`featured\` when the project should appear on the XIAO landing page, or \`catalog\` when it should remain in Project Hub only.\n\n\`\`\`json\n${JSON.stringify(entry, null, 2).replace(/`/g, '\\u0060')}\n\`\`\`\n`;
+    const body = `A community project submission for review.\n\nProject details are included below and appended to projects.yaml. Before merging, apply the \`homepage: featured\` label when the project should appear on the XIAO landing page, or \`homepage: catalog\` when it should remain in Project Hub only. The selected label updates the catalog automatically.\n\n\`\`\`json\n${JSON.stringify(entry, null, 2).replace(/`/g, '\\u0060')}\n\`\`\`\n`;
     try {
         const pull = await api(`${root}/pulls`, { method: 'POST', body: { title: `feat: add ${title}`, head: branch, base, body, maintainer_can_modify: true } });
         return { status: 'created', number: pull.number, url: pull.html_url };

@@ -108,8 +108,8 @@ export function inspectCatalogChange(baseText, headText, today = new Date().toIS
         if (project.image && !publicUrl(project.image)) errors.push(`${label}: cover image must be a public HTTPS URL.`);
         if (!date || Number.isNaN(Date.parse(`${date}T00:00:00Z`)) || date > today) errors.push(`${label}: release date is missing, invalid, or in the future.`);
 
-        if (added && project.homepage === 'review') errors.push(`${label}: homepage review is pending; choose featured or catalog before merging.`);
-        else if (added && !HOMEPAGE_DECISIONS.has(project.homepage)) errors.push(`${label}: homepage must be set to featured or catalog before merging.`);
+        if (added && project.homepage === 'review') errors.push(`${label}: homepage review is pending; apply the homepage: featured or homepage: catalog PR label before merging.`);
+        else if (added && !HOMEPAGE_DECISIONS.has(project.homepage)) errors.push(`${label}: apply the homepage: featured or homepage: catalog PR label before merging.`);
         else if (project.homepage != null && project.homepage !== 'review' && !HOMEPAGE_DECISIONS.has(project.homepage)) errors.push(`${label}: homepage must be featured, catalog, or review.`);
         if (project.homepage === 'featured' && !project.image) errors.push(`${label}: featured homepage projects require a cover image.`);
         if (!project.release_date) warnings.push(`${label}: add release_date for precise newest-first ordering.`);

@@ -1,0 +1,90 @@
+name: Apply homepage decision
+
+on:
+  pull_request_target:
+    types: [opened, reopened, labeled]
+    paths:
+      - projects.yaml
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  prepare-labels:
+    if: github.event.action != 'labeled'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create reviewer labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "homepage: featured" --repo "$GITHUB_REPOSITORY" --color "8CC63F" --description "Show this project on the XIAO landing page" --force
+          gh label create "homepage: catalog" --repo "$GITHUB_REPOSITORY" --color "6B7280" --description "Keep this project in Project Hub only" --force
+
+  apply-decision:
+    if: >-
+      github.event.action == 'labeled' &&
+      github.event.pull_request.head.repo.full_name == github.repository &&
+      (github.event.label.name == 'homepage: featured' || github.event.label.name == 'homepage: catalog')
+    runs-on: ubuntu-latest
+    env:
+      DECISION: "${{ github.event.label.name == 'homepage: featured' && 'featured' || 'catalog' }}"
+      PR_BRANCH: "${{ github.event.pull_request.head.ref }}"
+      PR_NUMBER: "${{ github.event.pull_request.number }}"
+    steps:
+      - name: Checkout trusted automation
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+
+      - name: Checkout proposed catalog
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          path: proposed
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: base/package-lock.json
+
+      - name: Install trusted dependencies
+        run: npm ci --prefix base
+
+      - name: Apply reviewer decision
+        run: node base/scripts/apply-homepage-decision.mjs --base base/projects.yaml --head proposed/projects.yaml --decision "$DECISION"
+
+      - name: Commit decision to the pull request
+        working-directory: proposed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add projects.yaml
+          if git diff --cached --quiet; then
+            echo "The selected homepage placement is already applied."
+          else
+            git commit -m "chore: set homepage placement to $DECISION"
+            git push origin "HEAD:refs/heads/$PR_BRANCH"
+          fi
+
+      - name: Keep one homepage label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const opposite = process.env.DECISION === 'featured'
+              ? 'homepage: catalog'
+              : 'homepage: featured';
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: Number(process.env.PR_NUMBER),
+                name: opposite,
+              });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }

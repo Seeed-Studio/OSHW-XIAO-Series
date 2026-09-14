@@ -20,17 +20,17 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh label create "homepage: featured" --repo "$GITHUB_REPOSITORY" --color "8CC63F" --description "Show this project on the XIAO landing page" --force
-          gh label create "homepage: catalog" --repo "$GITHUB_REPOSITORY" --color "6B7280" --description "Keep this project in Project Hub only" --force
+          gh label create "placement: landing page + project hub" --repo "$GITHUB_REPOSITORY" --color "8CC63F" --description "Publish in Project Hub and show on the XIAO Landing Page" --force
+          gh label create "placement: project hub only" --repo "$GITHUB_REPOSITORY" --color "6B7280" --description "Publish in Project Hub without Landing Page placement" --force
 
   apply-decision:
     if: >-
       github.event.action == 'labeled' &&
       github.event.pull_request.head.repo.full_name == github.repository &&
-      (github.event.label.name == 'homepage: featured' || github.event.label.name == 'homepage: catalog')
+      (github.event.label.name == 'placement: landing page + project hub' || github.event.label.name == 'placement: project hub only')
     runs-on: ubuntu-latest
     env:
-      DECISION: "${{ github.event.label.name == 'homepage: featured' && 'featured' || 'catalog' }}"
+      DECISION: "${{ github.event.label.name == 'placement: landing page + project hub' && 'featured' || 'catalog' }}"
       PR_BRANCH: "${{ github.event.pull_request.head.ref }}"
       PR_NUMBER: "${{ github.event.pull_request.number }}"
     steps:
@@ -71,13 +71,13 @@ jobs:
             git push origin "HEAD:refs/heads/$PR_BRANCH"
           fi
 
-      - name: Keep one homepage label
+      - name: Keep one placement label
         uses: actions/github-script@v7
         with:
           script: |
             const opposite = process.env.DECISION === 'featured'
-              ? 'homepage: catalog'
-              : 'homepage: featured';
+              ? 'placement: project hub only'
+              : 'placement: landing page + project hub';
             try {
               await github.rest.issues.removeLabel({
                 owner: context.repo.owner,

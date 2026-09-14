@@ -96,6 +96,7 @@ projects:
   author_type: "Web"
   link: "https://class.textile-academy.org/2026/madeleine-olsen/assignments/week12/"
   image: "https://class.textile-academy.org/2026/madeleine-olsen/images/week12/week12-schematic.png"
+  homepage: catalog
 
 - name:
     en: "Mood Paint"
@@ -191,6 +192,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/jancespivo/ble-leveler"
   image: "https://raw.githubusercontent.com/jancespivo/ble-leveler/main/screenshot.png"
+  homepage: catalog
 
   # ========== 2026-07-15 Community Projects ==========
   # Source: xiao-weekly-search(2026-07-15)
@@ -1952,6 +1954,7 @@ projects:
   author_type: GitHub
   link: https://github.com/geo-tp/ESP32-Bus-Pirate
   image: https://avatars.githubusercontent.com/u/72315006?v=4
+  homepage: catalog
 - name:
     en: MitsubishiCN105ESPHome
     zh: 三菱空调 ESPHome 集成
@@ -1971,6 +1974,7 @@ projects:
   author_type: GitHub
   link: https://github.com/echavet/MitsubishiCN105ESPHome
   image: https://avatars.githubusercontent.com/u/3224452?v=4
+  homepage: catalog
 - name:
     en: lvgl_micropython
     zh: LVGL MicroPython 绑定
@@ -1990,6 +1994,7 @@ projects:
   author_type: GitHub
   link: https://github.com/lvgl-micropython/lvgl_micropython
   image: https://avatars.githubusercontent.com/u/173945867?v=4
+  homepage: catalog
 - name:
     en: Sky-Spy
     zh: Sky-Spy 无人机追踪固件
@@ -2009,6 +2014,7 @@ projects:
   author_type: GitHub
   link: https://github.com/colonelpanichacks/Sky-Spy
   image: https://avatars.githubusercontent.com/u/90460753?v=4
+  homepage: catalog
 - name:
     en: trackpuck
     zh: trackpuck 6DoF CAD 输入设备
@@ -2028,6 +2034,7 @@ projects:
   author_type: GitHub
   link: https://github.com/badjeff/trackpuck
   image: https://avatars.githubusercontent.com/u/141321?v=4
+  homepage: catalog
 - name:
     en: OUI-SPY Unified
     zh: OUI-SPY 多模式监控检测固件
@@ -2047,6 +2054,7 @@ projects:
   author_type: GitHub
   link: https://github.com/colonelpanichacks/oui-spy-unified-blue
   image: https://avatars.githubusercontent.com/u/90460753?v=4
+  homepage: catalog
 - name:
     en: Vail Adapter
     zh: Vail 莫尔斯电码适配器
@@ -3290,4 +3298,4 @@ projects:
   author_type: GitHub
   link: https://github.com/nullsych/f1-key-holder
   image: https://raw.githubusercontent.com/nullsych/f1-key-holder/main/img/demo-img.jpg
-  homepage: featured
+  homepage: catalog

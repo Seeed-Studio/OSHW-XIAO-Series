@@ -30,6 +30,8 @@ test('new featured and catalog projects pass an explicit homepage decision', () 
 test('pending homepage decisions block new project merges', () => {
     const result = inspectCatalogChange(yaml([]), yaml([{ ...project, homepage: 'review' }]));
     assert.match(result.errors.join('\n'), /homepage review is pending/);
+    assert.match(result.errors.join('\n'), /placement: landing page \+ project hub/);
+    assert.match(result.errors.join('\n'), /placement: project hub only/);
     assert.match(formatSummary(result), /Homepage decision/);
 });
 

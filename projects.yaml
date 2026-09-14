@@ -491,6 +491,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/gidim/e61-gauge"
   image: "https://raw.githubusercontent.com/gidim/e61-gauge/main/media/hero.jpg"
+  homepage: catalog
 
 - name:
     en: "Pico2UltraHiResUSBDDC — USB Digital Audio Converter"
@@ -607,6 +608,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=FhV9c0Vv3Ng"
   image: "https://i.ytimg.com/vi/FhV9c0Vv3Ng/maxresdefault.jpg"
+  homepage: catalog
 
 - name:
     en: "Getting Started with XIAO MG24 / XIAO MG24 Sense (Arduino)"
@@ -626,6 +628,7 @@ projects:
   author_type: "Web"
   link: "https://tamanegi-digick.com/it/xiaomg24/"
   image: "https://tamanegi-digick.com/wp-content/uploads/2026/04/ec-xiaomg24.jpg"
+  homepage: catalog
 
 - name:
     en: "Final Countdown — RP2350 Event Timer"
@@ -977,6 +980,7 @@ projects:
   author_type: "Web"
   link: "https://madriguera.me/building-a-giant-xiao-a-fully-functional-15x-scale-seeed-studio-xiao-esp32-c3/"
   image: "https://madriguera.me/content/images/2026/06/02-size-comparison-real-vs-giant.jpg"
+  homepage: catalog
 
 - name:
     en: "WeatherPaper V2 — 500-Day Battery E-Paper Weather Display"
@@ -2421,6 +2425,7 @@ projects:
   author_type: GitHub
   link: https://github.com/plainFlight/plainFlightController
   image: https://github.com/plainFlight/plainFlightController/blob/main/assets/images/PlainFlight%20Logo%20Large.PNG
+  homepage: catalog
 - name:
     en: ShellOS
     zh: ShellOS ESP32 系统

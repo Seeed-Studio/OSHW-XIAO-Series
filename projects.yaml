@@ -1935,6 +1935,7 @@ projects:
   author_type: YouTube
   link: https://www.youtube.com/shorts/BvSES4DGh6c
   image: https://i.ytimg.com/vi/BvSES4DGh6c/maxresdefault.jpg
+  homepage: catalog
 - name:
     en: ESP32-Bus-Pirate
     zh: ESP32-Bus-Pirate
@@ -2074,6 +2075,7 @@ projects:
   author_type: GitHub
   link: https://github.com/Vail-CW/vail-adapter
   image: https://avatars.githubusercontent.com/u/207725212?v=4
+  homepage: catalog
 - name:
     en: xiamocon
     zh: xiamocon 游戏机形态主板
@@ -2093,6 +2095,7 @@ projects:
   author_type: GitHub
   link: https://github.com/shapoco/xiamocon
   image: https://avatars.githubusercontent.com/u/40152459?v=4
+  homepage: catalog
 - name:
     en: opticka
     zh: opticka 心理物理学实验管理器
@@ -2112,6 +2115,7 @@ projects:
   author_type: GitHub
   link: https://github.com/iandol/opticka
   image: https://avatars.githubusercontent.com/u/153905?v=4
+  homepage: catalog
 - name:
     en: Open source ESP32 AI Chatbot - DIY
     zh: 开源 ESP32 AI 聊天机器人 DIY

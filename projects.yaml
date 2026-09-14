@@ -308,6 +308,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/MikeEitel/ESP-32_C3_SEN_MQTT"
   image: "https://opengraph.githubassets.com/bce293bdec75fd4cbbf5fdf336272dae1c5370b0a6e28f39eb36162ab70806d0/MikeEitel/ESP-32_C3_SEN_MQTT"
+  homepage: catalog
 
 - name:
     en: "MacroBoard"
@@ -365,6 +366,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/Cobalt-Watch/Voice-Band"
   image: "https://opengraph.githubassets.com/662d37d4e75e8bd7cdcecd538659ea178fc5b31ab72e70922b5ff01e8ef80a94/Cobalt-Watch/Voice-Band"
+  homepage: catalog
 
 - name:
     en: "Gesture Detection Wearable Jewelry Bracelet Xerces Aurora"
@@ -384,6 +386,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/hybrisCole/abracadabra-platformio"
   image: "https://opengraph.githubassets.com/38442e6cfccd98d0829b14e3db1f6ce937cf51955b1f0f0ff0555b9d150cb62c/hybrisCole/abracadabra-platformio"
+  homepage: catalog
 
 - name:
     en: "Neon Beat Buzzer"
@@ -718,6 +721,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=u1eQ4RQV828"
   image: "https://i.ytimg.com/vi/u1eQ4RQV828/maxresdefault.jpg"
+  homepage: catalog
 
 - name:
     en: "A Ball Robot based on Esp32"
@@ -987,6 +991,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/WeatherPaper-Squeezing-500-Days-of-Battery-Life-Ou/"
   image: "https://content.instructables.com/F5R/SM2S/MPX8P861/F5RSM2SMPX8P861.jpg?auto=webp&frame=1&width=2100"
+  homepage: catalog
 
 - name:
     en: "Sleeper Matter Sensor — Ultra-Low-Power XIAO nRF52840 Smart Home Sensor"
@@ -1104,6 +1109,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/danking6/veltoc"
   image: "https://private-user-images.githubusercontent.com/35265770/605069097-abb05084-31d4-4e59-87b8-da9ddf925d28.jpg"
+  homepage: catalog
 
 - name:
     en: "DIY JOY AI Desktop Companion Robot"

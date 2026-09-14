@@ -80,6 +80,17 @@ Set `apiBaseUrl` in `docs/submission-config.json` to the HTTPS Worker URL printe
 
 The GitHub App creates `project-submissions/<link-hash>` branches in the selected repository. Review and merge the resulting PR to publish the project. GitHub repository rules must allow this App to create submission branches and commits.
 
+## Homepage editorial review
+
+New submissions enter `projects.yaml` with `homepage: review`. The project catalog check validates the changed record and requires a maintainer to replace that value before merge:
+
+- `homepage: featured` includes the project in the landing-page candidate pool and requires a public cover image.
+- `homepage: catalog` keeps the project in Project Hub without placing it on the landing page.
+
+The check validates the catalog shape, project identity, XIAO board, category, date, public links, duplicate entries, and the explicit homepage decision. Remote project and image availability appears as a review warning because third-party hosts can fail temporarily.
+
+After `projects.yaml` changes on `main`, `notify_landing_page.yml` sends a `projects-updated` repository dispatch to `Seeed-Projects/XIAO_Landing_Page`. Configure a fine-grained token with access to dispatch workflows in the `LANDING_PAGE_DISPATCH_TOKEN` Actions secret. The landing page also performs scheduled synchronization, so a missing dispatch does not stop later updates.
+
 ## Fields and storage
 
 | Form field | Catalog field | Validation |

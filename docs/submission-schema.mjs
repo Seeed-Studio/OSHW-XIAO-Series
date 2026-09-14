@@ -86,6 +86,7 @@ export function toProjectEntry(data) {
         author: data.author,
         author_type: data.source === 'Other' ? data.sourceOther : data.source,
         link: data.link,
+        homepage: 'review',
         ...(data.image ? { image: data.image } : {})
     };
 }

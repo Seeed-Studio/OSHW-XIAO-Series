@@ -57,6 +57,7 @@ test('valid submission normalizes fields, multiple boards and optional images', 
     assert.equal(entry.year, 2026);
     assert.equal(entry.month, 1);
     assert.equal(entry.release_date, valid.releaseDate);
+    assert.equal(entry.homepage, 'review');
     assert.equal('image' in entry, false);
 });
 

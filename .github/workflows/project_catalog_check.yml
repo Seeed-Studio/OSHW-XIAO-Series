@@ -1,0 +1,38 @@
+name: Check project catalog
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - projects.yaml
+
+permissions:
+  contents: read
+
+jobs:
+  validate-projects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted validator
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: base
+
+      - name: Checkout proposed catalog
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: proposed
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: base/package-lock.json
+
+      - name: Install validator dependencies
+        run: npm ci --prefix base
+
+      - name: Validate changed projects
+        run: node base/scripts/check-project-catalog.mjs --base base/projects.yaml --head proposed/projects.yaml

@@ -252,7 +252,7 @@ Your project can be submitted if it meets one or more of the following:
 - An application demo, experiment, or creative build
 - A project originally published on GitHub, Hackster, Instructables, or a personal blog
 
-Both `hardware-focused` and `software-focused` projects are welcome. For a Project Hub listing, use **Contribute Project** on the hub; the configured service opens a PR with your catalog entry. New submissions begin in editorial review. A maintainer selects **homepage: featured** to include a project on the XIAO landing page, or **homepage: catalog** to publish it in Project Hub only. Contributors can focus on the project details; the maintainer handles this placement decision from the PR labels. To contribute full project files, follow these steps:
+Both `hardware-focused` and `software-focused` projects are welcome. For a Project Hub listing, use **Contribute Project** on the hub; the configured service opens a PR with your catalog entry. New submissions begin in editorial review. A maintainer selects **placement: landing page + project hub** to publish in both locations, or **placement: project hub only** to keep the project in the catalog. Contributors can focus on the project details; the maintainer handles this placement decision from the PR labels. To contribute full project files, follow these steps:
 
 1. Fork this repository
 

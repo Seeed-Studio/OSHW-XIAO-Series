@@ -3311,3 +3311,18 @@ projects:
   link: https://github.com/nullsych/f1-key-holder
   image: https://raw.githubusercontent.com/nullsych/f1-key-holder/main/img/demo-img.jpg
   homepage: catalog
+
+- name:
+    en: SMARS ROVER
+  description:
+    en: SMARS ROVER is a modular robotic rover with a finger gripper, controlled remotely over a video stream and powered by an ESP32.
+  board: XIAO ESP32-S3, XIAO ESP32-S3 Sense
+  category: Robotics
+  year: 2026
+  month: 9
+  release_date: 2026-09-16
+  author:
+    en: I amdroid
+  author_type: GitHub
+  link: https://github.com/i-amdroid/smars-rover/
+  image: https://raw.githubusercontent.com/i-amdroid/smars-rover/main/images/render.png

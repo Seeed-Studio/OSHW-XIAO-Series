@@ -3311,3 +3311,18 @@ projects:
   link: https://github.com/nullsych/f1-key-holder
   image: https://raw.githubusercontent.com/nullsych/f1-key-holder/main/img/demo-img.jpg
   homepage: catalog
+
+- name:
+    en: iPad Computer Use
+  description:
+    en: Allow an AI agent to control an iPad through a USB input tool, native screen sharing, and a control server.
+  board: XIAO RP2040
+  category: AI Gadget
+  year: 2026
+  month: 9
+  release_date: 2026-09-16
+  author:
+    en: Jamie Pinheiro
+  author_type: Twitter
+  link: https://x.com/jamiepinheiro/status/2099981750046953653
+  image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg

@@ -3327,3 +3327,18 @@ projects:
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
   homepage: catalog
+
+- name:
+    en: xiao-esp32c3-blinky
+  description:
+    en: Nine `no_std` Rust examples wiring Grove sensors, displays, and actuators to the Seeed XIAO ESP32-C6 over `esp-hal`.
+  board: XIAO ESP32-C3
+  category: Tools & Accessories
+  year: 2026
+  month: 9
+  release_date: 2026-09-27
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-esp32c3-blinky
+  image: https://raw.githubusercontent.com/melastmohican/xiao-esp32c3-blinky/main/images/jd79661_zjy122250.jpg

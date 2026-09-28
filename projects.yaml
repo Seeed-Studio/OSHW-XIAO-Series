@@ -3327,3 +3327,20 @@ projects:
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
   homepage: catalog
+
+- name:
+    en: xiao-nrf52480-embassy-blinky
+  description:
+    en: |-
+      Rust async examples for the Seeed Studio XIAO nRF52840 (Sense) board using the Embassy framework.
+
+      This project is built using the official embassy-nrf HAL, which provides native Embassy support for the Nordic Semiconductor nRF52840 chip. The time driver is automatically configured using RTC1.
+  board: XIAO nRF52840 Sense (XIAO BLE Sense)
+  category: Tools & Accessories
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-nrf52480-embassy-blinky

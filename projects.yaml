@@ -3327,3 +3327,23 @@ projects:
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
   homepage: catalog
+
+- name:
+    en: Metal Gear Solid running natively on the ESP32-S3
+  description:
+    en: |-
+      This project brings Metal Gear Solid, originally released for the PlayStation 1, to the XIAO ESP32-S3 Sense. The game runs directly on the ESP32-S3 with an LCD display, using the microcontroller as the actual gaming platform rather than emulating a PlayStation 1.
+
+      The project explores how far the ESP32-S3 can be pushed by porting a real 3D PlayStation-era game to a tiny microcontroller. I also used Velxio, my browser-based embedded development and simulation platform, to iterate and test the firmware before flashing it to the physical XIAO ESP32-S3 Sense.
+
+      The source code and technical details are available in the project article.
+  board: XIAO ESP32-S3 Sense
+  category: Gaming
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: David Montero Crespo
+  author_type: Web
+  link: https://velxio.dev/blog/posts/metal-gear-solid-on-esp32-s3/
+  image: https://velxio.dev/blog/blog-shots/ports/mgs-esp32/blog-hero-wide.webp

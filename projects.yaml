@@ -3327,3 +3327,20 @@ projects:
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
   homepage: catalog
+
+- name:
+    en: xiao-mg24-embassy-blinky
+  description:
+    en: |-
+      Rust async examples for the Seeed Studio XIAO MG24 (Sense) board using the Embassy framework.
+
+      Because there is currently no official Embassy HAL for Silicon Labs EFR32 chips, this project manually implements the embassy-time-driver over the Cortex-M SysTick timer and uses the community mg24-hal crate to toggle GPIOs asynchronously!
+  board: XIAO MG24
+  category: Tools & Accessories
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-mg24-embassy-blinky

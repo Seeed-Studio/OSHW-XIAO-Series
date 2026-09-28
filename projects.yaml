@@ -3327,3 +3327,18 @@ projects:
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
   homepage: catalog
+
+- name:
+    en: rust-reterminal-e1002-examples
+  description:
+    en: Rust Embassy Examples for Seeed Studio reTerminal E1002 This repository contains idiomatic Rust examples for the Seeed Studio reTerminal E1002 carrier board (powered by the XIAO ESP32-S3 MCU), built using the Embassy async framework, esp-hal (v1.1), and defmt logging over USB-UART / RTT
+  board: XIAO ESP32-S3
+  category: IoT
+  year: 2026
+  month: 9
+  release_date: 2026-09-27
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/rust-reterminal-e1002-examples
+  image: https://raw.githubusercontent.com/melastmohican/rust-reterminal-e1002-examples/main/images/epd_ed2208_bmp.jpg

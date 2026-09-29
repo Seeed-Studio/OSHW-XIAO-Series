@@ -3327,3 +3327,18 @@ projects:
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
   homepage: catalog
+
+- name:
+    en: reTerminal-E1002-arduino-examples
+  description:
+    en: Arduino examples for the Seeed Studio reTerminal E1002 — 7.3" 6-color ACeP e-paper display and onboard peripherals (XIAO ESP32-S3)
+  board: XIAO ESP32-S3
+  category: IoT
+  year: 2026
+  month: 9
+  release_date: 2026-09-29
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/reTerminal-E1002-arduino-examples
+  image: https://raw.githubusercontent.com/melastmohican/reTerminal-E1002-arduino-examples/main/Waveshare_7in3e/images/7in3e1.jpg

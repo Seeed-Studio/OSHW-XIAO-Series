@@ -1,4 +1,20 @@
-export const CATEGORIES = ['AI Gadget', 'Gaming', 'Hardware Design', 'Healthcare', 'IoT', 'LED Lighting', 'Mechanical Keyboard', 'Robotics', 'Scientific Tools', 'Smart Home', 'Telecommunication', 'Tools & Accessories', 'Wearables', 'Others'];
+export const CATEGORY_LABELS = Object.freeze({
+    'AI Gadget': { en: 'AI Gadget', zh: 'AI Gadget' },
+    Gaming: { en: 'Gaming', zh: '游戏' },
+    'Hardware Design': { en: 'Hardware Design', zh: '硬件设计' },
+    Healthcare: { en: 'Healthcare', zh: '健康护理' },
+    IoT: { en: 'IoT', zh: 'IoT' },
+    'LED Lighting': { en: 'LED Lighting', zh: 'LED 灯光' },
+    'Mechanical Keyboard': { en: 'Mechanical Keyboard', zh: '机械键盘' },
+    Robotics: { en: 'Robotics', zh: '机器人' },
+    'Scientific Tools': { en: 'Scientific Tools', zh: '科学工具' },
+    'Smart Home': { en: 'Smart Home', zh: '智能家居' },
+    Telecommunication: { en: 'Telecommunication', zh: '通信' },
+    'Tools & Accessories': { en: 'Tools & Accessories', zh: '工具配件' },
+    Wearables: { en: 'Wearables', zh: '可穿戴' },
+    Others: { en: 'Others', zh: '其他' }
+});
+export const CATEGORIES = Object.keys(CATEGORY_LABELS);
 export const BOARD_GROUPS = [
     { label: 'ESP32', boards: ['XIAO ESP32-C3', 'XIAO ESP32-C5', 'XIAO ESP32-C6', 'XIAO ESP32-S3', 'XIAO ESP32-S3 Sense', 'XIAO ESP32-S3 Plus'] },
     { label: 'Nordic', boards: ['XIAO nRF52840 (XIAO BLE)', 'XIAO nRF52840 Sense (XIAO BLE Sense)', 'XIAO nRF52840 Plus', 'XIAO nRF52840 Sense Plus', 'XIAO nRF54L15', 'XIAO nRF54L15 Sense', 'XIAO nRF54LM20A', 'XIAO nRF54LM20A Sense'] },
@@ -9,6 +25,25 @@ export const BOARD_GROUPS = [
 ];
 export const BOARDS = BOARD_GROUPS.flatMap(group => group.boards);
 export const SOURCES = ['GitHub', 'YouTube', 'Hackster', 'Instructables', 'Hackaday', 'Fab Academy', 'Web', 'Other'];
+
+/**
+ * Return a fresh bilingual catalog category for a submitted category key.
+ * 根据提交的分类键返回一份新的双语目录分类。
+ */
+export function categoryEntry(value) {
+    const labels = CATEGORY_LABELS[value];
+    return labels ? { ...labels } : null;
+}
+
+/**
+ * Check that a catalog category contains the canonical English and Chinese labels.
+ * 检查目录分类是否包含标准的中英文名称。
+ */
+export function isCategoryEntry(value) {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
+    const expected = CATEGORY_LABELS[value.en];
+    return Boolean(expected && value.en === expected.en && value.zh === expected.zh);
+}
 
 // Return a public HTTPS URL, or an empty string for invalid input.
 export function publicUrl(value) {
@@ -94,7 +129,7 @@ export function toProjectEntry(data) {
         name: data.name,
         description: data.description,
         board: data.boards.join(', '),
-        category: data.category,
+        category: categoryEntry(data.category),
         year: Number(data.releaseDate.slice(0, 4)),
         month: Number(data.releaseDate.slice(5, 7)),
         release_date: data.releaseDate,

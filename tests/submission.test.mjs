@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { parse } from 'yaml';
-import { validateSubmission, projectIdentity, toProjectEntry } from '../docs/submission-schema.mjs';
+import { CATEGORY_LABELS, validateSubmission, projectIdentity, toProjectEntry } from '../docs/submission-schema.mjs';
 import { appendProject, createSubmission, SubmissionError } from '../worker/github.mjs';
 
 export const valid = { name: { en: 'Desk weather station' }, author: { en: 'Community Maker' }, description: { en: 'A small weather station that displays room temperature and humidity.' }, link: 'https://github.com/example/weather', category: 'Smart Home', source: 'GitHub', boards: ['XIAO ESP32-C6'], image: '', releaseDate: '2026-01-02' };
@@ -58,6 +58,7 @@ test('valid submission normalizes fields, multiple boards and optional images', 
     assert.equal(entry.month, 1);
     assert.equal(entry.release_date, valid.releaseDate);
     assert.equal(entry.homepage, 'review');
+    assert.deepEqual(entry.category, CATEGORY_LABELS['Smart Home']);
     assert.equal('image' in entry, false);
 });
 

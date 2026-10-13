@@ -3338,7 +3338,9 @@ projects:
 
       The source code and technical details are available in the project article.
   board: XIAO ESP32-S3 Sense
-  category: Gaming
+  category:
+    en: Gaming
+    zh: 游戏
   year: 2026
   month: 9
   release_date: 2026-09-28

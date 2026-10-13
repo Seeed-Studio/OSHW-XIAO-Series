@@ -1,4 +1,4 @@
-import { projectIdentity } from './submission-schema.mjs?v=4';
+import { projectIdentity } from './submission-schema.mjs?v=5';
 
 const VISITOR_KEY = 'xiao-project-hub-visitor';
 const VISITOR_PATTERN = /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;

@@ -1,4 +1,4 @@
-import { BOARD_GROUPS, CATEGORIES, SOURCES, validateSubmission } from './submission-schema.mjs?v=4';
+import { BOARD_GROUPS, CATEGORIES, CATEGORY_LABELS, SOURCES, validateSubmission } from './submission-schema.mjs?v=5';
 import { FORM_LANG } from './submission-locales.mjs?v=6';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -19,7 +19,7 @@ function loadChallenge() {
 }
 
 // Attach the contribution dialog and retain draft fields across close/reopen and language changes.
-export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
+export function initSubmissionForm({ getLanguage }) {
     const dialog = document.createElement('dialog');
     dialog.className = 'submission-dialog';
     dialog.id = 'submission-dialog';
@@ -65,7 +65,7 @@ export function initSubmissionForm({ getLanguage, getCategoryLabel }) {
         removeWidget();
         const language = L();
         const field = (name, type = 'text', wide = false, optional = false, hint = '') => `<div class="submission-field${wide ? ' submission-wide' : ''}"><label for="submission-${name}">${language[name]}${optional ? `<span class="submission-optional">${language.optional}</span>` : '<span class="submission-required">*</span>'}</label><input id="submission-${name}" name="${name}" type="${type}" ${optional ? '' : 'required'} maxlength="${['link', 'image'].includes(name) ? 2048 : name === 'name' ? 160 : name === 'author' ? 120 : 40}" aria-describedby="${name}-error${hint ? ` ${name}-hint` : ''}" ${type === 'url' ? 'placeholder="https://…"' : ''}>${hint ? `<p class="submission-hint" id="${name}-hint">${hint}</p>` : ''}<p class="submission-error" id="${name}-error"></p></div>`;
-        const options = (name, values) => `<div class="submission-field"><label for="submission-${name}">${language[name]}<span class="submission-required">*</span></label><select id="submission-${name}" name="${name}" required aria-describedby="${name}-error"><option value="">${language.choose}</option>${values.map(value => `<option value="${escapeHtml(value)}">${escapeHtml(name === 'category' ? getCategoryLabel(value) : value)}</option>`).join('')}</select><p class="submission-error" id="${name}-error"></p></div>`;
+        const options = (name, values) => `<div class="submission-field"><label for="submission-${name}">${language[name]}<span class="submission-required">*</span></label><select id="submission-${name}" name="${name}" required aria-describedby="${name}-error"><option value="">${language.choose}</option>${values.map(value => `<option value="${escapeHtml(value)}">${escapeHtml(name === 'category' ? CATEGORY_LABELS[value]?.[getLanguage()] || CATEGORY_LABELS[value]?.en || value : value)}</option>`).join('')}</select><p class="submission-error" id="${name}-error"></p></div>`;
         const translatedField = (key, locale) => {
             const name = `${key}${locale === 'en' ? 'En' : 'Zh'}`;
             const attributes = `id="submission-${name}" name="${name}" lang="${locale}" maxlength="${key === 'description' ? 3000 : key === 'name' ? 160 : 120}" aria-describedby="submission-content-hint ${name}-error"`;

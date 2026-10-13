@@ -1,7 +1,7 @@
 import { appendFile, readFile } from 'node:fs/promises';
 import process from 'node:process';
 import { parse } from 'yaml';
-import { BOARDS, CATEGORIES, projectIdentity, publicUrl } from '../docs/submission-schema.mjs';
+import { BOARDS, isCategoryEntry, projectIdentity, publicUrl } from '../docs/submission-schema.mjs';
 
 export const HOMEPAGE_DECISIONS = new Set(['featured', 'catalog']);
 
@@ -95,14 +95,13 @@ export function inspectCatalogChange(baseText, headText, today = new Date().toIS
         const name = localizedText(project.name);
         const description = localizedText(project.description);
         const author = localizedText(project.author);
-        const category = typeof project.category === 'string' ? project.category : localizedText(project.category);
         const boards = typeof project.board === 'string' ? project.board.split(',').map(item => item.trim()).filter(Boolean) : [];
         const date = itemDate(project);
 
         if (name.length < 2 || name.length > 160) errors.push(`${label}: name must contain 2-160 characters.`);
         if (description.length < 20 || description.length > 3000) errors.push(`${label}: description must contain 20-3000 characters.`);
         if (author.length < 2 || author.length > 120) errors.push(`${label}: author must contain 2-120 characters.`);
-        if (!CATEGORIES.includes(category)) errors.push(`${label}: category is not recognized.`);
+        if (!isCategoryEntry(project.category)) errors.push(`${label}: category must contain the canonical en and zh labels.`);
         if (!boards.length || boards.some(board => !BOARDS.includes(board))) errors.push(`${label}: board list contains an unrecognized XIAO model.`);
         if (!publicUrl(project.link)) errors.push(`${label}: project link must be a public HTTPS URL.`);
         if (project.image && !publicUrl(project.image)) errors.push(`${label}: cover image must be a public HTTPS URL.`);

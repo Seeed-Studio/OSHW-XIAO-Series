@@ -3333,7 +3333,9 @@ projects:
   description:
     en: Using the Seeed XIAO ESP32-C3 ecosystem and the open-source epdsi Rust crate to drive e-paper displays.
   board: XIAO ESP32-C6
-  category: Tools & Accessories
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
   year: 2026
   month: 9
   release_date: 2026-09-27

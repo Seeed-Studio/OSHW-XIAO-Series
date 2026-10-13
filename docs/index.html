@@ -331,9 +331,9 @@
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4/dist/js-yaml.min.js"></script>
     <script type="module">
         import { buildSearchIndex, scoreProject, compareProjectResults } from './search.mjs?v=2';
-        import { initSubmissionForm } from './submission.mjs?v=7';
+        import { initSubmissionForm } from './submission.mjs?v=8';
         import { initDescriptionPreview } from './description-preview.mjs?v=2';
-        import { comparePopularResults, initLikes } from './likes.mjs?v=1';
+        import { comparePopularResults, initLikes } from './likes.mjs?v=2';
         const dismissDescriptionPreview = initDescriptionPreview(document.getElementById('projects'));
         const YAML_URLS = [
             '../projects.yaml',
@@ -430,7 +430,7 @@
         let searchQuery = '';
         let searchIndexes = [];
         let sortMode = 'newest';
-        const submissionForm = initSubmissionForm({ getLanguage: () => currentLang, getCategoryLabel: value => t(PROJECTS_DATA.find(project => (typeof project.category === 'string' ? project.category : project.category.en) === value)?.category) || value });
+        const submissionForm = initSubmissionForm({ getLanguage: () => currentLang });
         const likes = initLikes({
             configUrl: new URL('./submission-config.json', location.href),
             onChange: () => {
@@ -527,7 +527,7 @@
 
             const months = [...new Set(langProjects.map(p => p.month))].sort((a, b) => b - a);
             const boards = [...new Set(langProjects.flatMap(p => p.board.split(',').map(b => b.trim())))].sort();
-            const categories = [...new Set(langProjects.map(p => typeof p.category === 'string' ? p.category : p.category.en))].sort();
+            const categories = [...new Set(langProjects.map(p => p.category.en))].sort();
             const L = LANG[currentLang];
 
             document.querySelectorAll('.filter-btn:not([id])').forEach(btn => btn.remove());
@@ -575,7 +575,7 @@
                 btn.className = 'filter-btn';
                 btn.dataset.filter = 'category';
                 btn.dataset.value = category;
-                btn.textContent = t(langProjects.find(p => (typeof p.category === 'string' ? p.category : p.category.en) === category).category);
+                btn.textContent = t(langProjects.find(p => p.category.en === category).category);
                 document.getElementById('category-filters').appendChild(btn);
             });
 
@@ -647,7 +647,7 @@
                 if (activeFilters.month && String(p.month) !== activeFilters.month) return false;
                 if (activeFilters.author_type && p.author_type !== activeFilters.author_type) return false;
                 if (activeFilters.board && !p.board.split(',').map(b => b.trim()).includes(activeFilters.board)) return false;
-                if (activeFilters.category && (typeof p.category === 'string' ? p.category : p.category.en) !== activeFilters.category) return false;
+                if (activeFilters.category && p.category.en !== activeFilters.category) return false;
                 return true;
             }).sort((left, right) => {
                 if (sortMode !== 'popular') return compareProjectResults(left, right);

@@ -3301,7 +3301,9 @@ projects:
   description:
     en: Battery-powered F1-garage key holder — XIAO ESP32-S3 firmware that plays a driver's theme when you hang up your keys.
   board: XIAO ESP32-S3
-  category: Smart Home
+  category:
+    en: Smart Home
+    zh: 智能家居
   year: 2026
   month: 9
   release_date: 2026-09-09
@@ -3317,7 +3319,9 @@ projects:
   description:
     en: Allow an AI agent to control an iPad through a USB input tool, native screen sharing, and a control server.
   board: XIAO RP2040
-  category: AI Gadget
+  category:
+    en: AI Gadget
+    zh: AI Gadget
   year: 2026
   month: 9
   release_date: 2026-09-16

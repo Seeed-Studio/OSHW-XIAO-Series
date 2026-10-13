@@ -3333,7 +3333,9 @@ projects:
   description:
     en: Arduino examples for the Seeed Studio reTerminal E1002 — 7.3" 6-color ACeP e-paper display and onboard peripherals (XIAO ESP32-S3)
   board: XIAO ESP32-S3
-  category: IoT
+  category:
+    en: IoT
+    zh: IoT
   year: 2026
   month: 9
   release_date: 2026-09-29

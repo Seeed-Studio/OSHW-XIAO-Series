@@ -3313,6 +3313,22 @@ projects:
   homepage: catalog
 
 - name:
+    en: iPad Computer Use
+  description:
+    en: Allow an AI agent to control an iPad through a USB input tool, native screen sharing, and a control server.
+  board: XIAO RP2040
+  category: AI Gadget
+  year: 2026
+  month: 9
+  release_date: 2026-09-16
+  author:
+    en: Jamie Pinheiro
+  author_type: Twitter
+  link: https://x.com/jamiepinheiro/status/2099981750046953653
+  image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
+  homepage: catalog
+
+- name:
     en: SMARS ROVER
   description:
     en: SMARS ROVER is a modular robotic rover with a finger gripper, controlled remotely over a video stream and powered by an ESP32.

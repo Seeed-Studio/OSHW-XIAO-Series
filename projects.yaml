@@ -3336,7 +3336,9 @@ projects:
 
       This project is built using the official embassy-nrf HAL, which provides native Embassy support for the Nordic Semiconductor nRF52840 chip. The time driver is automatically configured using RTC1.
   board: XIAO nRF52840 Sense (XIAO BLE Sense)
-  category: Tools & Accessories
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
   year: 2026
   month: 9
   release_date: 2026-09-28

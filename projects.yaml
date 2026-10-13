@@ -3301,7 +3301,9 @@ projects:
   description:
     en: Battery-powered F1-garage key holder — XIAO ESP32-S3 firmware that plays a driver's theme when you hang up your keys.
   board: XIAO ESP32-S3
-  category: Smart Home
+  category:
+    en: Smart Home
+    zh: 智能家居
   year: 2026
   month: 9
   release_date: 2026-09-09
@@ -3317,7 +3319,9 @@ projects:
   description:
     en: Allow an AI agent to control an iPad through a USB input tool, native screen sharing, and a control server.
   board: XIAO RP2040
-  category: AI Gadget
+  category:
+    en: AI Gadget
+    zh: AI Gadget
   year: 2026
   month: 9
   release_date: 2026-09-16
@@ -3326,6 +3330,46 @@ projects:
   author_type: Twitter
   link: https://x.com/jamiepinheiro/status/2099981750046953653
   image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
+  homepage: catalog
+
+- name:
+    en: xiao-mg24-embassy-blinky
+  description:
+    en: |-
+      Rust async examples for the Seeed Studio XIAO MG24 (Sense) board using the Embassy framework.
+
+      Because there is currently no official Embassy HAL for Silicon Labs EFR32 chips, this project manually implements the embassy-time-driver over the Cortex-M SysTick timer and uses the community mg24-hal crate to toggle GPIOs asynchronously!
+  board: XIAO MG24
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-mg24-embassy-blinky
+  homepage: catalog
+
+- name:
+    en: xiao-nrf52480-embassy-blinky
+  description:
+    en: |-
+      Rust async examples for the Seeed Studio XIAO nRF52840 (Sense) board using the Embassy framework.
+
+      This project is built using the official embassy-nrf HAL, which provides native Embassy support for the Nordic Semiconductor nRF52840 chip. The time driver is automatically configured using RTC1.
+  board: XIAO nRF52840 Sense (XIAO BLE Sense)
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-nrf52480-embassy-blinky
   homepage: catalog
 
 - name:

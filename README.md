@@ -19,7 +19,7 @@ Search Chinese or English names, descriptions, boards, categories, authors, and 
 
 Visitors can like or unlike a project from its card or detail dialog. The browser keeps a random local identifier so one browser has one active vote per project. The service stores a keyed hash of that identifier rather than its original value. Each page load starts with the **Newest** order.
 
-Select **Contribute Project** to submit a project through an in-page form. It accepts project names, descriptions, and author names in English, Chinese, or both, along with shared board selections, an optional cover image URL, and the release date. A configured submission service creates a GitHub pull request for maintainer review and returns its link. See [submission service setup and verification](worker/README.md) for local preview, GitHub App permissions, and deployment.
+Select **Contribute Project** to submit a project through an in-page form. It accepts project names, descriptions, and author names in English, Chinese, or both, along with a category, shared board selections, an optional cover image URL, and the release date. The selected category is stored with its canonical English and Chinese labels. A configured submission service creates a GitHub pull request for maintainer review and returns its link. See [submission service setup and verification](worker/README.md) for local preview, GitHub App permissions, and deployment.
 
 The search field includes an inline [Lucide search icon](https://github.com/lucide-icons/lucide/blob/main/icons/search.svg), with attribution in [LUCIDE-LICENSE](docs/LUCIDE-LICENSE).
 

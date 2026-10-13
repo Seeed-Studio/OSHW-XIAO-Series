@@ -3333,7 +3333,9 @@ projects:
   description:
     en: Nine `no_std` Rust examples wiring Grove sensors, displays, and actuators to the Seeed XIAO ESP32-C6 over `esp-hal`.
   board: XIAO ESP32-C3
-  category: Tools & Accessories
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
   year: 2026
   month: 9
   release_date: 2026-09-27

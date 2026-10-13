@@ -3336,7 +3336,9 @@ projects:
 
       Because there is currently no official Embassy HAL for Silicon Labs EFR32 chips, this project manually implements the embassy-time-driver over the Cortex-M SysTick timer and uses the community mg24-hal crate to toggle GPIOs asynchronously!
   board: XIAO MG24
-  category: Tools & Accessories
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
   year: 2026
   month: 9
   release_date: 2026-09-28

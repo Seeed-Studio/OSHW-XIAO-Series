@@ -19,7 +19,7 @@ Search Chinese or English names, descriptions, boards, categories, authors, and 
 
 Visitors can like or unlike a project from its card or detail dialog. The browser keeps a random local identifier so one browser has one active vote per project. The service stores a keyed hash of that identifier rather than its original value. Each page load starts with the **Newest** order.
 
-Select **Contribute Project** to submit a project through an in-page form. It accepts project names, descriptions, and author names in English, Chinese, or both, along with shared board selections, an optional cover image URL, and the release date. A configured submission service creates a GitHub pull request for maintainer review and returns its link. See [submission service setup and verification](worker/README.md) for local preview, GitHub App permissions, and deployment.
+Select **Contribute Project** to submit a project through an in-page form. It accepts project names, descriptions, and author names in English, Chinese, or both, along with a category, shared board selections, an optional cover image URL, and the release date. The selected category is stored with its canonical English and Chinese labels. A configured submission service creates a GitHub pull request for maintainer review and returns its link. See [submission service setup and verification](worker/README.md) for local preview, GitHub App permissions, and deployment.
 
 The search field includes an inline [Lucide search icon](https://github.com/lucide-icons/lucide/blob/main/icons/search.svg), with attribution in [LUCIDE-LICENSE](docs/LUCIDE-LICENSE).
 
@@ -252,7 +252,7 @@ Your project can be submitted if it meets one or more of the following:
 - An application demo, experiment, or creative build
 - A project originally published on GitHub, Hackster, Instructables, or a personal blog
 
-Both `hardware-focused` and `software-focused` projects are welcome. For a Project Hub listing, use **Contribute Project** on the hub; the configured service opens a PR with your catalog entry. To contribute full project files, follow these steps:
+Both `hardware-focused` and `software-focused` projects are welcome. For a Project Hub listing, use **Contribute Project** on the hub; the configured service opens a PR with your catalog entry. New submissions begin in editorial review. A maintainer selects **placement: landing page + project hub** to publish in both locations, or **placement: project hub only** to keep the project in the catalog. Contributors can focus on the project details; the maintainer handles this placement decision from the PR labels. To contribute full project files, follow these steps:
 
 1. Fork this repository
 

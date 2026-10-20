@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { parse } from 'yaml';
-import { validateSubmission, projectIdentity, toProjectEntry } from '../docs/submission-schema.mjs';
+import { CATEGORY_LABELS, validateSubmission, projectIdentity, toProjectEntry } from '../docs/submission-schema.mjs';
 import { appendProject, createSubmission, SubmissionError } from '../worker/github.mjs';
 
 export const valid = { name: { en: 'Desk weather station' }, author: { en: 'Community Maker' }, description: { en: 'A small weather station that displays room temperature and humidity.' }, link: 'https://github.com/example/weather', category: 'Smart Home', source: 'GitHub', boards: ['XIAO ESP32-C6'], image: '', releaseDate: '2026-01-02' };
@@ -57,7 +57,19 @@ test('valid submission normalizes fields, multiple boards and optional images', 
     assert.equal(entry.year, 2026);
     assert.equal(entry.month, 1);
     assert.equal(entry.release_date, valid.releaseDate);
+    assert.equal(entry.homepage, 'review');
+    assert.deepEqual(entry.category, CATEGORY_LABELS['Smart Home']);
     assert.equal('image' in entry, false);
+});
+
+test('GitHub image page URLs become direct raw image URLs', () => {
+    const result = validateSubmission({
+        ...valid,
+        image: 'https://github.com/nullsych/f1-key-holder/blob/main/img/demo-img.jpg'
+    });
+    assert.equal(result.valid, true);
+    assert.equal(result.data.image, 'https://raw.githubusercontent.com/nullsych/f1-key-holder/main/img/demo-img.jpg');
+    assert.equal(toProjectEntry(result.data).image, result.data.image);
 });
 
 test('empty, malformed, oversized fields, invalid URLs, unknown boards and dates fail', () => {

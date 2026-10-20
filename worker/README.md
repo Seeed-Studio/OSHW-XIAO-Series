@@ -80,6 +80,19 @@ Set `apiBaseUrl` in `docs/submission-config.json` to the HTTPS Worker URL printe
 
 The GitHub App creates `project-submissions/<link-hash>` branches in the selected repository. Review and merge the resulting PR to publish the project. GitHub repository rules must allow this App to create submission branches and commits.
 
+## Homepage editorial review
+
+New submissions enter `projects.yaml` with `homepage: review`. The project catalog check validates the changed record and requires a maintainer to replace that value before merge:
+
+- `homepage: featured` includes the project in the landing-page candidate pool and requires a public cover image.
+- `homepage: catalog` keeps the project in Project Hub without placing it on the landing page.
+
+The repository creates the explicit **placement: landing page + project hub** and **placement: project hub only** PR labels. A maintainer applies one label after reviewing the project; `homepage_decision.yml` maps that choice to the internal `featured` or `catalog` value, writes it to the submission branch, removes the opposite label, and lets the catalog check run again. Submission branches created by the Project Hub live in this repository, so reviewers can complete the decision without a local checkout. Manually submitted fork PRs continue to use GitHub's file editor for this field because the repository token cannot write to a contributor's fork.
+
+The check validates the catalog shape, project identity, XIAO board, canonical English and Chinese category labels, date, public links, duplicate entries, and the explicit homepage decision. Remote project and image availability appears as a review warning because third-party hosts can fail temporarily.
+
+After `projects.yaml` changes on `main`, `notify_landing_page.yml` sends a `projects-updated` repository dispatch to `Seeed-Projects/XIAO_Landing_Page`. Configure a fine-grained token with access to dispatch workflows in the `LANDING_PAGE_DISPATCH_TOKEN` Actions secret. The landing page also performs scheduled synchronization, so a missing dispatch does not stop later updates.
+
 ## Fields and storage
 
 | Form field | Catalog field | Validation |
@@ -88,22 +101,22 @@ The GitHub App creates `project-submissions/<link-hash>` branches in the selecte
 | Author | `author.en`, `author.zh` | At least one language, 2–120 characters per supplied language |
 | Description | `description.en`, `description.zh` | 20–3,000 characters per supplied language |
 | Project link | `link` | Public HTTPS URL |
-| Category | `category` | Listed category |
+| Category | `category.en`, `category.zh` | Canonical English and Chinese labels for the selected category |
 | Boards | `board` | One or more listed boards, stored comma-separated |
 | Source | `author_type` | Listed source or a 2–40 character custom name |
-| Image link | `image` | Optional public HTTPS URL |
+| Image link | `image` | Optional public HTTPS URL; GitHub file-page links are stored as direct Raw URLs |
 | Release date | `release_date`, `year`, `month` | Valid date from 1970 through today in UTC |
 
 Boards are selected in a grouped multi-select dropdown. Checked models appear as removable chips beneath the collapsed field. Selecting a checkbox keeps the list open; clicking outside or pressing Escape closes it. Press Arrow Down on the trigger to open the list and focus a checkbox, then use Tab and Space to navigate and select.
 
 The `BOARD_GROUPS` list in `docs/submission-schema.mjs` organizes form choices into ESP32, Nordic, Raspberry Pi, Microchip, Renesas, and Silicon Labs sections. Each section keeps chip families together and places standard models before their Sense and Plus variants. The shared `BOARDS` validation list is derived from these groups. As of September 8, 2026, it contains 22 models, including the five [XIAO Plus variants](https://www.seeedstudio.com/blog/2025/01/02/seeed-studio-xiao-plus-more-castellation-ios-for-smd-soldering/) and the nRF54L15 / nRF54LM20A standard and Sense versions in the [official XIAO overview](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/).
 
-The form displays separate English and Chinese sections. Project name, author, and description labels carry an asterisk; the form explains that these fields require at least one language. Contributors may provide either language or both; each supplied language includes a complete project name and description. Author attribution requires at least one language. Submitted text is stored as `{ en, zh }` objects containing only the supplied translations. The hub displays the selected language when available and uses the supplied language when a translation is absent. Interface language changes preserve both sections. PR titles use the English project name when supplied, otherwise the Chinese name. Images remain externally hosted; the form collects a direct image URL. Image priority and date sorting apply when the merged project appears in the hub.
+The form displays separate English and Chinese sections. Project name, author, and description labels carry an asterisk; the form explains that these fields require at least one language. Contributors may provide either language or both; each supplied language includes a complete project name and description. Author attribution requires at least one language. Submitted text is stored as `{ en, zh }` objects containing only the supplied translations. Categories come from the canonical `CATEGORY_LABELS` map, so one selection is stored with both `en` and `zh` labels. The hub displays the selected language when available and uses the supplied language when a translation is absent. Interface language changes preserve both sections. PR titles use the English project name when supplied, otherwise the Chinese name. Images remain externally hosted; the form collects a direct image URL and converts GitHub `blob` or `raw` file-page links to `raw.githubusercontent.com`. Image priority and date sorting apply when the merged project appears in the hub.
 
 ## Request flow and functions
 
-1. `initSubmissionForm({ getLanguage, getCategoryLabel })` in `docs/submission.mjs` creates the dialog and returns a language-update handler. It retains the current draft and displays field errors, connection status, and the returned PR link.
-2. `validateSubmission(input)` in `docs/submission-schema.mjs` receives form values and returns normalized `data`, field `errors`, and a `valid` flag. The browser and Worker share it. Text fields arrive as language-keyed objects, and error keys such as `nameEn` and `descriptionZh` identify the exact input. `toProjectEntry(data)` maps validated fields to a catalog object while retaining each translation.
+1. `initSubmissionForm({ getLanguage })` in `docs/submission.mjs` creates the dialog and returns a language-update handler. It retains the current draft and displays localized category choices, field errors, connection status, and the returned PR link.
+2. `validateSubmission(input)` in `docs/submission-schema.mjs` receives form values and returns normalized `data`, field `errors`, and a `valid` flag. The browser and Worker share it. Text fields arrive as language-keyed objects, and error keys such as `nameEn` and `descriptionZh` identify the exact input. `toProjectEntry(data)` maps validated fields to a catalog object, retaining supplied translations and expanding the category into its canonical `en` and `zh` labels.
 3. `initLikes({ configUrl, onChange })` in `docs/likes.mjs` creates or restores the browser identifier, loads public totals, sends final like or unlike states, and exposes each project's current count and button state. `comparePopularResults(left, right)` orders projects by likes, image availability, date, and source position.
 4. `handleRequest(request, env)` in `index.mjs` receives HTTP requests and returns JSON responses. It checks the origin, request size, content type, configuration, and rate limits. `GET /api/config` returns public submission readiness; `POST /api/submissions` accepts form fields plus `turnstileToken`; `POST /api/likes` returns totals and the current browser's selections; `PUT /api/likes` stores a requested final state.
 5. `getLikeSnapshot(db, visitorId, secret)` in `likes.mjs` returns all public totals and the current browser's liked project links. `setLike(db, input, secret)` inserts or removes one D1 row and returns the authoritative total. `hashVisitor(visitorId, secret)` converts the browser UUID into an HMAC-SHA-256 value before database storage.

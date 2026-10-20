@@ -77,6 +77,7 @@ projects:
   author_type: "Web"
   link: "https://class.textile-academy.org/2026/patricia-vizcaya/project/"
   image: "https://class.textile-academy.org/2026/patricia-vizcaya/images/Pictures/Together_1.jpg"
+  homepage: catalog
 
 - name:
     en: "Biofeedback Device for Nerve Injury Exercises"
@@ -96,6 +97,7 @@ projects:
   author_type: "Web"
   link: "https://class.textile-academy.org/2026/madeleine-olsen/assignments/week12/"
   image: "https://class.textile-academy.org/2026/madeleine-olsen/images/week12/week12-schematic.png"
+  homepage: catalog
 
 - name:
     en: "Mood Paint"
@@ -191,6 +193,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/jancespivo/ble-leveler"
   image: "https://raw.githubusercontent.com/jancespivo/ble-leveler/main/screenshot.png"
+  homepage: catalog
 
   # ========== 2026-07-15 Community Projects ==========
   # Source: xiao-weekly-search(2026-07-15)
@@ -308,6 +311,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/MikeEitel/ESP-32_C3_SEN_MQTT"
   image: "https://opengraph.githubassets.com/bce293bdec75fd4cbbf5fdf336272dae1c5370b0a6e28f39eb36162ab70806d0/MikeEitel/ESP-32_C3_SEN_MQTT"
+  homepage: catalog
 
 - name:
     en: "MacroBoard"
@@ -365,6 +369,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/Cobalt-Watch/Voice-Band"
   image: "https://opengraph.githubassets.com/662d37d4e75e8bd7cdcecd538659ea178fc5b31ab72e70922b5ff01e8ef80a94/Cobalt-Watch/Voice-Band"
+  homepage: catalog
 
 - name:
     en: "Gesture Detection Wearable Jewelry Bracelet Xerces Aurora"
@@ -384,6 +389,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/hybrisCole/abracadabra-platformio"
   image: "https://opengraph.githubassets.com/38442e6cfccd98d0829b14e3db1f6ce937cf51955b1f0f0ff0555b9d150cb62c/hybrisCole/abracadabra-platformio"
+  homepage: catalog
 
 - name:
     en: "Neon Beat Buzzer"
@@ -485,6 +491,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/gidim/e61-gauge"
   image: "https://raw.githubusercontent.com/gidim/e61-gauge/main/media/hero.jpg"
+  homepage: catalog
 
 - name:
     en: "Pico2UltraHiResUSBDDC — USB Digital Audio Converter"
@@ -523,6 +530,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/EFortune-Cookie-a-Tiny-ESP32-Fortune-Teller/"
   image: "https://content.instructables.com/F6G/WPQT/MOKK3HWT/F6GWPQTMOKK3HWT.jpg"
+  homepage: catalog
 
 - name:
     en: "Creating 4 Zigbee Devices on ESP32 in Home Assistant (Without Code)"
@@ -542,6 +550,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=OfGnYurjj8Y"
   image: "https://i.ytimg.com/vi/OfGnYurjj8Y/maxresdefault.jpg"
+  homepage: catalog
 
 - name:
     en: "Bit:busy — LED Bar That Indicates Your Work Status"
@@ -599,6 +608,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=FhV9c0Vv3Ng"
   image: "https://i.ytimg.com/vi/FhV9c0Vv3Ng/maxresdefault.jpg"
+  homepage: catalog
 
 - name:
     en: "Getting Started with XIAO MG24 / XIAO MG24 Sense (Arduino)"
@@ -618,6 +628,7 @@ projects:
   author_type: "Web"
   link: "https://tamanegi-digick.com/it/xiaomg24/"
   image: "https://tamanegi-digick.com/wp-content/uploads/2026/04/ec-xiaomg24.jpg"
+  homepage: catalog
 
 - name:
     en: "Final Countdown — RP2350 Event Timer"
@@ -718,6 +729,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=u1eQ4RQV828"
   image: "https://i.ytimg.com/vi/u1eQ4RQV828/maxresdefault.jpg"
+  homepage: catalog
 
 - name:
     en: "A Ball Robot based on Esp32"
@@ -968,6 +980,7 @@ projects:
   author_type: "Web"
   link: "https://madriguera.me/building-a-giant-xiao-a-fully-functional-15x-scale-seeed-studio-xiao-esp32-c3/"
   image: "https://madriguera.me/content/images/2026/06/02-size-comparison-real-vs-giant.jpg"
+  homepage: catalog
 
 - name:
     en: "WeatherPaper V2 — 500-Day Battery E-Paper Weather Display"
@@ -987,6 +1000,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/WeatherPaper-Squeezing-500-Days-of-Battery-Life-Ou/"
   image: "https://content.instructables.com/F5R/SM2S/MPX8P861/F5RSM2SMPX8P861.jpg?auto=webp&frame=1&width=2100"
+  homepage: catalog
 
 - name:
     en: "Sleeper Matter Sensor — Ultra-Low-Power XIAO nRF52840 Smart Home Sensor"
@@ -1104,6 +1118,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/danking6/veltoc"
   image: "https://private-user-images.githubusercontent.com/35265770/605069097-abb05084-31d4-4e59-87b8-da9ddf925d28.jpg"
+  homepage: catalog
 
 - name:
     en: "DIY JOY AI Desktop Companion Robot"
@@ -1927,6 +1942,7 @@ projects:
   author_type: YouTube
   link: https://www.youtube.com/shorts/BvSES4DGh6c
   image: https://i.ytimg.com/vi/BvSES4DGh6c/maxresdefault.jpg
+  homepage: catalog
 - name:
     en: ESP32-Bus-Pirate
     zh: ESP32-Bus-Pirate
@@ -1946,6 +1962,7 @@ projects:
   author_type: GitHub
   link: https://github.com/geo-tp/ESP32-Bus-Pirate
   image: https://avatars.githubusercontent.com/u/72315006?v=4
+  homepage: catalog
 - name:
     en: MitsubishiCN105ESPHome
     zh: 三菱空调 ESPHome 集成
@@ -1965,6 +1982,7 @@ projects:
   author_type: GitHub
   link: https://github.com/echavet/MitsubishiCN105ESPHome
   image: https://avatars.githubusercontent.com/u/3224452?v=4
+  homepage: catalog
 - name:
     en: lvgl_micropython
     zh: LVGL MicroPython 绑定
@@ -1984,6 +2002,7 @@ projects:
   author_type: GitHub
   link: https://github.com/lvgl-micropython/lvgl_micropython
   image: https://avatars.githubusercontent.com/u/173945867?v=4
+  homepage: catalog
 - name:
     en: Sky-Spy
     zh: Sky-Spy 无人机追踪固件
@@ -2003,6 +2022,7 @@ projects:
   author_type: GitHub
   link: https://github.com/colonelpanichacks/Sky-Spy
   image: https://avatars.githubusercontent.com/u/90460753?v=4
+  homepage: catalog
 - name:
     en: trackpuck
     zh: trackpuck 6DoF CAD 输入设备
@@ -2022,6 +2042,7 @@ projects:
   author_type: GitHub
   link: https://github.com/badjeff/trackpuck
   image: https://avatars.githubusercontent.com/u/141321?v=4
+  homepage: catalog
 - name:
     en: OUI-SPY Unified
     zh: OUI-SPY 多模式监控检测固件
@@ -2041,6 +2062,7 @@ projects:
   author_type: GitHub
   link: https://github.com/colonelpanichacks/oui-spy-unified-blue
   image: https://avatars.githubusercontent.com/u/90460753?v=4
+  homepage: catalog
 - name:
     en: Vail Adapter
     zh: Vail 莫尔斯电码适配器
@@ -2060,6 +2082,7 @@ projects:
   author_type: GitHub
   link: https://github.com/Vail-CW/vail-adapter
   image: https://avatars.githubusercontent.com/u/207725212?v=4
+  homepage: catalog
 - name:
     en: xiamocon
     zh: xiamocon 游戏机形态主板
@@ -2079,6 +2102,7 @@ projects:
   author_type: GitHub
   link: https://github.com/shapoco/xiamocon
   image: https://avatars.githubusercontent.com/u/40152459?v=4
+  homepage: catalog
 - name:
     en: opticka
     zh: opticka 心理物理学实验管理器
@@ -2098,6 +2122,7 @@ projects:
   author_type: GitHub
   link: https://github.com/iandol/opticka
   image: https://avatars.githubusercontent.com/u/153905?v=4
+  homepage: catalog
 - name:
     en: Open source ESP32 AI Chatbot - DIY
     zh: 开源 ESP32 AI 聊天机器人 DIY
@@ -2400,6 +2425,7 @@ projects:
   author_type: GitHub
   link: https://github.com/plainFlight/plainFlightController
   image: https://github.com/plainFlight/plainFlightController/blob/main/assets/images/PlainFlight%20Logo%20Large.PNG
+  homepage: catalog
 - name:
     en: ShellOS
     zh: ShellOS ESP32 系统
@@ -3269,3 +3295,120 @@ projects:
 
 # ========== Author Type / 来源平台 ==========
 # GitHub, YouTube, Hackster, Instructables, Hackaday, Web
+
+- name:
+    en: XIAO Formula 1 Key Holder
+  description:
+    en: Battery-powered F1-garage key holder — XIAO ESP32-S3 firmware that plays a driver's theme when you hang up your keys.
+  board: XIAO ESP32-S3
+  category:
+    en: Smart Home
+    zh: 智能家居
+  year: 2026
+  month: 9
+  release_date: 2026-09-09
+  author:
+    en: nullsych
+  author_type: GitHub
+  link: https://github.com/nullsych/f1-key-holder
+  image: https://raw.githubusercontent.com/nullsych/f1-key-holder/main/img/demo-img.jpg
+  homepage: catalog
+
+- name:
+    en: iPad Computer Use
+  description:
+    en: Allow an AI agent to control an iPad through a USB input tool, native screen sharing, and a control server.
+  board: XIAO RP2040
+  category:
+    en: AI Gadget
+    zh: AI Gadget
+  year: 2026
+  month: 9
+  release_date: 2026-09-16
+  author:
+    en: Jamie Pinheiro
+  author_type: Twitter
+  link: https://x.com/jamiepinheiro/status/2099981750046953653
+  image: https://raw.githubusercontent.com/jamiepinheiro/ipad_computer_use/refs/heads/main/docs/demo-preview.jpg
+  homepage: catalog
+
+- name:
+    en: xiao-mg24-embassy-blinky
+  description:
+    en: |-
+      Rust async examples for the Seeed Studio XIAO MG24 (Sense) board using the Embassy framework.
+
+      Because there is currently no official Embassy HAL for Silicon Labs EFR32 chips, this project manually implements the embassy-time-driver over the Cortex-M SysTick timer and uses the community mg24-hal crate to toggle GPIOs asynchronously!
+  board: XIAO MG24
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-mg24-embassy-blinky
+  homepage: catalog
+
+- name:
+    en: xiao-nrf52480-embassy-blinky
+  description:
+    en: |-
+      Rust async examples for the Seeed Studio XIAO nRF52840 (Sense) board using the Embassy framework.
+
+      This project is built using the official embassy-nrf HAL, which provides native Embassy support for the Nordic Semiconductor nRF52840 chip. The time driver is automatically configured using RTC1.
+  board: XIAO nRF52840 Sense (XIAO BLE Sense)
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: melastmohican
+  author_type: GitHub
+  link: https://github.com/melastmohican/xiao-nrf52480-embassy-blinky
+  homepage: catalog
+
+- name:
+    en: Metal Gear Solid running natively on the ESP32-S3
+  description:
+    en: |-
+      This project brings Metal Gear Solid, originally released for the PlayStation 1, to the XIAO ESP32-S3 Sense. The game runs directly on the ESP32-S3 with an LCD display, using the microcontroller as the actual gaming platform rather than emulating a PlayStation 1.
+
+      The project explores how far the ESP32-S3 can be pushed by porting a real 3D PlayStation-era game to a tiny microcontroller. I also used Velxio, my browser-based embedded development and simulation platform, to iterate and test the firmware before flashing it to the physical XIAO ESP32-S3 Sense.
+
+      The source code and technical details are available in the project article.
+  board: XIAO ESP32-S3 Sense
+  category:
+    en: Gaming
+    zh: 游戏
+  year: 2026
+  month: 9
+  release_date: 2026-09-28
+  author:
+    en: David Montero Crespo
+  author_type: Web
+  link: https://velxio.dev/blog/posts/metal-gear-solid-on-esp32-s3/
+  image: https://velxio.dev/blog/blog-shots/ports/mgs-esp32/blog-hero-wide.webp
+  homepage: featured
+
+- name:
+    en: SMARS ROVER
+  description:
+    en: SMARS ROVER is a modular robotic rover with a finger gripper, controlled remotely over a video stream and powered by an ESP32.
+  board: XIAO ESP32-S3, XIAO ESP32-S3 Sense
+  category:
+    en: Robotics
+    zh: 机器人
+  year: 2026
+  month: 9
+  release_date: 2026-09-16
+  author:
+    en: I amdroid
+  author_type: GitHub
+  link: https://github.com/i-amdroid/smars-rover/
+  image: https://raw.githubusercontent.com/i-amdroid/smars-rover/main/images/render.png
+  homepage: featured

@@ -77,6 +77,24 @@
         }
         .contribute-btn:hover { background: #a0d422; transform: translateY(-1px); }
 
+        .github-btn {
+            padding: 4px 12px;
+            border: 2px solid rgba(255,255,255,0.4);
+            background: transparent;
+            color: white;
+            border-radius: 14px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: border-color 0.2s, background 0.2s;
+            white-space: nowrap;
+        }
+        .github-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.75); }
+        .github-btn svg { width: 14px; height: 14px; }
+
         .lang-btn.small {
             padding: 4px 12px;
             border: 2px solid rgba(255,255,255,0.4);
@@ -267,6 +285,14 @@
             <div class="header-actions">
                 <button class="contribute-btn" id="contributeBtn" type="button">Contribute Project</button>
                 <button class="lang-btn small" id="langBtn">中文</button>
+                <a class="github-btn" id="githubLink" href="https://github.com/Seeed-Studio/OSHW-XIAO-Series" target="_blank" rel="noopener noreferrer" aria-label="View source repository on GitHub">
+                    <!-- Lucide GitHub icon; license: LUCIDE-LICENSE. -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.28-.36 6.72-1.61 6.72-7A5.4 5.4 0 0 0 19.22 4a5.07 5.07 0 0 0-.09-3.5S17.95.14 15 1.85a13.38 13.38 0 0 0-6 0C6.05.14 4.87.5 4.87.5A5.07 5.07 0 0 0 4.78 4a5.4 5.4 0 0 0-1.5 3.5c0 5.38 3.44 6.63 6.72 7A4.8 4.8 0 0 0 9 18v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    <span>GitHub</span>
+                </a>
             </div>
         </header>
 
@@ -373,7 +399,8 @@
                 noResults: 'No matching projects found.',
                 viewProject: 'View Project →',
                 langBtn: '中文',
-                contributeBtn: 'Contribute Project'
+                contributeBtn: 'Contribute Project',
+                githubLabel: 'View source repository on GitHub'
             },
             zh: {
                 search: "\u641c\u7d22\u9879\u76ee\u3001\u7528\u9014\u3001\u5f00\u53d1\u677f\u2026",
@@ -407,7 +434,8 @@
                 noResults: '没有找到匹配的项目。',
                 viewProject: '查看项目 →',
                 langBtn: 'English',
-                contributeBtn: '贡献项目'
+                contributeBtn: '贡献项目',
+                githubLabel: '在 GitHub 查看源代码仓库'
             }
         };
 
@@ -506,6 +534,7 @@
             document.getElementById('no-results-text').textContent = L.noResults;
             document.getElementById('langBtn').textContent = L.langBtn;
             document.getElementById('contributeBtn').textContent = L.contributeBtn;
+            document.getElementById('githubLink').setAttribute('aria-label', L.githubLabel);
             const search = document.getElementById('search');
             search.placeholder = L.search;
             search.setAttribute('aria-label', L.search);

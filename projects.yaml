@@ -3412,3 +3412,18 @@ projects:
   link: https://github.com/i-amdroid/smars-rover/
   image: https://raw.githubusercontent.com/i-amdroid/smars-rover/main/images/render.png
   homepage: featured
+
+- name:
+    en: King Cat Feeder — a feeder that recognizes my cat by face
+  description:
+    en: "A smart cat feeder that opens its door only for my cat — it recognizes him by face, no collar or RFID tag. Other cats kept eating his food, so the door stays shut for everyone else. The prototype was built on a XIAO ESP32S3 Sense; face recognition runs on a Seeed Grove Vision AI V2 with an OV5647 camera, fully offline, no cloud. A rotor dispenses kibble while a load cell under the tray stops it at the target weight (10 g), then the servo door opens. The current version moved to a custom ESP32-S3 board; the event-driven firmware, tested feeder logic and web UI are open source. Video: https://youtube.com/shorts/9GEyEji22ZU"
+  board: XIAO ESP32-S3 Sense
+  category: AI Gadget
+  year: 2026
+  month: 10
+  release_date: 2026-10-25
+  author:
+    en: Maksims Voloscuks
+  author_type: GitHub
+  link: https://github.com/maxeq/king-cat-feeder
+  image: https://i.ytimg.com/vi/9GEyEji22ZU/maxresdefault.jpg

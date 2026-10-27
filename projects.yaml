@@ -3430,7 +3430,9 @@ projects:
 
       Octopus 16 也是 OctoBio 教学套件的"大脑"部分，面向中小学和大学。在免费浏览器实验室（octobridge.pieeg.com）中，学生可以看到自己的 δ/θ/α/β/γ 频段功率，并用积木编程控制 Arduino 入门套件的 LED、舵机、蜂鸣器和 LCD：闭上眼睛，α 波升高，真实的 LED 就会亮起。非医疗设备。
   board: XIAO ESP32-S3
-  category: Scientific Tools
+  category:
+    en: Scientific Tools
+    zh: 科学工具
   year: 2026
   month: 10
   release_date: 2026-10-10

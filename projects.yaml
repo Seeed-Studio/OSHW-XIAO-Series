@@ -3417,16 +3417,18 @@ projects:
     en: DockFrame
     zh: DockFrame
   description:
-    en: DockFrame is a modular USB-C hub that takes the Framework Expansion Cards you already own, plus our own Tool Cards that turn it into a multimeter, power supply, and more.
-    zh: DockFrame 是一款模块化 USB-C 扩展坞，它既能兼容你现有的 Framework 扩展卡（Expansion Cards），还能配合我们自研的“工具卡”（Tool Cards），将其变身为万用表、电源等多种设备。
-  board: XIAO ESP32-C5, XIAO ESP32-S3
-  category: Tools & Accessories
+    en: DockFrame is a modular USB-C hub for Framework Expansion Cards and swappable Tool Cards such as a multimeter, power supply, and BreadBoard Card. The BreadBoard Card includes a removable XIAO ESP32-C5. The project is in active development, with design files planned for release at the end of the crowdfunding campaign.
+    zh: DockFrame 是一款兼容 Framework 扩展卡的模块化 USB-C 扩展坞，可换装万用表、电源和 BreadBoard Card 等工具卡。BreadBoard Card 配有可拆卸的 XIAO ESP32-C5。项目仍在开发中，设计文件计划在众筹结束时公开。
+  board: XIAO ESP32-C5
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
   year: 2026
   month: 10
   release_date: 2026-10-26
   author:
     en: HW Media Lab LLC
     zh: HW Media Lab LLC
-  author_type: Hackster
+  author_type: Web
   link: https://dockframe.com/
   image: https://dockframe.com/images/dockframe-hero-01.webp

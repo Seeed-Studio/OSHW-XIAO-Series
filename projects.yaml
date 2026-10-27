@@ -3414,11 +3414,13 @@ projects:
   homepage: featured
 
 - name:
-    en: King Cat Feeder — a feeder that recognizes my cat by face
+    en: King Cat Feeder — smart feeder bench prototype
   description:
-    en: "A smart cat feeder that opens its door only for my cat — it recognizes him by face, no collar or RFID tag. Other cats kept eating his food, so the door stays shut for everyone else. The prototype was built on a XIAO ESP32S3 Sense; face recognition runs on a Seeed Grove Vision AI V2 with an OV5647 camera, fully offline, no cloud. A rotor dispenses kibble while a load cell under the tray stops it at the target weight (10 g), then the servo door opens. The current version moved to a custom ESP32-S3 board; the event-driven firmware, tested feeder logic and web UI are open source. Video: https://youtube.com/shorts/9GEyEji22ZU"
+    en: "King Cat Feeder is a bench prototype for a weight-based cat feeder with a servo bowl door. An earlier XIAO ESP32-S3 Sense prototype verified weighed dosing, the door, scale, light, motion sensing, web UI, and OTA. The current firmware targets a custom ESP32-S3 board and communicates with a Grove Vision AI V2, but cat-specific recognition is not yet connected to the feeding flow. Opening the door only for the recognized cat is the next milestone. The firmware and recognition experiments are publicly available under a noncommercial source-available license. Video: https://youtube.com/shorts/9GEyEji22ZU"
   board: XIAO ESP32-S3 Sense
-  category: AI Gadget
+  category:
+    en: AI Gadget
+    zh: AI Gadget
   year: 2026
   month: 10
   release_date: 2026-10-25

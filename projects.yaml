@@ -3414,6 +3414,58 @@ projects:
   homepage: featured
 
 - name:
+    en: DockFrame
+    zh: DockFrame
+  description:
+    en: DockFrame is a modular USB-C hub for Framework Expansion Cards and swappable Tool Cards such as a multimeter, power supply, and BreadBoard Card. The BreadBoard Card includes a removable XIAO ESP32-C5. The project is in active development, with design files planned for release at the end of the crowdfunding campaign.
+    zh: DockFrame 是一款兼容 Framework 扩展卡的模块化 USB-C 扩展坞，可换装万用表、电源和 BreadBoard Card 等工具卡。BreadBoard Card 配有可拆卸的 XIAO ESP32-C5。项目仍在开发中，设计文件计划在众筹结束时公开。
+  board: XIAO ESP32-C5
+  category:
+    en: Tools & Accessories
+    zh: 工具配件
+  year: 2026
+  month: 10
+  release_date: 2026-10-26
+  author:
+    en: HW Media Lab LLC
+    zh: HW Media Lab LLC
+  author_type: Web
+  link: https://dockframe.com/
+  image: https://dockframe.com/images/dockframe-hero-01.webp
+  homepage: catalog
+
+- name:
+    en: "Octopus 16: 16-channel wireless dry-electrode EEG on XIAO ESP32-S3"
+    zh: Octopus 16：基于 XIAO ESP32-S3 的 16 通道无线干电极脑电板
+  description:
+    en: |-
+      Octopus 16 is a round, open 16-channel EEG board for education and BCI prototyping. Spring-loaded gold pogo pins act as dry electrodes, so there is no gel and no cap: you strap it to the back of the head and press it down. Two TI ADS131M08 24-bit ADCs capture EEG, EMG or ECG on 16 channels.
+
+      How XIAO is used: a Seeed Studio XIAO ESP32-S3 sits on top of the board. It drives the ADC clock over SPI, reads both ADCs and streams all 16 channels over Bluetooth LE at ~250 SPS (open, documented BLE protocol). Its native USB lets users flash the firmware straight from the browser (no Arduino IDE), and its BLE lets the browser pair and stream with Web Bluetooth. Its small size is what makes a head-worn, battery-powered 16-channel board possible.
+
+      Octopus 16 is also the brain side of the OctoBio Kit, a hands-on kit for schools and universities. In a free browser lab (octobridge.pieeg.com), students see their own delta/theta/alpha/beta/gamma band power and use block programs to control an Arduino starter kit's LEDs, servo, buzzer and LCD. Close your eyes, alpha rises, and a real LED turns on. A JavaScript SDK, Python tools and cloud.pieeg.com support are also available.
+    zh: |-
+      Octopus 16 是一款圆形、开源的 16 通道脑电（EEG）板，面向教育和脑机接口原型开发。镀金弹簧顶针作为干电极，无需导电膏和电极帽，直接贴在后脑即可。两颗 TI ADS131M08 24 位 ADC 可同时采集 16 通道 EEG、EMG 或 ECG 信号。
+
+      XIAO 的作用：Seeed Studio XIAO ESP32-S3 安装在板子上方，通过 SPI 驱动 ADC 时钟并读取两颗 ADC，通过低功耗蓝牙以约 250 SPS 传输全部 16 个通道（BLE 协议开放且有文档）。借助其原生 USB，用户可直接在浏览器中烧录固件（无需 Arduino IDE）；借助 BLE，浏览器可通过 Web Bluetooth 配对并接收数据。XIAO 的小巧体积让头戴式、电池供电的 16 通道设备成为可能。
+
+      Octopus 16 也是 OctoBio 教学套件的"大脑"部分，面向中小学和大学。在免费浏览器实验室（octobridge.pieeg.com）中，学生可以看到自己的 δ/θ/α/β/γ 频段功率，并用积木编程控制 Arduino 入门套件的 LED、舵机、蜂鸣器和 LCD：闭上眼睛，α 波升高，真实的 LED 就会亮起。非医疗设备。
+  board: XIAO ESP32-S3
+  category:
+    en: Scientific Tools
+    zh: 科学工具
+  year: 2026
+  month: 10
+  release_date: 2026-10-10
+  author:
+    en: Ildar Rakhmatulin (PiEEG)
+    zh: Ildar Rakhmatulin (PiEEG)
+  author_type: GitHub
+  link: https://github.com/pieeg-club/OctoBio-kit
+  image: https://raw.githubusercontent.com/pieeg-club/OctoBio-kit/main/Images/OctoBio_kit_XIAO_ESP32-S3.png
+  homepage: catalog
+
+- name:
     en: King Cat Feeder — smart feeder bench prototype
   description:
     en: "King Cat Feeder is a bench prototype for a weight-based cat feeder with a servo bowl door. An earlier XIAO ESP32-S3 Sense prototype verified weighed dosing, the door, scale, light, motion sensing, web UI, and OTA. The current firmware targets a custom ESP32-S3 board and communicates with a Grove Vision AI V2, but cat-specific recognition is not yet connected to the feeding flow. Opening the door only for the recognized cat is the next milestone. The firmware and recognition experiments are publicly available under a noncommercial source-available license. Video: https://youtube.com/shorts/9GEyEji22ZU"

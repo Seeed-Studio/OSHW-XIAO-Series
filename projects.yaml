@@ -3259,7 +3259,7 @@ projects:
   link: https://github.com/Seeed-Studio/OSHW-XIAO-Series/tree/main/projects/reference-projects/XIAO_ESP32_CSI_Espectre
 
   # ========== 2026-10-29 Community Projects ==========
-  # Source: Feishu bitable AMmSwO4ZOifQsqkKkT2c57eSntb (61 new projects)
+  # Source: Feishu bitable AMmSwO4ZOifQsqkKkT2c57eSntb (62 new projects)
 
 - name:
     en: "ESP32 Ethernet Speed Test over MQTT: PoE + W5500 on XIAO ESP32-S3"
@@ -3792,6 +3792,25 @@ projects:
     zh: "TheDogHasALemon"
   author_type: "Other"
   link: "https://www.printables.com/model/1745110-space-drop-seeed-xiao-rp2040-modification"
+  homepage: catalog
+- name:
+    en: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
+    zh: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
+  description:
+    en: "In this video we begin building a real handheld cyberpunk-inspired BLE/WiFi Tripwire Scanner using an ESP32, round TFT display, SD card logging, geiger-style proximity audio, live radar UI, device tracking and custom boot animations."
+    zh: "In this video we begin building a real handheld cyberpunk-inspired BLE/WiFi Tripwire Scanner using an ESP32, round TFT display, SD card logging, geiger-style proximity audio, live radar UI, device tracking and custom boot animations."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 4
+  release_date: 2026-04-30
+  author:
+    en: "Notorious Squirrel"
+    zh: "Notorious Squirrel"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=wwJTl4sEE3U"
   homepage: catalog
 - name:
     en: "XIAO ESP32-C6 Garage Remote"

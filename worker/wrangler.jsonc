@@ -10,8 +10,8 @@
     "GITHUB_OWNER": "Seeed-Studio",
     "GITHUB_REPO": "OSHW-XIAO-Series",
     "GITHUB_BASE_BRANCH": "main",
-    "ALLOWED_ORIGINS": "https://seeed-studio.github.io",
-    "TURNSTILE_HOSTNAMES": "seeed-studio.github.io",
+    "ALLOWED_ORIGINS": "https://seeed-studio.github.io,https://www.seeedstudio.com",
+    "TURNSTILE_HOSTNAMES": "seeed-studio.github.io,www.seeedstudio.com",
     "TURNSTILE_SITE_KEY": "0x4AAAAAAEsg0wvbOeg8UF50"
   },
   "d1_databases": [{ "binding": "LIKES_DB", "database_name": "xiao-project-likes", "database_id": "3fcd85f6-7388-429c-8bc4-81444a7fa269", "migrations_dir": "migrations" }],

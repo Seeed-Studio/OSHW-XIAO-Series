@@ -30,7 +30,7 @@ An unconfigured service returns `ready: false`. The dialog remains available for
 ## Service configuration
 
 1. Register a GitHub App with repository **Contents: Read and write** and **Pull requests: Read and write** permissions. Install it for the target repository. This service uses installation authentication; webhook delivery and visitor OAuth are unnecessary. Record its Client ID and installation ID, and generate a private key. See [GitHub App registration](https://docs.github.com/en/apps/creating-github-apps/registering-a-github-app/registering-a-github-app).
-2. Create a managed Turnstile widget for `seeed-studio.github.io`, `localhost`, and `127.0.0.1`. Copy its public site key into the corresponding `TURNSTILE_SITE_KEY` settings in `wrangler.jsonc`. Each deployment validates its own exact frontend hostname: production accepts `seeed-studio.github.io`, and local development accepts `localhost` and `127.0.0.1`.
+2. Create a managed Turnstile widget for `seeed-studio.github.io`, `www.seeedstudio.com`, `localhost`, and `127.0.0.1`. Copy its public site key into the corresponding `TURNSTILE_SITE_KEY` settings in `wrangler.jsonc`. Each deployment validates its own exact frontend hostnames: production accepts `seeed-studio.github.io` and `www.seeedstudio.com` (the XIAO landing page embeds the hub at `/xiao-series-page/project-hub-embed.html`), and local development accepts `localhost` and `127.0.0.1`.
 3. Set `GITHUB_OWNER`, `GITHUB_REPO`, and `GITHUB_BASE_BRANCH` to the installation's repository. `ALLOWED_ORIGINS` lists exact frontend origins including scheme and port, separated by commas. `TURNSTILE_HOSTNAMES` lists matching hostnames. The top-level settings are production; `env.local.vars` configures local development.
 4. Create `worker/.env.local` from [.env.example](.env.example), then fill the four values using a local editor. Store the full PEM private key as a quoted multiline value. These files and private-key files are ignored by Git. Wrangler loads environment-specific `.env` files alongside its configuration; see [local environment variables](https://developers.cloudflare.com/workers/local-development/environment-variables/).
 
@@ -42,7 +42,7 @@ Local configuration needs `GITHUB_APP_CLIENT_ID`, `GITHUB_APP_INSTALLATION_ID`, 
 
 ## Production deployment
 
-The production API is hosted at <https://xiao-project-submissions.limengdu0117.workers.dev>. Its configuration endpoint is `/api/config` and requires the frontend origin `https://seeed-studio.github.io`.
+The production API is hosted at <https://xiao-project-submissions.limengdu0117.workers.dev>. Its configuration endpoint is `/api/config` and accepts the frontend origins `https://seeed-studio.github.io` and `https://www.seeedstudio.com`.
 
 The [XIAO Project Hub Submissions GitHub App](https://github.com/apps/xiao-project-hub-submissions) is installed for `Seeed-Studio/OSHW-XIAO-Series` with Contents and Pull requests write permissions. Credentials are stored as encrypted Worker secrets. Check public readiness with:
 

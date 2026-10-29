@@ -3259,7 +3259,7 @@ projects:
   link: https://github.com/Seeed-Studio/OSHW-XIAO-Series/tree/main/projects/reference-projects/XIAO_ESP32_CSI_Espectre
 
   # ========== 2026-10-29 Community Projects ==========
-  # Source: Feishu bitable AMmSwO4ZOifQsqkKkT2c57eSntb (69 new projects)
+  # Source: Feishu bitable AMmSwO4ZOifQsqkKkT2c57eSntb (61 new projects)
 
 - name:
     en: "ESP32 Ethernet Speed Test over MQTT: PoE + W5500 on XIAO ESP32-S3"
@@ -3471,25 +3471,6 @@ projects:
   link: "https://www.reddit.com/r/esp32/comments/1x0w9mn/esp32_object_scanner/"
   homepage: catalog
 - name:
-    en: "DIY Smart Desktop Companion"
-    zh: "DIY Smart Desktop Companion"
-  description:
-    en: "Desktop companion robots are trending right now, but buying one can be expensive. So in this video, I built my own DIY desktop companion robot using a Seeed Studio XIAO ESP32-S3, and an OLED display."
-    zh: "Desktop companion robots are trending right now, but buying one can be expensive. So in this video, I built my own DIY desktop companion robot using a Seeed Studio XIAO ESP32-S3, and an OLED display."
-  board: "XIAO ESP32-S3"
-  category:
-    en: "Robotics"
-    zh: "机器人"
-  year: 2026
-  month: 10
-  release_date: 2026-10-02
-  author:
-    en: "roboattic Lab"
-    zh: "roboattic Lab"
-  author_type: "YouTube"
-  link: "https://www.youtube.com/watch?v=mNnPqyR818Y"
-  homepage: catalog
-- name:
     en: "Building a Tiny OLED Keychain"
     zh: "Building a Tiny OLED Keychain"
   description:
@@ -3645,8 +3626,8 @@ projects:
     en: "DIY Smart Desktop Companion"
     zh: "DIY Smart Desktop Companion"
   description:
-    en: "DIY Smart Desktop Companion: Greetings everyone, and welcome back to my Instructables tutorial! In this project, we&#x27;re building Desktop Companion V2, an upgraded version of my DIY desktop companion robot powered by the Seeed Studio XIAO ESP32-S3. Desktop companion robots are a …"
-    zh: "DIY Smart Desktop Companion: Greetings everyone, and welcome back to my Instructables tutorial! In this project, we&#x27;re building Desktop Companion V2, an upgraded version of my DIY desktop companion robot powered by the Seeed Studio XIAO ESP32-S3. Desktop companion robots are a …"
+    en: "DIY Smart Desktop Companion: Greetings everyone, and welcome back to my Instructables tutorial! In this project, we're building Desktop Companion V2, an upgraded version of my DIY desktop companion robot powered by the Seeed Studio XIAO ESP32-S3. Desktop companion robots are a …"
+    zh: "DIY Smart Desktop Companion: Greetings everyone, and welcome back to my Instructables tutorial! In this project, we're building Desktop Companion V2, an upgraded version of my DIY desktop companion robot powered by the Seeed Studio XIAO ESP32-S3. Desktop companion robots are a …"
   board: "XIAO ESP32-S3"
   category:
     en: "Robotics"
@@ -3737,25 +3718,6 @@ projects:
   link: "https://www.instructables.com/Vibe-Pad/"
   homepage: catalog
 - name:
-    en: "Genius GM-6000 - BLE Mouse Revival"
-    zh: "Genius GM-6000 - BLE Mouse Revival"
-  description:
-    en: "Reviving the iconic Genius GM-6000 mouse adding BLE, USB, air mouse functionality and a battery - preserving the mechanical ball encoders. By eSPee77."
-    zh: "Reviving the iconic Genius GM-6000 mouse adding BLE, USB, air mouse functionality and a battery - preserving the mechanical ball encoders. By eSPee77."
-  board: "XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 (XIAO BLE)"
-  category:
-    en: "Tools & Accessories"
-    zh: "工具配件"
-  year: 2026
-  month: 6
-  release_date: 2026-06-30
-  author:
-    en: "espee77"
-    zh: "espee77"
-  author_type: "Hackster"
-  link: "https://www.hackster.io/espee77/genius-gm-6000-ble-mouse-revival-82aee9"
-  homepage: catalog
-- name:
     en: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN"
     zh: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN"
   description:
@@ -3813,44 +3775,6 @@ projects:
   link: "https://github.com/OpenSQZ/OpenGlass/tree/docs/phase1-unified-repo"
   homepage: catalog
 - name:
-    en: "Sneaky Gestures — MIDI Glove"
-    zh: "Sneaky Gestures — MIDI Glove"
-  description:
-    en: "Bluetooth Gestural MIDI Glove."
-    zh: "Bluetooth Gestural MIDI Glove."
-  board: "XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 (XIAO BLE)"
-  category:
-    en: "Mechanical Keyboard"
-    zh: "机械键盘"
-  year: 2026
-  month: 5
-  release_date: 2026-05-31
-  author:
-    en: "INVOLUCIJA (sneak-thief)"
-    zh: "INVOLUCIJA (sneak-thief)"
-  author_type: "GitHub"
-  link: "https://github.com/sneak-thief/Sneaky-Gestures-V2"
-  homepage: catalog
-- name:
-    en: "Hivora Sense: Turning a decoy pot into a smart monitoring station"
-    zh: "Hivora Sense: Turning a decoy pot into a smart monitoring station"
-  description:
-    en: "Automatisches Monitoring der Asiatischen Hornisse: Hivora Sense nutzt Edge AI auf dem ESP32 und meldet Aktivitäten direkt aus dem Feld."
-    zh: "Automatisches Monitoring der Asiatischen Hornisse: Hivora Sense nutzt Edge AI auf dem ESP32 und meldet Aktivitäten direkt aus dem Feld."
-  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
-  category:
-    en: "Wearables"
-    zh: "可穿戴"
-  year: 2026
-  month: 5
-  release_date: 2026-05-31
-  author:
-    en: "Hivora (Community)"
-    zh: "Hivora (Community)"
-  author_type: "Web"
-  link: "https://www.mariolukas.de/hivora-sense-vom-locktopf-zur-intelligenten-messstation/"
-  homepage: catalog
-- name:
     en: "Space Drop - Seeed XIAO RP2040 Modification"
     zh: "Space Drop - Seeed XIAO RP2040 Modification"
   description:
@@ -3868,44 +3792,6 @@ projects:
     zh: "TheDogHasALemon"
   author_type: "Other"
   link: "https://www.printables.com/model/1745110-space-drop-seeed-xiao-rp2040-modification"
-  homepage: catalog
-- name:
-    en: "A desk companion rover built on the XIAO ESP32-S3 Sense"
-    zh: "A desk companion rover built on the XIAO ESP32-S3 Sense"
-  description:
-    en: "Made an autonomous rover using a Xiao ESP32S3 Sense hosting an index.html page over a local MDNS domain (explorer.local). The JS helps the rover 'see' the floor, objects, and makes choices to simulate autonomous behavior!"
-    zh: "Made an autonomous rover using a Xiao ESP32S3 Sense hosting an index.html page over a local MDNS domain (explorer.local). The JS helps the rover 'see' the floor, objects, and makes choices to simulate autonomous behavior!"
-  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
-  category:
-    en: "Robotics"
-    zh: "机器人"
-  year: 2026
-  month: 4
-  release_date: 2026-04-30
-  author:
-    en: "Absurd Industries"
-    zh: "Absurd Industries"
-  author_type: "Other"
-  link: "https://www.reddit.com/r/esp32/comments/1t5mrsp/made_an_autonomous_rover_using_the_xiao_esp32s3/"
-  homepage: catalog
-- name:
-    en: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
-    zh: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
-  description:
-    en: "In this video we begin building a real handheld cyberpunk-inspired BLE/WiFi Tripwire Scanner using an ESP32, round TFT display, SD card logging, geiger-style proximity audio, live radar UI, device tracking and custom boot animations."
-    zh: "In this video we begin building a real handheld cyberpunk-inspired BLE/WiFi Tripwire Scanner using an ESP32, round TFT display, SD card logging, geiger-style proximity audio, live radar UI, device tracking and custom boot animations."
-  board: "XIAO ESP32-C5"
-  category:
-    en: "Wearables"
-    zh: "可穿戴"
-  year: 2026
-  month: 4
-  release_date: 2026-04-30
-  author:
-    en: "Notorious Squirrel"
-    zh: "Notorious Squirrel"
-  author_type: "YouTube"
-  link: "https://www.youtube.com/watch?v=wwJTl4sEE3U"
   homepage: catalog
 - name:
     en: "XIAO ESP32-C6 Garage Remote"
@@ -3963,25 +3849,6 @@ projects:
     zh: "upir"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=EEmuondHHyY"
-  homepage: catalog
-- name:
-    en: "Half Pill a Minimal Smart Desk Pill Reminder with XIAO ESP32-C3 and Round Display for XIAO"
-    zh: "Half Pill a Minimal Smart Desk Pill Reminder with XIAO ESP32-C3 and Round Display for XIAO"
-  description:
-    en: "Missing medication schedules is more common than we think, especially for those with busy routines or elderly family members. I want to design something easy to use—a simple device that gently reminds users to take their medication at the right time."
-    zh: "Missing medication schedules is more common than we think, especially for those with busy routines or elderly family members. I want to design something easy to use—a simple device that gently reminds users to take their medication at the right time."
-  board: "XIAO ESP32-C3"
-  category:
-    en: "Healthcare"
-    zh: "健康护理"
-  year: 2026
-  month: 1
-  release_date: 2026-01-31
-  author:
-    en: "Gokul"
-    zh: "Gokul"
-  author_type: "YouTube"
-  link: "https://www.youtube.com/watch?v=pdmuOCIE_68"
   homepage: catalog
 - name:
     en: "Electronic Structure Air Plane"
@@ -4115,25 +3982,6 @@ projects:
     zh: "Data Slayer"
   author_type: "YouTube"
   link: "https://youtu.be/ofR7GFNZzJY"
-  homepage: catalog
-- name:
-    en: "13 F1 Cockpit-Inspired Digital OLED Clock With XIAO ESP32-C3"
-    zh: "13 F1 Cockpit-Inspired Digital OLED Clock With XIAO ESP32-C3"
-  description:
-    en: "Formula 1 has long stood for top-tier technolоgy, accuracy, and design. The driver's steering whеel ‍display, compact, data-rich, and designed fоr both functionality and style, is one of the mоst recog‍nizable parts of modern F1 cars."
-    zh: "Formula 1 has long stood for top-tier technolоgy, accuracy, and design. The driver's steering whеel ‍display, compact, data-rich, and designed fоr both functionality and style, is one of the mоst recog‍nizable parts of modern F1 cars."
-  board: "XIAO ESP32-C3"
-  category:
-    en: "Wearables"
-    zh: "可穿戴"
-  year: 2025
-  month: 7
-  release_date: 2025-07-31
-  author:
-    en: "gokux"
-    zh: "gokux"
-  author_type: "YouTube"
-  link: "https://www.youtube.com/watch?v=nS1MIreTm6M"
   homepage: catalog
 - name:
     en: "This Tiny ESP32 Board Has Everything! | XIAO ESP32-C6 Review"

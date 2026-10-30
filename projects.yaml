@@ -2161,6 +2161,24 @@ projects:
   link: https://www.youtube.com/watch?v=NAz847JrGU4
   image: https://i.ytimg.com/vi/NAz847JrGU4/hqdefault.jpg
 - name:
+    en: Running AI Agent on ESP32 S3 Board
+    zh: 在 ESP32 S3 开发板上运行 AI Agent
+  description:
+    en: ' Run the ESP Claw AI agent on an ESP32-S3 development board.'
+    zh: 在XIAO ESP32-S3上跑ESP Claw。
+  board: XIAO ESP32-S3
+  category:
+    en: AI Gadget
+    zh: AI Gadget
+  year: 2026
+  month: 4
+  author:
+    en: techiesms
+    zh: techiesms
+  author_type: YouTube
+  link: https://www.youtube.com/watch?v=S0czt7Ld5fw
+  image: https://i.ytimg.com/vi/S0czt7Ld5fw/hqdefault.jpg
+- name:
     en: Make Your Own Fallout Smart Watch
     zh: 自制 Fallout 风格智能手表
   description:

@@ -3240,6 +3240,1279 @@ projects:
   author_type: GitHub
   link: https://github.com/Seeed-Studio/OSHW-XIAO-Series/tree/main/projects/reference-projects/XIAO_ESP32_CSI_Espectre
 
+# ========== 2026-10-29 Community Projects ==========
+
+- name:
+    en: "ESP32 Ethernet Speed Test over MQTT: PoE + W5500 on XIAO ESP32-S3"
+    zh: "ESP32 Ethernet Speed Test over MQTT: PoE + W5500 on XIAO ESP32-S3"
+  description:
+    en: "📝 Full blog & code: Send one MQTT command and this ESP32 board tells you its real network speed, powered and connected by a single Ethernet cable."
+    zh: "📝 Full blog & code: Send one MQTT command and this ESP32 board tells you its real network speed, powered and connected by a single Ethernet cable."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 10
+  release_date: 2026-10-05
+  author:
+    en: "IoT Bhai"
+    zh: "IoT Bhai"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=L5pBvX0efOs"
+  homepage: catalog
+
+
+- name:
+    en: "Q - Tiny Desk Companion for Your Mac"
+    zh: "Q - Tiny Desk Companion for Your Mac"
+  description:
+    en: "A tiny desk companion for your Mac that surfaces what normally hides inside other windows: an AI agent finishing a task, a focus timer running down, a muted meeting mic. It shows these on a small physical display so you stop switching tabs and apps."
+    zh: "放在 Mac 旁边的桌面小伴侣，把原本藏在其他窗口里的信息搬到一块小屏上：AI 助手任务完成、专注计时结束、会议麦克风静音。不用再反复翻标签页或开 App 确认。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 10
+  release_date: 2026-10-07
+  author:
+    en: "Alex Latorre"
+    zh: "Alex Latorre"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/Q-Tiny-Desk-Companion-for-Your-Mac"
+  homepage: catalog
+
+- name:
+    en: "I Built a Tiny Screen That Tracks My YouTube & Store Sales"
+    zh: "I Built a Tiny Screen That Tracks My YouTube & Store Sales"
+  description:
+    en: "I built a tiny smart desk clock that shows way more than time — my live YouTube subscribers, today's e-commerce orders, weather and more — all on the new Seeed Studio XIAO 1.47\" IPS Display powered by the XIAO ESP32-S3 Plus."
+    zh: "I built a tiny smart desk clock that shows way more than time — my live YouTube subscribers, today's e-commerce orders, weather and more — all on the new Seeed Studio XIAO 1.47\" IPS Display powered by the XIAO ESP32-S3 Plus."
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-09
+  author:
+    en: "techiesms"
+    zh: "techiesms"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=UMBq-8sZl7I"
+  homepage: catalog
+
+
+- name:
+    en: "2.4GHz vs 5GHz on the ESP32 C5 The Real Difference"
+    zh: "2.4GHz vs 5GHz on the ESP32 C5 The Real Difference"
+  description:
+    en: "📝 Full blog & code: The Seeed Studio XIAO ESP32-C5 is the FIRST ESP32 with 5 GHz Wi-Fi — but does dual-band actually help your IoT projects? I built a live 2.4 GHz vs 5 GHz benchmark node to find out, with real throughput, RSSI, and range tests you can reproduce yourself."
+    zh: "📝 Full blog & code: The Seeed Studio XIAO ESP32-C5 is the FIRST ESP32 with 5 GHz Wi-Fi — but does dual-band actually help your IoT projects? I built a live 2.4 GHz vs 5 GHz benchmark node to find out, with real throughput, RSSI, and range tests you can reproduce yourself."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 9
+  release_date: 2026-09-15
+  author:
+    en: "IoT Bhai"
+    zh: "IoT Bhai"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=ss3Qop2KxwE"
+  homepage: catalog
+
+
+- name:
+    en: "A Wrist-Worn Step Counter with XIAO nRF54LM20A Sense"
+    zh: "A Wrist-Worn Step Counter with XIAO nRF54LM20A Sense"
+  description:
+    en: "DIY Portable 3D printed Step Counter with Web Control Dashboard. By Pradeep."
+    zh: "DIY Portable 3D printed Step Counter with Web Control Dashboard. By Pradeep."
+  board: "XIAO nRF54LM20A Sense, XIAO nRF54LM20A"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 10
+  release_date: 2026-10-01
+  author:
+    en: "Pradeep"
+    zh: "Pradeep"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/pradeeplogu0/a-wrist-worn-step-counter-with-xiao-nrf54lm20a-sense-ffd823"
+  homepage: catalog
+
+
+- name:
+    en: "Excuse Cat: An Offline E-Paper Excuse Generator"
+    zh: "Excuse Cat: An Offline E-Paper Excuse Generator"
+  description:
+    en: "Press the button and let an offline e-paper cat explain why your project still isn't done with 60 random excuses and changing moods. By Mason."
+    zh: "Press the button and let an offline e-paper cat explain why your project still isn't done with 60 random excuses and changing moods. By Mason."
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 7
+  release_date: 2026-07-15
+  author:
+    en: "Mason"
+    zh: "Mason"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Masonalive/excuse-cat-an-offline-e-paper-excuse-generator-9d8256"
+  homepage: catalog
+
+
+- name:
+    en: "eChain - A Fun Digital Key Chain"
+    zh: "eChain - A Fun Digital Key Chain"
+  description:
+    en: "Display memes, cartoons, and photos to your keys or bag with eChain: a smart ePaper tag that lasts weeks on a single charge! By Ameya Angadi."
+    zh: "Display memes, cartoons, and photos to your keys or bag with eChain: a smart ePaper tag that lasts weeks on a single charge! By Ameya Angadi."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 9
+  release_date: 2026-09-29
+  author:
+    en: "Ameya Angadi"
+    zh: "Ameya Angadi"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Ameya_Angadi/echain-a-fun-digital-key-chain-ce8f8d"
+  homepage: catalog
+
+
+- name:
+    en: "I managed to pack everything inside the walnut."
+    zh: "I managed to pack everything inside the walnut."
+  description:
+    en: "This time, I packed an electronic circuit inside a real walnut shell and turned it into a tiny electronic device. Inside the limited space, I installed an ESP32-C3, multiple LEDs, an IR receiver, a temperature sensor, a lithium-polymer battery, and other components."
+    zh: "This time, I packed an electronic circuit inside a real walnut shell and turned it into a tiny electronic device. Inside the limited space, I installed an ESP32-C3, multiple LEDs, an IR receiver, a temperature sensor, a lithium-polymer battery, and other components."
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 7
+  release_date: 2026-07-31
+  author:
+    en: "JSK-Studio"
+    zh: "JSK-Studio"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=OZSdhphErQY"
+  homepage: catalog
+
+
+- name:
+    en: "Claude Meter with XIAO ePaper DIY Kit (ESP32-S3) EE05"
+    zh: "Claude Meter with XIAO ePaper DIY Kit (ESP32-S3) EE05"
+  description:
+    en: "Will guide you to build a DIY Real Time Claude usage tracker with XIAO ePaper DIY Kit (ESP32-S3) and 2.6in ePaper Display. By Pradeep."
+    zh: "Will guide you to build a DIY Real Time Claude usage tracker with XIAO ePaper DIY Kit (ESP32-S3) and 2.6in ePaper Display. By Pradeep."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 10
+  release_date: 2026-10-09
+  author:
+    en: "Pradeep"
+    zh: "Pradeep"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/pradeeplogu0/claude-meter-with-xiao-epaper-diy-kit-esp32-s3-ee05-63df7b"
+  homepage: catalog
+
+
+- name:
+    en: "SignalSweep: pocket counter-surveillance scanner on a XIAO ESP32-C5"
+    zh: "SignalSweep: pocket counter-surveillance scanner on a XIAO ESP32-C5"
+  description:
+    en: "I built a little box that listens for surveillance and tracking gear and tells you what it heard by sound alone. It works face-down in a cupholder or buried in a jacket pocket. No screen, no phone required. **What it hears** - **Drones:** full ASTM F3411 Remote ID over BLE, Wi-Fi beacon and Wi-Fi NAN."
+    zh: "I built a little box that listens for surveillance and tracking gear and tells you what it heard by sound alone. It works face-down in a cupholder or buried in a jacket pocket. No screen, no phone required. **What it hears** - **Drones:** full ASTM F3411 Remote ID over BLE, Wi-Fi beacon and Wi-Fi NAN."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-09
+  author:
+    en: "No-Molasses1769"
+    zh: "No-Molasses1769"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1x20yit/signalsweep_pocket_countersurveillance_scanner_on/"
+  homepage: catalog
+
+
+- name:
+    en: "Esp32 Object Scanner"
+    zh: "Esp32 Object Scanner"
+  description:
+    en: "An ESP32-based 3D object scanner built with a Seeed Studio XIAO ESP32-S3 and the Round Display for XIAO."
+    zh: "An ESP32-based 3D object scanner built with a Seeed Studio XIAO ESP32-S3 and the Round Display for XIAO."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-07
+  author:
+    en: "the_man_of_the_first"
+    zh: "the_man_of_the_first"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1x0w9mn/esp32_object_scanner/"
+  homepage: catalog
+
+
+- name:
+    en: "Building a Tiny OLED Keychain"
+    zh: "Building a Tiny OLED Keychain"
+  description:
+    en: "DIY electronics keychains are everywhere right now, so I decided to make my own! I built a tiny OLED keychain using a XIAO ESP32-S3, a 1.3-inch OLED display, and a small LiPo battery. I designed a custom 3D-printed enclosure and squeezed all the electronics into a tiny package."
+    zh: "DIY electronics keychains are everywhere right now, so I decided to make my own! I built a tiny OLED keychain using a XIAO ESP32-S3, a 1.3-inch OLED display, and a small LiPo battery. I designed a custom 3D-printed enclosure and squeezed all the electronics into a tiny package."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-04
+  author:
+    en: "Tech Talkies"
+    zh: "Tech Talkies"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=c_qwv6NKEDg"
+  homepage: catalog
+
+
+- name:
+    en: "Build a Word Clock with XIAO ESP32-C6 | Part 1: PCB Design with KiCad"
+    zh: "Build a Word Clock with XIAO ESP32-C6 | Part 1: PCB Design with KiCad"
+  description:
+    en: "This video is about time! A word clock is a creative digital clock that displays the time using illuminated words instead of numbers, making it both functional and visually interesting."
+    zh: "This video is about time! A word clock is a creative digital clock that displays the time using illuminated words instead of numbers, making it both functional and visually interesting."
+  board: "XIAO ESP32-C6"
+  category:
+    en: "LED Lighting"
+    zh: "LED 灯光"
+  year: 2026
+  month: 8
+  release_date: 2026-08-13
+  author:
+    en: "Leon Anavi"
+    zh: "Leon Anavi"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=Wtqm-hPrgqk"
+  homepage: catalog
+
+
+- name:
+    en: "I Trained My Own 30M Parameter AI to Run on an ESP32"
+    zh: "I Trained My Own 30M Parameter AI to Run on an ESP32"
+  description:
+    en: "I trained my own AI language model from scratch and got it running offline on an ESP32! 🐱 In this video I'll show you how I trained a Transformer language model with 30.46 million parameters and brought it to an ESP32-S3 DevKit and the Seeed Studio XIAO ESP32S3."
+    zh: "I trained my own AI language model from scratch and got it running offline on an ESP32! 🐱 In this video I'll show you how I trained a Transformer language model with 30.46 million parameters and brought it to an ESP32-S3 DevKit and the Seeed Studio XIAO ESP32S3."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 10
+  release_date: 2026-10-12
+  author:
+    en: "Marina"
+    zh: "Marina"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=LgCNVUndTH8"
+  homepage: catalog
+
+
+- name:
+    en: "The ESP32-S3 Plus XIAO: Everything You Need to Know"
+    zh: "The ESP32-S3 Plus XIAO: Everything You Need to Know"
+  description:
+    en: "Seeed Studio XIAO 1.47'' IPS Touch Display (ESP32-S3 Plus) — getting started. We unbox the board, flash the official Hello XIAO sketch in Arduino IDE, and walk the pin map before you fry a bus."
+    zh: "Seeed Studio XIAO 1.47'' IPS Touch Display (ESP32-S3 Plus) — getting started. We unbox the board, flash the official Hello XIAO sketch in Arduino IDE, and walk the pin map before you fry a bus."
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-08
+  author:
+    en: "Valleytech Custom Solutions"
+    zh: "Valleytech Custom Solutions"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=2iXLf_5kyTY"
+  homepage: catalog
+
+
+- name:
+    en: "Getting Started with XIAO nRF52840 0.96\" Display and Arduino IDE"
+    zh: "Getting Started with XIAO nRF52840 0.96\" Display and Arduino IDE"
+  description:
+    en: "Getting Started with XIAO nRF52840 0.96\" Display Board and Arduino IDE. With detailed installation instructions and code examples."
+    zh: "Getting Started with XIAO nRF52840 0.96\" Display Board and Arduino IDE. With detailed installation instructions and code examples."
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-13
+  author:
+    en: "Stefan Maetschke"
+    zh: "Stefan Maetschke"
+  author_type: "Web"
+  link: "https://www.makerguides.com/getting-started-with-xiao-nrf52840-0-96-display-and-arduino-ide/"
+  homepage: catalog
+
+
+- name:
+    en: "I Built a Card-Launching Purse to Distract Mark Rober"
+    zh: "I Built a Card-Launching Purse to Distract Mark Rober"
+  description:
+    en: "A wearable purse that launches playing cards to create a distraction, built with a XIAO ESP32-C3. A practical-joke build in the spirit of Mark Rober's engineering pranks."
+    zh: "能弹出扑克牌制造干扰的可穿戴手包，基于 XIAO ESP32-C3 制作，属于受 Mark Rober 工程恶作剧启发的整蛊项目。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 9
+  release_date: 2026-09-18
+  author:
+    en: "Becky Stern"
+    zh: "Becky Stern"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=4R9bSVE5pJQ"
+  homepage: catalog
+
+
+- name:
+    en: "Make an ESP32 RC Bionic Butterfly That Flies | ESP-FLUTTER"
+    zh: "Make an ESP32 RC Bionic Butterfly That Flies | ESP-FLUTTER"
+  description:
+    en: "A bionic butterfly that actually flies: an ESP32 ornithopter with flapping wings and a custom flight-controller PCB, driven by a Seeed Studio XIAO ESP32-C3. The build log covers the wing mechanism, the PCB, the radio link and the first outdoor flight tests."
+    zh: "一只真能飞的仿生蝴蝶：带扑翼机构和自制飞控 PCB 的 ESP32 飞行器，主控用 Seeed Studio XIAO ESP32-C3。制作过程涵盖扑翼机构、飞控板设计、遥控链路和首次户外试飞。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 10
+  release_date: 2026-10-15
+  author:
+    en: "Max Imagination"
+    zh: "Max Imagination"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=5Le4I-1Pf9I"
+  homepage: catalog
+
+
+- name:
+    en: "30 Jahre Akkulaufzeit? Dieser ESPHome-Sensor braucht nur 10 µA"
+    zh: "30 Jahre Akkulaufzeit? Dieser ESPHome-Sensor braucht nur 10 µA"
+  description:
+    en: "How far can you really push the power consumption of a DIY Home Assistant sensor? In this video, I build and measure a BLE brightness sensor that, using a Seeed Studio XIAO nRF52840 and OPT3001, achieves around 10 µA in optimized operation."
+    zh: "How far can you really push the power consumption of a DIY Home Assistant sensor? In this video, I build and measure a BLE brightness sensor that, using a Seeed Studio XIAO nRF52840 and OPT3001, achieves around 10 µA in optimized operation."
+  board: "XIAO ESP32-C6, XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 10
+  release_date: 2026-10-14
+  author:
+    en: "Carsten's world"
+    zh: "Carsten's world"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=a9gEFRlPrB0"
+  homepage: catalog
+
+
+- name:
+    en: "DIY Smart Desktop Companion"
+    zh: "DIY Smart Desktop Companion"
+  description:
+    en: "Desktop Companion V2 is an upgraded version of a DIY desktop robot powered by the Seeed Studio XIAO ESP32-S3, with a 3D-printed body and animated facial expressions. The Instructables guide walks through the electronics, the firmware and the assembly step by step."
+    zh: "Desktop Companion V2 是 DIY 桌面机器人的升级版，主控为 Seeed Studio XIAO ESP32-S3，3D 打印机身配动态表情。Instructables 教程分步讲解电路、固件与装配。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 10
+  release_date: 2026-10-12
+  author:
+    en: "Shahbaz Hashmi Ansari"
+    zh: "Shahbaz Hashmi Ansari"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/DIY-Smart-Desktop-Companion/"
+  homepage: catalog
+
+
+- name:
+    en: "Round Display & ESP32 PiPack Kismet Monitor"
+    zh: "Round Display & ESP32 PiPack Kismet Monitor"
+  description:
+    en: "Check out this custom build using the Seeed Studio round display paired with an ESP32 and Pi Pack! By connecting over Wi-Fi using the RaspAP access point, we are using the Kismet API key to stream live wireless data directly to the display—tracking captured access points, packet counts, and GPS satellite locks."
+    zh: "Check out this custom build using the Seeed Studio round display paired with an ESP32 and Pi Pack! By connecting over Wi-Fi using the RaspAP access point, we are using the Kismet API key to stream live wireless data directly to the display—tracking captured access points, packet counts, and GPS satellite locks."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 7
+  release_date: 2026-07-31
+  author:
+    en: "CyberChuck"
+    zh: "CyberChuck"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=XdNKCfWlV9k"
+  homepage: catalog
+
+
+- name:
+    en: "BABAI – DIY Interactive Desktop Robot Inspired by Dasai Mochi"
+    zh: "BABAI – DIY Interactive Desktop Robot Inspired by Dasai Mochi"
+  description:
+    en: "BABAI is a fully custom interactive desktop companion designed and built from scratch in Ukraine, inspired by Dasai Mochi. The 3D modelling, the electronics built around a Seeed Studio XIAO ESP32-S3, the firmware, the animations and the enclosure were all made for the project, and the Instructables guide documents the whole build."
+    zh: "BABAI 是一台从零设计制作的交互式桌面机器人，灵感来自 Dasai Mochi。3D 建模、基于 Seeed Studio XIAO ESP32-S3 的电路、固件、动画与外壳全部自制，Instructables 教程完整记录了制作过程。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 7
+  release_date: 2026-07-31
+  author:
+    en: "Gi_motion"
+    zh: "Gi_motion"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/BABAI-DIY-Interactive-Desktop-Robot-Inspired-by-Da"
+  homepage: catalog
+
+
+- name:
+    en: "How are Chinese electronics so cheap?"
+    zh: "How are Chinese electronics so cheap?"
+  description:
+    en: "The XIAO lineup is taking over the DIY market, but how are these boards made at such a low price? Hack Club walks through the factory floor, tooling and volume economics behind cheap Chinese electronics to explain how a fully featured dev board can sell for a few dollars."
+    zh: "XIAO 系列正在占领 DIY 市场，但这么低的售价是怎么做到的？Hack Club 带你看中国电子制造的生产线、模具与规模经济，解释一块功能齐全的开发板为何能卖到几美元。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Others"
+    zh: "其他"
+  year: 2026
+  month: 7
+  release_date: 2026-07-31
+  author:
+    en: "Hack Club"
+    zh: "Hack Club"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=2OtiPNDWmQY"
+  homepage: catalog
+
+
+- name:
+    en: "Vibe Pad — a 4-Button Bluetooth Macro Keyboard for AI Coding"
+    zh: "Vibe Pad — a 4-Button Bluetooth Macro Keyboard for AI Coding"
+  description:
+    en: "A four-button Bluetooth macro keyboard for coding with AI assistants, built on a Seeed Studio XIAO nRF52840. Four keys carry the shortcuts and prompt snippets you reach for most, so you stop reaching for the mouse mid-session; the Instructables guide covers the PCB, the firmware and the BLE HID setup."
+    zh: "一块为 AI 辅助编程打造的四键蓝牙宏键盘，主控为 Seeed Studio XIAO nRF52840。四个按键放上最常用的快捷键和提示词片段，写代码时不用再频繁摸鼠标；教程涵盖 PCB、固件和 BLE HID 配置。"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2026
+  month: 6
+  release_date: 2026-06-30
+  author:
+    en: "gokux"
+    zh: "gokux"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/Vibe-Pad/"
+  homepage: catalog
+
+
+- name:
+    en: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN"
+    zh: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN"
+  description:
+    en: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN. Seeed XIAO nRF54LM20A + SX1262, Zephyr/nRF Connect SDK. ~4 uA sleep, ~10 year life on 3X AAA cell. Includes KiCad hardware and a Web Bluetooth config app."
+    zh: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN. Seeed XIAO nRF54LM20A + SX1262, Zephyr/nRF Connect SDK. ~4 uA sleep, ~10 year life on 3X AAA cell. Includes KiCad hardware and a Web Bluetooth config app."
+  board: "XIAO nRF54LM20A"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 7
+  release_date: 2026-07-26
+  author:
+    en: "hmd83"
+    zh: "hmd83"
+  author_type: "GitHub"
+  link: "https://github.com/hmd83/tanen"
+  homepage: catalog
+
+
+- name:
+    en: "Desktop Air Quality Monitor"
+    zh: "Desktop Air Quality Monitor"
+  description:
+    en: "A desktop air quality monitor built around the XIAO RP2040 and an ENS160 air quality sensor, for keeping an eye on indoor air quality."
+    zh: "基于 XIAO RP2040 与 ENS160 空气质量传感器的桌面空气监测器，用于持续关注室内空气质量。"
+  board: "XIAO RP2040"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 7
+  release_date: 2026-07-28
+  author:
+    en: "pradeeplogu0"
+    zh: "pradeeplogu0"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/pradeeplogu0/desktop-air-quality-monitor-with-xiao-rp2040-ens160-74ceeb"
+  homepage: catalog
+
+
+- name:
+    en: "OpenGlass"
+    zh: "OpenGlass"
+  description:
+    en: "An open research platform for wearable sensing, nearby-device local multimodal inference, and local-first visual assistance."
+    zh: "An open research platform for wearable sensing, nearby-device local multimodal inference, and local-first visual assistance."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 6
+  release_date: 2026-06-30
+  author:
+    en: "OpenSQZ"
+    zh: "OpenSQZ"
+  author_type: "GitHub"
+  link: "https://github.com/OpenSQZ/OpenGlass/tree/docs/phase1-unified-repo"
+  homepage: catalog
+
+
+- name:
+    en: "Space Drop - Seeed XIAO RP2040 Modification"
+    zh: "Space Drop - Seeed XIAO RP2040 Modification"
+  description:
+    en: "A printable Space Drop enclosure modification for the Seeed Studio XIAO RP2040."
+    zh: "A printable Space Drop enclosure modification for the Seeed Studio XIAO RP2040."
+  board: "XIAO RP2040"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 5
+  release_date: 2026-05-31
+  author:
+    en: "TheDogHasALemon"
+    zh: "TheDogHasALemon"
+  author_type: "Other"
+  link: "https://www.printables.com/model/1745110-space-drop-seeed-xiao-rp2040-modification"
+  homepage: catalog
+
+
+- name:
+    en: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
+    zh: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
+  description:
+    en: "In this video we begin building a real handheld cyberpunk-inspired BLE/WiFi Tripwire Scanner using an ESP32, round TFT display, SD card logging, geiger-style proximity audio, live radar UI, device tracking and custom boot animations."
+    zh: "In this video we begin building a real handheld cyberpunk-inspired BLE/WiFi Tripwire Scanner using an ESP32, round TFT display, SD card logging, geiger-style proximity audio, live radar UI, device tracking and custom boot animations."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 4
+  release_date: 2026-04-30
+  author:
+    en: "Notorious Squirrel"
+    zh: "Notorious Squirrel"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=wwJTl4sEE3U"
+  homepage: catalog
+
+
+- name:
+    en: "XIAO ESP32-C6 Garage Remote"
+    zh: "XIAO ESP32-C6 Garage Remote"
+  description:
+    en: "Made this garage remote able to be controlled in home assistant by esphome. Used an esp32-C6 by seeed, 2 \\*2N2222\\* Transistors, and a universal garage remote. Plan on switching to zigbee when I can code it I suppose 😆."
+    zh: "Made this garage remote able to be controlled in home assistant by esphome. Used an esp32-C6 by seeed, 2 \\*2N2222\\* Transistors, and a universal garage remote. Plan on switching to zigbee when I can code it I suppose 😆."
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 3
+  release_date: 2026-03-31
+  author:
+    en: "forest1wolf"
+    zh: "forest1wolf"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1sq1b1k/esp32c6_garage_remote/"
+  homepage: catalog
+
+
+- name:
+    en: "2048 Game with XIAO ESP32-S3 and Round Display for XIAO"
+    zh: "2048 Game with XIAO ESP32-S3 and Round Display for XIAO"
+  description:
+    en: "What do you do while waiting for your next flight to Nuremberg? #EW26 A few days ago, I was traveling and stumbled upon a version of the 2048 game in the airplane entertainment app. I liked it immediately… until the ads started showing up. So naturally, I thought… why not just build my own version?"
+    zh: "What do you do while waiting for your next flight to Nuremberg? #EW26 A few days ago, I was traveling and stumbled upon a version of the 2048 game in the airplane entertainment app. I liked it immediately… until the ads started showing up. So naturally, I thought… why not just build my own version?"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Gaming"
+    zh: "游戏"
+  year: 2026
+  month: 2
+  release_date: 2026-02-28
+  author:
+    en: "makahernandez"
+    zh: "makahernandez"
+  author_type: "Other"
+  link: "https://www.linkedin.com/posts/makahernandez_ew26-ugcPost-7436329589875830784-uNOY?utm_source=share&utm_medium=member_desktop&rcm=ACoAABCAXEUBG32MKn71Gdmj50cTqJ5WJAsoyEA"
+  homepage: catalog
+
+
+- name:
+    en: "Arduino BIG OLED Display (256x64px SSD1322 OLED Display) with Seeed Studio XIAO ESP32S3"
+    zh: "Arduino BIG OLED Display (256x64px SSD1322 OLED Display) with Seeed Studio XIAO ESP32S3"
+  description:
+    en: "A step-by-step Arduino walkthrough for driving a big 256x64 pixel SSD1322 OLED (3.12 inch) from a Seeed Studio XIAO ESP32-S3: wiring, library setup, framebuffer and font handling, plus a comparison with the 2.8-inch panel and notes on the custom carrier PCB."
+    zh: "手把手用 Arduino 驱动 3.12 英寸 256x64 像素 SSD1322 OLED，主控为 Seeed Studio XIAO ESP32-S3：接线、库配置、显存与字库处理，并与 2.8 英寸版本对比，附带自制转接板说明。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 1
+  release_date: 2026-01-31
+  author:
+    en: "upir"
+    zh: "upir"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=EEmuondHHyY"
+  homepage: catalog
+
+
+- name:
+    en: "Electronic Structure Air Plane"
+    zh: "Electronic Structure Air Plane"
+  description:
+    en: "An electronic “structure airplane” — a sculpture soldered from electronic components around a XIAO ESP32-S3, inspired by Mohit Bhoite's freeform circuit art."
+    zh: "一件电子结构飞机雕塑：以 XIAO ESP32-S3 为核心、用电子元件焊接塑形，灵感来自 Mohit Bhoite 的自由造型电路艺术。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2025
+  month: 12
+  release_date: 2025-12-31
+  author:
+    en: "David Kong"
+    zh: "David Kong"
+  author_type: "Other"
+  link: "https://www.linkedin.com/feed/update/urn:li:activity:7415857506117201920/"
+  homepage: catalog
+
+
+- name:
+    en: "Home Assistant PWM PC Fan Controller"
+    zh: "Home Assistant PWM PC Fan Controller"
+  description:
+    en: "I was looking for a fan controller I can use for my 3d printer enclosure through home assistant, but couldn't find a commercial solution. While searching, I saw a few people using ESP32 and ESPHome to achieve the results, and I decided to do it myself."
+    zh: "I was looking for a fan controller I can use for my 3d printer enclosure through home assistant, but couldn't find a commercial solution. While searching, I saw a few people using ESP32 and ESPHome to achieve the results, and I decided to do it myself."
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2025
+  month: 10
+  release_date: 2025-10-31
+  author:
+    en: "wgaca2"
+    zh: "wgaca2"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/Esphome/comments/1o6o7v7/home_assistant_pwm_pc_fan_controller/"
+  homepage: catalog
+
+
+- name:
+    en: "XIAO MIDI Synthesizer with a PCM Sound Module (XIAO RP2350 Upgrade)"
+    zh: "XIAO MIDI 合成器 — 换装 RP2350 的 PCM 音源版本"
+  description:
+    en: "HAGIWO's #XIAOmidi build, moved from the original XIAO MIDI synth enclosure onto a Seeed Studio XIAO RP2350 so the on-board LED can double as a level indicator. The finished instrument drives a standard PCM MIDI sound module, with attack, release, reverb and chorus exposed as live-adjustable parameters. About 95% of the firmware was AI-generated."
+    zh: "HAGIWO 的 #XIAOmidi 作品：沿用原 XIAO MIDI 合成器外壳，把主控换成 Seeed Studio XIAO RP2350，好让板载 LED 兼作电平指示。成品驱动标准 PCM MIDI 音源模块，起音、释音、混响、合唱等常用参数可实时调整，约 95% 的固件由 AI 生成。"
+  board: "XIAO RP2350"
+  category:
+    en: "Others"
+    zh: "其他"
+  year: 2025
+  month: 8
+  release_date: 2025-08-23
+  author:
+    en: "HAGIWO1"
+    zh: "HAGIWO1"
+  author_type: "Other"
+  link: "https://x.com/HAGIWO1/status/1959251297229758606"
+  homepage: catalog
+
+
+- name:
+    en: "6-Channel XIAO MIDI Hardware Synth Orchestra — Pachelbel's Canon"
+    zh: "六通道 XIAO 硬件 MIDI 合成器小乐队 — 卡农"
+  description:
+    en: "A standalone six-channel MIDI orchestra assembled from six Seeed Studio XIAO based hardware synthesizers and played live as Pachelbel's Canon. The build reuses the well-documented open-source XIAO MIDI synth designs published by SimpleDIYElectroMusicProjects, so most of the software work was already done — this video is a practice session and audio-mixer test of the finished rig."
+    zh: "由六台基于 Seeed Studio XIAO 的硬件 MIDI 合成器组成的独立六声部小乐队，现场演奏帕赫贝尔《卡农》。项目复用了 SimpleDIYElectroMusicProjects 公开的 XIAO MIDI 合成器设计，省去大部分软件开发；视频记录的是整套设备的练习与调音台测试。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Others"
+    zh: "其他"
+  year: 2025
+  month: 9
+  release_date: 2025-09-30
+  author:
+    en: "AtmosphEng"
+    zh: "AtmosphEng"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=2hYpgMcTs8o"
+  homepage: catalog
+
+
+- name:
+    en: "Built a $20,000 Military Router for $106.23 with XIAO WiFi Halow"
+    zh: "Built a $20,000 Military Router for $106.23 with XIAO WiFi Halow"
+  description:
+    en: "The Military contacted me... I reverse-engineered a $20,000 military IP mesh radio using just $106.23 in open-source parts. This isn't a gimmick—it's a fully functional MANET router capable of push-to-talk, GPS sharing, ATAK integration, and more."
+    zh: "The Military contacted me... I reverse-engineered a $20,000 military IP mesh radio using just $106.23 in open-source parts. This isn't a gimmick—it's a fully functional MANET router capable of push-to-talk, GPS sharing, ATAK integration, and more."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2025
+  month: 8
+  release_date: 2025-08-31
+  author:
+    en: "Data Slayer"
+    zh: "Data Slayer"
+  author_type: "YouTube"
+  link: "https://youtu.be/ofR7GFNZzJY"
+  homepage: catalog
+
+
+- name:
+    en: "This Tiny ESP32 Board Has Everything! | XIAO ESP32-C6 Review"
+    zh: "This Tiny ESP32 Board Has Everything! | XIAO ESP32-C6 Review"
+  description:
+    en: "A short hands-on review of the Seeed Studio XIAO ESP32-C6, pitched as the smallest ESP32 board yet: what the ESP32-C6 radio brings (Wi-Fi 6, BLE and 802.15.4 for Zigbee/Thread), what the pinout leaves you to work with, and whether the tiny footprint is worth it for compact DIY projects."
+    zh: "Seeed Studio XIAO ESP32-C6 上手短评：号称最小的 ESP32 开发板，讲清 ESP32-C6 无线能力（Wi-Fi 6、BLE、802.15.4 支持 Zigbee/Thread）、引脚可用性，以及这种小巧尺寸对紧凑型 DIY 项目是否值得。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2025
+  month: 7
+  release_date: 2025-07-31
+  author:
+    en: "J-Rat Techworks"
+    zh: "J-Rat Techworks"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/shorts/Y-lU2jJWXmw"
+  homepage: catalog
+
+
+- name:
+    en: "A-mazing Marble Game with Round Display"
+    zh: "A-mazing Marble Game with Round Display"
+  description:
+    en: "By popular demand here is the official release of the a-mazing marble game for the seeed studio XIAO Nrf Sense board and round display."
+    zh: "By popular demand here is the official release of the a-mazing marble game for the seeed studio XIAO Nrf Sense board and round display."
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense)"
+  category:
+    en: "Gaming"
+    zh: "游戏"
+  year: 2025
+  month: 7
+  release_date: 2025-07-31
+  author:
+    en: "the_man_of_the_first"
+    zh: "the_man_of_the_first"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1msgq0v/amazing_marble_game_01/"
+  homepage: catalog
+
+
+- name:
+    en: "Build your own LEGO technics compatible esp32s3 video robot car"
+    zh: "Build your own LEGO technics compatible esp32s3 video robot car"
+  description:
+    en: "A LEGO Technic-compatible robot car driven by XIAO ESP32-S3, with an onboard camera for a live video feed. The build covers the mechanical structure, the electronics, and the battery and printed parts used."
+    zh: "用 XIAO ESP32-S3 驱动的 LEGO 机械组兼容视频小车，车上带摄像头可回传画面。视频里讲了机械结构、电路，以及所用的电池和打印件。"
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 10
+  release_date: 2026-10-01
+  author:
+    en: "Michael ZoneRobotics"
+    zh: "Michael ZoneRobotics"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=F3EoujWpK7Y"
+  homepage: catalog
+
+- name:
+    en: "This Camera Turns Life Into a Game"
+    zh: "This Camera Turns Life Into a Game"
+  description:
+    en: "QuestCam is a palm-sized camera that hands you a random real-life challenge instead of endless phone scrolling. The build explores whether a tiny XIAO-based camera can pull you off your phone and back into the real world."
+    zh: "QuestCam 是一台掌心大小的相机，不让你无限刷手机，而是随机给你一个现实里的小挑战。这个项目想验证一台小小的 XIAO 相机能不能把人从手机里拉回现实。"
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Gaming"
+    zh: "游戏"
+  year: 2026
+  month: 3
+  release_date: 2026-03-14
+  author:
+    en: "Paul Lagier"
+    zh: "Paul Lagier"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=JSyK9pxqJa0"
+  homepage: catalog
+
+- name:
+    en: "This $5 XIAO Board Has Wi-Fi, BLE, and Fits on a Keycap"
+    zh: "This $5 XIAO Board Has Wi-Fi, BLE, and Fits on a Keycap"
+  description:
+    en: "Seeed Studio XIAO is one of the most compact and capable dev board ecosystems in the maker world — but with 11 chips across 18 boards, picking the right one is genuinely hard. In this video I break down every XIAO board by chip family: Espressif ESP32, Nordic Semiconductor, Raspberry Pi RP-series, and the specialists."
+    zh: "Seeed Studio XIAO is one of the most compact and capable dev board ecosystems in the maker world — but with 11 chips across 18 boards, picking the right one is genuinely hard. In this video I break down every XIAO board by chip family: Espressif ESP32, Nordic Semiconductor, Raspberry Pi RP-series, and the specialists."
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3, XIAO ESP32-C6, XIAO ESP32-C5, XIAO ESP32-C3, XIAO nRF54L15, XIAO nRF52840 (XIAO BLE), XIAO RP2350, XIAO RP2040, XIAO SAMD21 (Seeeduino XIAO), XIAO RA4M1, XIAO MG24"
+  category:
+    en: "Others"
+    zh: "其他"
+  year: 2026
+  month: 8
+  release_date: 2026-08-06
+  author:
+    en: "Tommy Bianco"
+    zh: "Tommy Bianco"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=wrkBanNFMBU"
+  homepage: catalog
+
+
+- name:
+    en: "Trying out ESP32 for the first time"
+    zh: "Trying out ESP32 for the first time"
+  description:
+    en: "Trying out an ESP32 from Seeed studio for the first time. Learning the basics of how to connect an ESP32 as well as soldering pins and assembling a bread board. These are the hoops and trouble shooting steps I took to learn more about ESPs."
+    zh: "Trying out an ESP32 from Seeed studio for the first time. Learning the basics of how to connect an ESP32 as well as soldering pins and assembling a bread board. These are the hoops and trouble shooting steps I took to learn more about ESPs."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 3
+  release_date: 2026-03-13
+  author:
+    en: "Peak Tech"
+    zh: "Peak Tech"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=YSRXy27gi9Y"
+  homepage: catalog
+
+
+- name:
+    en: "Bear Byte: a Cute Little System Resource Monitor for Your PC."
+    zh: "Bear Byte: a Cute Little System Resource Monitor for Your PC."
+  description:
+    en: "A small ESP32 desk display that shows your PC's CPU, GPU and RAM usage in real time over Bluetooth, so you can tell at a glance why your frame rate dropped instead of opening Task Manager. Built on a Seeed Studio XIAO ESP32-S3 Plus in a bear-shaped 3D-printed case."
+    zh: "一块小巧的 ESP32 桌面副屏，通过蓝牙实时显示电脑的 CPU、GPU 和内存占用，掉帧时一眼看出原因，不用再开任务管理器。主控为 Seeed Studio XIAO ESP32-S3 Plus，装在熊形 3D 打印外壳里。"
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-21
+  author:
+    en: "gokux"
+    zh: "gokux"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/Bear-Byte-a-Cute-Little-System-Resource-Monitor-fo"
+  homepage: catalog
+
+
+- name:
+    en: "Motion-Reactive LED Rave Gloves"
+    zh: "Motion-Reactive LED Rave Gloves"
+  description:
+    en: "Gloves that turn your hands into light: 20 individually addressable WS2812-2020 LEDs per glove, four per finger, driven by the motion sensors of a Seeed Studio XIAO nRF52840 Sense. Movement shapes the effects and an on-board microphone picks up the music so the lighting follows the beat."
+    zh: "会发光的手套：每只 20 颗可寻址 WS2812-2020 LED（每根手指 4 颗），由 Seeed Studio XIAO nRF52840 Sense 的运动传感器驱动。动作决定灯光效果，板载麦克风拾音让灯光跟着节拍走。"
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 10
+  release_date: 2026-10-20
+  author:
+    en: "Yannick99"
+    zh: "Yannick99"
+  author_type: "Instructables"
+  link: "https://www.instructables.com/Motion-Reactive-LED-Rave-Gloves/"
+  homepage: catalog
+
+
+- name:
+    en: "I built an ESP32-C5 ChLCD photo frame with native AirDrop — open hardware and firmware"
+    zh: "I built an ESP32-C5 ChLCD photo frame with native AirDrop — open hardware and firmware"
+  description:
+    en: "An open-hardware ESP32-C5 ChLCD photo frame with native AirDrop support, built around the Seeed Studio XIAO ESP32-C5."
+    zh: "An open-hardware ESP32-C5 ChLCD photo frame with native AirDrop support, built around the Seeed Studio XIAO ESP32-C5."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-21
+  author:
+    en: "BENVBDSG"
+    zh: "BENVBDSG"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1xcdciu/i_built_an_esp32c5_chlcd_photo_frame_with_native/"
+  homepage: catalog
+
+
+- name:
+    en: "OpenPrintSense"
+    zh: "OpenPrintSense"
+  description:
+    en: "🧤 Open-source 3D-printed smart glove with BLE flex sensors. Tracks finger bending in real time via an Android app. Built with Seeed XIAO nRF52840 & Kotlin. For game & VR control, robot hands, gestures, music/MIDI and your own experiments."
+    zh: "🧤 Open-source 3D-printed smart glove with BLE flex sensors. Tracks finger bending in real time via an Android app. Built with Seeed XIAO nRF52840 & Kotlin. For game & VR control, robot hands, gestures, music/MIDI and your own experiments."
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 1
+  release_date: 2026-01-03
+  author:
+    en: "Paul Buda (PaBu04)"
+    zh: "Paul Buda (PaBu04)"
+  author_type: "GitHub"
+  link: "https://github.com/PaBu04/OpenPrintSense"
+  homepage: catalog
+
+
+- name:
+    en: "Ghost-Themed Headphone Stand"
+    zh: "Ghost-Themed Headphone Stand"
+  description:
+    en: "A headphone stand themed after Ghost from PAC-MAN, built by Arnov Sharma around the XIAO ESP32-S3 Sense."
+    zh: "以《吃豆人》幽灵为造型的耳机支架，由 Arnov Sharma 使用 XIAO ESP32-S3 Sense 制作。"
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2024
+  month: 1
+  release_date: 2024-01-04
+  author:
+    en: "Arnov Sharma"
+    zh: "Arnov Sharma"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Arnov_Sharma_makes/ghost-themed-headphone-stand-314031"
+  homepage: catalog
+
+
+- name:
+    en: "A la QRte — QR Code Menu Printer"
+    zh: "A la QRte — QR Code Menu Printer"
+  description:
+    en: "A portable, combination scanner/printer for converting QR code menus into physical copies. Ultimately a very simple build! tl;dr: - Runs on a rechargeable 12V battery. - Uses a Tiny Code Reader (from Useful Sensors) for QR scanning."
+    zh: "A portable, combination scanner/printer for converting QR code menus into physical copies. Ultimately a very simple build! tl;dr: - Runs on a rechargeable 12V battery. - Uses a Tiny Code Reader (from Useful Sensors) for QR scanning."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2023
+  month: 10
+  release_date: 2023-10-23
+  author:
+    en: "Guy Dupont"
+    zh: "Guy Dupont"
+  author_type: "Hackaday"
+  link: "https://hackaday.io/project/193322-a-la-qrte-qr-code-menu-printer"
+  homepage: catalog
+
+
+- name:
+    en: "C5VRX — XIAO ESP32-C5 Video Receiver"
+    zh: "C5VRX — XIAO ESP32-C5 Video Receiver"
+  description:
+    en: "Ultra-minimal, zero-CPU 5.8 GHz analog FPV video receiver using ESP32-C5 Wi-Fi 6 PHY MODEM_DIAG, BitScrambler WBFM demodulation & resistor DAC CVBS."
+    zh: "Ultra-minimal, zero-CPU 5.8 GHz analog FPV video receiver using ESP32-C5 Wi-Fi 6 PHY MODEM_DIAG, BitScrambler WBFM demodulation & resistor DAC CVBS."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 8
+  release_date: 2026-08-29
+  author:
+    en: "Twotoz (Leon)"
+    zh: "Twotoz (Leon)"
+  author_type: "GitHub"
+  link: "https://github.com/Twotoz/C5VRX"
+  homepage: catalog
+
+
+- name:
+    en: "I Turned an ESP32 Into a Tiny Digital Aquarium"
+    zh: "I Turned an ESP32 Into a Tiny Digital Aquarium"
+  description:
+    en: "I love watching fish swim around. There's just one problem… I'm terrible at keeping them alive. So I built a tiny digital aquarium instead! 🐠 This project uses a round display from the Seeed Studio XIAO ecosystem, powered by the XIAO ESP32-S3."
+    zh: "I love watching fish swim around. There's just one problem… I'm terrible at keeping them alive. So I built a tiny digital aquarium instead! 🐠 This project uses a round display from the Seeed Studio XIAO ecosystem, powered by the XIAO ESP32-S3."
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3"
+  category:
+    en: "Others"
+    zh: "其他"
+  year: 2026
+  month: 10
+  release_date: 2026-10-24
+  author:
+    en: "Tech Talkies"
+    zh: "Tech Talkies"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=XajTXU7A1yA"
+  homepage: catalog
+
+
+- name:
+    en: "MCU-based adjustable (via UART) LDO"
+    zh: "MCU-based adjustable (via UART) LDO"
+  description:
+    en: "Most linear regulators hide a precise analog loop inside: a reference, an error amplifier, and a pass transistor. This project replaces the reference and error amplifier with a $5 microcontroller."
+    zh: "Most linear regulators hide a precise analog loop inside: a reference, an error amplifier, and a pass transistor. This project replaces the reference and error amplifier with a $5 microcontroller."
+  board: "XIAO SAMD21 (Seeeduino XIAO)"
+  category:
+    en: "Scientific Tools"
+    zh: "科学工具"
+  year: 2026
+  month: 10
+  release_date: 2026-10-22
+  author:
+    en: "Aleksei Tertychnyi (pinelab)"
+    zh: "Aleksei Tertychnyi (pinelab)"
+  author_type: "Hackaday"
+  link: "https://hackaday.io/project/207161-mcu-based-adjustable-via-uart-ldo"
+  homepage: catalog
+
+
+- name:
+    en: "What if Hayes Wasn't the Only Tech Company to Build a Clock?"
+    zh: "What if Hayes Wasn't the Only Tech Company to Build a Clock?"
+  description:
+    en: "What if Hayes wasn’t the only tech company to build a clock? Here’s my take on a Linksys router clock. In the early 1980s, Hayes made an external real-time clock styled after their ubiquitous Smartmodem 300."
+    zh: "What if Hayes wasn’t the only tech company to build a clock? Here’s my take on a Linksys router clock. In the early 1980s, Hayes made an external real-time clock styled after their ubiquitous Smartmodem 300."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Telecommunication"
+    zh: "通信"
+  year: 2026
+  month: 8
+  release_date: 2026-08-21
+  author:
+    en: "Glen Akins (bikerglen)"
+    zh: "Glen Akins (bikerglen)"
+  author_type: "Web"
+  link: "https://bikerglen.com/blog/the-router-clock/"
+  homepage: catalog
+
+
+- name:
+    en: "A $5 XIAO ESP32C3 that keeps its own history"
+    zh: "A $5 XIAO ESP32C3 that keeps its own history"
+  description:
+    en: "A Seeed Studio XIAO ESP32C3 stores 30 minutes of sensor readings in an on-chip database, publishes one summary a minute, and hands over the raw window when something asks for it. Full build: MicroPython, Contact, services and dashboards."
+    zh: "A Seeed Studio XIAO ESP32C3 stores 30 minutes of sensor readings in an on-chip database, publishes one summary a minute, and hands over the raw window when something asks for it. Full build: MicroPython, Contact, services and dashboards."
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 8
+  release_date: 2026-08-09
+  author:
+    en: "Hunter McGuire (Tendrl)"
+    zh: "Hunter McGuire (Tendrl)"
+  author_type: "Web"
+  link: "https://tendrl.com/blog/xiao-esp32c3-keeps-its-own-history/"
+  homepage: catalog
+
+
+- name:
+    en: "Cheaply Recreating the Ugly Boston Dynamics Robot Hand"
+    zh: "Cheaply Recreating the Ugly Boston Dynamics Robot Hand"
+  description:
+    en: "Nikodem Bartnik set out to recreate the Boston Dynamics Atlas robot hand design on a budget."
+    zh: "Nikodem Bartnik set out to recreate the Boston Dynamics Atlas robot hand design on a budget."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 9
+  release_date: 2026-09-17
+  author:
+    en: "Nikodem Bartnik"
+    zh: "Nikodem Bartnik"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/news/cheaply-recreating-the-ugly-boston-dynamics-robot-hand-0007997bd99f"
+  homepage: catalog
+
+
+- name:
+    en: "Myo Action: Accelerating Voluntary Actions via Electromyography and Muscle Stimulation"
+    zh: "Myo Action: Accelerating Voluntary Actions via Electromyography and Muscle Stimulation"
+  description:
+    en: "A CHI 2026 research project that uses electromyography sensing and electrical muscle stimulation to accelerate voluntary human actions, built on a Seeed Studio XIAO SAMD21."
+    zh: "A CHI 2026 research project that uses electromyography sensing and electrical muscle stimulation to accelerate voluntary human actions, built on a Seeed Studio XIAO SAMD21."
+  board: "XIAO SAMD21 (Seeeduino XIAO)"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 4
+  release_date: 2026-04-12
+  author:
+    en: "Yudai Tanaka, Che-Wei Hsu, Bruno Felalaga, Pedro Lopes (University of Chicago)"
+    zh: "Yudai Tanaka, Che-Wei Hsu, Bruno Felalaga, Pedro Lopes (University of Chicago)"
+  author_type: "Web"
+  link: "https://lab.plopes.org/published/2026-CHI-MyoAction.pdf"
+  homepage: catalog
+
+
+- name:
+    en: "M-Vave FM1 Unbricker"
+    zh: "M-Vave FM1 Unbricker"
+  description:
+    en: "A Python tool that restores a soft-bricked M-VAVE FM-1 over a plain USB cable, without extra hardware. It talks to the FM-1's JieLi WL82/AC791N mask-ROM boot mode through jl-uboot-tool, takes a verified full-flash backup, rewrites the firmware region at 0x4000 and checks every byte. Unofficial community tool; the hardware fallback it points to is the XIAO RP2040 based FM-1 Transporter."
+    zh: "一个纯 USB 线就能救回变砖 M-VAVE FM-1 的 Python 工具，无需额外硬件。它通过 jl-uboot-tool 与 FM-1 的杰理 WL82/AC791N 掩膜 ROM 启动模式通信，先做整片 flash 校验备份，再改写 0x4000 处的固件区并逐字节校验。非官方社区工具；走不通时它指向的硬件方案是基于 XIAO RP2040 的 FM-1 Transporter。"
+  board: "XIAO RP2040"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-06
+  author:
+    en: "Quixotic7"
+    zh: "Quixotic7"
+  author_type: "GitHub"
+  link: "https://github.com/Quixotic7/MvaveFM1Unbricker"
+  homepage: catalog
+
+
+- name:
+    en: "FM-1 Transporter"
+    zh: "FM-1 Transporter"
+  description:
+    en: "Read and rewrite the flash of an M-VAVE FM-1 (JieLi AC791N / WL82) from your computer through a small RP2040/RP2350 board wired to the FM-1's USB data lines — three wires, VBUS left disconnected. Built and tested on the Seeed Studio XIAO RP2040 on D6/D7, it forces even a bricked unit into mask-ROM boot mode so it can be dumped and repaired."
+    zh: "用一块小的 RP2040/RP2350 板接到 M-VAVE FM-1（杰理 AC791N / WL82）的 USB 数据线，就能在电脑上读写它的 flash——只需三根线，VBUS 不接。在 Seeed Studio XIAO RP2040 的 D6/D7 上构建并实测，可把变砖的机器强制拉进掩膜 ROM 启动模式再读片修复。"
+  board: "XIAO RP2040"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 9
+  release_date: 2026-09-29
+  author:
+    en: "kurogedelic"
+    zh: "kurogedelic"
+  author_type: "GitHub"
+  link: "https://github.com/kurogedelic/FM-1-transporter"
+  homepage: catalog
+
+
+- name:
+    en: "mmWave-Sensor（Smart mmWave Presence Sensor）"
+    zh: "mmWave-Sensor（Smart mmWave Presence Sensor）"
+  description:
+    en: "A DIY mmWave presence sensor that tracks you in 2D and drives zone-based automations in Home Assistant — for example a corner reading lamp that turns on when you sit in the armchair. ESPHome firmware on an ESP32 with a mmWave radar module; the repository ships the PCB production files, the 3D-printed enclosure and the ESPHome configuration."
+    zh: "自制的毫米波存在传感器，能二维追踪你的位置并在 Home Assistant 里做分区自动化——比如你坐进单人沙发时角落阅读灯自动亮起。ESP32 配毫米波雷达模块，固件用 ESPHome；仓库提供 PCB 生产文件、3D 打印外壳和 ESPHome 配置。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 9
+  release_date: 2026-09-20
+  author:
+    en: "FEATURE.（FeatureNAB）"
+    zh: "FEATURE.（FeatureNAB）"
+  author_type: "GitHub"
+  link: "https://github.com/FeatureNAB/mmWave-Sensor"
+  homepage: catalog
+
+# ========== 添加新项目模板 / Template for New Projects ==========
+#
+# - name:
+#     en: "Project Name"
+#     zh: "项目名称"
+#   description:
+#     en: "Brief description of the project"
+#     zh: "项目简介"
+#   board: "XIAO Model"
+#   category:
+#     en: "Category"
+#     zh: "分类"
+#   year: 2025
+#   month: 1
+#   author:
+#     en: "Author Name"
+#     zh: "作者名称"
+#   author_type: "GitHub"
+#   link: "Project URL"
+#   image: ""
+
+# ========== Board Options / 型号选项 ==========
+# XIAO ESP32-S3, XIAO ESP32-S3 Sense, XIAO ESP32-C3, XIAO ESP32-C6, XIAO ESP32-C5
+# XIAO nRF52840 (XIAO BLE), XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF54L15, XIAO nRF54L15 Sense
+# XIAO RP2040, XIAO RP2350, XIAO SAMD21 (Seeeduino), XIAO RA4M1
+# XIAO MG24, XIAO MG24 Sense
+
+# ========== Category Options / 分类选项 ==========
+# en: Wearables, Robotics, Smart Home, Healthcare, Power Management
+# AI Gadget, Tools & Accessories, Telecommunication, Mechanical Keyboard, LED Lighting
+# zh: 可穿戴, 机器人, 智能家居, 健康护理, 电源管理, AI Gadget, 工具配件, 通信, 机械键盘, LED 灯光
+
+# ========== Author Type / 来源平台 ==========
+# GitHub, YouTube, Hackster, Instructables, Hackaday, Web
+
+
 # ========== 添加新项目模板 / Template for New Projects ==========
 #
 # - name:

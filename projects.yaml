@@ -650,6 +650,7 @@ projects:
   image: "https://hackster.imgix.net/uploads/attachments/1890871/_Q2paFnTZcW.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
 
 
+
   # ========== 2026-06-28 Community Projects ==========
   # Source: Instructables (manual submission)
 
@@ -3261,6 +3262,7 @@ projects:
   link: "https://www.youtube.com/watch?v=L5pBvX0efOs"
   homepage: catalog
 
+
 - name:
     en: "Q - Tiny Desk Companion for Your Mac"
     zh: "Q - Tiny Desk Companion for Your Mac"
@@ -3301,6 +3303,7 @@ projects:
   link: "https://www.youtube.com/watch?v=UMBq-8sZl7I"
   homepage: catalog
 
+
 - name:
     en: "2.4GHz vs 5GHz on the ESP32 C5 The Real Difference"
     zh: "2.4GHz vs 5GHz on the ESP32 C5 The Real Difference"
@@ -3320,6 +3323,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=ss3Qop2KxwE"
   homepage: catalog
+
 
 - name:
     en: "A Wrist-Worn Step Counter with XIAO nRF54LM20A Sense"
@@ -3341,6 +3345,7 @@ projects:
   link: "https://www.hackster.io/pradeeplogu0/a-wrist-worn-step-counter-with-xiao-nrf54lm20a-sense-ffd823"
   homepage: catalog
 
+
 - name:
     en: "Excuse Cat: An Offline E-Paper Excuse Generator"
     zh: "Excuse Cat: An Offline E-Paper Excuse Generator"
@@ -3360,6 +3365,7 @@ projects:
   author_type: "Hackster"
   link: "https://www.hackster.io/Masonalive/excuse-cat-an-offline-e-paper-excuse-generator-9d8256"
   homepage: catalog
+
 
 - name:
     en: "eChain - A Fun Digital Key Chain"
@@ -3381,6 +3387,7 @@ projects:
   link: "https://www.hackster.io/Ameya_Angadi/echain-a-fun-digital-key-chain-ce8f8d"
   homepage: catalog
 
+
 - name:
     en: "I managed to pack everything inside the walnut."
     zh: "I managed to pack everything inside the walnut."
@@ -3400,6 +3407,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=OZSdhphErQY"
   homepage: catalog
+
 
 - name:
     en: "Claude Meter with XIAO ePaper DIY Kit (ESP32-S3) EE05"
@@ -3421,6 +3429,7 @@ projects:
   link: "https://www.hackster.io/pradeeplogu0/claude-meter-with-xiao-epaper-diy-kit-esp32-s3-ee05-63df7b"
   homepage: catalog
 
+
 - name:
     en: "SignalSweep: pocket counter-surveillance scanner on a XIAO ESP32-C5"
     zh: "SignalSweep: pocket counter-surveillance scanner on a XIAO ESP32-C5"
@@ -3440,6 +3449,7 @@ projects:
   author_type: "Other"
   link: "https://www.reddit.com/r/esp32/comments/1x20yit/signalsweep_pocket_countersurveillance_scanner_on/"
   homepage: catalog
+
 
 - name:
     en: "Esp32 Object Scanner"
@@ -3461,6 +3471,7 @@ projects:
   link: "https://www.reddit.com/r/esp32/comments/1x0w9mn/esp32_object_scanner/"
   homepage: catalog
 
+
 - name:
     en: "Building a Tiny OLED Keychain"
     zh: "Building a Tiny OLED Keychain"
@@ -3480,6 +3491,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=c_qwv6NKEDg"
   homepage: catalog
+
 
 - name:
     en: "Build a Word Clock with XIAO ESP32-C6 | Part 1: PCB Design with KiCad"
@@ -3501,6 +3513,7 @@ projects:
   link: "https://www.youtube.com/watch?v=Wtqm-hPrgqk"
   homepage: catalog
 
+
 - name:
     en: "I Trained My Own 30M Parameter AI to Run on an ESP32"
     zh: "I Trained My Own 30M Parameter AI to Run on an ESP32"
@@ -3520,6 +3533,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=LgCNVUndTH8"
   homepage: catalog
+
 
 - name:
     en: "The ESP32-S3 Plus XIAO: Everything You Need to Know"
@@ -3541,6 +3555,7 @@ projects:
   link: "https://www.youtube.com/watch?v=2iXLf_5kyTY"
   homepage: catalog
 
+
 - name:
     en: "Getting Started with XIAO nRF52840 0.96\" Display and Arduino IDE"
     zh: "Getting Started with XIAO nRF52840 0.96\" Display and Arduino IDE"
@@ -3560,6 +3575,7 @@ projects:
   author_type: "Web"
   link: "https://www.makerguides.com/getting-started-with-xiao-nrf52840-0-96-display-and-arduino-ide/"
   homepage: catalog
+
 
 - name:
     en: "I Built a Card-Launching Purse to Distract Mark Rober"
@@ -3581,6 +3597,7 @@ projects:
   link: "https://www.youtube.com/watch?v=4R9bSVE5pJQ"
   homepage: catalog
 
+
 - name:
     en: "Make an ESP32 RC Bionic Butterfly That Flies | ESP-FLUTTER"
     zh: "Make an ESP32 RC Bionic Butterfly That Flies | ESP-FLUTTER"
@@ -3600,6 +3617,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=5Le4I-1Pf9I"
   homepage: catalog
+
 
 - name:
     en: "30 Jahre Akkulaufzeit? Dieser ESPHome-Sensor braucht nur 10 µA"
@@ -3621,6 +3639,7 @@ projects:
   link: "https://www.youtube.com/watch?v=a9gEFRlPrB0"
   homepage: catalog
 
+
 - name:
     en: "DIY Smart Desktop Companion"
     zh: "DIY Smart Desktop Companion"
@@ -3640,6 +3659,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/DIY-Smart-Desktop-Companion/"
   homepage: catalog
+
 
 - name:
     en: "Round Display & ESP32 PiPack Kismet Monitor"
@@ -3661,6 +3681,7 @@ projects:
   link: "https://www.youtube.com/watch?v=XdNKCfWlV9k"
   homepage: catalog
 
+
 - name:
     en: "BABAI – DIY Interactive Desktop Robot Inspired by Dasai Mochi"
     zh: "BABAI – DIY Interactive Desktop Robot Inspired by Dasai Mochi"
@@ -3680,6 +3701,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/BABAI-DIY-Interactive-Desktop-Robot-Inspired-by-Da"
   homepage: catalog
+
 
 - name:
     en: "How are Chinese electronics so cheap?"
@@ -3701,6 +3723,7 @@ projects:
   link: "https://www.youtube.com/watch?v=2OtiPNDWmQY"
   homepage: catalog
 
+
 - name:
     en: "Vibe Pad — a 4-Button Bluetooth Macro Keyboard for AI Coding"
     zh: "Vibe Pad — a 4-Button Bluetooth Macro Keyboard for AI Coding"
@@ -3720,6 +3743,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/Vibe-Pad/"
   homepage: catalog
+
 
 - name:
     en: "LoRaWAN beehive monitor: hive weight, temperature and battery over TTN"
@@ -3741,6 +3765,7 @@ projects:
   link: "https://github.com/hmd83/tanen"
   homepage: catalog
 
+
 - name:
     en: "Desktop Air Quality Monitor"
     zh: "Desktop Air Quality Monitor"
@@ -3760,6 +3785,7 @@ projects:
   author_type: "Hackster"
   link: "https://www.hackster.io/pradeeplogu0/desktop-air-quality-monitor-with-xiao-rp2040-ens160-74ceeb"
   homepage: catalog
+
 
 - name:
     en: "OpenGlass"
@@ -3781,6 +3807,7 @@ projects:
   link: "https://github.com/OpenSQZ/OpenGlass/tree/docs/phase1-unified-repo"
   homepage: catalog
 
+
 - name:
     en: "Space Drop - Seeed XIAO RP2040 Modification"
     zh: "Space Drop - Seeed XIAO RP2040 Modification"
@@ -3800,6 +3827,7 @@ projects:
   author_type: "Other"
   link: "https://www.printables.com/model/1745110-space-drop-seeed-xiao-rp2040-modification"
   homepage: catalog
+
 
 - name:
     en: "I Built a DIY Cyberpunk ESP32 Tripwire Radar Scanner"
@@ -3821,6 +3849,7 @@ projects:
   link: "https://www.youtube.com/watch?v=wwJTl4sEE3U"
   homepage: catalog
 
+
 - name:
     en: "XIAO ESP32-C6 Garage Remote"
     zh: "XIAO ESP32-C6 Garage Remote"
@@ -3840,6 +3869,7 @@ projects:
   author_type: "Other"
   link: "https://www.reddit.com/r/esp32/comments/1sq1b1k/esp32c6_garage_remote/"
   homepage: catalog
+
 
 - name:
     en: "2048 Game with XIAO ESP32-S3 and Round Display for XIAO"
@@ -3861,6 +3891,7 @@ projects:
   link: "https://www.linkedin.com/posts/makahernandez_ew26-ugcPost-7436329589875830784-uNOY?utm_source=share&utm_medium=member_desktop&rcm=ACoAABCAXEUBG32MKn71Gdmj50cTqJ5WJAsoyEA"
   homepage: catalog
 
+
 - name:
     en: "Arduino BIG OLED Display (256x64px SSD1322 OLED Display) with Seeed Studio XIAO ESP32S3"
     zh: "Arduino BIG OLED Display (256x64px SSD1322 OLED Display) with Seeed Studio XIAO ESP32S3"
@@ -3880,6 +3911,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=EEmuondHHyY"
   homepage: catalog
+
 
 - name:
     en: "Electronic Structure Air Plane"
@@ -3901,6 +3933,7 @@ projects:
   link: "https://www.linkedin.com/feed/update/urn:li:activity:7415857506117201920/"
   homepage: catalog
 
+
 - name:
     en: "Home Assistant PWM PC Fan Controller"
     zh: "Home Assistant PWM PC Fan Controller"
@@ -3920,6 +3953,7 @@ projects:
   author_type: "Other"
   link: "https://www.reddit.com/r/Esphome/comments/1o6o7v7/home_assistant_pwm_pc_fan_controller/"
   homepage: catalog
+
 
 - name:
     en: "XIAO MIDI Synthesizer with a PCM Sound Module (XIAO RP2350 Upgrade)"
@@ -3941,6 +3975,7 @@ projects:
   link: "https://x.com/HAGIWO1/status/1959251297229758606"
   homepage: catalog
 
+
 - name:
     en: "6-Channel XIAO MIDI Hardware Synth Orchestra — Pachelbel's Canon"
     zh: "六通道 XIAO 硬件 MIDI 合成器小乐队 — 卡农"
@@ -3960,6 +3995,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=2hYpgMcTs8o"
   homepage: catalog
+
 
 - name:
     en: "Built a $20,000 Military Router for $106.23 with XIAO WiFi Halow"
@@ -3981,6 +4017,7 @@ projects:
   link: "https://youtu.be/ofR7GFNZzJY"
   homepage: catalog
 
+
 - name:
     en: "This Tiny ESP32 Board Has Everything! | XIAO ESP32-C6 Review"
     zh: "This Tiny ESP32 Board Has Everything! | XIAO ESP32-C6 Review"
@@ -4001,6 +4038,7 @@ projects:
   link: "https://www.youtube.com/shorts/Y-lU2jJWXmw"
   homepage: catalog
 
+
 - name:
     en: "A-mazing Marble Game with Round Display"
     zh: "A-mazing Marble Game with Round Display"
@@ -4020,6 +4058,7 @@ projects:
   author_type: "Other"
   link: "https://www.reddit.com/r/esp32/comments/1msgq0v/amazing_marble_game_01/"
   homepage: catalog
+
 
 - name:
     en: "Build your own LEGO technics compatible esp32s3 video robot car"
@@ -4081,6 +4120,7 @@ projects:
   link: "https://www.youtube.com/watch?v=wrkBanNFMBU"
   homepage: catalog
 
+
 - name:
     en: "Trying out ESP32 for the first time"
     zh: "Trying out ESP32 for the first time"
@@ -4100,6 +4140,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=YSRXy27gi9Y"
   homepage: catalog
+
 
 - name:
     en: "Bear Byte: a Cute Little System Resource Monitor for Your PC."
@@ -4121,6 +4162,7 @@ projects:
   link: "https://www.instructables.com/Bear-Byte-a-Cute-Little-System-Resource-Monitor-fo"
   homepage: catalog
 
+
 - name:
     en: "Motion-Reactive LED Rave Gloves"
     zh: "Motion-Reactive LED Rave Gloves"
@@ -4140,6 +4182,7 @@ projects:
   author_type: "Instructables"
   link: "https://www.instructables.com/Motion-Reactive-LED-Rave-Gloves/"
   homepage: catalog
+
 
 - name:
     en: "I built an ESP32-C5 ChLCD photo frame with native AirDrop — open hardware and firmware"
@@ -4161,6 +4204,7 @@ projects:
   link: "https://www.reddit.com/r/esp32/comments/1xcdciu/i_built_an_esp32c5_chlcd_photo_frame_with_native/"
   homepage: catalog
 
+
 - name:
     en: "OpenPrintSense"
     zh: "OpenPrintSense"
@@ -4180,6 +4224,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/PaBu04/OpenPrintSense"
   homepage: catalog
+
 
 - name:
     en: "Ghost-Themed Headphone Stand"
@@ -4201,6 +4246,7 @@ projects:
   link: "https://www.hackster.io/Arnov_Sharma_makes/ghost-themed-headphone-stand-314031"
   homepage: catalog
 
+
 - name:
     en: "A la QRte — QR Code Menu Printer"
     zh: "A la QRte — QR Code Menu Printer"
@@ -4220,6 +4266,7 @@ projects:
   author_type: "Hackaday"
   link: "https://hackaday.io/project/193322-a-la-qrte-qr-code-menu-printer"
   homepage: catalog
+
 
 - name:
     en: "C5VRX — XIAO ESP32-C5 Video Receiver"
@@ -4241,6 +4288,7 @@ projects:
   link: "https://github.com/Twotoz/C5VRX"
   homepage: catalog
 
+
 - name:
     en: "I Turned an ESP32 Into a Tiny Digital Aquarium"
     zh: "I Turned an ESP32 Into a Tiny Digital Aquarium"
@@ -4260,6 +4308,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=XajTXU7A1yA"
   homepage: catalog
+
 
 - name:
     en: "MCU-based adjustable (via UART) LDO"
@@ -4281,6 +4330,7 @@ projects:
   link: "https://hackaday.io/project/207161-mcu-based-adjustable-via-uart-ldo"
   homepage: catalog
 
+
 - name:
     en: "What if Hayes Wasn't the Only Tech Company to Build a Clock?"
     zh: "What if Hayes Wasn't the Only Tech Company to Build a Clock?"
@@ -4300,6 +4350,7 @@ projects:
   author_type: "Web"
   link: "https://bikerglen.com/blog/the-router-clock/"
   homepage: catalog
+
 
 - name:
     en: "A $5 XIAO ESP32C3 that keeps its own history"
@@ -4321,6 +4372,7 @@ projects:
   link: "https://tendrl.com/blog/xiao-esp32c3-keeps-its-own-history/"
   homepage: catalog
 
+
 - name:
     en: "Cheaply Recreating the Ugly Boston Dynamics Robot Hand"
     zh: "Cheaply Recreating the Ugly Boston Dynamics Robot Hand"
@@ -4340,6 +4392,7 @@ projects:
   author_type: "Hackster"
   link: "https://www.hackster.io/news/cheaply-recreating-the-ugly-boston-dynamics-robot-hand-0007997bd99f"
   homepage: catalog
+
 
 - name:
     en: "Myo Action: Accelerating Voluntary Actions via Electromyography and Muscle Stimulation"
@@ -4361,6 +4414,7 @@ projects:
   link: "https://lab.plopes.org/published/2026-CHI-MyoAction.pdf"
   homepage: catalog
 
+
 - name:
     en: "M-Vave FM1 Unbricker"
     zh: "M-Vave FM1 Unbricker"
@@ -4381,6 +4435,7 @@ projects:
   link: "https://github.com/Quixotic7/MvaveFM1Unbricker"
   homepage: catalog
 
+
 - name:
     en: "FM-1 Transporter"
     zh: "FM-1 Transporter"
@@ -4400,6 +4455,7 @@ projects:
   author_type: "GitHub"
   link: "https://github.com/kurogedelic/FM-1-transporter"
   homepage: catalog
+
 
 - name:
     en: "mmWave-Sensor（Smart mmWave Presence Sensor）"
@@ -4456,6 +4512,7 @@ projects:
 # ========== Author Type / 来源平台 ==========
 # GitHub, YouTube, Hackster, Instructables, Hackaday, Web
 
+
 # ========== 添加新项目模板 / Template for New Projects ==========
 #
 # - name:
@@ -4477,16 +4534,19 @@ projects:
 #   link: "Project URL"
 #   image: ""
 
+
 # ========== Board Options / 型号选项 ==========
 # XIAO ESP32-S3, XIAO ESP32-S3 Sense, XIAO ESP32-C3, XIAO ESP32-C6, XIAO ESP32-C5
 # XIAO nRF52840 (XIAO BLE), XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF54L15, XIAO nRF54L15 Sense
 # XIAO RP2040, XIAO RP2350, XIAO SAMD21 (Seeeduino), XIAO RA4M1
 # XIAO MG24, XIAO MG24 Sense
 
+
 # ========== Category Options / 分类选项 ==========
 # en: Wearables, Robotics, Smart Home, Healthcare, Power Management
 # AI Gadget, Tools & Accessories, Telecommunication, Mechanical Keyboard, LED Lighting
 # zh: 可穿戴, 机器人, 智能家居, 健康护理, 电源管理, AI Gadget, 工具配件, 通信, 机械键盘, LED 灯光
+
 
 # ========== Author Type / 来源平台 ==========
 # GitHub, YouTube, Hackster, Instructables, Hackaday, Web

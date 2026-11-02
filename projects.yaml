@@ -4737,3 +4737,65 @@ projects:
   link: https://github.com/maxeq/king-cat-feeder
   image: https://i.ytimg.com/vi/9GEyEji22ZU/maxresdefault.jpg
   homepage: catalog
+
+  # ========== 2026-11-02 Community Projects ==========
+
+- name:
+    en: "I Built a Tiny Device That Protects My Home"
+    zh: "I Built a Tiny Device That Protects My Home"
+  description:
+    en: "A Seeed Studio XIAO based maker project: I Built a Tiny Device That Protects My Home."
+    zh: "A Seeed Studio XIAO based maker project: I Built a Tiny Device That Protects My Home."
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 7
+  release_date: 2026-07-16
+  author:
+    en: "Pro maker 101"
+    zh: "Pro maker 101"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=2qtXVOpWWcU"
+  homepage: catalog
+
+- name:
+    en: "Build Your Own GPS Bike Speedometer with SeeedStudio XIAO ESP32-C5 + Round Display + ATGM336H"
+    zh: "Build Your Own GPS Bike Speedometer with SeeedStudio XIAO ESP32-C5 + Round Display + ATGM336H"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Build Your Own GPS Bike Speedometer with SeeedStudio XIAO ESP32-C5 + Round Display + ATGM336H."
+    zh: "A Seeed Studio XIAO based maker project: Build Your Own GPS Bike Speedometer with SeeedStudio XIAO ESP32-C5 + Round Display + ATGM336H."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 8
+  release_date: 2026-08-18
+  author:
+    en: "iHayri1"
+    zh: "iHayri1"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=Gp5rNogM-Pg"
+  homepage: catalog
+
+- name:
+    en: "Build an NFC ePaper Display in 5 Minutes! | XIAO nRF54LM20A"
+    zh: "Build an NFC ePaper Display in 5 Minutes! | XIAO nRF54LM20A"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Build an NFC ePaper Display in 5 Minutes! | XIAO nRF54LM20A."
+    zh: "A Seeed Studio XIAO based maker project: Build an NFC ePaper Display in 5 Minutes! | XIAO nRF54LM20A."
+  board: "XIAO nRF54LM20A Sense, XIAO nRF54LM20A"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-29
+  author:
+    en: "Brandy"
+    zh: "Brandy"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/lsw031105guge-bit/build-an-nfc-epaper-display-in-5-minutes-xiao-nrf54lm20a-608f84"
+  homepage: catalog

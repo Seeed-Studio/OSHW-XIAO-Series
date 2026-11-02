@@ -4799,3 +4799,45 @@ projects:
   author_type: "Hackster"
   link: "https://www.hackster.io/lsw031105guge-bit/build-an-nfc-epaper-display-in-5-minutes-xiao-nrf54lm20a-608f84"
   homepage: catalog
+
+  # ========== 2026-11-02 Community Projects ==========
+
+- name:
+    en: "XIAO nRF52840 Sense PDM Mic Audio Scope & Dynamic VU HUD"
+    zh: "XIAO nRF52840 Sense PDM Mic Audio Scope & Dynamic VU HUD"
+  description:
+    en: "PROJECT : XIAO nRF52840 Sense PDM Mic Audio Scope &amp; Dynamic VU HUD REVISION: v1.5.0 - AC-Filtered Audio Engine + Full CHSC6X Touch Modes AUTHOR : PJ (SmartIPTech) &amp; Agen-AI HARDWARE: Seeed Studio XIAO nRF52840 Sense + Seeed Round Display (GC9A01) CORE : Seeed nRF52 Non-mbed BSP 1.1.8 , 1.1.13 For more..."
+    zh: "PROJECT : XIAO nRF52840 Sense PDM Mic Audio Scope &amp; Dynamic VU HUD REVISION: v1.5.0 - AC-Filtered Audio Engine + Full CHSC6X Touch Modes AUTHOR : PJ (SmartIPTech) &amp; Agen-AI HARDWARE: Seeed Studio XIAO nRF52840 Sense + Seeed Round Display (GC9A01) CORE : Seeed nRF52 Non-mbed BSP 1.1.8 , 1.1.13 For more..."
+  board: "XIAO nRF52840 Sense (XIAO BLE Sense), XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 10
+  release_date: 2026-10-25
+  author:
+    en: "PJ Glasso（PJ / SmartIPTech）"
+    zh: "PJ Glasso（PJ / SmartIPTech）"
+  author_type: "Web"
+  link: "https://vimeo.com/1239534669"
+  homepage: catalog
+
+- name:
+    en: "Spooky Keychain Arcade"
+    zh: "Spooky Keychain Arcade"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Spooky Keychain Arcade."
+    zh: "A Seeed Studio XIAO based maker project: Spooky Keychain Arcade."
+  board: "XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Gaming"
+    zh: "游戏"
+  year: 2026
+  month: 10
+  release_date: 2026-10-29
+  author:
+    en: "gokux"
+    zh: "gokux"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Gokux/spooky-keychain-arcade-51c1bf"
+  homepage: catalog

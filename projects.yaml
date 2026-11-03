@@ -4841,3 +4841,24 @@ projects:
   author_type: "Hackster"
   link: "https://www.hackster.io/Gokux/spooky-keychain-arcade-51c1bf"
   homepage: catalog
+
+- name:
+    en: Handsy — AI agent that operates a real iPhone with a XIAO ESP32-S3
+    zh: Handsy——用 XIAO ESP32-S3 让 AI Agent 操作真实 iPhone
+  description:
+    en: The XIAO ESP32-S3 plugs into an iPhone as its USB mouse and keyboard and receives the phone's AirPlay Screen Mirroring. The computer talks to the XIAO over Bluetooth, so an AI agent such as Claude Code or Codex can see and tap the phone through the esp32agent CLI and MCP server. No jailbreak required. Open source under the MIT license; docs at https://handsy.tech/docs/cli
+    zh: XIAO ESP32-S3 作为 USB 鼠标和键盘接入 iPhone，并接收手机的 AirPlay 屏幕镜像。电脑通过蓝牙与 XIAO 通信，Claude Code、Codex 等 AI Agent 可借助 esp32agent CLI 与 MCP 服务器看到并点按手机屏幕，无需越狱。MIT 协议开源，文档见 https://handsy.tech/docs/cli
+  board: XIAO ESP32-S3
+  category:
+    en: AI Gadget
+    zh: AI Gadget
+  year: 2026
+  month: 10
+  release_date: 2026-10-12
+  author:
+    en: Henry Yuan
+    zh: Henry Yuan
+  author_type: GitHub
+  link: https://github.com/onehumanbeing/esp32-iphone-agent
+  homepage: review
+  image: https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png

@@ -3260,6 +3260,7 @@ projects:
     zh: "IoT Bhai"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=L5pBvX0efOs"
+  image: "https://i.ytimg.com/vi/L5pBvX0efOs/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3281,6 +3282,7 @@ projects:
     zh: "Alex Latorre"
   author_type: "Instructables"
   link: "https://www.instructables.com/Q-Tiny-Desk-Companion-for-Your-Mac"
+  image: "https://content.instructables.com/FBF/BGXS/MUX0F0O6/FBFBGXSMUX0F0O6.png?auto=webp&frame=1"
   homepage: catalog
 
 - name:
@@ -3301,6 +3303,7 @@ projects:
     zh: "techiesms"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=UMBq-8sZl7I"
+  image: "https://i.ytimg.com/vi/UMBq-8sZl7I/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3322,6 +3325,7 @@ projects:
     zh: "IoT Bhai"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=ss3Qop2KxwE"
+  image: "https://i.ytimg.com/vi/ss3Qop2KxwE/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3343,6 +3347,7 @@ projects:
     zh: "Pradeep"
   author_type: "Hackster"
   link: "https://www.hackster.io/pradeeplogu0/a-wrist-worn-step-counter-with-xiao-nrf54lm20a-sense-ffd823"
+  image: "https://hackster.imgix.net/uploads/attachments/2007015/_mxAwOxUro3.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 
@@ -3364,6 +3369,7 @@ projects:
     zh: "Mason"
   author_type: "Hackster"
   link: "https://www.hackster.io/Masonalive/excuse-cat-an-offline-e-paper-excuse-generator-9d8256"
+  image: "https://hackster.imgix.net/uploads/attachments/1976372/an_excuse_cat_c742plEFgV.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 
@@ -3385,6 +3391,7 @@ projects:
     zh: "Ameya Angadi"
   author_type: "Hackster"
   link: "https://www.hackster.io/Ameya_Angadi/echain-a-fun-digital-key-chain-ce8f8d"
+  image: "https://hackster.imgix.net/uploads/attachments/2006498/_yOxvJHC4Zp.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 
@@ -3406,6 +3413,7 @@ projects:
     zh: "JSK-Studio"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=OZSdhphErQY"
+  image: "https://i.ytimg.com/vi/OZSdhphErQY/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3427,6 +3435,7 @@ projects:
     zh: "Pradeep"
   author_type: "Hackster"
   link: "https://www.hackster.io/pradeeplogu0/claude-meter-with-xiao-epaper-diy-kit-esp32-s3-ee05-63df7b"
+  image: "https://hackster.imgix.net/uploads/attachments/2009665/_XVe8j2UlWZ.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 
@@ -3490,6 +3499,7 @@ projects:
     zh: "Tech Talkies"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=c_qwv6NKEDg"
+  image: "https://i.ytimg.com/vi/c_qwv6NKEDg/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3511,6 +3521,7 @@ projects:
     zh: "Leon Anavi"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=Wtqm-hPrgqk"
+  image: "https://i.ytimg.com/vi/Wtqm-hPrgqk/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3532,6 +3543,7 @@ projects:
     zh: "Marina"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=LgCNVUndTH8"
+  image: "https://i.ytimg.com/vi/LgCNVUndTH8/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3553,6 +3565,7 @@ projects:
     zh: "Valleytech Custom Solutions"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=2iXLf_5kyTY"
+  image: "https://i.ytimg.com/vi/2iXLf_5kyTY/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3574,6 +3587,7 @@ projects:
     zh: "Stefan Maetschke"
   author_type: "Web"
   link: "https://www.makerguides.com/getting-started-with-xiao-nrf52840-0-96-display-and-arduino-ide/"
+  image: "https://www.makerguides.com/wp-content/uploads/2026/10/image-1.png"
   homepage: catalog
 
 
@@ -3595,6 +3609,7 @@ projects:
     zh: "Becky Stern"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=4R9bSVE5pJQ"
+  image: "https://i.ytimg.com/vi/4R9bSVE5pJQ/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3616,6 +3631,7 @@ projects:
     zh: "Max Imagination"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=5Le4I-1Pf9I"
+  image: "https://i.ytimg.com/vi/5Le4I-1Pf9I/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3637,6 +3653,7 @@ projects:
     zh: "Carsten's world"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=a9gEFRlPrB0"
+  image: "https://i.ytimg.com/vi/a9gEFRlPrB0/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3658,6 +3675,7 @@ projects:
     zh: "Shahbaz Hashmi Ansari"
   author_type: "Instructables"
   link: "https://www.instructables.com/DIY-Smart-Desktop-Companion/"
+  image: "https://content.instructables.com/FER/IWQ6/MV6XS5E0/FERIWQ6MV6XS5E0.jpg?auto=webp&frame=1"
   homepage: catalog
 
 
@@ -3679,6 +3697,7 @@ projects:
     zh: "CyberChuck"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=XdNKCfWlV9k"
+  image: "https://i.ytimg.com/vi/XdNKCfWlV9k/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3700,6 +3719,7 @@ projects:
     zh: "Gi_motion"
   author_type: "Instructables"
   link: "https://www.instructables.com/BABAI-DIY-Interactive-Desktop-Robot-Inspired-by-Da"
+  image: "https://content.instructables.com/FMW/CU88/MSHTHT1W/FMWCU88MSHTHT1W.jpg?auto=webp&frame=1"
   homepage: catalog
 
 
@@ -3721,6 +3741,7 @@ projects:
     zh: "Hack Club"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=2OtiPNDWmQY"
+  image: "https://i.ytimg.com/vi/2OtiPNDWmQY/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3742,6 +3763,7 @@ projects:
     zh: "gokux"
   author_type: "Instructables"
   link: "https://www.instructables.com/Vibe-Pad/"
+  image: "https://content.instructables.com/FE8/S8UR/MRCQBOD0/FE8S8URMRCQBOD0.jpg?auto=webp&frame=1&width=2100"
   homepage: catalog
 
 
@@ -3763,6 +3785,7 @@ projects:
     zh: "hmd83"
   author_type: "GitHub"
   link: "https://github.com/hmd83/tanen"
+  image: "https://opengraph.githubassets.com/df554be1686032fd1fb29f9d16c87226390ca25b04ff79a6d0089bd2dacc755f/hmd83/tanen"
   homepage: catalog
 
 
@@ -3784,6 +3807,7 @@ projects:
     zh: "pradeeplogu0"
   author_type: "Hackster"
   link: "https://www.hackster.io/pradeeplogu0/desktop-air-quality-monitor-with-xiao-rp2040-ens160-74ceeb"
+  image: "https://hackster.imgix.net/uploads/attachments/1980492/_9tlF3JYAMM.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 
@@ -3805,6 +3829,7 @@ projects:
     zh: "OpenSQZ"
   author_type: "GitHub"
   link: "https://github.com/OpenSQZ/OpenGlass/tree/docs/phase1-unified-repo"
+  image: "https://opengraph.githubassets.com/166f9562a9717226d04c42530cbf29360b0c9d1ec12c532c5282dbf6f729277f/OpenSQZ/OpenGlass"
   homepage: catalog
 
 
@@ -3847,6 +3872,7 @@ projects:
     zh: "Notorious Squirrel"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=wwJTl4sEE3U"
+  image: "https://i.ytimg.com/vi/wwJTl4sEE3U/sddefault.jpg"
   homepage: catalog
 
 
@@ -3889,6 +3915,7 @@ projects:
     zh: "makahernandez"
   author_type: "Other"
   link: "https://www.linkedin.com/posts/makahernandez_ew26-ugcPost-7436329589875830784-uNOY?utm_source=share&utm_medium=member_desktop&rcm=ACoAABCAXEUBG32MKn71Gdmj50cTqJ5WJAsoyEA"
+  image: "https://dms.licdn.com/playlist/vid/v2/D4E05AQHEH9oTdEakuA/thumbnail-with-play-button-overlay-high/B4EZzMmXIPGoDU-/0/1772959141064?e=2147483647&v=beta&t=Q5yVEgJwJMBE-qwOu5zUgk9GF_tfwtgTD8jTlwGkCEk"
   homepage: catalog
 
 
@@ -3910,6 +3937,7 @@ projects:
     zh: "upir"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=EEmuondHHyY"
+  image: "https://i.ytimg.com/vi/EEmuondHHyY/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -3973,6 +4001,7 @@ projects:
     zh: "HAGIWO1"
   author_type: "Other"
   link: "https://x.com/HAGIWO1/status/1959251297229758606"
+  image: "https://pbs.twimg.com/ext_tw_video_thumb/1959251238765350912/pu/img/ljNqBaUuy1_EVivx?format=webp&name=large"
   homepage: catalog
 
 
@@ -3994,6 +4023,7 @@ projects:
     zh: "AtmosphEng"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=2hYpgMcTs8o"
+  image: "https://i.ytimg.com/vi/2hYpgMcTs8o/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -4015,6 +4045,7 @@ projects:
     zh: "Data Slayer"
   author_type: "YouTube"
   link: "https://youtu.be/ofR7GFNZzJY"
+  image: "https://i.ytimg.com/vi/ofR7GFNZzJY/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -4036,6 +4067,7 @@ projects:
     zh: "J-Rat Techworks"
   author_type: "YouTube"
   link: "https://www.youtube.com/shorts/Y-lU2jJWXmw"
+  image: "https://i.ytimg.com/vi/Y-lU2jJWXmw/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -4078,6 +4110,7 @@ projects:
     zh: "Michael ZoneRobotics"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=F3EoujWpK7Y"
+  image: "https://i.ytimg.com/vi/F3EoujWpK7Y/maxresdefault.jpg"
   homepage: catalog
 
 - name:
@@ -4098,6 +4131,7 @@ projects:
     zh: "Paul Lagier"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=JSyK9pxqJa0"
+  image: "https://i.ytimg.com/vi/JSyK9pxqJa0/maxresdefault.jpg"
   homepage: catalog
 
 - name:
@@ -4118,6 +4152,7 @@ projects:
     zh: "Tommy Bianco"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=wrkBanNFMBU"
+  image: "https://i.ytimg.com/vi/wrkBanNFMBU/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -4139,6 +4174,7 @@ projects:
     zh: "Peak Tech"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=YSRXy27gi9Y"
+  image: "https://i.ytimg.com/vi/YSRXy27gi9Y/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -4160,6 +4196,7 @@ projects:
     zh: "gokux"
   author_type: "Instructables"
   link: "https://www.instructables.com/Bear-Byte-a-Cute-Little-System-Resource-Monitor-fo"
+  image: "https://content.instructables.com/FDS/2ICC/MVJRMXQF/FDS2ICCMVJRMXQF.png?auto=webp&frame=1"
   homepage: catalog
 
 
@@ -4181,6 +4218,7 @@ projects:
     zh: "Yannick99"
   author_type: "Instructables"
   link: "https://www.instructables.com/Motion-Reactive-LED-Rave-Gloves/"
+  image: "https://content.instructables.com/F3D/LYHP/MVIRYFV1/F3DLYHPMVIRYFV1.jpg?auto=webp&frame=1"
   homepage: catalog
 
 
@@ -4223,6 +4261,7 @@ projects:
     zh: "Paul Buda (PaBu04)"
   author_type: "GitHub"
   link: "https://github.com/PaBu04/OpenPrintSense"
+  image: "https://opengraph.githubassets.com/1/PaBu04/OpenPrintSense"
   homepage: catalog
 
 
@@ -4244,6 +4283,7 @@ projects:
     zh: "Arnov Sharma"
   author_type: "Hackster"
   link: "https://www.hackster.io/Arnov_Sharma_makes/ghost-themed-headphone-stand-314031"
+  image: "https://hackster.imgix.net/uploads/attachments/1670938/_SSJzdYEw4z.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 
@@ -4265,6 +4305,7 @@ projects:
     zh: "Guy Dupont"
   author_type: "Hackaday"
   link: "https://hackaday.io/project/193322-a-la-qrte-qr-code-menu-printer"
+  image: "https://cdn.hackaday.io/images/resize/600x600/2419351698180309812.jpg"
   homepage: catalog
 
 
@@ -4286,6 +4327,7 @@ projects:
     zh: "Twotoz (Leon)"
   author_type: "GitHub"
   link: "https://github.com/Twotoz/C5VRX"
+  image: "https://opengraph.githubassets.com/16fc7980d1a63238d38c5b3801d146d721cc5c61e4d9f4f6ace11f59a1184e71/Twotoz/C5VRX"
   homepage: catalog
 
 
@@ -4307,6 +4349,7 @@ projects:
     zh: "Tech Talkies"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=XajTXU7A1yA"
+  image: "https://i.ytimg.com/vi/XajTXU7A1yA/maxresdefault.jpg"
   homepage: catalog
 
 
@@ -4328,6 +4371,7 @@ projects:
     zh: "Aleksei Tertychnyi (pinelab)"
   author_type: "Hackaday"
   link: "https://hackaday.io/project/207161-mcu-based-adjustable-via-uart-ldo"
+  image: "https://cdn.hackaday.io/images/resize/600x600/3494191792745415024.jpg"
   homepage: catalog
 
 
@@ -4349,6 +4393,7 @@ projects:
     zh: "Glen Akins (bikerglen)"
   author_type: "Web"
   link: "https://bikerglen.com/blog/the-router-clock/"
+  image: "https://bikerglen.com/wp/wp-content/uploads/2026/08/DSC_0719_2000px.jpg"
   homepage: catalog
 
 
@@ -4370,6 +4415,7 @@ projects:
     zh: "Hunter McGuire (Tendrl)"
   author_type: "Web"
   link: "https://tendrl.com/blog/xiao-esp32c3-keeps-its-own-history/"
+  image: "https://tendrl.com/screenshots/xiao-esp32c3-guitar-pick.png"
   homepage: catalog
 
 
@@ -4391,6 +4437,7 @@ projects:
     zh: "Nikodem Bartnik"
   author_type: "Hackster"
   link: "https://www.hackster.io/news/cheaply-recreating-the-ugly-boston-dynamics-robot-hand-0007997bd99f"
+  image: "https://hackster.imgix.net/uploads/attachments/2004630/_6rJNtz5p3A.blob?auto=compress%2Cformat&w=600&h=450&fit=min"
   homepage: catalog
 
 
@@ -4433,6 +4480,7 @@ projects:
     zh: "Quixotic7"
   author_type: "GitHub"
   link: "https://github.com/Quixotic7/MvaveFM1Unbricker"
+  image: "https://opengraph.githubassets.com/95b95a4a6e42c41ad8372d07043bc5d1fb809390fab6207b6ab2590ead4536d6/Quixotic7/MvaveFM1Unbricker"
   homepage: catalog
 
 
@@ -4454,6 +4502,7 @@ projects:
     zh: "kurogedelic"
   author_type: "GitHub"
   link: "https://github.com/kurogedelic/FM-1-transporter"
+  image: "https://opengraph.githubassets.com/005b2d0c55117c20ee692910b5dcea9bd7fb4944447df226a70a70cb573f817b/kurogedelic/FM-1-transporter"
   homepage: catalog
 
 
@@ -4475,6 +4524,7 @@ projects:
     zh: "FEATURE.（FeatureNAB）"
   author_type: "GitHub"
   link: "https://github.com/FeatureNAB/mmWave-Sensor"
+  image: "https://opengraph.githubassets.com/a7b5e716a6f838180748434eb28fe88468cd7232049572ac386c8e560cafd649/FeatureNAB/mmWave-Sensor"
   homepage: catalog
 
 # ========== 添加新项目模板 / Template for New Projects ==========
@@ -4758,6 +4808,7 @@ projects:
     zh: "Pro maker 101"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=2qtXVOpWWcU"
+  image: "https://i.ytimg.com/vi/2qtXVOpWWcU/maxresdefault.jpg"
   homepage: catalog
 
 - name:
@@ -4778,6 +4829,7 @@ projects:
     zh: "iHayri1"
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=Gp5rNogM-Pg"
+  image: "https://i.ytimg.com/vi/Gp5rNogM-Pg/maxresdefault.jpg"
   homepage: catalog
 
 - name:
@@ -4798,6 +4850,7 @@ projects:
     zh: "Brandy"
   author_type: "Hackster"
   link: "https://www.hackster.io/lsw031105guge-bit/build-an-nfc-epaper-display-in-5-minutes-xiao-nrf54lm20a-608f84"
+  image: "https://hackster.imgix.net/uploads/attachments/2015704/nfc-1_(1)_gtO0O9bvcs.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
   # ========== 2026-11-03 Community Projects ==========
@@ -4820,6 +4873,7 @@ projects:
     zh: "PJ Glasso（PJ / SmartIPTech）"
   author_type: "Web"
   link: "https://vimeo.com/1239534669"
+  image: "https://i.vimeocdn.com/video/2217097061-10805b3a016b5cca146b66500b27f3bd161a1da481d0e51170c08c0c6b609e68-d_295x166?region=us"
   homepage: catalog
 
 - name:
@@ -4840,6 +4894,7 @@ projects:
     zh: "gokux"
   author_type: "Hackster"
   link: "https://www.hackster.io/Gokux/spooky-keychain-arcade-51c1bf"
+  image: "https://hackster.imgix.net/uploads/attachments/2015834/_RKUqdvazIJ.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: catalog
 
 - name:

@@ -4922,10 +4922,10 @@ projects:
 
 - name:
     en: "ESP32-C6: El microcontrolador que deberías usar en 2026"
-    zh: "ESP32-C6: El microcontrolador que deberías usar en 2026"
+    zh: "ESP32-C6：2026 年值得使用的微控制器（西语评测）"
   description:
-    en: "A Seeed Studio XIAO based maker project: ESP32-C6: El microcontrolador que deberías usar en 2026."
-    zh: "A Seeed Studio XIAO based maker project: ESP32-C6: El microcontrolador que deberías usar en 2026."
+    en: "IoT Lab presents a Spanish-language ESP32-C6 review featuring the Seeed Studio XIAO ESP32-C6, asking whether it is a microcontroller worth choosing in 2026."
+    zh: "IoT Lab 的西班牙语 ESP32-C6 评测，以 Seeed Studio XIAO ESP32-C6 为展示板，探讨 ESP32-C6 是否值得在 2026 年选用。"
   board: "XIAO ESP32-C6"
   category:
     en: "Tools & Accessories"
@@ -4939,4 +4939,4 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=KYB-kUVTZxA"
   image: "https://i.ytimg.com/vi/KYB-kUVTZxA/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog

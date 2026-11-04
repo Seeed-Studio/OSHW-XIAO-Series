@@ -20,6 +20,7 @@ export const BOARD_GROUPS = [
     { label: 'Nordic', boards: ['XIAO nRF52840 (XIAO BLE)', 'XIAO nRF52840 Sense (XIAO BLE Sense)', 'XIAO nRF52840 Plus', 'XIAO nRF52840 Sense Plus', 'XIAO nRF54L15', 'XIAO nRF54L15 Sense', 'XIAO nRF54LM20A', 'XIAO nRF54LM20A Sense'] },
     { label: 'Raspberry Pi', boards: ['XIAO RP2040', 'XIAO RP2040 Plus', 'XIAO RP2350'] },
     { label: 'Microchip', boards: ['XIAO SAMD21 (Seeeduino XIAO)', 'XIAO SAMD21 Plus'] },
+    { label: 'STMicroelectronics', boards: ['XIAO STM32C5'] },
     { label: 'Renesas', boards: ['XIAO RA4M1'] },
     { label: 'Silicon Labs', boards: ['XIAO MG24', 'XIAO MG24 Sense'] }
 ];

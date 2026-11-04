@@ -4862,3 +4862,46 @@ projects:
   link: https://github.com/onehumanbeing/esp32-iphone-agent
   homepage: featured
   image: https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png
+
+  # ========== 2026-11-04 Community Projects ==========
+
+- name:
+    en: "ESP32-C6: El microcontrolador que deberías usar en 2026"
+    zh: "ESP32-C6: El microcontrolador que deberías usar en 2026"
+  description:
+    en: "A Seeed Studio XIAO based maker project: ESP32-C6: El microcontrolador que deberías usar en 2026."
+    zh: "A Seeed Studio XIAO based maker project: ESP32-C6: El microcontrolador que deberías usar en 2026."
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 3
+  release_date: 2026-03-21
+  author:
+    en: "IoT Lab"
+    zh: "IoT Lab"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=KYB-kUVTZxA"
+  image: "https://i.ytimg.com/vi/KYB-kUVTZxA/maxresdefault.jpg"
+  homepage: featured
+
+- name:
+    en: "IMU Electronic Ocean"
+    zh: "IMU Electronic Ocean"
+  description:
+    en: "A Seeed Studio XIAO based maker project: IMU Electronic Ocean."
+    zh: "A Seeed Studio XIAO based maker project: IMU Electronic Ocean."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Zeller,MA"
+    zh: "Zeller,MA"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Zeller/imu-electronic-ocean-3ed85d"
+  homepage: catalog

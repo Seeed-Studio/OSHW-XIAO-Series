@@ -4866,33 +4866,12 @@ projects:
   # ========== 2026-11-04 Community Projects ==========
 
 - name:
-    en: "ESP32-C6: El microcontrolador que deberías usar en 2026"
-    zh: "ESP32-C6: El microcontrolador que deberías usar en 2026"
-  description:
-    en: "A Seeed Studio XIAO based maker project: ESP32-C6: El microcontrolador que deberías usar en 2026."
-    zh: "A Seeed Studio XIAO based maker project: ESP32-C6: El microcontrolador que deberías usar en 2026."
-  board: "XIAO ESP32-C6"
-  category:
-    en: "Tools & Accessories"
-    zh: "工具配件"
-  year: 2026
-  month: 3
-  release_date: 2026-03-21
-  author:
-    en: "IoT Lab"
-    zh: "IoT Lab"
-  author_type: "YouTube"
-  link: "https://www.youtube.com/watch?v=KYB-kUVTZxA"
-  image: "https://i.ytimg.com/vi/KYB-kUVTZxA/maxresdefault.jpg"
-  homepage: featured
-
-- name:
     en: "IMU Electronic Ocean"
     zh: "IMU Electronic Ocean"
   description:
-    en: "A Seeed Studio XIAO based maker project: IMU Electronic Ocean."
-    zh: "A Seeed Studio XIAO based maker project: IMU Electronic Ocean."
-  board: "XIAO ESP32-S3"
+    en: "An interactive ocean nightlight built with a Seeed Studio XIAO STM32C5. Its onboard IMU tracks tilt and shaking, driving two WS2812 RGB LED matrices to render gravity-responsive water and fading ripples; a button switches lighting modes."
+    zh: "基于 Seeed Studio XIAO STM32C5 的交互式海洋夜灯：读取板载 IMU 的倾斜与摇动数据，驱动两块 WS2812 RGB 灯板模拟随重力流动的水面和逐渐消退的涟漪，并通过按钮切换灯光模式。"
+  board: "XIAO STM32C5"
   category:
     en: "Tools & Accessories"
     zh: "工具配件"

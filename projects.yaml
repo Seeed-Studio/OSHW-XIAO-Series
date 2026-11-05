@@ -4917,3 +4917,26 @@ projects:
   link: https://github.com/onehumanbeing/esp32-iphone-agent
   homepage: featured
   image: https://raw.githubusercontent.com/onehumanbeing/esp32-iphone-agent/main/docs/images/app-screens.png
+
+  # ========== 2026-11-04 Community Projects ==========
+
+- name:
+    en: "ESP32-C6: El microcontrolador que deberías usar en 2026"
+    zh: "ESP32-C6：2026 年值得使用的微控制器（西语评测）"
+  description:
+    en: "IoT Lab presents a Spanish-language ESP32-C6 review featuring the Seeed Studio XIAO ESP32-C6, asking whether it is a microcontroller worth choosing in 2026."
+    zh: "IoT Lab 的西班牙语 ESP32-C6 评测，以 Seeed Studio XIAO ESP32-C6 为展示板，探讨 ESP32-C6 是否值得在 2026 年选用。"
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 3
+  release_date: 2026-03-22
+  author:
+    en: "IoT Lab"
+    zh: "IoT Lab"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=KYB-kUVTZxA"
+  image: "https://i.ytimg.com/vi/KYB-kUVTZxA/maxresdefault.jpg"
+  homepage: catalog

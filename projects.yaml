@@ -4947,15 +4947,15 @@ projects:
     en: "IMU Electronic Ocean"
     zh: "IMU Electronic Ocean"
   description:
-    en: "Hackster.io\" itemprop=\"name\" /> IMU Electronic Ocean - Hackster.io <meta content=."
-    zh: "Hackster.io\" itemprop=\"name\" /> IMU Electronic Ocean - Hackster.io <meta content=."
-  board: "XIAO ESP32-S3"
+    en: "A desk-sized rhythmic nightlight built on XIAO STM32C5: the on-board 6-axis IMU is read and fused, then mapped onto two 6x10 WS2812 matrices to recreate bioluminescent “blue tears” waves, colour flows that follow gravity, plus low-power wake-up from IMU motion or a Grove Button."
+    zh: "基于 XIAO STM32C5 的桌面律动夜灯：读取并融合板载六轴 IMU 数据，映射到两片 6×10 WS2812 点阵，还原「蓝眼泪」海浪、随重力方向流动的灯光，并支持 IMU 动作与 Grove 按键低功耗唤醒。"
+  board: "XIAO STM32C5"
   category:
     en: "Tools & Accessories"
     zh: "工具配件"
   year: 2026
   month: 11
-  release_date: 2026-11-03
+  release_date: 2026-11-04
   author:
     en: "Zeller,MA"
     zh: "Zeller,MA"
@@ -4968,15 +4968,15 @@ projects:
     en: "How to read codes from (many) IR remote controls with as little code as possible"
     zh: "How to read codes from (many) IR remote controls with as little code as possible"
   description:
-    en: "Width=device-width, initial-scale=1' name='viewport'/> How to read codes from (many) IR remote controls with as little code as possible <meta content=."
-    zh: "Width=device-width, initial-scale=1' name='viewport'/> How to read codes from (many) IR remote controls with as little code as possible <meta content=."
-  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3, XIAO nRF52840 (XIAO BLE)"
+    en: "A from-scratch minimal NEC infrared decoder for XIAO boards: an IR demodulator wired to a header pin or the QWIIC socket captures 32-bit remote codes, and the firmware converts them into USB HID key presses (volume, mute, play/pause, skip) so any IR remote can drive media playback on a PC or Mac."
+    zh: "从零实现的极简 NEC 红外解码方案：红外解调器接在 XIAO 的排针或 QWIIC 接口上采集 32 位遥控码，再由固件转换成 USB HID 按键（音量、静音、播放/暂停、快进快退），让任意红外遥控器控制电脑或 Mac 的媒体播放。"
+  board: "XIAO nRF52840 Plus, XIAO ESP32-S3"
   category:
     en: "Tools & Accessories"
     zh: "工具配件"
   year: 2026
   month: 11
-  release_date: 2026-11-03
+  release_date: 2026-11-04
   author:
     en: "Larry Bank"
     zh: "Larry Bank"

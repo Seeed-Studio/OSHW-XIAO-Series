@@ -4940,3 +4940,47 @@ projects:
   link: "https://www.youtube.com/watch?v=KYB-kUVTZxA"
   image: "https://i.ytimg.com/vi/KYB-kUVTZxA/maxresdefault.jpg"
   homepage: catalog
+
+  # ========== 2026-11-06 Community Projects ==========
+
+- name:
+    en: "IMU Electronic Ocean"
+    zh: "IMU Electronic Ocean"
+  description:
+    en: "Hackster.io\" itemprop=\"name\" /> IMU Electronic Ocean - Hackster.io <meta content=."
+    zh: "Hackster.io\" itemprop=\"name\" /> IMU Electronic Ocean - Hackster.io <meta content=."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Zeller,MA"
+    zh: "Zeller,MA"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Zeller/imu-electronic-ocean-3ed85d"
+  image: "https://hackster.imgix.net/uploads/attachments/2016842/ezgif_com-video-to-gif-converter_(14)_QSUE9ZDANv.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured
+
+- name:
+    en: "How to read codes from (many) IR remote controls with as little code as possible"
+    zh: "How to read codes from (many) IR remote controls with as little code as possible"
+  description:
+    en: "Width=device-width, initial-scale=1' name='viewport'/> How to read codes from (many) IR remote controls with as little code as possible <meta content=."
+    zh: "Width=device-width, initial-scale=1' name='viewport'/> How to read codes from (many) IR remote controls with as little code as possible <meta content=."
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3, XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Larry Bank"
+    zh: "Larry Bank"
+  author_type: "Web"
+  link: "https://bitbanksoftware.blogspot.com/2026/11/how-to-read-codes-from-many-ir-remote.html"
+  image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh105qMltP9lmqwHDZI4LcD3iEzndTfbb3a7Yia7y0NrGd5hgVaoxki0BcerD-qBZZfMRYnbBDWnCi-Joz8QbvKle9yLCBez-XTkaBSK0gotrN9wfhGxPIOYnKsmZSiSfubm3w2HqtA6jOB67IdAgw0SMEbX125bJXl4GFx0a4HZ-tUBBvLI1C2qxUdz5GH/w1200-h630-p-k-no-nu/IMG_3201%20Medium.jpeg"
+  homepage: featured

@@ -4991,15 +4991,15 @@ projects:
     en: "Building an AI Smart Speaker with the reSpeaker XVF3800"
     zh: "Building an AI Smart Speaker with the reSpeaker XVF3800"
   description:
-    en: "Hackster.io\" itemprop=\"name\" /> Building an AI Smart Speaker with the reSpeaker XVF3800 - Hackster.io <meta content=."
-    zh: "Hackster.io\" itemprop=\"name\" /> Building an AI Smart Speaker with the reSpeaker XVF3800 - Hackster.io <meta content=."
+    en: "A voice-first smart-home system built around the reSpeaker XVF3800 with XIAO ESP32-S3: on board runs the Xiaozhi assistant \"Joy\" (wake word \"Hi, Joy\"), which turns natural-language requests into real appliance actions and smart-home scenes. A second XIAO ESP32-S3 powering a Home Controller drives a Grove 4-channel relay for switching and reads a Grove SHT40 temperature/humidity sensor, while a CrowPanel Advance 7 touchscreen dashboard shows device states and live readings for touch control."
+    zh: "基于 reSpeaker XVF3800 + XIAO ESP32-S3 的语音智能家居系统：板端运行 Xiaozhi 助手「Joy」（唤醒词 Hi, Joy），把自然语言请求变成真实的家电动作与场景联动。另一块 XIAO ESP32-S3 作为 Home Controller，通过 Grove 四路继电器控制开关、用 Grove SHT40 采集温湿度；CrowPanel Advance 7 触屏看板展示设备状态与实时读数，也支持触屏操作。"
   board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
   category:
-    en: "Mechanical Keyboard"
-    zh: "机械键盘"
+    en: "Smart Home"
+    zh: "智能家居"
   year: 2026
   month: 11
-  release_date: 2026-11-05
+  release_date: 2026-11-06
   author:
     en: "make2explore Systems"
     zh: "make2explore Systems"

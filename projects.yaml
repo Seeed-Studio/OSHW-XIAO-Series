@@ -4984,3 +4984,26 @@ projects:
   link: "https://bitbanksoftware.blogspot.com/2026/11/how-to-read-codes-from-many-ir-remote.html"
   image: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh105qMltP9lmqwHDZI4LcD3iEzndTfbb3a7Yia7y0NrGd5hgVaoxki0BcerD-qBZZfMRYnbBDWnCi-Joz8QbvKle9yLCBez-XTkaBSK0gotrN9wfhGxPIOYnKsmZSiSfubm3w2HqtA6jOB67IdAgw0SMEbX125bJXl4GFx0a4HZ-tUBBvLI1C2qxUdz5GH/w1200-h630-p-k-no-nu/IMG_3201%20Medium.jpeg"
   homepage: featured
+
+  # ========== 2026-11-09 Community Projects ==========
+
+- name:
+    en: "Building an AI Smart Speaker with the reSpeaker XVF3800"
+    zh: "Building an AI Smart Speaker with the reSpeaker XVF3800"
+  description:
+    en: "Hackster.io\" itemprop=\"name\" /> Building an AI Smart Speaker with the reSpeaker XVF3800 - Hackster.io <meta content=."
+    zh: "Hackster.io\" itemprop=\"name\" /> Building an AI Smart Speaker with the reSpeaker XVF3800 - Hackster.io <meta content=."
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Mechanical Keyboard"
+    zh: "机械键盘"
+  year: 2026
+  month: 11
+  release_date: 2026-11-05
+  author:
+    en: "make2explore Systems"
+    zh: "make2explore Systems"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/make2explore/building-an-ai-smart-speaker-with-the-respeaker-xvf3800-2d4b2b"
+  image: "https://hackster.imgix.net/uploads/attachments/2005015/_FIdPyEPqEv.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured

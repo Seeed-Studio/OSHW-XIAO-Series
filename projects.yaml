@@ -5007,3 +5007,47 @@ projects:
   link: "https://www.hackster.io/make2explore/building-an-ai-smart-speaker-with-the-respeaker-xvf3800-2d4b2b"
   image: "https://hackster.imgix.net/uploads/attachments/2005015/_FIdPyEPqEv.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: featured
+
+  # ========== 2026-11-10 Community Projects ==========
+
+- name:
+    en: "MyroNode: Real-Time IMU-to-Servo Teleoperation with ROS-2"
+    zh: "MyroNode: Real-Time IMU-to-Servo Teleoperation with ROS-2"
+  description:
+    en: "A robotic teleoperation system using two XIAO STM32C5 boards to map IMU orientation to serial bus servo motion over CAN FD, with ROS 2 integration and RViz2 visualization."
+    zh: "使用两块 XIAO STM32C5，通过 CAN FD 将 IMU 姿态映射为总线舵机动作，并接入 ROS 2 和 RViz2 进行可视化的机器人遥操作系统。"
+  board: "XIAO STM32C5"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Jahed"
+    zh: "Jahed"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Jahedul-haque/myronode-real-time-imu-to-servo-teleoperation-with-ros-2-88fb0f"
+  image: "https://hackster.imgix.net/uploads/attachments/2016244/_7k8aBl2Kys.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured
+
+- name:
+    en: "no_DICE"
+    zh: "no_DICE"
+  description:
+    en: "A XIAO RP2040-based device for rolling dice, flipping coins and keeping score, featuring an OLED display, a rotary encoder and a 3D-printed enclosure."
+    zh: "基于 XIAO RP2040 的掷骰、抛硬币和计分设备，配备 OLED 显示屏、旋转编码器及 3D 打印外壳。"
+  board: "XIAO RP2040"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Spirik"
+    zh: "Spirik"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Spirik/no-dice-957521"
+  image: "https://hackster.imgix.net/uploads/attachments/2017120/hero-animation_150ms_976x732_tcmzWISMpl.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured

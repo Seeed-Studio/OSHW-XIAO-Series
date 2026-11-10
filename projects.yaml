@@ -5007,3 +5007,47 @@ projects:
   link: "https://www.hackster.io/make2explore/building-an-ai-smart-speaker-with-the-respeaker-xvf3800-2d4b2b"
   image: "https://hackster.imgix.net/uploads/attachments/2005015/_FIdPyEPqEv.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: featured
+
+  # ========== 2026-11-10 Community Projects ==========
+
+- name:
+    en: "MyroNode: Real-Time IMU-to-Servo Teleoperation with ROS-2"
+    zh: "MyroNode: Real-Time IMU-to-Servo Teleoperation with ROS-2"
+  description:
+    en: "Hackster.io\" itemprop=\"name\" /> MyroNode: Real-Time IMU-to-Servo Teleoperation with ROS-2 - Hackster.io <meta content=."
+    zh: "Hackster.io\" itemprop=\"name\" /> MyroNode: Real-Time IMU-to-Servo Teleoperation with ROS-2 - Hackster.io <meta content=."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Jahed"
+    zh: "Jahed"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Jahedul-haque/myronode-real-time-imu-to-servo-teleoperation-with-ros-2-88fb0f"
+  image: "https://hackster.imgix.net/uploads/attachments/2016244/_7k8aBl2Kys.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured
+
+- name:
+    en: "no_DICE"
+    zh: "no_DICE"
+  description:
+    en: "Hackster.io\" itemprop=\"name\" /> no_DICE - Hackster.io <meta content=."
+    zh: "Hackster.io\" itemprop=\"name\" /> no_DICE - Hackster.io <meta content=."
+  board: "XIAO RP2040"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-03
+  author:
+    en: "Spirik"
+    zh: "Spirik"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Spirik/no-dice-957521"
+  image: "https://hackster.imgix.net/uploads/attachments/2017120/hero-animation_150ms_976x732_tcmzWISMpl.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured

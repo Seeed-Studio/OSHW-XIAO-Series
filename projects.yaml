@@ -5051,3 +5051,26 @@ projects:
   link: "https://www.hackster.io/Spirik/no-dice-957521"
   image: "https://hackster.imgix.net/uploads/attachments/2017120/hero-animation_150ms_976x732_tcmzWISMpl.gif?auto=format%2Ccompress&gifq=35&w=1600&h=1200&fit=min&fm=jpg"
   homepage: featured
+
+  # ========== 2026-11-11 Community Projects ==========
+
+- name:
+    en: "Arduino ESP32 mmWave Radar Project"
+    zh: "Arduino ESP32 mmWave Radar Project"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Arduino ESP32 mmWave Radar Project."
+    zh: "A Seeed Studio XIAO based maker project: Arduino ESP32 mmWave Radar Project."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 7
+  release_date: 2026-07-01
+  author:
+    en: "Stevee87"
+    zh: "Stevee87"
+  author_type: "GitHub"
+  link: "https://github.com/Stevee87/Arduino-ESP32-Radarproject"
+  image: "https://opengraph.githubassets.com/af9b979eb32abc987c85b0cd1a1c6ddff1b402c7e6239263f550e9f77deab433/Stevee87/Arduino-ESP32-Radarproject"
+  homepage: featured

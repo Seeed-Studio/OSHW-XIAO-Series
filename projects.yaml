@@ -5096,7 +5096,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=gp4iV7dj3Bg"
   image: "https://i.ytimg.com/vi/gp4iV7dj3Bg/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog
 
 - name:
     en: "Small size, big performance: testing the Seeed XIAO"
@@ -5117,7 +5117,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=M_WjVYfAzD8"
   image: "https://i.ytimg.com/vi/M_WjVYfAzD8/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog
 
 - name:
     en: "Solving the Smart Home Battery Problem"
@@ -5138,7 +5138,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=-wEKOhVZ0NM"
   image: "https://i.ytimg.com/vi/-wEKOhVZ0NM/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog
 
 - name:
     en: "XIAO ESP32-C5 - 5 GHz Wi-Fi IoT Powerhouse"
@@ -5159,7 +5159,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=2PrRQDiVzAA"
   image: "https://i.ytimg.com/vi/2PrRQDiVzAA/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog
 
 - name:
     en: "XIAO ESP32-S3 – The Smallest AI Camera Module! Full Setup Guide"
@@ -5180,4 +5180,4 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=asP3AOQtrQ8"
   image: "https://i.ytimg.com/vi/asP3AOQtrQ8/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog

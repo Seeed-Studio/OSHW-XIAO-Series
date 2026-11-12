@@ -5074,3 +5074,110 @@ projects:
   link: "https://github.com/Stevee87/Arduino-ESP32-Radarproject"
   image: "https://opengraph.githubassets.com/af9b979eb32abc987c85b0cd1a1c6ddff1b402c7e6239263f550e9f77deab433/Stevee87/Arduino-ESP32-Radarproject"
   homepage: catalog
+
+  # ========== 2026-11-12 Community Projects ==========
+
+- name:
+    en: "Construí um Robô que Enxerga e Segue Meu Rosto!"
+    zh: "Construí um Robô que Enxerga e Segue Meu Rosto!"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Construí um Robô que Enxerga e Segue Meu Rosto!."
+    zh: "A Seeed Studio XIAO based maker project: Construí um Robô que Enxerga e Segue Meu Rosto!."
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Robotics"
+    zh: "机器人"
+  year: 2026
+  month: 11
+  release_date: 2026-11-09
+  author:
+    en: "Leandro Fellipe"
+    zh: "Leandro Fellipe"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=gp4iV7dj3Bg"
+  image: "https://i.ytimg.com/vi/gp4iV7dj3Bg/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "Small size, big performance: testing the Seeed XIAO"
+    zh: "Small size, big performance: testing the Seeed XIAO"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Small size, big performance: testing the Seeed XIAO."
+    zh: "A Seeed Studio XIAO based maker project: Small size, big performance: testing the Seeed XIAO."
+  board: "XIAO RA4M1"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2025
+  month: 12
+  release_date: 2025-12-08
+  author:
+    en: "Back to Engineering"
+    zh: "Back to Engineering"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=M_WjVYfAzD8"
+  image: "https://i.ytimg.com/vi/M_WjVYfAzD8/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "Solving the Smart Home Battery Problem"
+    zh: "Solving the Smart Home Battery Problem"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Solving the Smart Home Battery Problem."
+    zh: "A Seeed Studio XIAO based maker project: Solving the Smart Home Battery Problem."
+  board: "XIAO ESP32-C6, XIAO nRF52840 (XIAO BLE)"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 1
+  release_date: 2026-01-29
+  author:
+    en: "FEATURE."
+    zh: "FEATURE."
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=-wEKOhVZ0NM"
+  image: "https://i.ytimg.com/vi/-wEKOhVZ0NM/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "XIAO ESP32-C5 - 5 GHz Wi-Fi IoT Powerhouse"
+    zh: "XIAO ESP32-C5 - 5 GHz Wi-Fi IoT Powerhouse"
+  description:
+    en: "A Seeed Studio XIAO based maker project: XIAO ESP32-C5 - 5 GHz Wi-Fi IoT Powerhouse."
+    zh: "A Seeed Studio XIAO based maker project: XIAO ESP32-C5 - 5 GHz Wi-Fi IoT Powerhouse."
+  board: "XIAO ESP32-C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 1
+  release_date: 2026-01-25
+  author:
+    en: "DroneBot Workshop"
+    zh: "DroneBot Workshop"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=2PrRQDiVzAA"
+  image: "https://i.ytimg.com/vi/2PrRQDiVzAA/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "XIAO ESP32-S3 – The Smallest AI Camera Module! Full Setup Guide"
+    zh: "XIAO ESP32-S3 – The Smallest AI Camera Module! Full Setup Guide"
+  description:
+    en: "A Seeed Studio XIAO based maker project: XIAO ESP32-S3 – The Smallest AI Camera Module! Full Setup Guide."
+    zh: "A Seeed Studio XIAO based maker project: XIAO ESP32-S3 – The Smallest AI Camera Module! Full Setup Guide."
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2025
+  month: 12
+  release_date: 2025-12-01
+  author:
+    en: "Mohsin Kamal"
+    zh: "Mohsin Kamal"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=asP3AOQtrQ8"
+  image: "https://i.ytimg.com/vi/asP3AOQtrQ8/maxresdefault.jpg"
+  homepage: catalog

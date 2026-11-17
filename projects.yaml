@@ -5183,6 +5183,34 @@ projects:
   homepage: catalog
 
 - name:
+    en: ZRCar
+  description:
+    en: |-
+      ZRCar is a modular, browser-controlled robotics platform powered by ZROS, our free firmware for the ESP32-S3 Sense.
+
+      Designed as an accessible introduction to robotics, ZRCar lets you drive, experiment, and program your robot directly from a web browser—no dedicated app required.
+
+      Explore camera streaming, customizable controls, drag-and-drop programming, Python APIs, and LEGO Technic-compatible construction. Expand the robot with sensors and accessories, or use ZROS to bring browser-based control and programming to your own robotics projects.
+
+      Our goal is to make robotics more accessible, hackable, and fun while building an open platform for makers to learn, experiment, and contribute builds that everyone can use.
+
+      From our website click download to get to the github repo 
+      https://github.com/zonemikel/ZoneRobotics/tree/main/ZRCar
+  board: XIAO ESP32-C3, XIAO ESP32-S3, XIAO ESP32-S3 Sense
+  category:
+    en: Robotics
+    zh: 机器人
+  year: 2026
+  month: 11
+  release_date: 2026-11-16
+  author:
+    en: ZoneRobotics
+  author_type: GitHub
+  link: https://home.zonerobotics.com/
+  homepage: featured
+  image: https://raw.githubusercontent.com/zonemikel/ZoneRobotics/refs/heads/main/ZRCar/IMG_0027-small.jpg
+
+- name:
     en: Visión Mary
     zh: Vision Mary
   description:

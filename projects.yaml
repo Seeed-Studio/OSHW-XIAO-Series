@@ -5209,3 +5209,33 @@ projects:
   link: https://home.zonerobotics.com/
   homepage: featured
   image: https://raw.githubusercontent.com/zonemikel/ZoneRobotics/refs/heads/main/ZRCar/IMG_0027-small.jpg
+
+- name:
+    en: Visión Mary
+    zh: Vision Mary
+  description:
+    en: |-
+      Glasses that look, listen, and tell you what's in front of you. One button, three funcs.
+
+      Single press
+      Takes a photo and describes it out loud
+      Double press
+      Records your question and sends it, along with the image, to Gemini for a specific answer ("What does that sign say?")
+      Long press
+      Saves a photo of something you find beautiful and, if you turn it on, uploads it to the project's public gallery  https://www.juandmunoz.xyz/vision_mary/fotos.php
+      Plus: phone-based setup through a captive portal, two WiFi networks (say, your home network and your phone's hotspot for when you head out), volume control, an optional signature on gallery photos, and over-the-air (OTA) updates.
+    zh: Arraariatu (Juan David Muñoz)
+  board: XIAO ESP32-S3 Sense
+  category:
+    en: AI Gadget
+    zh: AI Gadget
+  year: 2026
+  month: 10
+  release_date: 2026-10-20
+  author:
+    en: Arraariatu (Juan David Muñoz)
+    zh: Arraariatu (Juan David Muñoz)
+  author_type: GitHub
+  link: https://github.com/XuanMunoz/vision-mary
+  homepage: featured
+  image: https://raw.githubusercontent.com/XuanMunoz/vision-mary/main/docs/images/gafas-hero.jpg

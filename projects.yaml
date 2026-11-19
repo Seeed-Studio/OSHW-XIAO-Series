@@ -5239,3 +5239,47 @@ projects:
   link: https://github.com/XuanMunoz/vision-mary
   homepage: featured
   image: https://raw.githubusercontent.com/XuanMunoz/vision-mary/main/docs/images/gafas-hero.jpg
+
+  # ========== 2026-11-18 Community Projects ==========
+
+- name:
+    en: "Blip — a ESP32 keychain that runs real Water PHYSICS and has a FACE"
+    zh: "Blip — a ESP32 keychain that runs real Water PHYSICS and has a FACE"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Blip — a ESP32 keychain that runs real Water PHYSICS and has a FACE."
+    zh: "A Seeed Studio XIAO based maker project: Blip — a ESP32 keychain that runs real Water PHYSICS and has a FACE."
+  board: "XIAO ESP32-C6"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 10
+  release_date: 2026-10-16
+  author:
+    en: "Sulphon"
+    zh: "Sulphon"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=q-tgDWzvj1w"
+  image: "https://i.ytimg.com/vi/q-tgDWzvj1w/maxresdefault.jpg"
+  homepage: featured
+
+- name:
+    en: "Face Recognition With NO Internet — $15 XIAO ESP32-S3 Camera"
+    zh: "Face Recognition With NO Internet — $15 XIAO ESP32-S3 Camera"
+  description:
+    en: "A Seeed Studio XIAO based maker project: Face Recognition With NO Internet — $15 XIAO ESP32-S3 Camera."
+    zh: "A Seeed Studio XIAO based maker project: Face Recognition With NO Internet — $15 XIAO ESP32-S3 Camera."
+  board: "XIAO ESP32-S3 Sense, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 8
+  release_date: 2026-08-20
+  author:
+    en: "Robojax"
+    zh: "Robojax"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=_LiiJxeuhtE&t=16s"
+  image: "https://i.ytimg.com/vi/_LiiJxeuhtE/maxresdefault.jpg"
+  homepage: featured

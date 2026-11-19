@@ -5283,3 +5283,47 @@ projects:
   link: "https://www.youtube.com/watch?v=_LiiJxeuhtE&t=16s"
   image: "https://i.ytimg.com/vi/_LiiJxeuhtE/maxresdefault.jpg"
   homepage: featured
+
+  # ========== 2026-11-19 Community Projects ==========
+
+- name:
+    en: "This Might Be the Most Capable Tiny STM32 Board Yet! | XIAO STM32C5"
+    zh: "This Might Be the Most Capable Tiny STM32 Board Yet! | XIAO STM32C5"
+  description:
+    en: "A Seeed Studio XIAO based maker project: This Might Be the Most Capable Tiny STM32 Board Yet! | XIAO STM32C5."
+    zh: "A Seeed Studio XIAO based maker project: This Might Be the Most Capable Tiny STM32 Board Yet! | XIAO STM32C5."
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-17
+  author:
+    en: "Equip Embedded"
+    zh: "Equip Embedded"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=vUkfb-C3QVk"
+  image: "https://i.ytimg.com/vi/vUkfb-C3QVk/maxresdefault.jpg"
+  homepage: featured
+
+- name:
+    en: "XIAO ESP32S3 and E-Paper Display Project."
+    zh: "XIAO ESP32S3 and E-Paper Display Project."
+  description:
+    en: "A Seeed Studio XIAO based maker project: XIAO ESP32S3 and E-Paper Display Project.."
+    zh: "A Seeed Studio XIAO based maker project: XIAO ESP32S3 and E-Paper Display Project.."
+  board: "XIAO ESP32-S3 Plus, XIAO ESP32-S3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-04
+  author:
+    en: "Hacktuber"
+    zh: "Hacktuber"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=ApNYEzWPvNg"
+  image: "https://i.ytimg.com/vi/ApNYEzWPvNg/maxresdefault.jpg"
+  homepage: featured

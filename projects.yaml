@@ -5391,3 +5391,24 @@ projects:
   link: "https://www.hackster.io/Zeller/xiao-motion-arcade-seven-tilt-and-tap-games-on-a-1-28-inch-c25796"
   image: "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/assets/images/community/2026-11-23/motion-arcade.jpg"
   homepage: catalog
+
+- name:
+    en: "ESP32 RGB LED Matrix Keychain"
+    zh: "XIAO ESP32-C3 RGB 点阵钥匙扣"
+  description:
+    en: "Tech Talkies builds a pocket-sized keychain with a Seeed Studio XIAO ESP32-C3 and a 6×10 RGB LED matrix in a 3D-printed enclosure. The video demonstrates idle animations, apps and games, custom screens and brightness adjustment, and provides firmware and source files."
+    zh: "Tech Talkies 使用 Seeed Studio XIAO ESP32-C3 与 6×10 RGB LED 点阵，在 3D 打印外壳内制作便携钥匙扣；视频演示待机动画、应用与小游戏、自定义画面和亮度调节，并提供固件及源码。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-20
+  author:
+    en: "Tech Talkies"
+    zh: "Tech Talkies"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=yUyYNM2BMfQ"
+  image: "https://i.ytimg.com/vi/yUyYNM2BMfQ/maxresdefault.jpg"
+  homepage: catalog

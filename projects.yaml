@@ -5412,3 +5412,24 @@ projects:
   link: "https://www.youtube.com/watch?v=yUyYNM2BMfQ"
   image: "https://i.ytimg.com/vi/yUyYNM2BMfQ/maxresdefault.jpg"
   homepage: catalog
+
+- name:
+    en: "Jason AI Desk Buddy with XIAO ESP32-S3"
+    zh: "基于 XIAO ESP32-S3 的 Jason AI 桌面伙伴"
+  description:
+    en: "Simple Circuits builds Jason, a battery-powered desk companion using the XIAO ESP32-S3 and Xiaozhi firmware. An I2S microphone and speaker support Wi-Fi voice conversations, while an OLED displays animated expressions, text, time and date in a 3D-printed enclosure."
+    zh: "Simple Circuits 使用 XIAO ESP32-S3 和 Xiaozhi 固件制作电池供电的 Jason 桌面伙伴，通过 I2S 麦克风、扬声器和 Wi-Fi 进行语音对话；OLED 在 3D 打印外壳内显示动态表情、文字、时间和日期。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 10
+  release_date: 2026-10-27
+  author:
+    en: "Simple Circuits"
+    zh: "Simple Circuits"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=Zu19HJRGMno"
+  image: "https://i.ytimg.com/vi/Zu19HJRGMno/hqdefault.jpg"
+  homepage: catalog

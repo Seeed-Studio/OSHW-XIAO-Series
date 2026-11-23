@@ -5391,3 +5391,47 @@ projects:
   link: "https://www.hackster.io/Zeller/xiao-motion-arcade-seven-tilt-and-tap-games-on-a-1-28-inch-c25796"
   image: "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/assets/images/community/2026-11-23/motion-arcade.jpg"
   homepage: catalog
+
+  # ========== 2026-11-19 Community Projects ==========
+
+- name:
+    en: "This Might Be the Most Capable Tiny STM32 Board Yet! | XIAO STM32C5"
+    zh: "XIAO STM32C5 开箱与固件烧录演示"
+  description:
+    en: "Introduces the XIAO STM32C5 and its onboard CAN transceiver, motion sensor and flash memory, then demonstrates programming with STM32CubeIDE using UF2 and ST-Link."
+    zh: "介绍 XIAO STM32C5 的板载 CAN 收发器、运动传感器与闪存，并演示在 STM32CubeIDE 中开发以及通过 UF2 和 ST-Link 烧录固件。"
+  board: "XIAO STM32C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-17
+  author:
+    en: "Equip Embedded"
+    zh: "Equip Embedded"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=vUkfb-C3QVk"
+  image: "https://i.ytimg.com/vi/vUkfb-C3QVk/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "XIAO ESP32S3 and E-Paper Display Project."
+    zh: "基于 XIAO EE05 的电子纸显示器制作"
+  description:
+    en: "Builds an enclosed e-paper clock around the XIAO EE05 board, powered by a XIAO ESP32-S3 Plus. The display shows time, date, battery status and connection status in a 3D-printed case."
+    zh: "以搭载 XIAO ESP32-S3 Plus 的 EE05 驱动板制作电子纸时钟，在 3D 打印外壳中显示时间、日期、电池状态与连接状态。"
+  board: "XIAO ESP32-S3 Plus"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-04
+  author:
+    en: "Hacktuber"
+    zh: "Hacktuber"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=ApNYEzWPvNg"
+  image: "https://i.ytimg.com/vi/ApNYEzWPvNg/maxresdefault.jpg"
+  homepage: catalog

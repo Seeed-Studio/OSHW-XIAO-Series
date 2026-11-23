@@ -5396,8 +5396,8 @@ projects:
     en: "ESP32 RGB LED Matrix Keychain"
     zh: "XIAO ESP32-C3 RGB 点阵钥匙扣"
   description:
-    en: "Tech Talkies builds a pocket-sized keychain with a Seeed Studio XIAO ESP32-C3 and a 6×10 RGB LED matrix in a 3D-printed enclosure. The video demonstrates idle animations, apps and games, custom screens and brightness adjustment, and provides firmware and source files."
-    zh: "Tech Talkies 使用 Seeed Studio XIAO ESP32-C3 与 6×10 RGB LED 点阵，在 3D 打印外壳内制作便携钥匙扣；视频演示待机动画、应用与小游戏、自定义画面和亮度调节，并提供固件及源码。"
+    en: "Tech Talkies builds a pocket-sized keychain with a Seeed Studio XIAO ESP32-C3 and a 6×10 RGB LED matrix in a 3D-printed enclosure. The video demonstrates idle animations, apps and games, custom screens and brightness adjustment, and links to a firmware flasher and 3D-printable enclosure files."
+    zh: "Tech Talkies 使用 Seeed Studio XIAO ESP32-C3 与 6×10 RGB LED 点阵，在 3D 打印外壳内制作便携钥匙扣；视频演示待机动画、应用与小游戏、自定义画面和亮度调节，并提供固件烧录入口和可打印的外壳文件。"
   board: "XIAO ESP32-C3"
   category:
     en: "Tools & Accessories"

@@ -5413,7 +5413,7 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=vUkfb-C3QVk"
   image: "https://i.ytimg.com/vi/vUkfb-C3QVk/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog
 
 - name:
     en: "XIAO ESP32S3 and E-Paper Display Project."
@@ -5434,4 +5434,4 @@ projects:
   author_type: "YouTube"
   link: "https://www.youtube.com/watch?v=ApNYEzWPvNg"
   image: "https://i.ytimg.com/vi/ApNYEzWPvNg/maxresdefault.jpg"
-  homepage: featured
+  homepage: catalog

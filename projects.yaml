@@ -5283,3 +5283,26 @@ projects:
   link: "https://www.youtube.com/watch?v=_LiiJxeuhtE&t=16s"
   image: "https://i.ytimg.com/vi/_LiiJxeuhtE/maxresdefault.jpg"
   homepage: featured
+
+- name:
+    en: "Gym XIAO: Apple Watch Bike Tracker"
+  description:
+    en: |-
+      Gym XIAO upgrades a low-cost folding exercise bike using a Seeed Studio XIAO ESP32-S3 and Seeed Round Display. It reuses the bike’s existing pedal-contact sensor to measure cadence and sends real cadence and estimated cycling power over standard Bluetooth cycling services to Apple Watch, where they can be recorded in the native Workout app.
+
+      The standalone touchscreen dashboard cycles between Watts, RPM and total distance, with calibrated virtual speed/distance, ride averages and peaks, mechanical work, manual resistance input, a subtle cadence-driven green gradient and a brightness gesture. Every startup begins a fresh ride while preserving settings and calibration. Firmware updates use an authenticated Wi-Fi connection, so the unit can stay on the bike. A 3D-printed enclosure houses the display and controller; the UI and firmware were developed with Codex.
+
+      Power is estimated from cadence and manually entered resistance rather than measured torque. Distance is calibrated against the original bike console. This uses Bluetooth cycling sensor services, not certified Apple GymKit; native Watch saving of speed/distance remains under verification. The public repository includes firmware, build notes and a Mac menu-bar helper, and also offers a separate Desktop Display profile.
+  board: XIAO ESP32-S3
+  category:
+    en: Healthcare
+    zh: 健康护理
+  year: 2026
+  month: 11
+  release_date: 2026-11-22
+  author:
+    en: Roy Kittrell (Roy’s Lab)
+  author_type: GitHub
+  link: https://github.com/RoyKittrell/xiao-round-display
+  homepage: featured
+  image: https://raw.githubusercontent.com/RoyKittrell/xiao-round-display/main/docs/media/gym-xiao-demo.gif

@@ -5306,3 +5306,88 @@ projects:
   link: https://github.com/RoyKittrell/xiao-round-display
   homepage: featured
   image: https://raw.githubusercontent.com/RoyKittrell/xiao-round-display/main/docs/media/gym-xiao-demo.gif
+
+  # Community projects — 2026-11-23
+
+- name:
+    en: "ESP32-S3 Oscilloscope Vector Graphics"
+    zh: "ESP32-S3 示波器矢量绘图"
+  description:
+    en: "Uses two sigma-delta outputs and RC filters to drive an oscilloscope in X-Y mode, drawing vector figures without a dedicated DAC."
+    zh: "利用两路 sigma-delta 输出和 RC 滤波驱动示波器的 X-Y 模式，在没有独立 DAC 的情况下绘制矢量图形。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Scientific Tools"
+    zh: "科学工具"
+  year: 2026
+  month: 11
+  release_date: 2026-11-20
+  author:
+    en: "R1BBIT_ESP32"
+    zh: "R1BBIT_ESP32"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1y0g8vi/no_display_no_problem_esp32s3_draws_vector/"
+  homepage: catalog
+
+- name:
+    en: "EITWatch: Smartwatch-Integrated Gesture Recognition"
+    zh: "EITWatch：集成于智能手表的手势识别"
+  description:
+    en: "Integrates eight planar electrodes into a watch-back sensor for hand gesture recognition. A XIAO ESP32-S3 schedules impedance scans and streams measurements over Wi-Fi."
+    zh: "将八个平面电极集成于表背，用阻抗变化识别手势；XIAO ESP32-S3 控制扫描时序并通过 Wi-Fi 传输测量数据。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 8
+  release_date: 2026-08-29
+  author:
+    en: "Xuanyou Liu, Novel Alam, Karan Ahuja"
+    zh: "Xuanyou Liu, Novel Alam, Karan Ahuja"
+  author_type: "Web"
+  link: "https://arxiv.org/pdf/2608.29415"
+  image: "https://raw.githubusercontent.com/evatan0720-coder/OSHW-XIAO-Series/add-four-community-projects-20261123/assets/images/community/2026-11-23/eitwatch.jpg"
+  homepage: catalog
+
+- name:
+    en: "Point at Anything and Control It — Did I Build the Future Remote?"
+    zh: "指向即可控制：改造 Wii 遥控器"
+  description:
+    en: "Builds a pointing-based universal remote inside a Wii Remote, using a camera and a convolutional neural network to recognize the target appliance."
+    zh: "将摄像头和卷积神经网络集成进 Wii 遥控器，通过识别所指设备实现指向式家电控制。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 11
+  release_date: 2026-11-08
+  author:
+    en: "GreatScott!"
+    zh: "GreatScott!"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=N15lYh-jwaA"
+  image: "https://raw.githubusercontent.com/evatan0720-coder/OSHW-XIAO-Series/add-four-community-projects-20261123/assets/images/community/2026-11-23/future-remote.jpg"
+  homepage: catalog
+
+- name:
+    en: "XIAO Motion Arcade: Seven Tilt-and-Tap Games"
+    zh: "XIAO Motion Arcade：七款倾斜与触屏小游戏"
+  description:
+    en: "Pairs a XIAO STM32C5 with the Round Display for XIAO to run seven handheld games. Onboard motion sensing and touch input replace a directional pad."
+    zh: "将 XIAO STM32C5 与 XIAO 圆形显示屏组合，用板载运动传感器和触屏操控七款掌上游戏，无需方向键。"
+  board: "XIAO STM32C5"
+  category:
+    en: "Gaming"
+    zh: "游戏"
+  year: 2026
+  month: 11
+  release_date: 2026-11-20
+  author:
+    en: "Zeller,MA"
+    zh: "Zeller,MA"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Zeller/xiao-motion-arcade-seven-tilt-and-tap-games-on-a-1-28-inch-c25796"
+  image: "https://raw.githubusercontent.com/evatan0720-coder/OSHW-XIAO-Series/add-four-community-projects-20261123/assets/images/community/2026-11-23/motion-arcade.jpg"
+  homepage: catalog

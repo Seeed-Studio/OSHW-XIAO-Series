@@ -5285,6 +5285,200 @@ projects:
   homepage: featured
 
 - name:
+    en: "Gym XIAO: Apple Watch Bike Tracker"
+  description:
+    en: |-
+      Gym XIAO upgrades a low-cost folding exercise bike using a Seeed Studio XIAO ESP32-S3 and Seeed Round Display. It reuses the bike’s existing pedal-contact sensor to measure cadence and sends real cadence and estimated cycling power over standard Bluetooth cycling services to Apple Watch, where they can be recorded in the native Workout app.
+
+      The standalone touchscreen dashboard cycles between Watts, RPM and total distance, with calibrated virtual speed/distance, ride averages and peaks, mechanical work, manual resistance input, a subtle cadence-driven green gradient and a brightness gesture. Every startup begins a fresh ride while preserving settings and calibration. Firmware updates use an authenticated Wi-Fi connection, so the unit can stay on the bike. A 3D-printed enclosure houses the display and controller; the UI and firmware were developed with Codex.
+
+      Power is estimated from cadence and manually entered resistance rather than measured torque. Distance is calibrated against the original bike console. This uses Bluetooth cycling sensor services, not certified Apple GymKit; native Watch saving of speed/distance remains under verification. The public repository includes firmware, build notes and a Mac menu-bar helper, and also offers a separate Desktop Display profile.
+  board: XIAO ESP32-S3
+  category:
+    en: Healthcare
+    zh: 健康护理
+  year: 2026
+  month: 11
+  release_date: 2026-11-22
+  author:
+    en: Roy Kittrell (Roy’s Lab)
+  author_type: GitHub
+  link: https://github.com/RoyKittrell/xiao-round-display
+  homepage: featured
+  image: https://raw.githubusercontent.com/RoyKittrell/xiao-round-display/main/docs/media/gym-xiao-demo.gif
+
+  # Community projects — 2026-11-23
+
+- name:
+    en: "ESP32-S3 Oscilloscope Vector Graphics"
+    zh: "ESP32-S3 示波器矢量绘图"
+  description:
+    en: "Uses two sigma-delta outputs and RC filters to drive an oscilloscope in X-Y mode, drawing vector figures without a dedicated DAC."
+    zh: "利用两路 sigma-delta 输出和 RC 滤波驱动示波器的 X-Y 模式，在没有独立 DAC 的情况下绘制矢量图形。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Scientific Tools"
+    zh: "科学工具"
+  year: 2026
+  month: 11
+  release_date: 2026-11-20
+  author:
+    en: "R1BBIT_ESP32"
+    zh: "R1BBIT_ESP32"
+  author_type: "Other"
+  link: "https://www.reddit.com/r/esp32/comments/1y0g8vi/no_display_no_problem_esp32s3_draws_vector/"
+  homepage: catalog
+
+- name:
+    en: "EITWatch: Smartwatch-Integrated Gesture Recognition"
+    zh: "EITWatch：集成于智能手表的手势识别"
+  description:
+    en: "Integrates eight planar electrodes into a watch-back sensor for hand gesture recognition. A XIAO ESP32-S3 schedules impedance scans and streams measurements over Wi-Fi."
+    zh: "将八个平面电极集成于表背，用阻抗变化识别手势；XIAO ESP32-S3 控制扫描时序并通过 Wi-Fi 传输测量数据。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "Wearables"
+    zh: "可穿戴"
+  year: 2026
+  month: 8
+  release_date: 2026-08-29
+  author:
+    en: "Xuanyou Liu, Novel Alam, Karan Ahuja"
+    zh: "Xuanyou Liu, Novel Alam, Karan Ahuja"
+  author_type: "Web"
+  link: "https://arxiv.org/pdf/2608.29415"
+  image: "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/assets/images/community/2026-11-23/eitwatch.jpg"
+  homepage: catalog
+
+- name:
+    en: "Point at Anything and Control It — Did I Build the Future Remote?"
+    zh: "指向即可控制：改造 Wii 遥控器"
+  description:
+    en: "Builds a pointing-based universal remote inside a Wii Remote, using a camera and a convolutional neural network to recognize the target appliance."
+    zh: "将摄像头和卷积神经网络集成进 Wii 遥控器，通过识别所指设备实现指向式家电控制。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Smart Home"
+    zh: "智能家居"
+  year: 2026
+  month: 11
+  release_date: 2026-11-08
+  author:
+    en: "GreatScott!"
+    zh: "GreatScott!"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=N15lYh-jwaA"
+  image: "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/assets/images/community/2026-11-23/future-remote.jpg"
+  homepage: catalog
+
+- name:
+    en: "XIAO Motion Arcade: Seven Tilt-and-Tap Games"
+    zh: "XIAO Motion Arcade：七款倾斜与触屏小游戏"
+  description:
+    en: "Pairs a XIAO STM32C5 with the Round Display for XIAO to run seven handheld games. Onboard motion sensing and touch input replace a directional pad."
+    zh: "将 XIAO STM32C5 与 XIAO 圆形显示屏组合，用板载运动传感器和触屏操控七款掌上游戏，无需方向键。"
+  board: "XIAO STM32C5"
+  category:
+    en: "Gaming"
+    zh: "游戏"
+  year: 2026
+  month: 11
+  release_date: 2026-11-20
+  author:
+    en: "Zeller,MA"
+    zh: "Zeller,MA"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/Zeller/xiao-motion-arcade-seven-tilt-and-tap-games-on-a-1-28-inch-c25796"
+  image: "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/assets/images/community/2026-11-23/motion-arcade.jpg"
+  homepage: catalog
+
+  # ========== 2026-11-19 Community Projects ==========
+
+- name:
+    en: "This Might Be the Most Capable Tiny STM32 Board Yet! | XIAO STM32C5"
+    zh: "XIAO STM32C5 开箱与固件烧录演示"
+  description:
+    en: "Introduces the XIAO STM32C5 and its onboard CAN transceiver, motion sensor and flash memory, then demonstrates programming with STM32CubeIDE using UF2 and ST-Link."
+    zh: "介绍 XIAO STM32C5 的板载 CAN 收发器、运动传感器与闪存，并演示在 STM32CubeIDE 中开发以及通过 UF2 和 ST-Link 烧录固件。"
+  board: "XIAO STM32C5"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-17
+  author:
+    en: "Equip Embedded"
+    zh: "Equip Embedded"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=vUkfb-C3QVk"
+  image: "https://i.ytimg.com/vi/vUkfb-C3QVk/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "XIAO ESP32S3 and E-Paper Display Project."
+    zh: "基于 XIAO EE05 的电子纸显示器制作"
+  description:
+    en: "Builds an enclosed e-paper clock around the XIAO EE05 board, powered by a XIAO ESP32-S3 Plus. The display shows time, date, battery status and connection status in a 3D-printed case."
+    zh: "以搭载 XIAO ESP32-S3 Plus 的 EE05 驱动板制作电子纸时钟，在 3D 打印外壳中显示时间、日期、电池状态与连接状态。"
+  board: "XIAO ESP32-S3 Plus"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-04
+  author:
+    en: "Hacktuber"
+    zh: "Hacktuber"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=ApNYEzWPvNg"
+  image: "https://i.ytimg.com/vi/ApNYEzWPvNg/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "ESP32 RGB LED Matrix Keychain"
+    zh: "XIAO ESP32-C3 RGB 点阵钥匙扣"
+  description:
+    en: "Tech Talkies builds a pocket-sized keychain with a Seeed Studio XIAO ESP32-C3 and a 6×10 RGB LED matrix in a 3D-printed enclosure. The video demonstrates idle animations, apps and games, custom screens and brightness adjustment, and links to a firmware flasher and 3D-printable enclosure files."
+    zh: "Tech Talkies 使用 Seeed Studio XIAO ESP32-C3 与 6×10 RGB LED 点阵，在 3D 打印外壳内制作便携钥匙扣；视频演示待机动画、应用与小游戏、自定义画面和亮度调节，并提供固件烧录入口和可打印的外壳文件。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 11
+  release_date: 2026-11-20
+  author:
+    en: "Tech Talkies"
+    zh: "Tech Talkies"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=yUyYNM2BMfQ"
+  image: "https://i.ytimg.com/vi/yUyYNM2BMfQ/maxresdefault.jpg"
+  homepage: catalog
+
+- name:
+    en: "Jason AI Desk Buddy with XIAO ESP32-S3"
+    zh: "基于 XIAO ESP32-S3 的 Jason AI 桌面伙伴"
+  description:
+    en: "Simple Circuits builds Jason, a battery-powered desk companion using the XIAO ESP32-S3 and Xiaozhi firmware. An I2S microphone and speaker support Wi-Fi voice conversations, while an OLED displays animated expressions, text, time and date in a 3D-printed enclosure."
+    zh: "Simple Circuits 使用 XIAO ESP32-S3 和 Xiaozhi 固件制作电池供电的 Jason 桌面伙伴，通过 I2S 麦克风、扬声器和 Wi-Fi 进行语音对话；OLED 在 3D 打印外壳内显示动态表情、文字、时间和日期。"
+  board: "XIAO ESP32-S3"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 10
+  release_date: 2026-10-27
+  author:
+    en: "Simple Circuits"
+    zh: "Simple Circuits"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=Zu19HJRGMno"
+  image: "https://i.ytimg.com/vi/Zu19HJRGMno/hqdefault.jpg"
+  homepage: catalog
+
+- name:
     en: K.A.S.H. Search and Rescue System
   description:
     en: K.A.S.H. Search and Rescue System is an open handheld range display and radar-node toolkit built around a Seeed Studio XIAO ESP32-C6. The XIAO reads radar data over UART and can emit presence reports, and an ESP32-2432S028R Cheap Yellow Display plots range on a 320×240 touchscreen. Firmware, wiring, and the telemetry contract are in the public GitHub repository.

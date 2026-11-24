@@ -5477,3 +5477,20 @@ projects:
   link: "https://www.youtube.com/watch?v=Zu19HJRGMno"
   image: "https://i.ytimg.com/vi/Zu19HJRGMno/hqdefault.jpg"
   homepage: catalog
+
+- name:
+    en: K.A.S.H. Search and Rescue System
+  description:
+    en: K.A.S.H. Search and Rescue System is an open handheld range display and radar-node toolkit built around a Seeed Studio XIAO ESP32-C6. The XIAO reads radar data over UART and can emit presence reports, and an ESP32-2432S028R Cheap Yellow Display plots range on a 320×240 touchscreen. Firmware, wiring, and the telemetry contract are in the public GitHub repository.
+  board: XIAO ESP32-C6
+  category:
+    en: Scientific Tools
+    zh: 科学工具
+  year: 2026
+  month: 8
+  release_date: 2026-08-05
+  author:
+    en: Austin Houston / Obscure Octopus LLC
+  author_type: GitHub
+  link: https://github.com/obscureoctopus-llc/K.A.S.H-Search-an-Rescue
+  homepage: catalog

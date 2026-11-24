@@ -5494,3 +5494,24 @@ projects:
   author_type: GitHub
   link: https://github.com/obscureoctopus-llc/K.A.S.H-Search-an-Rescue
   homepage: catalog
+
+- name:
+    en: "BLE Weather Station with XIAO ESP32-S3 Plus"
+    zh: "XIAO ESP32-S3 Plus 蓝牙离线气象站"
+  description:
+    en: "Pradeep combines a Seeed Studio XIAO ESP32-S3 Plus, XIAO Expansion Board and DFRobot Lark weather sensor. Readings appear on the OLED and stream over Bluetooth LE to a local Python dashboard, which provides charts, CSV export and offline mathematical forecasts without a cloud account or API key."
+    zh: "Pradeep 使用 Seeed Studio XIAO ESP32-S3 Plus、XIAO 扩展板和 DFRobot Lark 气象传感器，将读数显示在 OLED 上，并通过低功耗蓝牙发送到本地 Python 仪表盘，提供图表、CSV 导出和基于数学计算的离线预报，无需云账号或 API 密钥。"
+  board: "XIAO ESP32-S3 Plus"
+  category:
+    en: "IoT"
+    zh: "IoT"
+  year: 2026
+  month: 11
+  release_date: 2026-11-01
+  author:
+    en: "Pradeep"
+    zh: "Pradeep"
+  author_type: "Hackster"
+  link: "https://www.hackster.io/pradeeplogu0/ble-weather-station-with-xiao-esp32-s3-plus-51237f"
+  image: "https://hackster.imgix.net/uploads/attachments/2016118/_uSj8DwiU1F.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
+  homepage: featured

@@ -5515,3 +5515,45 @@ projects:
   link: "https://www.hackster.io/pradeeplogu0/ble-weather-station-with-xiao-esp32-s3-plus-51237f"
   image: "https://hackster.imgix.net/uploads/attachments/2016118/_uSj8DwiU1F.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg"
   homepage: featured
+
+- name:
+    en: "EasyPill: Hidden Lid Monitoring with XIAO ESP32-C3"
+    zh: "EasyPill：XIAO ESP32-C3 隐藏式药盒开盖监测"
+  description:
+    en: "Miloš Rašić hides a XIAO ESP32-C3, magnets and Hall switches in a weekly pillbox. A local web dashboard logs lid activity against a schedule; opening a lid does not confirm medication was taken."
+    zh: "Miloš Rašić 将 XIAO ESP32-C3、磁铁和霍尔开关藏入一周药盒，通过本地网页按计划记录各格开盖活动；开盖不等于确认服药。"
+  board: "XIAO ESP32-C3"
+  category:
+    en: "Healthcare"
+    zh: "健康护理"
+  year: 2026
+  month: 11
+  release_date: 2026-11-19
+  author:
+    en: "Miloš Rašić"
+    zh: "Miloš Rašić"
+  author_type: "Web"
+  link: "https://community.element14.com/challenges-projects/element14-presents/b/projects/posts/has-grandma-taken-her-pills-this-esp32-pillbox-can-help-you-find-out?ICID=I-HP-has-grandma-taken-her-pills-this-esp32-EP741"
+  image: "https://raw.githubusercontent.com/evatan0720-coder/OSHW-XIAO-Series/community-homepage-with-covers-20261125/assets/images/community/2026-11-25/easypill.png"
+  homepage: featured
+
+- name:
+    en: "A Face-Tracking Painting with XIAO ESP32-S3 Sense"
+    zh: "XIAO ESP32-S3 Sense 人脸追踪动态眼睛画框"
+  description:
+    en: "Phil's DIY uses a XIAO ESP32-S3 Sense camera and two servos to animate printed eyes in a portrait. Local face detection follows visitors, while idle behaviours blink and doze; settings are adjusted through a web page without a cloud service."
+    zh: "Phil's DIY 使用 XIAO ESP32-S3 Sense 摄像头和双舵机驱动画框中的纸质眼睛，本地人脸检测让眼睛追随访客，无人时眨眼、张望或入睡；通过网页调整设置，无需云服务。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "AI Gadget"
+    zh: "AI Gadget"
+  year: 2026
+  month: 11
+  release_date: 2026-11-21
+  author:
+    en: "Phil's DIY"
+    zh: "Phil's DIY"
+  author_type: "YouTube"
+  link: "https://www.youtube.com/watch?v=vSbphjCgu3U"
+  image: "https://raw.githubusercontent.com/evatan0720-coder/OSHW-XIAO-Series/community-homepage-with-covers-20261125/assets/images/community/2026-11-25/face-tracking-painting.jpg"
+  homepage: featured

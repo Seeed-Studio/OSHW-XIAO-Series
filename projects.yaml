@@ -5557,3 +5557,23 @@ projects:
   link: "https://www.youtube.com/watch?v=vSbphjCgu3U"
   image: "https://raw.githubusercontent.com/Seeed-Studio/OSHW-XIAO-Series/main/assets/images/community/2026-11-25/face-tracking-painting.jpg"
   homepage: featured
+
+- name:
+    en: "PrusaConnect Camera Firmware for XIAO ESP32-S3 Sense and OV5640"
+    zh: "XIAO ESP32-S3 Sense 与 OV5640 的 PrusaConnect 相机定制固件"
+  description:
+    en: "SamLovick adapts Prusa camera firmware for a XIAO ESP32-S3 Sense with an OV5640 autofocus camera. The board captures and uploads printer images to Prusa Connect, adding autofocus, digital zoom and pan/tilt, exposure lock, presets and PrusaLink-triggered timelapse."
+    zh: "SamLovick 为搭配 OV5640 自动对焦相机的 XIAO ESP32-S3 Sense 定制 Prusa 相机固件，由开发板拍摄并向 Prusa Connect 上传打印机图像，增加自动对焦、数字缩放与平移、曝光锁定、预设及 PrusaLink 触发的延时摄影。"
+  board: "XIAO ESP32-S3 Sense"
+  category:
+    en: "Tools & Accessories"
+    zh: "工具配件"
+  year: 2026
+  month: 9
+  release_date: 2026-09-03
+  author:
+    en: "SamLovick"
+    zh: "SamLovick"
+  author_type: "GitHub"
+  link: "https://github.com/SamLovick/Prusa-Firmware-ESP32-Cam"
+  homepage: catalog
